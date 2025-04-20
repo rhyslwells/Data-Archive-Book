@@ -1,14 +1,9 @@
-# Table of contents
+# Summary
 
-- [Dedication](Dedication.md)
-- [Copyright](Copyright.md)
-- [Preface](Preface.md)
-- [Introduction](README.md)
-- [Basics](basics/README.md)
-  - [Comments](basics/comments.md)
-  - [Variables](basics/variables.md)
-  - [Types](basics/types.md)
-  - [Equality](basics/equality.md)
-- [Preface](README.md)
-- [First chapter](content/1-first.md)
-- [Second chapter](content/2-second.md)
+* [Preface](README.md)
+* [First chapter](content/1-first.md)
+* [Second chapter](content/2-second.md)
+* [Third chapter](content/comments.md)
+* [Fourth chapter](content/types.md)
+* [Fifth chapter](content/variables.md)
+
