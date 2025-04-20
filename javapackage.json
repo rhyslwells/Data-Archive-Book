@@ -1,0 +1,27 @@
+{
+  "name": "javascript_tutorial",
+  "version": "1.0.0",
+  "description": "Learn JavaScript",
+  "main": "index.js",
+  "devDependencies": {
+    "@honkit/honkit-plugin-ga": "^1.0.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "honkit": "^4.0.4",
+    "honkit-plugin-i18nsettings": "^1.0.0"
+  },
+  "scripts": {
+    "start": "honkit serve",
+    "build": "honkit build",
+    "pdf": "honkit pdf",
+    "epub": "honkit epub",
+    "mobi": "honkit mobi",
+    "commit": "cz"
+  },
+  "keywords": [],
+  "author": "Suman Kunwar",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
