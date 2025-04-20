@@ -1,0 +1,22 @@
+{
+  "title": "Data Archive Book",
+  "description": "The Data Archive in book form",
+  "author": "Rhys Wells",
+  "honkit": ">=3.0.0",
+  "root": "./",
+  "plugins": [
+    "mathjax",
+    "honkit-plugin-prism",  // Use the correct Prism plugin
+    "-highlight"
+  ],
+  "pluginsConfig": {
+    "mathjax": {
+      "forceSVG": false
+    },
+    "honkit-plugin-prism": {
+      "css": [
+        "prismjs/themes/prism-tomorrow.css"
+      ]
+    }
+  }
+}

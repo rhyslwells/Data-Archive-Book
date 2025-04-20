@@ -1,0 +1,61 @@
+{
+  "title": "Data Archive Book",
+  "description": "The Data Archive in book form",
+  "author": "Rhys Wells",
+  "published": "20/04/2025",
+  "copyright": "Rhys Wells",
+  "honkit": ">=3.0.0",
+  "root": "./",
+
+  "plugins": [
+    "mathjax",
+    "bibtex-cite",
+    "wordcount",
+    "api-language-selector@https://github.com/algorithm-archivists/gitbook-plugin-api-language-selector.git",
+    "include-codeblock",
+    "bulk-redirect",
+    "prism",
+    "copy-code-button",
+    "back-to-top-button",
+    "toggle-chapters",
+    "edit-link",
+    "ace-editor",
+    "intopic-toc",
+    "-highlight"
+  ],
+
+  "lunr": {
+    "maxIndexSize": 1000000000
+  },
+
+  "pluginsConfig": {
+    "mathjax": {
+      "version": "2.6.1",
+      "forceSVG": false
+    },
+    "include-codeblock": {
+      "fixlang": true,
+      "unindent": true
+    },
+    "bulk-redirect": {
+      "basepath": "/",
+      "redirectsFile": "redirects.json"
+    },
+    "prism": {
+      "lang": {
+        "asm-x64": "nasm"
+      },
+      "ignore": ["emojicode", "text"],
+      "css": [
+        "prismjs/themes/prism-tomorrow.css"
+      ]
+    },
+    "copy-code-button": {
+      "style": "mac"
+    },
+    "edit-link": {
+      "base": "https://github.com/your_username/data_archive_book/edit/main/",
+      "label": "Edit this page"
+    }
+  }
+}

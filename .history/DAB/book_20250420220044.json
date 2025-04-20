@@ -7,7 +7,8 @@
   "honkit": ">=3.0.0",
   "root": "./",
   "plugins": [
-    "honkit-plugin-katex"
+    "mathjax"
   ],
-  "pluginsConfig": {}
+  "pluginsConfig": {
+  }
 }

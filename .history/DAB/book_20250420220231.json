@@ -6,8 +6,6 @@
   "copyright": "Rhys Wells",
   "honkit": ">=3.0.0",
   "root": "./",
-  "plugins": [
-    "honkit-plugin-katex"
-  ],
+  "plugins": [],
   "pluginsConfig": {}
 }
