@@ -6,9 +6,6 @@ tags:
 aliases: 
 category:
 ---
-
-# Logistic Regression
-
 ==Logistic regression models the log-odds of the probability as a linear function of the input features.==
 
 It models the probability of an input belonging to a particular class using a logistic (sigmoid) function.

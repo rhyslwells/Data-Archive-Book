@@ -14,11 +14,6 @@ Specifically a graph such as,
 
 ![Intro Page](../.gitbook/assets/intro.png)
 
-![Pasted image 20240124095916.png](./images/Pasted image 20240124095916.png)
-
-![Pasted image 20240124095916.png](./images/Pasted%20image%2020240124095916.png)
-
-![Pasted image 20240124095916.png](images/Pasted%20image%2020240124095916.png)
 
 
 $$\mathbb{N}$$

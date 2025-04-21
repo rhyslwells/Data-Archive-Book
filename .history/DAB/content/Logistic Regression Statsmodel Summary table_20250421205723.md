@@ -10,15 +10,8 @@ The dependent variable is 'duration'. The model used is a Logit regression (logi
 - High p value, suggests to remove from model, drop one by one, ie [Feature Selection](./Feature%20Selection.html).
 
 Specifically a graph such as,
-![Pasted image 20240124095916.png](.././images/Pasted%20image%2020240124095916.png)
+![Pasted image 20240124095916.png](../images/Pasted%20image%2020240124095916.png)
 
-![Intro Page](../.gitbook/assets/intro.png)
-
-![Pasted image 20240124095916.png](./images/Pasted image 20240124095916.png)
-
-![Pasted image 20240124095916.png](./images/Pasted%20image%2020240124095916.png)
-
-![Pasted image 20240124095916.png](images/Pasted%20image%2020240124095916.png)
 
 
 $$\mathbb{N}$$
