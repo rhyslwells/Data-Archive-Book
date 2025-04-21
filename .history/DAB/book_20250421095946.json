@@ -1,0 +1,21 @@
+{
+  "plugins": ["katex", "include-codeblock"],
+  "pluginsConfig": {
+    "katex": {
+      "delimiters": [
+        { "left": "$$", "right": "$$", "display": true },
+        { "left": "$", "right": "$", "display": false }
+      ]
+    },
+    "include-codeblock": {
+      "fixlang": true,
+      "unindent": true
+    }
+  },
+  {
+    "styles": {
+      "website": "./styles.css"
+    }
+  }
+  
+}

@@ -6,14 +6,11 @@
   "copyright": "Rhys Wells",
   "honkit": ">=3.0.0",
   "root": "./",
-  "plugins": [
-    "katex",
-    "include-codeblock",
-    "highlight",
-    "lunr",
-    "theme-default"
-  ],
+  "plugins": ["katex", "include-codeblock", "highlight", "lunr", "internal-links","fontsettings", "theme-default"],
   "pluginsConfig": {
+    "internal-links": {
+      "prefix": "/"
+    },
     "katex": {
       "delimiters": [
         { "left": "$$", "right": "$$", "display": true },
@@ -23,19 +20,9 @@
     "include-codeblock": {
       "fixlang": true,
       "unindent": true
-    },
-    "lunr": {
-      "languages": ["en"],  
-      "indexContents": true, 
-      "indexHeadings": true   
     }
   },
   "styles": {
-    "website": "styles.css"
-  },
-  "assets": {
-    "copy": [
-      "images/**/*"
-    ]
+    "website": "./styles.css"
   }
 }

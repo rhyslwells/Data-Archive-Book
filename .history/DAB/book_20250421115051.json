@@ -25,9 +25,9 @@
       "unindent": true
     },
     "lunr": {
-      "languages": ["en"],  
-      "indexContents": true, 
-      "indexHeadings": true   
+      "languages": ["en"],  // Language support for search
+      "indexContents": true,  // Whether to index content
+      "indexHeadings": true   // Whether to index headings
     }
   },
   "styles": {

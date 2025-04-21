@@ -4,5 +4,9 @@
     "gitbook-plugin-katex": "^1.1.4",
     "honkit": "^6.0.2",
     "puppeteer": "^24.6.1"
+  },
+  "dependencies": {
+    "gitbook-plugin-search": "^2.2.1",
+    "lunr": "^2.3.9"
   }
 }

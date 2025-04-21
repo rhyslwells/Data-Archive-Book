@@ -11,9 +11,14 @@
     "include-codeblock",
     "highlight",
     "lunr",
-    "theme-default"
+    "theme-default",
+    "search"
   ],
   "pluginsConfig": {
+    "search": {
+      "indexContents": true,  
+      "indexHeadings": true  
+    },
     "katex": {
       "delimiters": [
         { "left": "$$", "right": "$$", "display": true },
