@@ -1,0 +1,27 @@
+{
+  "title": "Data Archive Book",
+  "description": "The Data Archive in book form",
+  "author": "Rhys Wells",
+  "published": "20/04/2025",
+  "copyright": "Rhys Wells",
+  "honkit": ">=3.0.0",
+  "root": "./",
+  "plugins": ["katex"],
+  "pluginsConfig": {
+    "include-codeblock": {
+      "fixlang": true,
+      "unindent": true
+    },
+    "bulk-redirect": {
+      "basepath": "/",
+      "redirectsFile": "redirects.json"
+    },
+    "prism": {
+      "lang": {
+        "asm-x64": "nasm"
+      },
+      "ignore": ["emojicode", "text"],
+      "css": ["prismjs/themes/prism-tomorrow.css"]
+    }
+  }
+}

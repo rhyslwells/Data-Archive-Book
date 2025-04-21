@@ -1,5 +1,5 @@
 {
-  "plugins": ["katex", "include-codeblock"],
+  "plugins": ["katex", "include-codeblock", "pdf"],
   "pluginsConfig": {
     "katex": {
       "delimiters": [

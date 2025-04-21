@@ -1,0 +1,13 @@
+{
+  "title": "Data Archive Book",
+  "description": "The Data Archive in book form",
+  "author": "Rhys Wells",
+  "published": "20/04/2025",
+  "copyright": "Rhys Wells",
+  "honkit": ">=3.0.0",
+  "root": "./",
+  "plugins": [
+    "mathjax"
+  ],
+  "pluginsConfig": {}
+}
