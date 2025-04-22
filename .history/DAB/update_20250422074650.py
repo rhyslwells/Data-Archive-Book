@@ -5,10 +5,6 @@ import re
 content_folder = './content'
 summary_file = 'SUMMARY.md'
 
-# Slugify helper: turns "Page Name" into "page-name"
-def slugify(text):
-    return re.sub(r'[^\w\- ]', '', text).strip().lower().replace(' ', '-')
-
 # Function to update image links, wiki links, and inject titles
 def update_links_and_titles(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
@@ -22,20 +18,16 @@ def update_links_and_titles(file_path):
 
     content = re.sub(r'!\[\[([^\]]+)\]\]', replace_image, content)
 
-    # Replace wiki links: [[Page Name]] → [Page Name](#page-name)
+    # Replace wiki links: [[Page Name]] → [Page Name](./Page Name.md)
     def replace_wiki(match):
         page_name = match.group(1)
-        anchor = slugify(page_name)
-        return f'[{page_name}](#{anchor})'
-
+        encoded = page_name.replace(' ', '%20')
+        return f'[{page_name}](./{encoded}.md)'
     content = re.sub(r'(?<!\!)\[\[([^\]]+)\]\]', replace_wiki, content)
 
     # Add title header after YAML front matter, or at top if not present
     file_name = os.path.splitext(os.path.basename(file_path))[0]
-    title_text = file_name.replace('-', ' ').title()
-    slug = slugify(title_text)
-    title = f"# {title_text} {{#{slug}}}\n\n"
-    # title = f"# {title_text}\n\n"
+    title = f"# {file_name.replace('-', ' ').title()}\n\n"
 
     if content.startswith('---'):
         yaml_end = content.find('---', 3)

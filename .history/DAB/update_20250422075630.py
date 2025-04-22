@@ -33,9 +33,7 @@ def update_links_and_titles(file_path):
     # Add title header after YAML front matter, or at top if not present
     file_name = os.path.splitext(os.path.basename(file_path))[0]
     title_text = file_name.replace('-', ' ').title()
-    slug = slugify(title_text)
-    title = f"# {title_text} {{#{slug}}}\n\n"
-    # title = f"# {title_text}\n\n"
+    title = f"# {title_text}\n\n"
 
     if content.startswith('---'):
         yaml_end = content.find('---', 3)

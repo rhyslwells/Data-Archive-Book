@@ -6,7 +6,7 @@ tags:
 aliases: 
 category:
 ---
-# Logistic Regression
+# Logistic Regression {#logistic-regression}
 
 
 ==Logistic regression models the log-odds of the probability as a linear function of the input features.==
@@ -17,17 +17,17 @@ The model establishes a decision boundary (threshold) in the feature space.
 
 Logistic regression is best suited for cases where the decision boundary is approximately linear in the feature space.
 
-Logistic [Regression](./Regression.md)  can be used for [Binary Classification](./Binary%20Classification.md)tasks.
+Logistic [Regression](#regression)  can be used for [Binary Classification](#binary-classification)tasks.
 
 ### Related Notes:
-- [Logistic Regression Statsmodel Summary table](./Logistic%20Regression%20Statsmodel%20Summary%20table.md)
-- [Logistic Regression does not predict probabilities](./Logistic%20Regression%20does%20not%20predict%20probabilities.md)
-- [Interpreting logistic regression model parameters](./Interpreting%20logistic%20regression%20model%20parameters.md)
-- [Model Evaluation](./Model%20Evaluation.md)
-- To get [Model Parameters](./Model%20Parameters.md) use [Maximum Likelihood Estimation](./Maximum%20Likelihood%20Estimation.md)
+- [Logistic Regression Statsmodel Summary table](#logistic-regression-statsmodel-summary-table)
+- [Logistic Regression does not predict probabilities](#logistic-regression-does-not-predict-probabilities)
+- [Interpreting logistic regression model parameters](#interpreting-logistic-regression-model-parameters)
+- [Model Evaluation](#model-evaluation)
+- To get [Model Parameters](#model-parameters) use [Maximum Likelihood Estimation](#maximum-likelihood-estimation)
 
-In [ML_Tools](./ML_Tools.md), see:
-- [Regression_Logistic_Metrics.ipynb](./Regression_Logistic_Metrics.ipynb.md)
+In [ML_Tools](#ml_tools), see:
+- [Regression_Logistic_Metrics.ipynb](#regression_logistic_metricsipynb)
 ## Key Concepts of Logistic Regression
 
 ### Logistic Function (Sigmoid Function)
@@ -55,10 +55,10 @@ This equation shows that ==logistic regression models the log-odds of the probab
 
 ### Decision Boundary
 
-- Similar to [Support Vector Machines](./Support%20Vector%20Machines.md), logistic regression defines a decision boundary that separates the two classes.
+- Similar to [Support Vector Machines](#support-vector-machines), logistic regression defines a decision boundary that separates the two classes.
 - The logistic function determines the probability of a data point belonging to a specific class. If this probability exceeds a given ==threshold== (typically 0.5), the model assigns the point to the positive class; otherwise, it is classified as negative.
 
-### [Binary Classification](./Binary%20Classification.md)
+### [Binary Classification](#binary-classification)
 
 - Logistic regression is primarily used for binary classification tasks, where the target variable has only two possible values (e.g., "0" and "1").
 - It can handle multiple independent variables (features) and assigns probabilities to the target classes based on the feature values.
@@ -66,8 +66,8 @@ This equation shows that ==logistic regression models the log-odds of the probab
 
 ### No Residuals
 
-- Unlike [Linear Regression](./Linear%20Regression.md), logistic regression does not compute standard residuals.
-- Instead, [Model Evaluation](./Model%20Evaluation.md) is performed by comparing predicted probabilities with actual class labels using metrics such as accuracy, precision, recall, and the [Confusion Matrix](./Confusion%20Matrix.md).
+- Unlike [Linear Regression](#linear-regression), logistic regression does not compute standard residuals.
+- Instead, [Model Evaluation](#model-evaluation) is performed by comparing predicted probabilities with actual class labels using metrics such as accuracy, precision, recall, and the [Confusion Matrix](#confusion-matrix).
 
 ### Also see:
 
