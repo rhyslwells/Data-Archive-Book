@@ -59,7 +59,11 @@ img.center {
   }
 
 
-
+/* Remove or comment out the ::selection rules */
+code .hljs ::selection,
+pre .hljs::selection {
+    background: none;
+}
 
   
   /*Make sure all content is displayed and not just the first page*/

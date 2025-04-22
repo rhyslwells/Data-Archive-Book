@@ -17,5 +17,3 @@ Specifically a graph such as,
 
 
 $$\mathbb{N}$$
-
-[Logistic Regression](#logistic-regression)
