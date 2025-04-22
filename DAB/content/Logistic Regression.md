@@ -6,6 +6,9 @@ tags:
 aliases: 
 category:
 ---
+# Logistic Regression
+
+
 ==Logistic regression models the log-odds of the probability as a linear function of the input features.==
 
 It models the probability of an input belonging to a particular class using a logistic (sigmoid) function.
@@ -14,17 +17,17 @@ The model establishes a decision boundary (threshold) in the feature space.
 
 Logistic regression is best suited for cases where the decision boundary is approximately linear in the feature space.
 
-Logistic [Regression](./Regression.html)  can be used for [Binary Classification](./Binary%20Classification.html)tasks.
+Logistic [Regression](./Regression.md)  can be used for [Binary Classification](./Binary%20Classification.md)tasks.
 
 ### Related Notes:
-- [Logistic Regression Statsmodel Summary table](./Logistic%20Regression%20Statsmodel%20Summary%20table.html)
-- [Logistic Regression does not predict probabilities](./Logistic%20Regression%20does%20not%20predict%20probabilities.html)
-- [Interpreting logistic regression model parameters](./Interpreting%20logistic%20regression%20model%20parameters.html)
-- [Model Evaluation](./Model%20Evaluation.html)
-- To get [Model Parameters](./Model%20Parameters.html) use [Maximum Likelihood Estimation](./Maximum%20Likelihood%20Estimation.html)
+- [Logistic Regression Statsmodel Summary table](./Logistic%20Regression%20Statsmodel%20Summary%20table.md)
+- [Logistic Regression does not predict probabilities](./Logistic%20Regression%20does%20not%20predict%20probabilities.md)
+- [Interpreting logistic regression model parameters](./Interpreting%20logistic%20regression%20model%20parameters.md)
+- [Model Evaluation](./Model%20Evaluation.md)
+- To get [Model Parameters](./Model%20Parameters.md) use [Maximum Likelihood Estimation](./Maximum%20Likelihood%20Estimation.md)
 
-In [ML_Tools](./ML_Tools.html), see:
-- [Regression_Logistic_Metrics.ipynb](./Regression_Logistic_Metrics.ipynb.html)
+In [ML_Tools](./ML_Tools.md), see:
+- [Regression_Logistic_Metrics.ipynb](./Regression_Logistic_Metrics.ipynb.md)
 ## Key Concepts of Logistic Regression
 
 ### Logistic Function (Sigmoid Function)
@@ -52,10 +55,10 @@ This equation shows that ==logistic regression models the log-odds of the probab
 
 ### Decision Boundary
 
-- Similar to [Support Vector Machines](./Support%20Vector%20Machines.html), logistic regression defines a decision boundary that separates the two classes.
+- Similar to [Support Vector Machines](./Support%20Vector%20Machines.md), logistic regression defines a decision boundary that separates the two classes.
 - The logistic function determines the probability of a data point belonging to a specific class. If this probability exceeds a given ==threshold== (typically 0.5), the model assigns the point to the positive class; otherwise, it is classified as negative.
 
-### [Binary Classification](./Binary%20Classification.html)
+### [Binary Classification](./Binary%20Classification.md)
 
 - Logistic regression is primarily used for binary classification tasks, where the target variable has only two possible values (e.g., "0" and "1").
 - It can handle multiple independent variables (features) and assigns probabilities to the target classes based on the feature values.
@@ -63,8 +66,8 @@ This equation shows that ==logistic regression models the log-odds of the probab
 
 ### No Residuals
 
-- Unlike [Linear Regression](./Linear%20Regression.html), logistic regression does not compute standard residuals.
-- Instead, [Model Evaluation](./Model%20Evaluation.html) is performed by comparing predicted probabilities with actual class labels using metrics such as accuracy, precision, recall, and the [Confusion Matrix](./Confusion%20Matrix.html).
+- Unlike [Linear Regression](./Linear%20Regression.md), logistic regression does not compute standard residuals.
+- Instead, [Model Evaluation](./Model%20Evaluation.md) is performed by comparing predicted probabilities with actual class labels using metrics such as accuracy, precision, recall, and the [Confusion Matrix](./Confusion%20Matrix.md).
 
 ### Also see:
 
