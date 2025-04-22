@@ -11,7 +11,6 @@ files_to_remove = [
     'Comparing_Ensembles.py.md',
     'Covariance Structures.md',
     'Handling Missing Data.md',
-    'Justfile.md',
     'Mermaid.md',
     'ER Diagrams.md',
     'Data Mining - CRISP.md',

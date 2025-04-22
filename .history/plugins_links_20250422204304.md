@@ -1,0 +1,22 @@
+# Plugins
+
+npm install gitbook-plugin-include-codeblock --save-dev
+
+resources:
+https://github.com/honkit/honkit/issues/217
+
+npm install gitbook-plugin-katex --save-dev
+
+## Links
+
+Honkit: 
+https://flaviocopes.com/how-to-create-ebooks-markdown/#:~:text=honkit%20works%20great.,and%20let%20CloudFlare%20distribute%20it.
+
+Inspired by:
+https://github.com/sumn2u/learn-javascript/tree/main
+
+
+
+
+
+
