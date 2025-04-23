@@ -77,16 +77,15 @@ for letter, entries in sorted(grouped_files.items()):
             out_file.write(f"\n\n{cleaned_content}")
     print(f"✅ Wrote {out_path} with {len(entries)} files")
 
-# Generate SUMMARY.md (flattened entries for EPUB TOC compatibility)
+# Generate grouped SUMMARY.md
 summary_path = 'SUMMARY.md'
 with open(summary_path, 'w', encoding='utf-8') as summary:
     summary.write("# Summary\n\n")
     for letter in sorted(grouped_files.keys()):
+        summary.write(f"* [{letter}](./grouped/{letter}.md)\n")
         for filename, _, anchor, _ in grouped_files[letter]:
-            display_name = os.path.splitext(filename)[0]
+            display_name = os.path.splitext(filename)[0].replace('-', ' ')
             if anchor:
-                summary.write(f"* [{display_name}](./grouped/{letter}.md#{anchor})\n")
-            else:
-                summary.write(f"* [{display_name}](./grouped/{letter}.md)\n")
+                summary.write(f"  * [{display_name}](./grouped/{letter}.md#{anchor})\n")
 
 print("📘 Created grouped content with a single TOC for each letter, a title for each file, and flattened SUMMARY.md for EPUB TOC.")
