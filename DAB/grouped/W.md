@@ -1,3 +1,34 @@
+# W
+
+## Table of Contents
+* [WCSS and elbow method](#wcss-and-elbow-method)
+* [Weak Learners](#weak-learners)
+* [Web Feature Server (WFS)](#web-feature-server-wfs)
+* [Web Map Tile Service (WMTS)](#web-map-tile-service-wmts)
+* [Webpages relevant](#webpages-relevant)
+* [What algorithms or models are used within the energy sector](#what-algorithms-or-models-are-used-within-the-energy-sector)
+* [What algorithms or models are used within the telecommunication sector](#what-algorithms-or-models-are-used-within-the-telecommunication-sector)
+* [What are the best practices for evaluating the effectiveness of different prompts](#what-are-the-best-practices-for-evaluating-the-effectiveness-of-different-prompts)
+* [What can ABM solve within the energy sector](#what-can-abm-solve-within-the-energy-sector)
+* [What is the difference between odds and probability](#what-is-the-difference-between-odds-and-probability)
+* [What is the role of gradient-based optimization in training deep learning models.](#what-is-the-role-of-gradient-based-optimization-in-training-deep-learning-models)
+* [When and why not to us regularisation](#when-and-why-not-to-us-regularisation)
+* [Why JSON is Better than Pickle for Untrusted Data](#why-json-is-better-than-pickle-for-untrusted-data)
+* [Why Type 1 and Type 2 matter](#why-type-1-and-type-2-matter)
+* [Why and when is feature scaling necessary](#why-and-when-is-feature-scaling-necessary)
+* [Why does increasing the number of models in a ensemble not necessarily improve the accuracy](#why-does-increasing-the-number-of-models-in-a-ensemble-not-necessarily-improve-the-accuracy)
+* [Why does label encoding give different predictions from one-hot encoding](#why-does-label-encoding-give-different-predictions-from-one-hot-encoding)
+* [Why does the Adam Optimizer converge](#)
+* [Why is named entity recognition (NER) a challenging task](#why-is-named-entity-recognition-ner-a-challenging-task)
+* [Why is the Central Limit Theorem important when working with small sample sizes](#why-is-the-central-limit-theorem-important-when-working-with-small-sample-sizes)
+* [Why use ER diagrams](#why-use-er-diagrams)
+* [Wikipedia_API.py](#wikipedia_apipy)
+* [Windows Subsystem for Linux](#windows-subsystem-for-linux)
+* [Word2Vec.py](#word2vecpy)
+* [Word2vec](#word2vec)
+* [WordNet](#wordnet)
+* [Wrapper Methods](#wrapper-methods)
+
 
 
 # Wcss And Elbow Method {#wcss-and-elbow-method}

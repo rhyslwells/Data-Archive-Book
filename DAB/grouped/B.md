@@ -1,3 +1,34 @@
+# B
+
+## Table of Contents
+* [B-tree](#b-tree)
+* [BERT Pretraining of Deep Bidirectional Transformers for Language Understanding](#bert-pretraining-of-deep-bidirectional-transformers-for-language-understanding)
+* [BERT](#bert)
+* [BERTScore](#bertscore)
+* [Backpropagation](#backpropagation)
+* [Bag of words](#bag-of-words)
+* [Bag_of_Words.py](#)
+* [Bagging](#bagging)
+* [Bandit_Example_Fixed.py](#bandit_example_fixedpy)
+* [Bandit_Example_Nonfixed.py](#bandit_example_nonfixedpy)
+* [Bash](#)
+* [Batch Normalisation](#batch-normalisation)
+* [Batch Processing](#batch-processing)
+* [Bellman Equations](#bellman-equations)
+* [Benefits of Data Transformation](#)
+* [Bernoulli](#bernoulli)
+* [Bias and variance](#bias-and-variance)
+* [Big Data](#big-data)
+* [Big O Notation](#big-o-notation)
+* [BigQuery](#bigquery)
+* [Binary Classification](#binary-classification)
+* [Binder](#binder)
+* [Boosting](#boosting)
+* [Bootstrap](#bootstrap)
+* [Boxplot](#boxplot)
+* [Business observability](#business-observability)
+* [business intelligence](#business-intelligence)
+
 
 
 # B Tree {#b-tree}

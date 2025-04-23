@@ -1,3 +1,11 @@
+# Z
+
+## Table of Contents
+* [Z-Normalisation](#z-normalisation)
+* [Z-Score](#z-score)
+* [Z-Scores vs Prediction Intervals](#z-scores-vs-prediction-intervals)
+* [Z-Test](#z-test)
+
 
 
 # Z Normalisation {#z-normalisation}

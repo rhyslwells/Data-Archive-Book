@@ -1,3 +1,28 @@
+# I
+
+## Table of Contents
+* [Imbalanced Datasets](#imbalanced-datasets)
+* [Imbalanced_Datasets_SMOTE.py](#imbalanced_datasets_smotepy)
+* [Immutable vs mutable](#immutable-vs-mutable)
+* [Impact of multicollinearity on model parameters](#impact-of-multicollinearity-on-model-parameters)
+* [Implementing Database Schema](#implementing-database-schema)
+* [In NER how would you handle ambiguous entities](#in-ner-how-would-you-handle-ambiguous-entities)
+* [Industries of interest](#industries-of-interest)
+* [Input is Not Properly Sanitized](#input-is-not-properly-sanitized)
+* [Interpreting logistic regression model parameters](#interpreting-logistic-regression-model-parameters)
+* [Interquartile Range (IQR) Detection](#interquartile-range-iqr-detection)
+* [Isolated Forest](#isolated-forest)
+* [imperative](#imperative)
+* [in-memory format](#in-memory-format)
+* [incremental synchronization](#incremental-synchronization)
+* [inference versus prediction](#inference-versus-prediction)
+* [inference](#inference)
+* [information theory](#information-theory)
+* [interoperable](#interoperable)
+* [interpretability](#interpretability)
+* [interview notepad](#interview-notepad)
+* [ipynb](#ipynb)
+
 
 
 # Imbalanced Datasets {#imbalanced-datasets}

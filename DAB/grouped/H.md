@@ -1,3 +1,37 @@
+# H
+
+## Table of Contents
+* [Hadoop](#hadoop)
+* [Handling Different Distributions](#handling-different-distributions)
+* [Handling_Missing_Data.ipynb](#handling_missing_dataipynb)
+* [Handling_Missing_Data_Basic.ipynb](#handling_missing_data_basicipynb)
+* [Handwritten Digit Classification](#handwritten-digit-classification)
+* [Hash](#hash)
+* [Heatmap](#heatmap)
+* [Heatmaps_Dendrograms.py](#heatmaps_dendrogramspy)
+* [Hierarchical Clustering](#hierarchical-clustering)
+* [High cross validation accuracy is not directly proportional to performance on unseen test data](#high-cross-validation-accuracy-is-not-directly-proportional-to-performance-on-unseen-test-data)
+* [Honkit](#honkit)
+* [Hosting](#hosting)
+* [How LLMs store facts](#how-llms-store-facts)
+* [How businesses use Gen AI](#how-businesses-use-gen-ai)
+* [How do we evaluate of LLM Outputs](#how-do-we-evaluate-of-llm-outputs)
+* [How is reinforcement learning being combined with deep learning](#how-is-reinforcement-learning-being-combined-with-deep-learning)
+* [How is schema evolution done in practice with SQL](#how-is-schema-evolution-done-in-practice-with-sql)
+* [How to do git commit messages properly](#)
+* [How to model to improve demand forecasting](#how-to-model-to-improve-demand-forecasting)
+* [How to normalise a merged table](#how-to-normalise-a-merged-table)
+* [How to reduce the need for Gen AI responses](#how-to-reduce-the-need-for-gen-ai-responses)
+* [How to search within a graph](#)
+* [How to use Sklearn Pipeline](#how-to-use-sklearn-pipeline)
+* [How would you decide between using TF-IDF and Word2Vec for text vectorization](#how-would-you-decide-between-using-tf-idf-and-word2vec-for-text-vectorization)
+* [Hugging Face](#hugging-face)
+* [Hyperparameter Tuning](#hyperparameter-tuning)
+* [Hyperparameter](#hyperparameter)
+* [Hypothesis testing](#hypothesis-testing)
+* [heterogeneous features](#heterogeneous-features)
+* [how do you do the data selection](#how-do-you-do-the-data-selection)
+
 
 
 # Hadoop {#hadoop}

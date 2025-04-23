@@ -24,9 +24,13 @@ def slugify(text):
 
 # Regex patterns
 main_header_pattern = re.compile(r'^# (.+?)\s*\{#(.+?)\}', re.MULTILINE)
+sub_header_pattern = re.compile(r'^## (.+?)\s*\{#(.+?)\}', re.MULTILINE)
 
 # Group files
 grouped_files = defaultdict(list)
+
+# This will hold the final Table of Contents (TOC) for each grouped letter (A, B, C, etc.)
+final_toc = defaultdict(list)
 
 for file in sorted(os.listdir(content_folder)):
     if file.endswith('.md') and file.lower() != 'readme.md':
@@ -43,13 +47,33 @@ for file in sorted(os.listdir(content_folder)):
             if match:
                 anchor = match.group(2)
 
-            grouped_files[first_letter].append((file, content, anchor))
+            # Extract subheadings with anchors
+            subheadings = sub_header_pattern.findall(content)
+
+            # For each file, add its name and subheadings to the final TOC for this letter group
+            file_toc_entries = []
+            for sub_title, sub_anchor in subheadings:
+                file_toc_entries.append(f"- [{sub_title}](#{sub_anchor})")  # Link to the local anchor
+            
+            # Correctly link to the file within its own context
+            final_toc[first_letter].append(f"* [{os.path.splitext(file)[0]}](#{anchor})")  # Link to the main header in the same file
+            final_toc[first_letter].extend(file_toc_entries)
+
+            grouped_files[first_letter].append((file, content, anchor, subheadings))
 
 # Write grouped markdown files
 for letter, entries in sorted(grouped_files.items()):
     out_path = os.path.join(output_folder, f"{letter}.md")
     with open(out_path, 'w', encoding='utf-8') as out_file:
-        for _, cleaned_content, _ in entries:
+        # Insert the title for the group (e.g., # A, # B, etc.)
+        out_file.write(f"# {letter}\n\n")
+
+        # Insert the TOC for this particular group of files at the top
+        out_file.write("## Table of Contents\n")
+        out_file.write("\n".join(final_toc[letter]) + "\n\n")
+
+        # Write the content from all files in this group
+        for filename, cleaned_content, _, _ in entries:
             out_file.write(f"\n\n{cleaned_content}")
     print(f"✅ Wrote {out_path} with {len(entries)} files")
 
@@ -58,11 +82,11 @@ summary_path = 'SUMMARY.md'
 with open(summary_path, 'w', encoding='utf-8') as summary:
     summary.write("# Summary\n\n")
     for letter in sorted(grouped_files.keys()):
-        for filename, _, anchor in grouped_files[letter]:
+        for filename, _, anchor, _ in grouped_files[letter]:
             display_name = os.path.splitext(filename)[0]
             if anchor:
                 summary.write(f"* [{display_name}](./grouped/{letter}.md#{anchor})\n")
             else:
                 summary.write(f"* [{display_name}](./grouped/{letter}.md)\n")
 
-print("📘 Created grouped content and flattened SUMMARY.md for EPUB TOC.")
+print("📘 Created grouped content with a single TOC for each letter, a title for each file, and flattened SUMMARY.md for EPUB TOC.")

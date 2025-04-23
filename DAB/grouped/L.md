@@ -1,3 +1,39 @@
+# L
+
+## Table of Contents
+* [LBFGS](#lbfgs)
+* [LLM Evaluation Metrics](#llm-evaluation-metrics)
+* [LLM](#llm)
+* [LSTM](#lstm)
+* [Label encoding](#label-encoding)
+* [Labelling data](#labelling-data)
+* [Langchain](#langchain)
+* [Language Model Output Optimisation](#language-model-output-optimisation)
+* [Language Models Large (LLMs) vs Small (SLMs)](#)
+* [Language Models](#language-models)
+* [Lasso](#lasso)
+* [Latency](#latency)
+* [Latent Dirichlet Allocation](#latent-dirichlet-allocation)
+* [Learning Styles](#learning-styles)
+* [LightGBM vs XGBoost vs CatBoost](#lightgbm-vs-xgboost-vs-catboost)
+* [LightGBM](#lightgbm)
+* [Linear Discriminant Analysis](#linear-discriminant-analysis)
+* [Linear Regression](#linear-regression)
+* [Linked List](#linked-list)
+* [Load Balancing](#load-balancing)
+* [Local Interpretable Model-agnostic Explanations](#local-interpretable-model-agnostic-explanations)
+* [Logical Model](#logical-model)
+* [Logistic Regression Statsmodel Summary table](#logistic-regression-statsmodel-summary-table)
+* [Logistic Regression does not predict probabilities](#logistic-regression-does-not-predict-probabilities)
+* [Logistic Regression](#logistic-regression)
+* [Logistic regression in sklearn & Gradient Descent](#)
+* [Looker Studio](#looker-studio)
+* [Loss function](#loss-function)
+* [Loss versus Cost function](#loss-versus-cost-function)
+* [lambda architecture](#lambda-architecture)
+* [learning rate](#learning-rate)
+* [lemmatization](#lemmatization)
+
 
 
 # Lbfgs {#lbfgs}

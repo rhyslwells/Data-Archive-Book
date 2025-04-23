@@ -1,3 +1,20 @@
+# V
+
+## Table of Contents
+* [Vacuum](#vacuum)
+* [Variance](#variance)
+* [Vector Database](#)
+* [Vector Embedding](#vector-embedding)
+* [Vector_Embedding.py](#vector_embeddingpy)
+* [Vectorisation](#vectorisation)
+* [Vectorized Engine](#)
+* [Vercel](#vercel)
+* [View Use Case](#)
+* [Views](#views)
+* [Violin plot](#violin-plot)
+* [Virtual environments](#virtual-environments)
+* [vanishing and exploding gradients problem](#vanishing-and-exploding-gradients-problem)
+
 
 
 # Vacuum {#vacuum}

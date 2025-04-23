@@ -1,3 +1,24 @@
+# O
+
+## Table of Contents
+* [OLAP (online analytical processing)](#olap-online-analytical-processing)
+* [OLAP](#olap)
+* [OLTP](#oltp)
+* [One Pager Template](#)
+* [One-hot encoding](#one-hot-encoding)
+* [One_hot_encoding.py](#one_hot_encodingpy)
+* [Optimisation function](#optimisation-function)
+* [Optimisation techniques](#optimisation-techniques)
+* [Optimising Neural Networks](#optimising-neural-networks)
+* [Optimising a Logistic Regression Model](#)
+* [Optuna](#optuna)
+* [Ordinary Least Squares](#ordinary-least-squares)
+* [Orthogonalization](#orthogonalization)
+* [Outliers](#outliers)
+* [Over parameterised models](#over-parameterised-models)
+* [Overfitting](#overfitting)
+* [oltp (online transactional processing)](#oltp-online-transactional-processing)
+
 
 
 # Olap (Online Analytical Processing) {#olap-online-analytical-processing}

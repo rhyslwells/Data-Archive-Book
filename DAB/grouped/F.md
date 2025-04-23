@@ -1,3 +1,40 @@
+# F
+
+## Table of Contents
+* [FAISS](#faiss)
+* [Fabric](#fabric)
+* [Fact Table](#fact-table)
+* [Factor Analysis](#factor-analysis)
+* [Factor_Analysis.py](#factor_analysispy)
+* [Facts](#facts)
+* [FastAPI](#fastapi)
+* [FastAPI_Example.py](#fastapi_examplepy)
+* [Feature Engineering](#feature-engineering)
+* [Feature Evaluation](#feature-evaluation)
+* [Feature Extraction](#feature-extraction)
+* [Feature Importance](#feature-importance)
+* [Feature Scaling](#feature-scaling)
+* [Feature Selection vs Feature Importance](#feature-selection-vs-feature-importance)
+* [Feature Selection](#feature-selection)
+* [Feature selection and creation](#feature-selection-and-creation)
+* [Feature_Distribution.py](#feature_distributionpy)
+* [Feed Forward Neural Network](#feed-forward-neural-network)
+* [Feedback Template](#feedback-template)
+* [Filter method](#filter-method)
+* [Firebase](#firebase)
+* [Fishbone diagram](#fishbone-diagram)
+* [Fitting weights and biases of a neural network](#fitting-weights-and-biases-of-a-neural-network)
+* [Flask](#)
+* [Folder Tree Diagram](#folder-tree-diagram)
+* [Forecasting_AutoArima.py](#forecasting_autoarimapy)
+* [Forecasting_Baseline.py](#forecasting_baselinepy)
+* [Forecasting_Exponential_Smoothing.py](#forecasting_exponential_smoothingpy)
+* [Foreign Key](#foreign-key)
+* [Forward Propagation](#forward-propagation)
+* [Fuzzywuzzy](#fuzzywuzzy)
+* [filter methods](#filter-methods)
+* [functional programming](#functional-programming)
+
 
 
 # Faiss {#faiss}

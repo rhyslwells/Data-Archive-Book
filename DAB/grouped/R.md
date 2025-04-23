@@ -1,3 +1,39 @@
+# R
+
+## Table of Contents
+* [R squared](#r-squared)
+* [R-squared metric not always a good indicator of model performance in regression](#r-squared-metric-not-always-a-good-indicator-of-model-performance-in-regression)
+* [R](#r)
+* [RAG](#rag)
+* [REST API](#)
+* [ROC (Receiver Operating Characteristic)](#roc-receiver-operating-characteristic)
+* [ROC_Curve.py](#roc_curvepy)
+* [Race Conditions](#race-conditions)
+* [Random Forest Regression](#random-forest-regression)
+* [Random Forests](#random-forests)
+* [React](#react)
+* [Reasoning tokens](#reasoning-tokens)
+* [Recall](#recall)
+* [Recommender systems](#recommender-systems)
+* [Recurrent Neural Networks](#recurrent-neural-networks)
+* [Recursive Algorithm](#recursive-algorithm)
+* [Regression Metrics](#regression-metrics)
+* [Regression](#regression)
+* [Regression_Logistic_Metrics.ipynb](#regression_logistic_metricsipynb)
+* [Regularisation of Tree based models](#regularisation-of-tree-based-models)
+* [Regularisation](#regularisation)
+* [Regularisation.py](#regularisationpy)
+* [Reinforcement learning](#reinforcement-learning)
+* [Relating Tables Together](#relating-tables-together)
+* [Relational Database](#relational-database)
+* [Relationships in memory](#relationships-in-memory)
+* [Reward Function](#reward-function)
+* [Ridge](#ridge)
+* [Row-based Storage](#row-based-storage)
+* [requirements.txt](#requirementstxt)
+* [reverse etl](#reverse-etl)
+* [rollup](#rollup)
+
 
 
 # R Squared {#r-squared}
