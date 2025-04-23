@@ -6,21 +6,24 @@ content_folder = './content'
 output_folder = './grouped'
 os.makedirs(output_folder, exist_ok=True)
 
-# Define a function to strip YAML front matter
+# Strip YAML front matter
 def strip_yaml_front_matter(text):
     if text.startswith('---'):
         end = text.find('---', 3)
         if end != -1:
-            return text[end + 3:].lstrip()  # Remove YAML front matter
+            return text[end + 3:].lstrip()
     return text
 
-# Group files by first letter and preserve their anchor links
-grouped_files = defaultdict(list)
+# Convert ==highlight== to <mark>highlight</mark>
+def convert_highlights(content):
+    return re.sub(r'==(.+?)==', r'<mark>\1</mark>', content)
 
-# Regex to find headers with anchors (e.g., # Title {#title-anchor})
+# Regex to extract anchor from header: # Title {#anchor}
 header_pattern = re.compile(r'^# (.+?)\s*\{#(.+?)\}', re.MULTILINE)
 
-# Process each file in the content folder
+# Group files by first letter
+grouped_files = defaultdict(list)
+
 for file in sorted(os.listdir(content_folder)):
     if file.endswith('.md') and file.lower() != 'readme.md':
         first_letter = file[0].upper()
@@ -28,13 +31,15 @@ for file in sorted(os.listdir(content_folder)):
 
         with open(file_path, 'r', encoding='utf-8') as f:
             content = f.read()
-            cleaned = strip_yaml_front_matter(content)
-            # Extract header and anchors from the first level heading
-            match = header_pattern.search(cleaned)
+            content = strip_yaml_front_matter(content)
+            content = convert_highlights(content)
+
             anchor = ""
+            match = header_pattern.search(content)
             if match:
-                anchor = match.group(2)  # Get the anchor from the header
-            grouped_files[first_letter].append((file, cleaned, anchor))
+                anchor = match.group(2)
+
+            grouped_files[first_letter].append((file, content, anchor))
 
 # Write grouped markdown files (A.md, B.md, ...)
 for letter, entries in sorted(grouped_files.items()):
@@ -52,10 +57,9 @@ with open(summary_path, 'w', encoding='utf-8') as summary:
         summary.write(f"* [{letter}](./grouped/{letter}.md)\n")
         for filename, _, anchor in grouped_files[letter]:
             display_name = os.path.splitext(filename)[0]
-            # Only add anchor links if the file has an anchor
             if anchor:
                 summary.write(f"  * [{display_name}](./grouped/{letter}.md#{anchor})\n")
             else:
-                summary.write(f"  * [{display_name}](./content/{filename})\n")
+                summary.write(f"  * [{display_name}](./grouped/{letter}.md)\n")
 
 print("📘 Created grouped content and updated SUMMARY.md.")
