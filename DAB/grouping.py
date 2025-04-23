@@ -6,7 +6,7 @@ content_folder = './content'
 output_folder = './grouped'
 os.makedirs(output_folder, exist_ok=True)
 
-# Strip YAML front matter
+# YAML front matter stripper
 def strip_yaml_front_matter(text):
     if text.startswith('---'):
         end = text.find('---', 3)
@@ -14,14 +14,18 @@ def strip_yaml_front_matter(text):
             return text[end + 3:].lstrip()
     return text
 
-# Convert ==highlight== to <mark>highlight</mark>
+# ==highlight== → <mark>
 def convert_highlights(content):
     return re.sub(r'==(.+?)==', r'<mark>\1</mark>', content)
 
-# Regex to extract anchor from header: # Title {#anchor}
-header_pattern = re.compile(r'^# (.+?)\s*\{#(.+?)\}', re.MULTILINE)
+# Slugify function for anchors
+def slugify(text):
+    return re.sub(r'[^\w\- ]', '', text).strip().lower().replace(' ', '-')
 
-# Group files by first letter
+# Regex patterns
+main_header_pattern = re.compile(r'^# (.+?)\s*\{#(.+?)\}', re.MULTILINE)
+
+# Group files
 grouped_files = defaultdict(list)
 
 for file in sorted(os.listdir(content_folder)):
@@ -35,13 +39,13 @@ for file in sorted(os.listdir(content_folder)):
             content = convert_highlights(content)
 
             anchor = ""
-            match = header_pattern.search(content)
+            match = main_header_pattern.search(content)
             if match:
                 anchor = match.group(2)
 
             grouped_files[first_letter].append((file, content, anchor))
 
-# Write grouped markdown files (A.md, B.md, ...)
+# Write grouped markdown files
 for letter, entries in sorted(grouped_files.items()):
     out_path = os.path.join(output_folder, f"{letter}.md")
     with open(out_path, 'w', encoding='utf-8') as out_file:
@@ -49,17 +53,16 @@ for letter, entries in sorted(grouped_files.items()):
             out_file.write(f"\n\n{cleaned_content}")
     print(f"✅ Wrote {out_path} with {len(entries)} files")
 
-# Generate SUMMARY.md with subpoints per letter group
+# Generate SUMMARY.md (flattened entries for EPUB TOC compatibility)
 summary_path = 'SUMMARY.md'
 with open(summary_path, 'w', encoding='utf-8') as summary:
     summary.write("# Summary\n\n")
     for letter in sorted(grouped_files.keys()):
-        summary.write(f"* [{letter}](./grouped/{letter}.md)\n")
         for filename, _, anchor in grouped_files[letter]:
             display_name = os.path.splitext(filename)[0]
             if anchor:
-                summary.write(f"  * [{display_name}](./grouped/{letter}.md#{anchor})\n")
+                summary.write(f"* [{display_name}](./grouped/{letter}.md#{anchor})\n")
             else:
-                summary.write(f"  * [{display_name}](./grouped/{letter}.md)\n")
+                summary.write(f"* [{display_name}](./grouped/{letter}.md)\n")
 
-print("📘 Created grouped content and updated SUMMARY.md.")
+print("📘 Created grouped content and flattened SUMMARY.md for EPUB TOC.")

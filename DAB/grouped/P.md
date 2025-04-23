@@ -1416,9 +1416,9 @@ print(x.grad)  # Output: tensor([2., 4., 6.])
 
 The gradient is calculated by the chain rule:
 - For $y = x^2$, the derivative of $y$ with respect to $x$ is $\frac{dy}{dx} = 2x$.
-- <mark>Since `z` is the sum of the elements of `y`, the gradient of `z` with respect to each element in `x` is $\frac{dz}{dx_i} = 2x_i$ for each element in `x`.</mark>
+- ==Since `z` is the sum of the elements of `y`, the gradient of `z` with respect to each element in `x` is $\frac{dz}{dx_i} = 2x_i$ for each element in `x`.<mark>
 
-<mark>z is a formula but calculates the derivative wrt x, so the derivative of y with x.</mark>
+</mark>z is a formula but calculates the derivative wrt x, so the derivative of y with x.==
 
 So, the gradients for each element in `x` are:
 $\frac{dz}{dx} = [2 \times 1.0, 2 \times 2.0, 2 \times 3.0] = [2.0, 4.0, 6.0]$

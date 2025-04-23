@@ -9,7 +9,7 @@ category:
 # Logistic Regression {#logistic-regression}
 
 
-==Logistic regression models the log-odds of the probability as a linear function of the input features.==
+<mark>Logistic regression models the log-odds of the probability as a linear function of the input features.</mark>
 
 It models the probability of an input belonging to a particular class using a logistic (sigmoid) function.
 
@@ -43,7 +43,7 @@ $$ P(y=1 \mid \mathbf{x}) = \sigma(z) $$
 
 ### Log odds: Transforming from continuous to 0-1
 
-Logistic regression is based on the ==log-odds== (logit) transformation, which expresses probability in terms of odds:
+Logistic regression is based on the <mark>log-odds</mark> (logit) transformation, which expresses probability in terms of odds:
 
 $$ \text{Odds} = \frac{P(y=1 \mid \mathbf{x})}{1 - P(y=1 \mid \mathbf{x})} $$
 
@@ -51,12 +51,12 @@ Taking the natural logarithm of both sides gives the logit function:
 
 $$ \log \left(\frac{P(y=1 \mid \mathbf{x})}{1 - P(y=1 \mid \mathbf{x})} \right) = \mathbf{w} \cdot \mathbf{x} + b $$
 
-This equation shows that ==logistic regression models the log-odds of the probability as a linear function of the input features.==
+This equation shows that <mark>logistic regression models the log-odds of the probability as a linear function of the input features.</mark>
 
 ### Decision Boundary
 
 - Similar to [Support Vector Machines](#support-vector-machines), logistic regression defines a decision boundary that separates the two classes.
-- The logistic function determines the probability of a data point belonging to a specific class. If this probability exceeds a given ==threshold== (typically 0.5), the model assigns the point to the positive class; otherwise, it is classified as negative.
+- The logistic function determines the probability of a data point belonging to a specific class. If this probability exceeds a given <mark>threshold</mark> (typically 0.5), the model assigns the point to the positive class; otherwise, it is classified as negative.
 
 ### [Binary Classification](#binary-classification)
 
