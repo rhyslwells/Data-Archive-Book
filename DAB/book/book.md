@@ -1,270 +1,26 @@
-# A {#a}
+<a id="1-on-1-template"></a>
+# 1 On 1 Template {#1-on-1-template}
 
-# A
+- Decisions
+    - [Your name] _add decisions that need to be made_
+    - [Other person's name] _add decisions that need to be made_
+        
+- Action items
+    - [Your name] _add next steps from the discussion_
+    - [Other person's name] _add next steps from the discussion_
+        
+- Topics to discuss (bi-directional)
+    - [Your name] _add topics or questions to discuss together_
+    - [Other person's name] _add topics or questions to discuss together_
+        
+- Updates (uni-directional - no action needed)
+    - [Your name] _add updates with no action needed_
+    - [Other person's name] _add updates with no action needed_
 
+<a id="ab-testing"></a>
 # Ab Testing {#ab-testing}
 
 A/B testing is a method of performance testing two versions of a product like an app.
-
-<a id="acid-transaction"></a>
-# Acid Transaction {#acid-transaction}
-
-
-An ACID [Transaction](#transaction) ensures that either all changes are successfully committed or rolled back, preventing the database from ending up in an inconsistent state. This guarantees the integrity of the data throughout the transaction process. [AB testing](#ab-testing)
-
-### Key Properties of ACID Transactions
-
-1. Atomicity: This property ensures that transactions are treated as a single, indivisible unit. If any part of the transaction fails, the entire transaction is rolled back, and none of the changes are applied. Users do not see intermediate states of the transaction.
-
-2. Consistency: Transactions must leave the database in a valid state, adhering to all defined constraints. If a transaction violates a constraint, it is rolled back to maintain the database's stable state.
-
-3. Isolation: This property ensures that concurrent transactions do not interfere with each other. Each transaction operates independently, and the results of one transaction are not visible to others until it is committed.
-
-4. Durability: Once a transaction has been committed, the changes are permanent, even in the event of a system failure. The data remains intact and recoverable.
-
-
-
-<a id="ai-engineer"></a>
-# Ai Engineer {#ai-engineer}
-
-
-They know what
-- [LSTM](#lstm) means
-- [Attention mechanism](#attention-mechanism)
-- [Prompting](#prompting) optimisation
-- [Neural network](#neural-network)
-
-
-
-<a id="ai-governance"></a>
-# Ai Governance {#ai-governance}
-
-AI Governance
-
-[Data Governance](#data-governance)
-
-Used in regulated sectors.  
-
-Constraints to using ai: 
-- legal,
-- transparency, 
-- security, 
-- historical bias  
-
-AI acts and standards: 
-- eu and AI acts
-- NIST standards framework  
-- Security OWASP standards for LLM  
-
-how will beaurcracy keeps up with ai innovation.  
-
-Governance can stifle innovation.
-
-<a id="api-driven-microservices"></a>
-# Api Driven Microservices {#api-driven-microservices}
-
-
-API-driven microservices refer to a [software architecture](#software-architecture) approach where [microservices](#microservices) communicate with each other and with external systems primarily through well-defined [API](#api) (Application Programming Interfaces). 
-
-This architecture is designed to enhance modularity, scalability, and flexibility by breaking down an application into smaller, independent services that can be developed, deployed, and scaled independently.
-
-API-driven microservices architecture is particularly beneficial for large, complex applications that require frequent updates and scaling. It allows organizations to innovate faster, improve fault isolation, and better align development efforts with business needs. However, it also introduces complexity in terms of service orchestration, data consistency, and network communication, which must be carefully managed.
-
-Key characteristics of API-driven microservices include:
-
-1. **Decoupled Services**: Each microservice is a separate, self-contained unit that performs a specific business function. Services are loosely coupled, meaning changes to one service do not directly impact others.
-
-2. **API Communication**: Microservices interact with each other and with external clients through APIs. These APIs are typically RESTful, but they can also use other protocols like gRPC, GraphQL, or messaging systems like Kafka.
-
-3. **Independent Deployment**: Each microservice can be developed, tested, deployed, and scaled independently of the others. This allows for more agile development and continuous deployment practices.
-
-4. **Technology Agnostic**: Different microservices can be built using different technologies or programming languages, as long as they adhere to the agreed-upon API contracts.
-
-5. **Scalability and Resilience**: Microservices can be scaled independently based on demand. If one service fails, it does not necessarily bring down the entire system, enhancing resilience.
-
-6. **Focused Functionality**: Each microservice is designed to handle a specific business capability, making it easier to understand, develop, and maintain.
-
-7. **API Gateway**: Often, an API gateway is used to manage and route requests to the appropriate microservices. It can also handle cross-cutting concerns like authentication, logging, and rate limiting.
-
-
-<a id="api"></a>
-<a id="api"></a>
-# Api {#api}
-
-
-An API (Application Programming Interfaces) allows one system (client) to <mark>request specific actions from another system</mark> (server).
-
-Using a predefined set of rules and <mark>protocols</mark>. 
-
-Good API documentation is necessary for developers to integrate and use APIs effectively.
-####  Resources:
-- [Link](https://www.youtube.com/watch?v=yBZO5Rb4ibo)
-- [REST API](#rest-api)
-- [FastAPI](#fastapi)
-#### API Principles
-
-1. **Controlled Access**: APIs provide access to certain parts of a system while keeping the core functionalities secure.
-2. **System Independence**: APIs function independently of changes in the underlying system.
-3. **Simplicity**: APIs are designed to be <mark>user-friendly</mark> and come with comprehensive documentation to guide developers.
-#### Implementation
-
-In [ML_Tools](#ml_tools) see: [Wikipedia_API.py](#wikipedia_apipy)
-
-#### Example:
-
-For instance, a weather app querying a weather API to fetch the current weather conditions involves sending a structured request and receiving a response.
-
-Types of API Connections:
-1. **Web APIs**: These facilitate communication between web clients (browsers or apps) and servers. For example, online shopping apps use APIs to process transactions on remote servers.
-2. **Database APIs**: These allow applications to interact with databases, ensuring data is accessed and manipulated efficiently.
-3. **Device APIs**: When apps like Instagram or WhatsApp request access to your phone's camera or microphone, they use device APIs.
-
-<a id="arima"></a>
-# Arima {#arima}
-
-
-**ARIMA** (AutoRegressive Integrated Moving Average) is a popular method for [Time Series Forecasting](#time-series-forecasting) that models the autocorrelations within the data. It is particularly useful for datasets with trends and patterns that are not seasonal. However, it is not perfect; for example, it struggles with predicting stock trading data.
-
-## ARIMA Components
-
-- **AR (AutoRegressive)**: Utilizes the dependency between an observation and a number of lagged observations.
-- **I (Integrated)**: Involves differencing the data to achieve stationarity.
-- **MA (Moving Average)**: Models the dependency between an observation and a residual error from a moving average model applied to lagged observations.
-
-### ARIMA Explained
-
-**ARIMA** stands for:
-
-- **A**uto**R**egressive (AR): Uses past values to predict the current one.
-- **I**ntegrated (I): Differencing to make the series stationary.
-- **MA**ving Average (MA): Uses past forecast errors for prediction.
-
-A typical **ARIMA(p,d,q)** model has:
-
-- $p$: Number of **lagged values** (AR terms)
-- $d$: Number of **differences** needed to make the series stationary
-- $q$: Number of **lagged forecast errors** (MA terms)
-
-#### 🔧 What ARIMA Does:
-
-1. **Checks for stationarity** – if not, applies differencing ($d$ times).
-2. **Models relationships** between current values and:
-   - Past values (AR part)
-   - Past errors (MA part)
-3. **Fits** parameters by minimizing a loss (typically log-likelihood).
-4. **Forecasts** future values using this learned structure.
-### Why ARIMA Isn’t Enough for Seasonal Data
-
-Your quarterly data might show **repeating patterns every 4 quarters** (seasonality), and ARIMA has **no built-in mechanism to model this periodic structure**. This is where **SARIMA** comes in.
-### SARIMA: Seasonal ARIMA
-
-SARIMA extends ARIMA by adding **seasonal components**. It is written as:
-
-$$\text{SARIMA}(p, d, q)(P, D, Q)_s$$
-
-Where:
-
-- $(p, d, q)$ are **non-seasonal** ARIMA parameters (as above).
-- $(P, D, Q)_s$ are **seasonal** ARIMA parameters:
-  - $P$: Seasonal autoregressive terms.
-  - $D$: Seasonal differences.
-  - $Q$: Seasonal moving average terms.
-  - $s$: Seasonality period (e.g., $s=4$ for quarterly data).
-
-#### What SARIMA Adds:
-
-- **Seasonal differencing** ($D$): e.g., subtract the value from 4 quarters ago to remove annual cycles.
-- **Seasonal AR/MA** terms: Model relationships from past seasonal lags and errors.
-
-### ✅ Summary
-
-| Model   | Handles Trend | Handles Seasonality | Use When...                                   |
-|---------|---------------|---------------------|------------------------------------------------|
-| ARIMA   | ✅            | ❌                  | Data has trend, but no regular cycles         |
-| SARIMA  | ✅            | ✅                  | Data has both trend and seasonality           |
-## Advanced Variants
-
-### SARIMAX (Seasonal ARIMA with Exogenous Variables)
-
-- Incorporates external variables (e.g., interest rates, volume) into the forecasting model.
-- Useful for [Datasets](#datasets) where external factors influence the time series.
-
-### Related terms
-
-In [ML_Tools](#ml_tools) see:
-- https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Build/TimeSeries/ARIMA.ipynb
-- [Forecasting_AutoArima.py](#forecasting_autoarimapy)
-- [pmdarima](#pmdarima)
-
-<a id="auc"></a>
-# Auc {#auc}
-
-
-**AUC (Area Under the Curve)** is a metric for binary classification problems, representing the area under the [ROC (Receiver Operating Characteristic)](#roc-receiver-operating-characteristic)
-
-#### Key Concepts
-Represents the area under the ROC curve.
-
-AUC values range from 0 to 1, where 1 indicates perfect classification and 0.5 suggests no discriminative power (equivalent to random guessing).
-
-#### Roc and Auc Score
-
-The `roc_auc_score` is a function from the `sklearn.metrics` module in Python that computes the Area Under the Receiver Operating Characteristic Curve (ROC AUC) from prediction scores. It is a widely used metric for evaluating the performance of binary classification models.
-
-Key Points about `roc_auc_score`:
-
-- **Purpose**: It quantifies the overall ability of the model to discriminate between the positive and negative classes across all possible classification thresholds.
-- **Range**: The score ranges from 0 to 1, where:
-    - 1 indicates perfect discrimination (the model perfectly distinguishes between the positive and negative classes).
-    - 0.5 suggests no discriminative power (equivalent to random guessing).
-    - Values below 0.5 indicate a model that performs worse than random guessing.
-- **Input**: The function takes the true binary labels and the predicted probabilities (or decision function scores) as inputs.
-- **Output**: It returns a single scalar value representing the AUC.
-
-#### Example Code
-
-```python
-from sklearn.metrics import roc_auc_score
-
-# Actual and predicted values
-y_act = [1, 0, 1, 1, 0]
-y_pred = [1, 1, 0, 1, 0]
-
-# Compute AUC
-auc = roc_auc_score(y_act, y_pred)
-print(f'AUC: {auc}')
-```
-
-<a id="aws-lambda"></a>
-# Aws Lambda {#aws-lambda}
-
-
-AWS Lambda is a serverless computing service provided by Amazon Web Services (AWS) that allows you to run code without provisioning or managing servers. 
-
-AWS Lambda is a powerful tool for building scalable, event-driven applications without the overhead of managing server infrastructure.
-
-With AWS Lambda, you can execute your code in response to various events, such as HTTP requests via Amazon API Gateway, changes to data in an Amazon S3 bucket, updates to a DynamoDB table, or messages arriving in an Amazon SQS queue.
-
-Key features of AWS Lambda include:
-
-1. **[Event Driven Events](#event-driven-events)**: AWS Lambda functions are triggered by events, which can come from a wide range of AWS services or custom applications.
-
-2. **Automatic Scaling**: Lambda automatically scales your application by running code in response to each trigger. Your code runs in parallel and processes each trigger individually, scaling precisely with the size of the workload.
-
-3. **Pay-as-You-Go**: You are charged based on the number of requests for your functions and the time your code executes. This means you only pay for the compute time you consume.
-
-4. **No Server Management**: AWS Lambda abstracts the underlying infrastructure, so you don't need to manage servers, patch operating systems, or worry about scaling.
-
-5. **Supports Multiple Languages**: AWS Lambda supports several programming languages, including Python, Java, Node.js, C#, Ruby, and Go, among others.
-
-6. **Integration with AWS Services**: Lambda integrates seamlessly with other AWS services, allowing you to build complex, scalable applications.
-
-Here's a simple example of how AWS Lambda might be used:
-
-- You have an [S3 bucket](#s3-bucket) where users upload images.
-- An AWS Lambda function is triggered whenever a new image is uploaded.
-- The Lambda function processes the image, such as generating thumbnails or extracting metadata.
-- The processed data is then stored back in S3 or sent to another AWS service for further processing.
 
 <a id="accessing-gen-ai-generated-content"></a>
 # Accessing Gen Ai Generated Content {#accessing-gen-ai-generated-content}
@@ -329,6 +85,32 @@ print("Prediction accuracy: {:.2f}%".format(accuracy  100.0))
 
 - Make sure to replace `pred` and `y_test` with your actual prediction and test data variables.
 
+<a id="acid-transaction"></a>
+# Acid Transaction {#acid-transaction}
+
+
+An ACID [Transaction](#transaction) ensures that either all changes are successfully committed or rolled back, preventing the database from ending up in an inconsistent state. This guarantees the integrity of the data throughout the transaction process.
+
+### Key Properties of ACID Transactions
+
+1. Atomicity: This property ensures that transactions are treated as a single, indivisible unit. If any part of the transaction fails, the entire transaction is rolled back, and none of the changes are applied. Users do not see intermediate states of the transaction.
+
+2. Consistency: Transactions must leave the database in a valid state, adhering to all defined constraints. If a transaction violates a constraint, it is rolled back to maintain the database's stable state.
+
+3. Isolation: This property ensures that concurrent transactions do not interfere with each other. Each transaction operates independently, and the results of one transaction are not visible to others until it is committed.
+
+4. Durability: Once a transaction has been committed, the changes are permanent, even in the event of a system failure. The data remains intact and recoverable.
+
+
+
+<a id="activation-atlases"></a>
+# Activation Atlases {#activation-atlases}
+
+
+is a viewing method for high dimensional space that AI system use for predictions.
+
+Example AlexNet (cofounder of OpenAI)
+
 <a id="activation-function"></a>
 # Activation Function {#activation-function}
 
@@ -372,14 +154,6 @@ This ensures that the output values are between 0 and 1 and that they sum to 1, 
 
 
 
-
-<a id="activation-atlases"></a>
-# Activation Atlases {#activation-atlases}
-
-
-is a viewing method for high dimensional space that AI system use for predictions.
-
-Example AlexNet (cofounder of OpenAI)
 
 <a id="active-learning"></a>
 # Active Learning {#active-learning}
@@ -476,6 +250,7 @@ Adam is particularly effective for large datasets and complex models, as it prov
 
 Adaptive [learning rate](#learning-rate) adjust the learning rate for each parameter based on the estimates of the first and second moments of the gradients. Adam (short for Adaptive Moment Estimation) combines ideas from [Momentum](#momentum) and adaptive learning rates to help the optimization process.
 
+<a id="connect-to-the-postgresql-server-default-postgres-database"></a>
 ### How to Add a Database to PostgreSQL  
 
 ### Using pgAdmin (GUI)  
@@ -498,7 +273,7 @@ Then, run this script to create a PostgreSQL database:
 ```python
 import psycopg2
 
-# Connect to the PostgreSQL server (default 'postgres' database)
+# Connect to the PostgreSQL server (default 'postgres' database) {#connect-to-the-postgresql-server-default-postgres-database}
 conn = psycopg2.connect(
     dbname="postgres",  # Default DB to connect before creating a new one
     user="postgres",
@@ -745,6 +520,42 @@ Summarizing data for analysis ([Pandas Pivot Table](#pandas-pivot-table) and [Gr
 In [DE_Tools](#de_tools) see:
 	- https://github.com/rhyslwells/DE_Tools/blob/main/Explorations/Transformation/group_by.ipynb
 	- https://github.com/rhyslwells/DE_Tools/blob/main/Explorations/Transformation/pivot_table.ipynb
+
+<a id="ai-engineer"></a>
+# Ai Engineer {#ai-engineer}
+
+
+They know what
+- [LSTM](#lstm) means
+- [Attention mechanism](#attention-mechanism)
+- [Prompting](#prompting) optimisation
+- [Neural network](#neural-network)
+
+
+
+<a id="ai-governance"></a>
+# Ai Governance {#ai-governance}
+
+AI Governance
+
+[Data Governance](#data-governance)
+
+Used in regulated sectors.  
+
+Constraints to using ai: 
+- legal,
+- transparency, 
+- security, 
+- historical bias  
+
+AI acts and standards: 
+- eu and AI acts
+- NIST standards framework  
+- Security OWASP standards for LLM  
+
+how will beaurcracy keeps up with ai innovation.  
+
+Governance can stifle innovation.
 
 <a id="algorithms"></a>
 # Algorithms {#algorithms}
@@ -1067,6 +878,142 @@ Spark is a highly popular framework for large-scale data processing. It allows  
 
 
 
+<a id="api-driven-microservices"></a>
+# Api Driven Microservices {#api-driven-microservices}
+
+
+API-driven microservices refer to a [software architecture](#software-architecture) approach where [microservices](#microservices) communicate with each other and with external systems primarily through well-defined [API](#api) (Application Programming Interfaces). 
+
+This architecture is designed to enhance modularity, scalability, and flexibility by breaking down an application into smaller, independent services that can be developed, deployed, and scaled independently.
+
+API-driven microservices architecture is particularly beneficial for large, complex applications that require frequent updates and scaling. It allows organizations to innovate faster, improve fault isolation, and better align development efforts with business needs. However, it also introduces complexity in terms of service orchestration, data consistency, and network communication, which must be carefully managed.
+
+Key characteristics of API-driven microservices include:
+
+1. **Decoupled Services**: Each microservice is a separate, self-contained unit that performs a specific business function. Services are loosely coupled, meaning changes to one service do not directly impact others.
+
+2. **API Communication**: Microservices interact with each other and with external clients through APIs. These APIs are typically RESTful, but they can also use other protocols like gRPC, GraphQL, or messaging systems like Kafka.
+
+3. **Independent Deployment**: Each microservice can be developed, tested, deployed, and scaled independently of the others. This allows for more agile development and continuous deployment practices.
+
+4. **Technology Agnostic**: Different microservices can be built using different technologies or programming languages, as long as they adhere to the agreed-upon API contracts.
+
+5. **Scalability and Resilience**: Microservices can be scaled independently based on demand. If one service fails, it does not necessarily bring down the entire system, enhancing resilience.
+
+6. **Focused Functionality**: Each microservice is designed to handle a specific business capability, making it easier to understand, develop, and maintain.
+
+7. **API Gateway**: Often, an API gateway is used to manage and route requests to the appropriate microservices. It can also handle cross-cutting concerns like authentication, logging, and rate limiting.
+
+
+
+<a id="api"></a>
+# Api {#api}
+
+
+An API (Application Programming Interfaces) allows one system (client) to <mark>request specific actions from another system</mark> (server).
+
+Using a predefined set of rules and <mark>protocols</mark>. 
+
+Good API documentation is necessary for developers to integrate and use APIs effectively.
+####  Resources:
+- [Link](https://www.youtube.com/watch?v=yBZO5Rb4ibo)
+- [REST API](#rest-api)
+- [FastAPI](#fastapi)
+#### API Principles
+
+1. **Controlled Access**: APIs provide access to certain parts of a system while keeping the core functionalities secure.
+2. **System Independence**: APIs function independently of changes in the underlying system.
+3. **Simplicity**: APIs are designed to be <mark>user-friendly</mark> and come with comprehensive documentation to guide developers.
+#### Implementation
+
+In [ML_Tools](#ml_tools) see: [Wikipedia_API.py](#wikipedia_apipy)
+
+#### Example:
+
+For instance, a weather app querying a weather API to fetch the current weather conditions involves sending a structured request and receiving a response.
+
+Types of API Connections:
+1. **Web APIs**: These facilitate communication between web clients (browsers or apps) and servers. For example, online shopping apps use APIs to process transactions on remote servers.
+2. **Database APIs**: These allow applications to interact with databases, ensuring data is accessed and manipulated efficiently.
+3. **Device APIs**: When apps like Instagram or WhatsApp request access to your phone's camera or microphone, they use device APIs.
+
+<a id="arima"></a>
+# Arima {#arima}
+
+
+**ARIMA** (AutoRegressive Integrated Moving Average) is a popular method for [Time Series Forecasting](#time-series-forecasting) that models the autocorrelations within the data. It is particularly useful for datasets with trends and patterns that are not seasonal. However, it is not perfect; for example, it struggles with predicting stock trading data.
+
+## ARIMA Components
+
+- **AR (AutoRegressive)**: Utilizes the dependency between an observation and a number of lagged observations.
+- **I (Integrated)**: Involves differencing the data to achieve stationarity.
+- **MA (Moving Average)**: Models the dependency between an observation and a residual error from a moving average model applied to lagged observations.
+
+### ARIMA Explained
+
+**ARIMA** stands for:
+
+- **A**uto**R**egressive (AR): Uses past values to predict the current one.
+- **I**ntegrated (I): Differencing to make the series stationary.
+- **MA**ving Average (MA): Uses past forecast errors for prediction.
+
+A typical **ARIMA(p,d,q)** model has:
+
+- $p$: Number of **lagged values** (AR terms)
+- $d$: Number of **differences** needed to make the series stationary
+- $q$: Number of **lagged forecast errors** (MA terms)
+
+#### 🔧 What ARIMA Does:
+
+1. **Checks for stationarity** – if not, applies differencing ($d$ times).
+2. **Models relationships** between current values and:
+   - Past values (AR part)
+   - Past errors (MA part)
+3. **Fits** parameters by minimizing a loss (typically log-likelihood).
+4. **Forecasts** future values using this learned structure.
+### Why ARIMA Isn’t Enough for Seasonal Data
+
+Your quarterly data might show **repeating patterns every 4 quarters** (seasonality), and ARIMA has **no built-in mechanism to model this periodic structure**. This is where **SARIMA** comes in.
+### SARIMA: Seasonal ARIMA
+
+SARIMA extends ARIMA by adding **seasonal components**. It is written as:
+
+$$\text{SARIMA}(p, d, q)(P, D, Q)_s$$
+
+Where:
+
+- $(p, d, q)$ are **non-seasonal** ARIMA parameters (as above).
+- $(P, D, Q)_s$ are **seasonal** ARIMA parameters:
+  - $P$: Seasonal autoregressive terms.
+  - $D$: Seasonal differences.
+  - $Q$: Seasonal moving average terms.
+  - $s$: Seasonality period (e.g., $s=4$ for quarterly data).
+
+#### What SARIMA Adds:
+
+- **Seasonal differencing** ($D$): e.g., subtract the value from 4 quarters ago to remove annual cycles.
+- **Seasonal AR/MA** terms: Model relationships from past seasonal lags and errors.
+
+### ✅ Summary
+
+| Model   | Handles Trend | Handles Seasonality | Use When...                                   |
+|---------|---------------|---------------------|------------------------------------------------|
+| ARIMA   | ✅            | ❌                  | Data has trend, but no regular cycles         |
+| SARIMA  | ✅            | ✅                  | Data has both trend and seasonality           |
+## Advanced Variants
+
+### SARIMAX (Seasonal ARIMA with Exogenous Variables)
+
+- Incorporates external variables (e.g., interest rates, volume) into the forecasting model.
+- Useful for [Datasets](#datasets) where external factors influence the time series.
+
+### Related terms
+
+In [ML_Tools](#ml_tools) see:
+- https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Build/TimeSeries/ARIMA.ipynb
+- [Forecasting_AutoArima.py](#forecasting_autoarimapy)
+- [pmdarima](#pmdarima)
+
 <a id="asking-questions"></a>
 # Asking Questions {#asking-questions}
 
@@ -1229,6 +1176,45 @@ These have better understanding of the context.
 - This allows the model to weigh the importance of different words in a sequence when making predictions. It captures relationships between words, even if they are far apart in the sequence.
    - The model computes attention scores for each pair of words to determine how much focus one word should place on another in a sequence.
 
+<a id="auc"></a>
+# Auc {#auc}
+
+
+**AUC (Area Under the Curve)** is a metric for binary classification problems, representing the area under the [ROC (Receiver Operating Characteristic)](#roc-receiver-operating-characteristic)
+
+#### Key Concepts
+Represents the area under the ROC curve.
+
+AUC values range from 0 to 1, where 1 indicates perfect classification and 0.5 suggests no discriminative power (equivalent to random guessing).
+
+#### Roc and Auc Score
+
+The `roc_auc_score` is a function from the `sklearn.metrics` module in Python that computes the Area Under the Receiver Operating Characteristic Curve (ROC AUC) from prediction scores. It is a widely used metric for evaluating the performance of binary classification models.
+
+Key Points about `roc_auc_score`:
+
+- **Purpose**: It quantifies the overall ability of the model to discriminate between the positive and negative classes across all possible classification thresholds.
+- **Range**: The score ranges from 0 to 1, where:
+    - 1 indicates perfect discrimination (the model perfectly distinguishes between the positive and negative classes).
+    - 0.5 suggests no discriminative power (equivalent to random guessing).
+    - Values below 0.5 indicate a model that performs worse than random guessing.
+- **Input**: The function takes the true binary labels and the predicted probabilities (or decision function scores) as inputs.
+- **Output**: It returns a single scalar value representing the AUC.
+
+#### Example Code
+
+```python
+from sklearn.metrics import roc_auc_score
+
+# Actual and predicted values
+y_act = [1, 0, 1, 1, 0]
+y_pred = [1, 1, 0, 1, 0]
+
+# Compute AUC
+auc = roc_auc_score(y_act, y_pred)
+print(f'AUC: {auc}')
+```
+
 <a id="automated-feature-creation"></a>
 # Automated Feature Creation {#automated-feature-creation}
 
@@ -1249,76 +1235,45 @@ Below are some popular open-source libraries for automated feature engineering:
 - https://www.turintech.ai/blog/feature-generation-what-it-is-and-how-to-do-it
 
 
+<a id="aws-lambda"></a>
+# Aws Lambda {#aws-lambda}
+
+
+AWS Lambda is a serverless computing service provided by Amazon Web Services (AWS) that allows you to run code without provisioning or managing servers. 
+
+AWS Lambda is a powerful tool for building scalable, event-driven applications without the overhead of managing server infrastructure.
+
+With AWS Lambda, you can execute your code in response to various events, such as HTTP requests via Amazon API Gateway, changes to data in an Amazon S3 bucket, updates to a DynamoDB table, or messages arriving in an Amazon SQS queue.
+
+Key features of AWS Lambda include:
+
+1. **[Event Driven Events](#event-driven-events)**: AWS Lambda functions are triggered by events, which can come from a wide range of AWS services or custom applications.
+
+2. **Automatic Scaling**: Lambda automatically scales your application by running code in response to each trigger. Your code runs in parallel and processes each trigger individually, scaling precisely with the size of the workload.
+
+3. **Pay-as-You-Go**: You are charged based on the number of requests for your functions and the time your code executes. This means you only pay for the compute time you consume.
+
+4. **No Server Management**: AWS Lambda abstracts the underlying infrastructure, so you don't need to manage servers, patch operating systems, or worry about scaling.
+
+5. **Supports Multiple Languages**: AWS Lambda supports several programming languages, including Python, Java, Node.js, C#, Ruby, and Go, among others.
+
+6. **Integration with AWS Services**: Lambda integrates seamlessly with other AWS services, allowing you to build complex, scalable applications.
+
+Here's a simple example of how AWS Lambda might be used:
+
+- You have an [S3 bucket](#s3-bucket) where users upload images.
+- An AWS Lambda function is triggered whenever a new image is uploaded.
+- The Lambda function processes the image, such as generating thumbnails or extracting metadata.
+- The processed data is then stored back in S3 or sent to another AWS service for further processing.
+
 <a id="azure"></a>
 # Azure {#azure}
 
 
 Public cloud computing platform from Microsoft offering various services like infrastructure, data storage, and machine learning.
 
-# B {#b}
-
-# B
-
+<a id="b-tree"></a>
 # B Tree {#b-tree}
-
-
-
-<a id="bert-pretraining-of-deep-bidirectional-transformers-for-language-understanding"></a>
-# Bert Pretraining Of Deep Bidirectional Transformers For Language Understanding {#bert-pretraining-of-deep-bidirectional-transformers-for-language-understanding}
-
-
-
-
-<a id="bert"></a>
-# Bert {#bert}
-
-
-BERT (<mark>Bidirectional Encoder Representations from [Transformer](#transformer)</mark>) is used in [NLP](#nlp)processing, developed by [Google](#google). 
-
-Introduced in the paper "[BERT Pretraining of Deep Bidirectional Transformers for Language Understanding](#bert-pretraining-of-deep-bidirectional-transformers-for-language-understanding)" in 2018. 
-
-It is forward & backward looking in the context.
-
-BERT is a stack of encoders -learning context.
-
-Input [Vector Embedding|embedding](#vector-embeddingembedding):
-- [Positional Encoding](#positional-encoding): passes location info to encoder
-- Sentence embeddings: differences between sentences
-- Token embeddings
-
-Training of BERT:
-- Masked Language modelling (hiding words)
-- Next Sentence Prediction
-
-Fine tuning ([Transfer Learning](#transfer-learning)) BERT model:
-- New output layer dependent
- 
-Resources:
-- [What is BERT and how does it work? | A Quick Review](https://www.youtube.com/watch?v=6ahxPTLZxU8&list=PLcWfeUsAys2my8yUlOa6jEWB1-QbkNSUl&index=12)
-
-### What is BERT?
-
-- BERT is based on the [Transformer](#transformer) architecture and utilizes a bidirectional approach, meaning it considers the <mark>context of a word based on both its left and right surroundings in a sentence.</mark> This allows BERT to capture nuanced meanings and relationships between words more effectively than unidirectional models
-
-- Pre-training and Fine-tuning/[Transfer Learning](#transfer-learning) techniques. It learns to predict masked words in sentences (Masked Language Model) and to determine if one sentence follows another (Next Sentence Prediction).
-### What is BERT Used For?
-
-1. Text Classification: Assigning categories or labels to text documents, such as sentiment analysis or topic classification.
-
-2. Named Entity Recognition ([Named Entity Recognition|NER](#named-entity-recognitionner)): Identifying and classifying entities (e.g., names, organizations, locations) within text.
-
-3. Question Answering: Providing answers to questions based on a given context or passage of text.
-
-4. Text [Summarisation](#summarisation): Generating concise summaries of longer documents while retaining key information.
-
-5. Language Translation: Assisting in translating text from one language to another.
-
-6. [Sentence Similarity](#sentence-similarity) :Measuring the similarity between sentences, which can be useful for tasks like paraphrase detection or duplicate question identification.
-
-
-
-<a id="bertscore"></a>
-# Bertscore {#bertscore}
 
 
 
@@ -1417,6 +1372,9 @@ print(bow.get_feature_names_out())  # Key terms
 
 Represent each sentence by a vector of length determined by get_feature_names_out. representing the tokens contained.
 
+<a id="bag_of_wordspy"></a>
+# Bag_of_Words.py {#bag_of_wordspy}
+
 ### Summary of What the Script Does:
 
 1. It takes a dataset of text (movie reviews in this case) and processes it to remove HTML tags, non-alphabetic characters, and stopwords.
@@ -1482,6 +1440,9 @@ https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Deployment/Bandit_
 # Bandit_Example_Nonfixed.Py {#bandit_example_nonfixedpy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Deployment/Bandit_Example_Nonfixed.py
+
+<a id="bash"></a>
+# Bash {#bash}
 
 #### Automation Scripts
 
@@ -1670,6 +1631,12 @@ Batch processing is widely supported by cloud infrastructures like **Amazon EMR*
    **Tags**: #data_processing, #data_workflow
 
 <a id="bellman-equations"></a>
+#question"
+importance: 
+engagement: 
+recency_of_interest: 
+category: DS
+---
 # Bellman Equations {#bellman-equations}
 
 
@@ -1695,6 +1662,9 @@ In reinforcement learning, Bellman's equations are fundamental to understanding 
 
 Bellman's equations are used in dynamic programming methods like Value Iteration and Policy Iteration to find optimal policies and value functions. They provide a recursive decomposition of the value functions.
 
+<a id="benefits-of-data-transformation"></a>
+# Benefits of Data Transformation {#benefits-of-data-transformation}
+
 ## Benefits of [Data Transformation](#data-transformation)  
 
 - Efficiency: Faster query performance.  
@@ -1704,6 +1674,65 @@ Bellman's equations are used in dynamic programming methods like Value Iteration
 
 <a id="bernoulli"></a>
 # Bernoulli {#bernoulli}
+
+
+
+<a id="bert-pretraining-of-deep-bidirectional-transformers-for-language-understanding"></a>
+# Bert Pretraining Of Deep Bidirectional Transformers For Language Understanding {#bert-pretraining-of-deep-bidirectional-transformers-for-language-understanding}
+
+
+
+
+<a id="bert"></a>
+# Bert {#bert}
+
+
+BERT (<mark>Bidirectional Encoder Representations from [Transformer](#transformer)</mark>) is used in [NLP](#nlp)processing, developed by [Google](#google). 
+
+Introduced in the paper "[BERT Pretraining of Deep Bidirectional Transformers for Language Understanding](#bert-pretraining-of-deep-bidirectional-transformers-for-language-understanding)" in 2018. 
+
+It is forward & backward looking in the context.
+
+BERT is a stack of encoders -learning context.
+
+Input [Vector Embedding|embedding](#vector-embeddingembedding):
+- [Positional Encoding](#positional-encoding): passes location info to encoder
+- Sentence embeddings: differences between sentences
+- Token embeddings
+
+Training of BERT:
+- Masked Language modelling (hiding words)
+- Next Sentence Prediction
+
+Fine tuning ([Transfer Learning](#transfer-learning)) BERT model:
+- New output layer dependent
+ 
+Resources:
+- [What is BERT and how does it work? | A Quick Review](https://www.youtube.com/watch?v=6ahxPTLZxU8&list=PLcWfeUsAys2my8yUlOa6jEWB1-QbkNSUl&index=12)
+
+### What is BERT?
+
+- BERT is based on the [Transformer](#transformer) architecture and utilizes a bidirectional approach, meaning it considers the <mark>context of a word based on both its left and right surroundings in a sentence.</mark> This allows BERT to capture nuanced meanings and relationships between words more effectively than unidirectional models
+
+- Pre-training and Fine-tuning/[Transfer Learning](#transfer-learning) techniques. It learns to predict masked words in sentences (Masked Language Model) and to determine if one sentence follows another (Next Sentence Prediction).
+### What is BERT Used For?
+
+1. Text Classification: Assigning categories or labels to text documents, such as sentiment analysis or topic classification.
+
+2. Named Entity Recognition ([Named Entity Recognition|NER](#named-entity-recognitionner)): Identifying and classifying entities (e.g., names, organizations, locations) within text.
+
+3. Question Answering: Providing answers to questions based on a given context or passage of text.
+
+4. Text [Summarisation](#summarisation): Generating concise summaries of longer documents while retaining key information.
+
+5. Language Translation: Assisting in translating text from one language to another.
+
+6. [Sentence Similarity](#sentence-similarity) :Measuring the similarity between sentences, which can be useful for tasks like paraphrase detection or duplicate question identification.
+
+
+
+<a id="bertscore"></a>
+# Bertscore {#bertscore}
 
 
 
@@ -1859,6 +1888,10 @@ sampling with replacement from an original dataset.
 
 
 <a id="boxplot"></a>
+#statistics"
+  - data_cleaning
+  - data_visualization
+---
 # Boxplot {#boxplot}
 
 
@@ -1919,6 +1952,29 @@ plt.ylabel('Values')
 plt.show()
 ```
 
+<a id="business-intelligence"></a>
+# Business Intelligence {#business-intelligence}
+
+
+Business intelligence (BI) leverages software and services to [transform data](Data%20Transformation.md) into actionable insights that inform an organization’s business decisions. 
+
+The new term is [Data Engineer](Data%20Engineer.md). The language of a BI engineer is [SQL](SQL.md).
+
+## Goals of BI
+BI should produce a simple overview of your business, boost efficiency, and automate repetitive tasks across your organization. In more detail:
+
+
+  * **[rollup](#rollup) capability** - (data) [Visualization](term/analytics.md) over the most important [KPIs][2] (aggregations) - like a cockpit in an airplane which gives you the important information at one glance.
+
+  * **Drill-down possibilities** - from the above high-level overview drill down the very details to figure out why something is not performing as planned. **Slice-and-dice or pivot your data from different angles.
+
+  * **[Single Source of Truth](#single-source-of-truth)** - instead of multiple spreadsheets or other tools with different numbers, the process is automated and done for all unified. Employees can talk about the business problem instead of the various numbers everyone has. Reporting, budgeting, and forecasting are automatically updated and consistent, accurate, and in timely manner.
+
+  * **Empower users**: With the so-called self-service BI, every user can analyze their data instead of only BI or IT persons.
+
+
+
+
 <a id="business-observability"></a>
 # Business Observability {#business-observability}
 
@@ -1944,48 +2000,6 @@ Key components of business observability include:
 5. **Feedback Loops**: Implementing mechanisms to use insights gained from observability to make adjustments and improvements in business processes and strategies.
 
 
-
-<a id="business-intelligence"></a>
-# Business Intelligence {#business-intelligence}
-
-
-Business intelligence (BI) leverages software and services to [transform data](Data%20Transformation.md) into actionable insights that inform an organization’s business decisions. 
-
-The new term is [Data Engineer](Data%20Engineer.md). The language of a BI engineer is [SQL](SQL.md).
-
-## Goals of BI
-BI should produce a simple overview of your business, boost efficiency, and automate repetitive tasks across your organization. In more detail:
-
-
-  * **[rollup](#rollup) capability** - (data) [Visualization](term/analytics.md) over the most important [KPIs][2] (aggregations) - like a cockpit in an airplane which gives you the important information at one glance.
-
-  * **Drill-down possibilities** - from the above high-level overview drill down the very details to figure out why something is not performing as planned. **Slice-and-dice or pivot your data from different angles.
-
-  * **[Single Source of Truth](#single-source-of-truth)** - instead of multiple spreadsheets or other tools with different numbers, the process is automated and done for all unified. Employees can talk about the business problem instead of the various numbers everyone has. Reporting, budgeting, and forecasting are automatically updated and consistent, accurate, and in timely manner.
-
-  * **Empower users**: With the so-called self-service BI, every user can analyze their data instead of only BI or IT persons.
-
-
-
-
-# C {#c}
-
-# C
-
-# Ci Cd {#ci-cd}
-
-**CI/CD** stands for **[Continuous Integration](#continuous-integration)** and **[Continuous Delivery/Deployment](#continuous-deliverydeployment)**. It is a set of practices aimed at streamlining and accelerating the [Software Development Life Cycle](#software-development-life-cycle). The main goals of CI/CD are to improve software quality, reduce integration issues, and deliver updates to users more frequently and reliably.
-
-Tools and Technologies
-- [Gitlab](#gitlab)
-- [Docker](#docker)
-
-
-
-<a id="crud"></a>
-# Crud {#crud}
-
-Create,Read,Update,Delete.
 
 <a id="career-interest"></a>
 # Career Interest {#career-interest}
@@ -2218,6 +2232,9 @@ This is a basic example, and in practice, checksums can be computed using more c
 
 
 
+<a id="chi-squared-test"></a>
+# Chi Squared Test {#chi-squared-test}
+
 ## Chi-Squared Test
 
 The Chi-squared test is used to determine if there is a significant association between categorical variables. It assesses whether the observed frequencies in a contingency table differ from the expected frequencies, assuming the data is independent.
@@ -2239,6 +2256,17 @@ The optimal number of clusters ([clustering](#clustering)) depends on the data a
 
 1. Elbow Method: [WCSS and elbow method](#wcss-and-elbow-method): Plot the within-cluster sum of squares (WCSS) as a function of the number of clusters. The optimal number of clusters is often the point where the WCSS starts to decrease slowly.
 2. [Silhouette Analysis](#silhouette-analysis): Calculate the silhouette coefficient for each data point, which measures how similar a data point is to its own cluster compared to other clusters. The optimal number of clusters 1 is often the one that maximizes the average silhouette coefficient.T
+
+<a id="ci-cd"></a>
+# Ci Cd {#ci-cd}
+
+**CI/CD** stands for **[Continuous Integration](#continuous-integration)** and **[Continuous Delivery/Deployment](#continuous-deliverydeployment)**. It is a set of practices aimed at streamlining and accelerating the [Software Development Life Cycle](#software-development-life-cycle). The main goals of CI/CD are to improve software quality, reduce integration issues, and deliver updates to users more frequently and reliably.
+
+Tools and Technologies
+- [Gitlab](#gitlab)
+- [Docker](#docker)
+
+
 
 <a id="class-separability"></a>
 # Class Separability {#class-separability}
@@ -2354,6 +2382,34 @@ Classifier: A model used for classification tasks, predicting discrete labels or
 Claude is better for code and uses Artifact for tracking code changes.
 
 Claude is crazy see: https://youtu.be/RudrWy9uPZE?t=473
+
+<a id="cleaning-terminal-path"></a>
+# Cleaning Terminal Path {#cleaning-terminal-path}
+
+
+https://www.youtube.com/watch?v=18hUejOK0qk
+
+```cmd
+prompt $g
+```
+
+### powershell
+```powershell
+$profile
+
+microsfot_Powershell_profile have
+
+function prompt{
+$p = -path
+"$p> "
+}
+```
+
+getting the script working 
+
+https://stackoverflow.com/questions/41117421/ps1-cannot-be-loaded-because-running-scripts-is-disabled-on-this-system
+
+
 
 <a id="click_implementationpy"></a>
 # Click_Implementation.Py {#click_implementationpy}
@@ -2472,6 +2528,9 @@ Use clustering to find [Correlation](#correlation) between features. Utilize a [
 
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Preprocess/Clustering_Dashboard.py
+
+<a id="clustermap"></a>
+# Clustermap {#clustermap}
 
 ## Clustermap
 
@@ -2858,6 +2917,16 @@ FROM levels;
 ```
 
 
+<a id="communication-principles"></a>
+# Communication Principles {#communication-principles}
+
+
+![Pasted image 20240916075433.png](../content/images/Pasted%20image%2020240916075433.png)
+
+![Pasted image 20240916075439.png](../content/images/Pasted%20image%2020240916075439.png)
+
+
+
 <a id="communication-techniques"></a>
 # Communication Techniques {#communication-techniques}
 
@@ -2947,16 +3016,6 @@ Tips for Using Communication Bridges
 - Effect: Ends discussions with clear direction and accountability.
 
 
-<a id="communication-principles"></a>
-# Communication Principles {#communication-principles}
-
-
-![Pasted image 20240916075433.png](../content/images/Pasted%20image%2020240916075433.png)
-
-![Pasted image 20240916075439.png](../content/images/Pasted%20image%2020240916075439.png)
-
-
-
 <a id="comparing-llm"></a>
 # Comparing Llm {#comparing-llm}
 
@@ -2988,6 +3047,11 @@ text to image leader board
 
 <a id="concatenate"></a>
 # Concatenate {#concatenate}
+
+
+
+<a id="conceptual-data-model"></a>
+# Conceptual Data Model {#conceptual-data-model}
 
 
 
@@ -3330,6 +3394,8 @@ In [ML_Tools](#ml_tools) see:
 
 
 <a id="cross-validation"></a>
+#evaluation"
+---
 # Cross Validation {#cross-validation}
 
 
@@ -3503,6 +3569,11 @@ B            1  1
 In [DE_Tools](#de_tools) see:
 - https://github.com/rhyslwells/DE_Tools/blob/main/Explorations/Transformation/reshaping.ipynb
 
+<a id="crud"></a>
+# Crud {#crud}
+
+Create,Read,Update,Delete.
+
 <a id="cryptography"></a>
 # Cryptography {#cryptography}
 
@@ -3666,6 +3737,11 @@ console.log(isVerified);
 ```
 
 <a id="current-challenges-within-the-energy-sector"></a>
+#question"
+category:
+engagement: 
+recency_of_interest:
+---
 # Current Challenges Within The Energy Sector {#current-challenges-within-the-energy-sector}
 
 
@@ -3673,173 +3749,15 @@ console.log(isVerified);
 
 
 
-<a id="cleaning-terminal-path"></a>
-# Cleaning Terminal Path {#cleaning-terminal-path}
+<a id="dagster"></a>
+# Dagster {#dagster}
 
 
-https://www.youtube.com/watch?v=18hUejOK0qk
+[Dagster](https://dagster.io/) is a [data orchestrator] focusing on data-aware scheduling that supports the whole development [Data Lifecycle Management](#data-lifecycle-management)  lifecycle, with integrated lineage and observability, a [declarative](#declarative) programming model, and best-in-class testability.
 
-```cmd
-prompt $g
-```
-
-### powershell
-```powershell
-$profile
-
-microsfot_Powershell_profile have
-
-function prompt{
-$p = -path
-"$p> "
-}
-```
-
-getting the script working 
-
-https://stackoverflow.com/questions/41117421/ps1-cannot-be-loaded-because-running-scripts-is-disabled-on-this-system
-
-
-
-<a id="conceptual-data-model"></a>
-# Conceptual Data Model {#conceptual-data-model}
-
-
-
-# D {#d}
-
-# D
-
-# Dbscan {#dbscan}
-
-
-**DBSCAN** (Density-Based Spatial Clustering of Applications with Noise) is a [Clustering](#clustering) algorithm that groups together data points <mark>based on density</mark>. It is particularly useful when K-means doesn't work well, such as in datasets with complex shapes or when there are outliers.
-
-- **Used when [K-means](#k-means) doesn't work**: DBSCAN handles datasets with <mark>irregular cluster shapes</mark> and is not sensitive to outliers like K-means.
-- **When you have nesting of clusters**: It can identify clusters of varying shapes and sizes without needing to predefine the number of clusters, unlike K-means.
-- **Groups core points to make clusters**: DBSCAN identifies core points, which have many nearby points, and groups them together.
-- **Can identify [standardised/Outliers](#standardisedoutliers)**: It detects noise points (outliers) that don't belong to any cluster.
-
-### Python Example:
-
-```python
-from sklearn.cluster import DBSCAN
-from sklearn.datasets import make_blobs
-import matplotlib.pyplot as plt
-
-# Create sample data
-X, _ = make_blobs(n_samples=300, centers=4, cluster_std=0.60, random_state=0)
-
-# Apply DBSCAN
-dbscan = DBSCAN(eps=0.3, min_samples=5)
-clusters = dbscan.fit_predict(X)
-
-# Plot results
-plt.scatter(X[:, 0], X[:, 1], c=clusters, cmap='plasma')
-plt.show()
-```
-
-This will cluster the data and visualize it, highlighting core points and marking outliers as separate clusters.
-
-## 🌐 Sources
-1. [hex.tech - When and Why To Choose Density-Based Methods](https://hex.tech/blog/comparing-density-based-methods/#:~:text=DBSCAN%20is%20a%20density%2Dbased)
-2. [newhorizons.com - DBSCAN vs. K-Means: A Guide in Python](https://www.newhorizons.com/resources/blog/dbscan-vs-kmeans-a-guide-in-python)
-
-### Machine Learning Fundamentals
-
-- [ML_Tools](#ml_tools)
-- [Supervised Learning](#supervised-learning)
-- [Unsupervised Learning](#unsupervised-learning)
-- [Reinforcement learning](#reinforcement-learning)
-- [Deep Learning](#deep-learning)
-
-### Model Training and Optimisation
-
-- [Learning rate](#learning-rate)
-- [Overfitting](#overfitting)
-- [Regularisation](#regularisation)
-- [Hyperparameter](#hyperparameter)
-- [Hyperparameter Tuning](#hyperparameter-tuning)
-- [Model Optimisation](#model-optimisation)
-- [Model Selection](#model-selection)
-- [Vanishing and exploding gradients problem](#vanishing-and-exploding-gradients-problem)
-
-### Feature Engineering and Data Handling
-
-- [Feature Selection](#feature-selection)
-- [Feature Engineering](#feature-engineering)
-- [Imbalanced Datasets](#imbalanced-datasets)
-- [Outliers](#outliers)
-- [Anomaly Detection](#anomaly-detection)
-- [Multicollinearity](#multicollinearity)
-- [Dimensionality Reduction](#dimensionality-reduction)
-- [Clustering](#clustering)
-### Machine Learning Models
-
-Classification Models
-
-- [Classification](#classification)
-- [Binary Classification](#binary-classification)
-- [Support Vector Machines](#support-vector-machines)
-- [Decision Tree](#decision-tree)
-- [Random Forests](#random-forests)
-- [K-nearest neighbours](#k-nearest-neighbours)
-- [Logistic Regression](#logistic-regression)
-
-Regression Models
-
-- [Regression](#regression)
-- [Linear Regression](#linear-regression)
-
-Boosting and Optimisation
-
-- [Gradient Descent](#gradient-descent)
-- [Gradient Boosting](#gradient-boosting)
-- [XGBoost](#xgboost)
-
-### Deep Learning and Neural Networks
- 
-- [BERT](#bert)
-- [LSTM](#lstm)
-- [Recurrent Neural Networks](#recurrent-neural-networks)
-- [Transformer](#transformer)
-- [Attention mechanism](#attention-mechanism)
-- [Neural network](#neural-network)
-
-### Model Evaluation and Metrics
-
-- [Cost Function](#cost-function)
-- [Loss function](#loss-function)
-- [Cross Entropy](#cross-entropy)
-- [Evaluation Metrics](#evaluation-metrics)
-- [Model Evaluation](#model-evaluation)
-- [Accuracy](#accuracy)
-- [Precision](#precision)
-- [Recall](#recall)
-
-### Algorithms and Frameworks
-
-- [Machine Learning Algorithms](#machine-learning-algorithms)
-- [Optimisation techniques](#optimisation-techniques)
-- [Optimisation function](#optimisation-function)
-- [Model Ensemble](#model-ensemble)
-- [Batch Processing](#batch-processing)
-- [Apache Spark](#apache-spark)
-- [Sklearn](#sklearn)
-
-### Statistical and Data Analysis Concepts
-
-- [Distributions](#distributions)
-- [Statistics](#statistics)
-- [Correlation](#correlation)
-- [Data Analysis](#data-analysis)
-- [Data Quality](#data-quality)
-- [Principal Component Analysis](#principal-component-analysis)
-
-### Misc
-
-- [Interpretability](#interpretability)
-- [RAG](#rag)
+Key features are: 
+- Manage your data assets with code
+- A single pane of glass for your data platform 
 
 <a id="dash"></a>
 # Dash {#dash}
@@ -4007,6 +3925,11 @@ Check out [Graph Analysis Plugin](#graph-analysis-plugin)
 Convert Dataview to CSV
 
 
+<a id="data-asset"></a>
+# Data Asset {#data-asset}
+
+
+
 <a id="data-cleansing"></a>
 # Data Cleansing {#data-cleansing}
 
@@ -4035,6 +3958,9 @@ Follow-up questions:
 Determine the [Data Quality](#data-quality) and quantity of data required and get it.
 
 [Imbalanced Datasets](#imbalanced-datasets)
+
+<a id="data-contract"></a>
+# Data Contract {#data-contract}
 
 ### [Data Contract](#data-contract)
 
@@ -4245,6 +4171,8 @@ With that said more programmatic skills are needed similar to software engineeri
 As a data engineer, you use mainly [SQL](SQL.md) for almost everything except when using external data from an API. Here you'd use [ELT](term/elt.md) tools or write some [Data Pipeline](#data-pipeline) with the tools mentioned above.
 
 <a id="data-governance"></a>
+#data_governance"
+---
 # Data Governance {#data-governance}
 
 
@@ -4472,6 +4400,35 @@ Key Stages of Full Lifecycle Management
 
 Data engineers must evaluate and select tools and technologies based on several [Performance Dimensions](#performance-dimensions)
 
+<a id="data-lineage"></a>
+# Data Lineage {#data-lineage}
+
+
+Data lineage uncovers the [Data Lifecycle Management](#data-lifecycle-management) life cycle of data. It aims to show the complete data flow from start to finish. 
+
+Data lineage is the process of understanding, recording, and visualizing data as it flows from data sources to consumption. 
+
+This includes all [Data Transformation](Data%20Transformation.md) (what changed and why).
+
+<a id="data-literacy"></a>
+#business"
+---
+# Data Literacy {#data-literacy}
+
+
+Data literacy is the ability to read, work with, analyze, and argue with data in order to extract meaningful information and make informed decisions. This skill set is crucial for employees across various levels of an organization, especially as data-driven decision-making becomes increasingly important.
+
+Organizations should invest in data literacy training programs to empower their employees with the necessary skills to effectively engage with data. A data-literate employee can read charts, draw correct conclusions, recognize when data is being used inappropriately or misleadingly, and gain a deeper understanding of the business domain. This enables them to communicate more effectively using a common language of data, spot unexpected operational issues, identify root causes, and prevent poor decision-making due to data misinterpretation.
+
+Examples of data literacy in action include:
+
+* Implementing the Adoptive Framework to create a Data Literacy Program.
+* Employees working with spreadsheets to understand the rationale behind data-driven decisions and advocating for alternative courses of action.
+* Work teams identifying areas where data needs clarification for a project.
+
+By nurturing a data-literate workforce, businesses can improve their ability to make informed decisions, drive innovation, and achieve better outcomes.
+
+
 <a id="data-management"></a>
 # Data Management {#data-management}
 
@@ -4529,6 +4486,10 @@ Types of Modeling:
    **Tags**: #data_modeling, #database_design
 
 <a id="data-observability"></a>
+#data_orchestration"
+  - data_management
+aliases: []
+---
 # Data Observability {#data-observability}
 
 
@@ -4576,6 +4537,16 @@ How to Manage Metadata:
 - Alerting and ensuring data owners fix it.
 
 <a id="data-pipeline-to-data-products"></a>
+#question"
+  - data_orchestration
+  - anomaly_detection
+  - data_pipeline
+  - data_products
+category: DEVOPS
+engagement: 
+recency_of_interest: 2024-10-10
+importance:
+---
 # Data Pipeline To Data Products {#data-pipeline-to-data-products}
 
 
@@ -4707,6 +4678,8 @@ It applies more product thinking, whereas the "Data Product" essentially is a da
 Sometimes Data Products are also called [data asset](#data-asset).
 
 <a id="data-quality"></a>
+#data_quality"
+---
 # Data Quality {#data-quality}
 
 
@@ -4970,6 +4943,28 @@ Example:
 
 
 
+<a id="data-transformation-in-data-engineering"></a>
+# Data Transformation In Data Engineering {#data-transformation-in-data-engineering}
+
+Data transformation in [Data Engineering](#data-engineering) is a key step in data pipelines, often part of:  
+
+- [ETL (Extract, Transform, Load)](ETL.md) [ETL](#etl): Data is transformed before loading into the target system.  
+- [ELT (Extract, Load, Transform)](term/elt.md) [ELT](#elt): Data is loaded first, then transformed for analysis.  
+- EtLT (Extract, “tweak”, Load, Transform: A hybrid approach combining elements of ETL and ELT.  
+
+Related:
+- [ETL vs ELT](#etl-vs-elt)for a comparison.
+
+<a id="data-transformation-in-machine-learning"></a>
+# Data Transformation In Machine Learning {#data-transformation-in-machine-learning}
+
+Transforming raw data into a meaningful format is necessary for building effective models.  
+
+- [Supervised Learning](#supervised-learning): Annotating datasets with correct labels (e.g., labeling images of apples vs. other fruits).  
+- Manual & Automated Labeling: Using human annotators or leveraging existing labeled datasets (e.g., Google reCAPTCHA).  
+- Feature Scaling & Encoding: Applying normalization and encoding to categorical variables.  
+- [Encoding Categorical Variables](#encoding-categorical-variables): Converting categorical data into numerical format for machine learning models.  
+
 <a id="data-transformation-with-pandas"></a>
 # Data Transformation With Pandas {#data-transformation-with-pandas}
 
@@ -5107,28 +5102,6 @@ Access Tools: Tools for querying and analyzing data, such as SQL clients and bus
 - [Designing a Data Warehouse](https://www.youtube.com/watch?v=patBYUGwsHE)
 - [Why a Data Warehouse?](https://www.youtube.com/watch?v=jmwGNhUXn_o)
 
-
-<a id="data-transformation-in-data-engineering"></a>
-# Data Transformation In Data Engineering {#data-transformation-in-data-engineering}
-
-Data transformation in [Data Engineering](#data-engineering) is a key step in data pipelines, often part of:  
-
-- [ETL (Extract, Transform, Load)](ETL.md) [ETL](#etl): Data is transformed before loading into the target system.  
-- [ELT (Extract, Load, Transform)](term/elt.md) [ELT](#elt): Data is loaded first, then transformed for analysis.  
-- EtLT (Extract, “tweak”, Load, Transform: A hybrid approach combining elements of ETL and ELT.  
-
-Related:
-- [ETL vs ELT](#etl-vs-elt)for a comparison.
-
-<a id="data-transformation-in-machine-learning"></a>
-# Data Transformation In Machine Learning {#data-transformation-in-machine-learning}
-
-Transforming raw data into a meaningful format is necessary for building effective models.  
-
-- [Supervised Learning](#supervised-learning): Annotating datasets with correct labels (e.g., labeling images of apples vs. other fruits).  
-- Manual & Automated Labeling: Using human annotators or leveraging existing labeled datasets (e.g., Google reCAPTCHA).  
-- Feature Scaling & Encoding: Applying normalization and encoding to categorical variables.  
-- [Encoding Categorical Variables](#encoding-categorical-variables): Converting categorical data into numerical format for machine learning models.  
 
 <a id="database-index"></a>
 # Database Index {#database-index}
@@ -5373,6 +5346,114 @@ This note collects notes on datasets that are good examples for exploring variou
 
 
 
+<a id="dbscan"></a>
+# Dbscan {#dbscan}
+
+
+**DBSCAN** (Density-Based Spatial Clustering of Applications with Noise) is a [Clustering](#clustering) algorithm that groups together data points <mark>based on density</mark>. It is particularly useful when K-means doesn't work well, such as in datasets with complex shapes or when there are outliers.
+
+- **Used when [K-means](#k-means) doesn't work**: DBSCAN handles datasets with <mark>irregular cluster shapes</mark> and is not sensitive to outliers like K-means.
+- **When you have nesting of clusters**: It can identify clusters of varying shapes and sizes without needing to predefine the number of clusters, unlike K-means.
+- **Groups core points to make clusters**: DBSCAN identifies core points, which have many nearby points, and groups them together.
+- **Can identify [standardised/Outliers](#standardisedoutliers)**: It detects noise points (outliers) that don't belong to any cluster.
+
+### Python Example:
+
+```python
+from sklearn.cluster import DBSCAN
+from sklearn.datasets import make_blobs
+import matplotlib.pyplot as plt
+
+# Create sample data
+X, _ = make_blobs(n_samples=300, centers=4, cluster_std=0.60, random_state=0)
+
+# Apply DBSCAN
+dbscan = DBSCAN(eps=0.3, min_samples=5)
+clusters = dbscan.fit_predict(X)
+
+# Plot results
+plt.scatter(X[:, 0], X[:, 1], c=clusters, cmap='plasma')
+plt.show()
+```
+
+This will cluster the data and visualize it, highlighting core points and marking outliers as separate clusters.
+
+## 🌐 Sources
+1. [hex.tech - When and Why To Choose Density-Based Methods](https://hex.tech/blog/comparing-density-based-methods/#:~:text=DBSCAN%20is%20a%20density%2Dbased)
+2. [newhorizons.com - DBSCAN vs. K-Means: A Guide in Python](https://www.newhorizons.com/resources/blog/dbscan-vs-kmeans-a-guide-in-python)
+
+<a id="dbt"></a>
+# Dbt {#dbt}
+
+
+Data build tool is an open-source framework designed for [Data Transformation](#data-transformation) within a modern data stack. 
+
+It enables analysts and engineers to transform, model, and manage data using [SQL](#sql) while <mark>adhering to software engineering best practices</mark> like version control, testing, and [Documentation & Meetings](#documentation--meetings). 
+
+### Key Concepts of dbt:
+1. **SQL-based Transformation**: dbt allows users to write SQL queries to define transformations and models, making it accessible for analysts who are already familiar with SQL. It doesn't handle extraction or loading of data, but focuses purely on transforming data that is already in a data warehouse.
+
+2. **Modular and Reusable Models**: dbt encourages the creation of modular, <mark>reusable SQL "models."</mark> Each model represents a transformation, and these models can be built on top of each other. A model is essentially a SQL query stored as a `.sql` file that dbt uses to transform raw data into a refined dataset. Models are run in sequence, with dbt handling dependencies between models.
+
+3. **Version Control and Collaboration**: dbt integrates with Git for version control, making it easy for teams to collaborate, track changes, and roll back to previous versions if needed. This promotes transparency and accountability within the data team.
+
+4. **Testing**: dbt allows users to write and run tests to ensure data integrity and consistency. You can define tests for specific models or fields, like checking for non-null values or ensuring data uniqueness.
+
+5. **Documentation**: dbt auto-generates documentation from your models, providing a clear overview of your data transformations, lineage, and dependencies. You can also add descriptions for models and fields to improve the clarity of your data pipelines.
+
+6. **[Data Lineage](#data-lineage)**: dbt automatically tracks the lineage of your data by mapping dependencies between models. This makes it easy to understand how data flows through the pipeline and where any upstream or downstream issues might originate.
+
+7. **Extensibility**: dbt has a plugin architecture that allows users to extend functionality. For example, there are adapters for popular data warehouses like Snowflake, BigQuery, Redshift, and others, making dbt highly flexible in different data stack environments.
+
+8. **Cloud and Core Versions**: 
+   - **dbt Core** is the open-source version that you run locally or in your cloud infrastructure.
+   - **dbt Cloud** is a fully managed service that adds features like scheduling, logging, and a web-based IDE for dbt workflows.
+
+### Workflow with dbt:
+1. **Data Loading**: First, data is loaded into a data warehouse from various sources using ELT tools (e.g., Fivetran, Stitch).
+2. **Transform with dbt**: Using dbt, you write SQL models to clean, transform, and aggregate the raw data into useful, analytical datasets.
+3. **Build Data Models**: You organize your models into layers, often referred to as staging, intermediate, and final models.
+4. **Testing and Documentation**: Run tests to validate data, generate lineage diagrams, and create documentation.
+5. **Deploy**: Schedule or trigger dbt jobs to run in production environments, ensuring consistent and accurate data transformations.
+
+### Example of a dbt Model:
+```sql
+-- models/staging_orders.sql
+WITH raw_orders AS (
+    SELECT * FROM {{ ref('raw_orders_data') }}
+)
+SELECT 
+    order_id,
+    customer_id,
+    order_date,
+    amount
+FROM raw_orders
+WHERE order_status = 'completed';
+```
+In this model:
+- `ref('raw_orders_data')` is referencing another model that contains raw order data.
+- The model selects and transforms only the completed orders.
+
+### Benefits of Using dbt:
+1. **Analyst Empowerment**: dbt empowers data analysts to own the transformation process using SQL, reducing dependency on data engineers for transformations.
+2. **Version Control and Testing**: Built-in version control and testing improve data reliability and reduce risks of errors in production.
+3. **Modularity and Scalability**: The modular nature of dbt models makes it easier to scale transformations and manage complex pipelines.
+4. **Transparency and Documentation**: dbt creates clear documentation and lineage automatically, improving visibility across teams.
+
+### Tools Integrating with dbt:
+- **Data Warehouses**: Redshift, Snowflake, BigQuery, Postgres.
+- **[ELT](#elt) Tools**: Stitch, Fivetran, Airbyte (for the extraction and loading phase).
+- **Version Control**: GitHub, GitLab, Bitbucket (for managing dbt code).
+  
+### Resources:
+https://www.getdbt.com/blog/what-exactly-is-dbt
+[dbt](https://docs.getdbt.com/docs/introduction) 
+
+
+
+[dbt](#dbt)
+   **Tags**: #data_transformation, #data_tools
+
 <a id="debugging-ipynb"></a>
 # Debugging Ipynb {#debugging-ipynb}
 
@@ -5542,6 +5623,40 @@ Disadvantages:
 
 
 
+<a id="declarative"></a>
+# Declarative {#declarative}
+
+
+In a **declarative data pipeline**, the focus is on *what* needs to be achieved, not *how* it should be executed. You define the desired outcome or the data products, and the system takes care of the underlying execution details, such as the order in which tasks are performed. This is in contrast to an **imperative** pipeline, where the developer explicitly specifies the steps and the order in which they should be executed. Here's a breakdown of the key aspects:
+
+### **Declarative Programming**:
+- Focuses on *<mark>what</mark>* needs to be done.
+- Describes the desired state or result without dictating the control flow or step-by-step process.
+- In a data pipeline context, a declarative approach might involve specifying the desired data products and letting the system optimize how and when different parts of the pipeline are executed.
+- Example: [SQL](#sql) is often considered declarative because you specify the result you want (e.g., the output of a query) without explicitly stating the steps for how the database engine should retrieve it.
+
+### **Imperative Programming**:
+- Focuses on *<mark>how</mark>* tasks should be done.
+- Specifies the <mark>control flow</mark> explicitly, dictating the exact steps to be performed and the order of operations.
+- In a data pipeline, this would involve writing scripts that detail each step in the transformation and loading process in the sequence they must be executed.
+- Example: A series of Python scripts that process data in a specific sequence.
+
+### **Advantages of Declarative Pipelines**:
+1. **Easier to Debug**: Since the desired state is clearly defined, it is easier to identify discrepancies between the intended outcome and the current state. This can help pinpoint issues in the pipeline.
+   
+2. **Automation**: Declarative systems often enable better automation since the system has the flexibility to determine the most efficient way to achieve the defined goals.
+
+3. **Simplicity and Intent**: Declarative approaches focus on the *<mark>intent</mark>* of the program, making it easier for others to understand what the program is supposed to do without having to dive into implementation details. 
+
+4. **Reactivity**: The pipeline can automatically adjust when inputs or dependencies change. For example, if certain data dependencies change, the system can rerun the necessary parts of the pipeline to maintain consistency.
+
+### **Example in Data Engineering**:
+
+A declarative approach to data engineering would involve **Functional Data Engineering** principles. This involves treating data as immutable and focusing on defining the desired transformations and outputs in a declarative manner. Instead of writing imperative scripts for each data transformation step, you'd define the desired outputs, and the system would optimize the execution.
+
+### **Use Cases**:
+Declarative pipelines are particularly useful in [data lineage](#data-lineage), **[Data Observability](#data-observability)**, and [Data Quality](#data-quality) monitoring**. By defining *what* data products should exist and what their properties should be, it's easier to track changes and ensure the consistency and quality of data. It also makes systems more resilient to changes, as the declarative nature enables the system to adjust the execution order or method dynamically, based on current conditions.
+
 <a id="deep-learning-frameworks"></a>
 # Deep Learning Frameworks {#deep-learning-frameworks}
 
@@ -5703,6 +5818,13 @@ absorbed weights at training
 
 
 <a id="demand-forecasting"></a>
+#question"
+  - energy
+importance: 
+engagement: 
+recency_of_interest: 
+category: CAREER
+---
 # Demand Forecasting {#demand-forecasting}
 
 
@@ -5732,6 +5854,17 @@ Can tell which <mark>features are the most similar</mark> with [Dendrograms](#de
 
 
 
+
+<a id="dependency-manager"></a>
+# Dependency Manager {#dependency-manager}
+
+[Virtual environments](#virtual-environments)
+
+[requirements.txt](#requirementstxt)
+
+[TOML](#toml)
+
+[Poetry](#poetry)
 
 <a id="design-thinking-questions"></a>
 # Design Thinking Questions {#design-thinking-questions}
@@ -6421,6 +6554,9 @@ Multi use containers
 
 
 
+<a id="documentation--meetings"></a>
+# Documentation & Meetings {#documentation--meetings}
+
 ## Tools  
 - [pdoc](#pdoc) – Auto-generate Python API documentation  
 - [Mermaid](#mermaid) – Create diagrams and flowcharts from text in a Markdown-like syntax  
@@ -6534,6 +6670,105 @@ from tensorflow.keras.layers import Dropout
 # The dropout rate (e.g., 0.5) specifies the fraction of neurons to drop during training. A rate of 0.5 means that half of the neurons will be dropped at each iteration.
 Dropout(0.5)
 ```
+
+<a id="ds--ml-portal"></a>
+# DS & ML Portal {#ds--ml-portal}
+
+### Machine Learning Fundamentals
+
+- [ML_Tools](#ml_tools)
+- [Supervised Learning](#supervised-learning)
+- [Unsupervised Learning](#unsupervised-learning)
+- [Reinforcement learning](#reinforcement-learning)
+- [Deep Learning](#deep-learning)
+
+### Model Training and Optimisation
+
+- [Learning rate](#learning-rate)
+- [Overfitting](#overfitting)
+- [Regularisation](#regularisation)
+- [Hyperparameter](#hyperparameter)
+- [Hyperparameter Tuning](#hyperparameter-tuning)
+- [Model Optimisation](#model-optimisation)
+- [Model Selection](#model-selection)
+- [Vanishing and exploding gradients problem](#vanishing-and-exploding-gradients-problem)
+
+### Feature Engineering and Data Handling
+
+- [Feature Selection](#feature-selection)
+- [Feature Engineering](#feature-engineering)
+- [Imbalanced Datasets](#imbalanced-datasets)
+- [Outliers](#outliers)
+- [Anomaly Detection](#anomaly-detection)
+- [Multicollinearity](#multicollinearity)
+- [Dimensionality Reduction](#dimensionality-reduction)
+- [Clustering](#clustering)
+### Machine Learning Models
+
+Classification Models
+
+- [Classification](#classification)
+- [Binary Classification](#binary-classification)
+- [Support Vector Machines](#support-vector-machines)
+- [Decision Tree](#decision-tree)
+- [Random Forests](#random-forests)
+- [K-nearest neighbours](#k-nearest-neighbours)
+- [Logistic Regression](#logistic-regression)
+
+Regression Models
+
+- [Regression](#regression)
+- [Linear Regression](#linear-regression)
+
+Boosting and Optimisation
+
+- [Gradient Descent](#gradient-descent)
+- [Gradient Boosting](#gradient-boosting)
+- [XGBoost](#xgboost)
+
+### Deep Learning and Neural Networks
+ 
+- [BERT](#bert)
+- [LSTM](#lstm)
+- [Recurrent Neural Networks](#recurrent-neural-networks)
+- [Transformer](#transformer)
+- [Attention mechanism](#attention-mechanism)
+- [Neural network](#neural-network)
+
+### Model Evaluation and Metrics
+
+- [Cost Function](#cost-function)
+- [Loss function](#loss-function)
+- [Cross Entropy](#cross-entropy)
+- [Evaluation Metrics](#evaluation-metrics)
+- [Model Evaluation](#model-evaluation)
+- [Accuracy](#accuracy)
+- [Precision](#precision)
+- [Recall](#recall)
+
+### Algorithms and Frameworks
+
+- [Machine Learning Algorithms](#machine-learning-algorithms)
+- [Optimisation techniques](#optimisation-techniques)
+- [Optimisation function](#optimisation-function)
+- [Model Ensemble](#model-ensemble)
+- [Batch Processing](#batch-processing)
+- [Apache Spark](#apache-spark)
+- [Sklearn](#sklearn)
+
+### Statistical and Data Analysis Concepts
+
+- [Distributions](#distributions)
+- [Statistics](#statistics)
+- [Correlation](#correlation)
+- [Data Analysis](#data-analysis)
+- [Data Quality](#data-quality)
+- [Principal Component Analysis](#principal-component-analysis)
+
+### Misc
+
+- [Interpretability](#interpretability)
+- [RAG](#rag)
 
 <a id="duckdb-in-python"></a>
 # Duckdb In Python {#duckdb-in-python}
@@ -6669,6 +6904,9 @@ Resources:
 - [Querying](#querying)
 
 
+<a id="dummy-variable-trap"></a>
+# Dummy variable trap {#dummy-variable-trap}
+
 ### Key Takeaways:
 
 - The dummy variable trap occurs due to [multicollinearity](#multicollinearity), where <mark>one dummy variable can be perfectly predicted from others.</mark>
@@ -6707,169 +6945,7 @@ If you drop the `West Windsor` dummy column, your table would look like this:
 
 Now, your model will use the `West Windsor` category as the baseline. The coefficients of `Robbinsville` and `Princeton` in the regression model will indicate how much higher or lower their prices are compared to `West Windsor`.
 
-<a id="dagster"></a>
-# Dagster {#dagster}
-
-
-[Dagster](https://dagster.io/) is a [data orchestrator] focusing on data-aware scheduling that supports the whole development [Data Lifecycle Management](#data-lifecycle-management)  lifecycle, with integrated lineage and observability, a [declarative](#declarative) programming model, and best-in-class testability.
-
-Key features are: 
-- Manage your data assets with code
-- A single pane of glass for your data platform 
-
-<a id="data-asset"></a>
-# Data Asset {#data-asset}
-
-
-
-<a id="data-lineage"></a>
-# Data Lineage {#data-lineage}
-
-
-Data lineage uncovers the [Data Lifecycle Management](#data-lifecycle-management) life cycle of data. It aims to show the complete data flow from start to finish. 
-
-Data lineage is the process of understanding, recording, and visualizing data as it flows from data sources to consumption. 
-
-This includes all [Data Transformation](Data%20Transformation.md) (what changed and why).
-
-<a id="data-literacy"></a>
-# Data Literacy {#data-literacy}
-
-
-Data literacy is the ability to read, work with, analyze, and argue with data in order to extract meaningful information and make informed decisions. This skill set is crucial for employees across various levels of an organization, especially as data-driven decision-making becomes increasingly important.
-
-Organizations should invest in data literacy training programs to empower their employees with the necessary skills to effectively engage with data. A data-literate employee can read charts, draw correct conclusions, recognize when data is being used inappropriately or misleadingly, and gain a deeper understanding of the business domain. This enables them to communicate more effectively using a common language of data, spot unexpected operational issues, identify root causes, and prevent poor decision-making due to data misinterpretation.
-
-Examples of data literacy in action include:
-
-* Implementing the Adoptive Framework to create a Data Literacy Program.
-* Employees working with spreadsheets to understand the rationale behind data-driven decisions and advocating for alternative courses of action.
-* Work teams identifying areas where data needs clarification for a project.
-
-By nurturing a data-literate workforce, businesses can improve their ability to make informed decisions, drive innovation, and achieve better outcomes.
-
-
-<a id="dbt"></a>
-# Dbt {#dbt}
-
-
-Data build tool is an open-source framework designed for [Data Transformation](#data-transformation) within a modern data stack. 
-
-It enables analysts and engineers to transform, model, and manage data using [SQL](#sql) while <mark>adhering to software engineering best practices</mark> like version control, testing, and [Documentation & Meetings](#documentation--meetings). 
-
-### Key Concepts of dbt:
-1. **SQL-based Transformation**: dbt allows users to write SQL queries to define transformations and models, making it accessible for analysts who are already familiar with SQL. It doesn't handle extraction or loading of data, but focuses purely on transforming data that is already in a data warehouse.
-
-2. **Modular and Reusable Models**: dbt encourages the creation of modular, <mark>reusable SQL "models."</mark> Each model represents a transformation, and these models can be built on top of each other. A model is essentially a SQL query stored as a `.sql` file that dbt uses to transform raw data into a refined dataset. Models are run in sequence, with dbt handling dependencies between models.
-
-3. **Version Control and Collaboration**: dbt integrates with Git for version control, making it easy for teams to collaborate, track changes, and roll back to previous versions if needed. This promotes transparency and accountability within the data team.
-
-4. **Testing**: dbt allows users to write and run tests to ensure data integrity and consistency. You can define tests for specific models or fields, like checking for non-null values or ensuring data uniqueness.
-
-5. **Documentation**: dbt auto-generates documentation from your models, providing a clear overview of your data transformations, lineage, and dependencies. You can also add descriptions for models and fields to improve the clarity of your data pipelines.
-
-6. **[Data Lineage](#data-lineage)**: dbt automatically tracks the lineage of your data by mapping dependencies between models. This makes it easy to understand how data flows through the pipeline and where any upstream or downstream issues might originate.
-
-7. **Extensibility**: dbt has a plugin architecture that allows users to extend functionality. For example, there are adapters for popular data warehouses like Snowflake, BigQuery, Redshift, and others, making dbt highly flexible in different data stack environments.
-
-8. **Cloud and Core Versions**: 
-   - **dbt Core** is the open-source version that you run locally or in your cloud infrastructure.
-   - **dbt Cloud** is a fully managed service that adds features like scheduling, logging, and a web-based IDE for dbt workflows.
-
-### Workflow with dbt:
-1. **Data Loading**: First, data is loaded into a data warehouse from various sources using ELT tools (e.g., Fivetran, Stitch).
-2. **Transform with dbt**: Using dbt, you write SQL models to clean, transform, and aggregate the raw data into useful, analytical datasets.
-3. **Build Data Models**: You organize your models into layers, often referred to as staging, intermediate, and final models.
-4. **Testing and Documentation**: Run tests to validate data, generate lineage diagrams, and create documentation.
-5. **Deploy**: Schedule or trigger dbt jobs to run in production environments, ensuring consistent and accurate data transformations.
-
-### Example of a dbt Model:
-```sql
--- models/staging_orders.sql
-WITH raw_orders AS (
-    SELECT * FROM {{ ref('raw_orders_data') }}
-)
-SELECT 
-    order_id,
-    customer_id,
-    order_date,
-    amount
-FROM raw_orders
-WHERE order_status = 'completed';
-```
-In this model:
-- `ref('raw_orders_data')` is referencing another model that contains raw order data.
-- The model selects and transforms only the completed orders.
-
-### Benefits of Using dbt:
-1. **Analyst Empowerment**: dbt empowers data analysts to own the transformation process using SQL, reducing dependency on data engineers for transformations.
-2. **Version Control and Testing**: Built-in version control and testing improve data reliability and reduce risks of errors in production.
-3. **Modularity and Scalability**: The modular nature of dbt models makes it easier to scale transformations and manage complex pipelines.
-4. **Transparency and Documentation**: dbt creates clear documentation and lineage automatically, improving visibility across teams.
-
-### Tools Integrating with dbt:
-- **Data Warehouses**: Redshift, Snowflake, BigQuery, Postgres.
-- **[ELT](#elt) Tools**: Stitch, Fivetran, Airbyte (for the extraction and loading phase).
-- **Version Control**: GitHub, GitLab, Bitbucket (for managing dbt code).
-  
-### Resources:
-https://www.getdbt.com/blog/what-exactly-is-dbt
-[dbt](https://docs.getdbt.com/docs/introduction) 
-
-
-
-[dbt](#dbt)
-   **Tags**: #data_transformation, #data_tools
-
-<a id="declarative"></a>
-# Declarative {#declarative}
-
-
-In a **declarative data pipeline**, the focus is on *what* needs to be achieved, not *how* it should be executed. You define the desired outcome or the data products, and the system takes care of the underlying execution details, such as the order in which tasks are performed. This is in contrast to an **imperative** pipeline, where the developer explicitly specifies the steps and the order in which they should be executed. Here's a breakdown of the key aspects:
-
-### **Declarative Programming**:
-- Focuses on *<mark>what</mark>* needs to be done.
-- Describes the desired state or result without dictating the control flow or step-by-step process.
-- In a data pipeline context, a declarative approach might involve specifying the desired data products and letting the system optimize how and when different parts of the pipeline are executed.
-- Example: [SQL](#sql) is often considered declarative because you specify the result you want (e.g., the output of a query) without explicitly stating the steps for how the database engine should retrieve it.
-
-### **Imperative Programming**:
-- Focuses on *<mark>how</mark>* tasks should be done.
-- Specifies the <mark>control flow</mark> explicitly, dictating the exact steps to be performed and the order of operations.
-- In a data pipeline, this would involve writing scripts that detail each step in the transformation and loading process in the sequence they must be executed.
-- Example: A series of Python scripts that process data in a specific sequence.
-
-### **Advantages of Declarative Pipelines**:
-1. **Easier to Debug**: Since the desired state is clearly defined, it is easier to identify discrepancies between the intended outcome and the current state. This can help pinpoint issues in the pipeline.
-   
-2. **Automation**: Declarative systems often enable better automation since the system has the flexibility to determine the most efficient way to achieve the defined goals.
-
-3. **Simplicity and Intent**: Declarative approaches focus on the *<mark>intent</mark>* of the program, making it easier for others to understand what the program is supposed to do without having to dive into implementation details. 
-
-4. **Reactivity**: The pipeline can automatically adjust when inputs or dependencies change. For example, if certain data dependencies change, the system can rerun the necessary parts of the pipeline to maintain consistency.
-
-### **Example in Data Engineering**:
-
-A declarative approach to data engineering would involve **Functional Data Engineering** principles. This involves treating data as immutable and focusing on defining the desired transformations and outputs in a declarative manner. Instead of writing imperative scripts for each data transformation step, you'd define the desired outputs, and the system would optimize the execution.
-
-### **Use Cases**:
-Declarative pipelines are particularly useful in [data lineage](#data-lineage), **[Data Observability](#data-observability)**, and [Data Quality](#data-quality) monitoring**. By defining *what* data products should exist and what their properties should be, it's easier to track changes and ensure the consistency and quality of data. It also makes systems more resilient to changes, as the declarative nature enables the system to adjust the execution order or method dynamically, based on current conditions.
-
-<a id="dependency-manager"></a>
-# Dependency Manager {#dependency-manager}
-
-[Virtual environments](#virtual-environments)
-
-[requirements.txt](#requirementstxt)
-
-[TOML](#toml)
-
-[Poetry](#poetry)
-
-# E {#e}
-
-# E
-
+<a id="eda"></a>
 # Eda {#eda}
 
 
@@ -6898,6 +6974,84 @@ In [ML_Tools](#ml_tools) see:
 # Eda_Pandas.Py {#eda_pandaspy}
 
 
+
+<a id="edge-machine-learning-models"></a>
+# Edge Machine Learning Models {#edge-machine-learning-models}
+
+**Edge ML** refers to deploying machine learning models directly on edge devices, such as IoT sensors, smartphones, or embedded systems, instead of relying on cloud-based processing. This is crucial in scenarios requiring low-latency, real-time decision-making, or environments with limited connectivity.
+
+#### Key Characteristics of Edge ML Models:
+
+1. **Low Latency**
+   - Models running at the edge can make real-time decisions with minimal delay. This is critical in applications like autonomous vehicles, industrial automation, or real-time health monitoring, where delays can have serious consequences.
+
+2. **Reduced Bandwidth Usage**
+   - By processing data locally, edge ML models reduce the need to send large amounts of data to the cloud for analysis. This is particularly valuable in environments with limited or expensive connectivity (e.g., remote locations or bandwidth-constrained networks).
+   
+3. **Privacy Preservation**
+   - Processing sensitive data on-device, instead of sending it to the cloud, enhances privacy and reduces the risk of data breaches. This is important in healthcare, financial services, or any scenario involving personal data.
+
+4. **Energy Efficiency**
+   - Edge devices often have limited power resources. As a result, models deployed at the edge need to be optimized for low energy consumption, ensuring they can operate for extended periods without requiring frequent battery replacements or recharging.
+
+#### Common Applications of Edge ML:
+   
+1. **Autonomous Systems (e.g., Drones, Robots, Vehicles)**
+   - Autonomous systems rely on real-time decision-making for navigation, obstacle detection, and control. Edge ML allows these systems to react instantaneously to their surroundings without depending on external servers.
+
+3. **Smart Cities and Industrial IoT**
+   - Edge ML powers applications such as **traffic monitoring**, **environmental sensing**, and **predictive maintenance** in smart factories. For example, sensors in factories can use edge models to predict equipment failure before it occurs, ensuring smooth operations without cloud reliance.
+
+#### Challenges in Edge ML:
+
+1. **Model Compression**
+   - Since edge devices often have limited storage and computational power, ML models need to be compressed or optimized (e.g., using techniques like quantization, pruning, or knowledge distillation) to run efficiently while maintaining accuracy.
+
+2. **On-Device Model Updates**
+   - Keeping models updated without frequent cloud interactions is a challenge. Edge devices need mechanisms for **incremental learning** or efficient updates without disrupting normal operations.
+#### Popular Frameworks for Edge ML:
+
+- **TensorFlow Lite**: A lightweight version of TensorFlow, designed to run on mobile and embedded devices.
+- **[PyTorch](#pytorch) Mobile**: PyTorch’s framework for deploying ML models on mobile devices.
+- **[ONNX](#onnx) Runtime**: Optimized for running machine learning models on various platforms, including edge devices.
+- **Edge Impulse**: A platform specifically for building ML models for edge devices, particularly for IoT applications.
+
+Edge ML is driving innovation in industries requiring decentralized, real-time intelligence, enabling devices to make smart decisions locally while minimizing reliance on cloud resources.
+
+<a id="education-and-training"></a>
+# Education And Training {#education-and-training}
+
+Adaptive Learning Systems
+
+- **Overview**: Adaptive learning systems use technology to tailor educational experiences to individual student needs. RL is instrumental in personalizing these systems.
+- **Applications**:
+    - **Personalized Learning Paths**: RL algorithms can create customized learning paths for students based on their performance, preferences, and engagement levels, adapting content delivery in real-time.
+    - **Feedback and Assessment**: Adaptive systems can provide immediate feedback based on student responses, reinforcing concepts through targeted exercises and adjusting difficulty levels as needed.
+    - **Engagement Strategies**: By analyzing student interactions, RL can suggest motivational strategies, such as gamification elements or timely reminders, to keep students engaged and motivated.
+
+<a id="elastic-net"></a>
+# Elastic Net {#elastic-net}
+
+
+This method combines both L1 ([Lasso](#lasso)) and L2 ([Ridge](#ridge)) regularization by adding both absolute and squared penalties to the loss function. It strikes a balance between Ridge and Lasso.
+
+It is particularly useful when you have high-dimensional datasets with highly correlated features.
+
+The Elastic Net loss function is:
+
+    $$\text{Loss} = \text{MSE} + \lambda_1 \sum_{i=1}^{n} |w_i| + \lambda_2 \sum_{i=1}^{n} w_i^2$$
+    
+where $\lambda_1$ controls the L1 regularization and $\lambda_2$ controls the L2 regularization.
+
+#### Code
+
+```python
+from sklearn.linear_model import ElasticNet
+
+# Initialize an Elastic Net model
+model = ElasticNet(alpha=0.1, l1_ratio=0.5)  # l1_ratio controls the L1/L2 mix
+model.fit(X_train, y_train)
+```
 
 <a id="elt"></a>
 # Elt {#elt}
@@ -6928,6 +7082,311 @@ Historically, ETL was preferred for reasons that are now less relevant:
 
 [ELT](#elt)
    **Tags**: #data_transformation, #data_integration
+
+<a id="embedded-methods"></a>
+# Embedded Methods {#embedded-methods}
+
+Embedded methods for [Feature Selection](#feature-selection) <mark>integrate feature selection directly into the model training process.</mark>
+
+Embedded methods provide a convenient and efficient approach to feature selection by seamlessly integrating it into the model training process, ultimately leading to models that are more parsimonious and potentially more interpretable.
+
+1. **Incorporated into Model Training**: Unlike [Filter method](#filter-method) and [Wrapper Methods](#wrapper-methods), which involve feature selection as a separate step from model training, embedded methods perform feature selection simultaneously with model training. This means that feature importance or relevance is determined within the context of the model itself.
+
+2. **Regularization Techniques**: Embedded methods commonly use [Regularisation](#regularisation) techniques to penalize the inclusion of unnecessary features during model training. 
+
+3. **Automatic Feature Selection**: Embedded methods automatically select the most relevant features by learning feature importance during the training process. The model adjusts the importance of features iteratively based on their contribution to minimizing the [Loss function](#loss-function).
+
+4. **Examples of Embedded Methods**:
+   - **[Lasso](#lasso) (L1 Regularization)**:
+   - [Elastic Net](#elastic-net): Elastic Net combines L1 ([Lasso](#lasso)) and L2 ([Ridge](#ridge)) regularization .
+   - **Tree-based Methods**: [Decision Tree](#decision-tree) and ensemble methods like [Random Forests](#random-forests) and [Gradient Boosting](#gradient-boosting) inherently perform feature selection during training by selecting the most informative features at each split node of the tree.
+
+5. **Advantages**:
+   - Simplicity: Embedded methods simplify the feature selection process by integrating it into model training, reducing the need for additional preprocessing steps.
+   - Efficiency: Because feature selection is performed during model training, embedded methods can be more computationally efficient compared to wrapper methods, which require training multiple models.
+
+6. **Considerations**:
+   - Hyperparameter Tuning: Tuning regularization parameters or other model-specific parameters may be necessary to optimize feature selection performance.
+   - Model [interpretability](#interpretability): While embedded methods can automatically select features, interpreting the resulting model may be challenging, especially for complex models like ensemble methods.
+
+
+
+<a id="embeddings-for-oov-words"></a>
+# Embeddings For Oov Words {#embeddings-for-oov-words}
+
+Can you find words in a [Vector Embedding|word embedding](#vector-embeddingword-embedding) that where not used to creates the embedding?
+
+Yes, but with important caveats. If a word is not in the [spaCy](#spacy) model’s vocabulary with a vector, then:
+
+### ✅ What you can do
+
+#### Option 1: Filter out words without vectors (what you're doing now)
+This is the cleanest option:
+```python
+if token.has_vector:
+    embeddings.append(token.vector)
+    valid_words.append(word)
+```
+
+#### Option 2: Fallback to character-level embeddings (optional)
+If you're using `en_core_web_lg`, spaCy sometimes provides approximate vectors for out-of-vocabulary (OOV) words using subword features. But with `en_core_web_md`, OOV words truly lack vector meaning.
+
+#### Option 3: Use a different embedding model
+Use FastText or transformer-based models (e.g., Sentence Transformers), which can produce [embeddings for OOV words](#embeddings-for-oov-words) based on subword information or context.
+
+Example with [FastText](#fasttext) (using gensim):
+```python
+from gensim.models import KeyedVectors
+
+model = KeyedVectors.load_word2vec_format("cc.en.300.vec")  # or download from FastText
+embedding = model.get_vector("unseenword")  # FastText will synthesize it
+```
+
+### 💡 Summary
+
+| Approach                     | Handles OOV? | Notes |
+|-----------------------------|--------------|-------|
+| spaCy `en_core_web_md`      | ❌            | Skips words without vectors (recommended) |
+| spaCy `en_core_web_lg`      | ⚠️ Sometimes  | May infer vectors using subword info |
+| FastText / GloVe            | ✅            | Good for unseen words |
+| Sentence Transformers (BERT)| ✅            | Contextualized, ideal for phrases/sentences |
+
+#NLP #ml_process #ml_optimisation
+
+<a id="emergent-behavior"></a>
+# Emergent Behavior {#emergent-behavior}
+
+
+
+<a id="encoding-categorical-variables"></a>
+# Encoding Categorical Variables {#encoding-categorical-variables}
+
+
+### Overview
+
+Categorical variables need to be converted into numerical representations to be used in models, particularly in [Regression](#regression) analysis. This process is essential for transforming categorical results into a format that algorithms can interpret.
+
+### Label Encoding
+
+This method assigns a unique integer to each category in the variable.
+
+```python
+from sklearn.preprocessing import LabelEncoder
+
+label_encoder = LabelEncoder()
+var1_cat = df['var1']  # Replace df with your DataFrame
+var1_encoded = label_encoder.fit_transform(var1_cat)
+```
+For example, if `df[col]` contains the categories `['apple', 'banana', 'orange']`, the `LabelEncoder` would transform them into `[0, 1, 2]`.
+
+However, keep in mind that this encoding can imply an order or hierarchy in the data, which might not be intended. In some cases, you might want to use `OneHotEncoder` instead, which creates a binary vector for each category.{}
+
+Given a term in the df you can transform it without needing to look up its value.
+```python
+company="google"
+company_n = LabelEncoder().transform([company])
+```
+### One-Hot Encoding
+
+This technique creates a binary column for each category, allowing the model to treat each category as a separate feature.
+
+```python
+from sklearn.preprocessing import OneHotEncoder
+
+binary_encoder = OneHotEncoder(categories='auto')
+var1_1hot = binary_encoder.fit_transform(var1_encoded.reshape(-1, 1))
+var1_1hot_mat = var1_1hot.toarray()
+var1_DF = pd.DataFrame(var1_1hot_mat, columns=['cat1', 'cat2', 'cat3'])  # Adjust column names as needed
+var1_DF.head()
+```
+
+Understanding OneHotEncoder:
+
+The `OneHotEncoder` from `sklearn.preprocessing` is used to convert categorical integer values into a format that can be provided to machine learning algorithms to do a better job in prediction. It creates a binary column for each category and returns a sparse matrix or dense array.
+
+### Converting All Categorical Variables to Dummies
+
+To convert all categorical variables in a DataFrame to dummy variables, you can use the following loop:
+
+```python
+for col in df.columns:
+    if df[col].dtype == 'object':
+        dummies = pd.get_dummies(df[col], drop_first=False)
+        dummies = dummies.add_prefix(f'{col}_')
+        df.drop(col, axis=1, inplace=True)
+        df = df.join(dummies)
+```
+
+Dummy Variable Trap:
+When using one-hot encoding, it's important to avoid the **dummy variable trap**, which occurs when one category can be perfectly predicted from the others. To prevent this, you can drop one of the dummy variables, as one column is sufficient to represent a binary choice (0 or 1).
+
+### Alternative Encoding Method
+Another way to encode categorical variables is by mapping them directly to integers:
+
+```python
+dataset['var1'] = dataset['var1'].map({'A': 0, 'B': 1, 'C': 2}).astype(int)
+```
+### Related Topics
+- **[Regression](#regression)**: Understanding how regression models utilize encoded variables.
+- **[Feature Engineering](#feature-engineering)**: Techniques to enhance model performance through better feature representation.
+### Overview
+
+- Categorical variables need to be converted into numerical representations for use in models. This is essential for transforming categorical data into a format that algorithms can interpret.
+
+### Methods
+
+- Label Encoding: Assigns a unique integer to each category.
+- One-Hot Encoding: Creates a binary column for each category, allowing the model to treat each category as a separate feature.
+
+### Example Code
+
+```python
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder
+import pandas as pd
+
+# Label Encoding
+label_encoder = LabelEncoder()
+var1_encoded = label_encoder.fit_transform(df['var1'])
+
+# One-Hot Encoding
+binary_encoder = OneHotEncoder(categories='auto')
+var1_1hot = binary_encoder.fit_transform(var1_encoded.reshape(-1, 1))
+var1_1hot_mat = var1_1hot.toarray()
+var1_DF = pd.DataFrame(var1_1hot_mat, columns=['cat1', 'cat2', 'cat3'])
+```
+
+<a id="energy-abm"></a>
+# Energy ABM {#energy-abm}
+
+- **Complex Systems Understanding**: Energy systems involve numerous stakeholders (producers, consumers, regulators) with diverse interests and behaviors. [Agent-Based Modelling|ABM](#agent-based-modellingabm) helps capture this complexity, providing a clearer picture of system dynamics.
+- **Adaptive Behavior**: Agents in ABM can adapt their behavior based on interactions, mirroring how consumers and producers might respond to incentives or changes in the market.
+- **Scenario Analysis**: ABM allows for "what-if" analyses, enabling stakeholders to explore different scenarios, such as the impact of implementing new technologies or policies on energy systems.
+- **Data-Driven Insights**: With the rise of smart meters and IoT devices, ABM can leverage real-time data to improve model accuracy and relevancy, enhancing decision-making processes.
+
+<a id="energy-storage"></a>
+# Energy Storage {#energy-storage}
+
+
+## Energy Storage
+
+Battery farms exist.
+
+Stored energy can be traded.
+
+Stored energy can be stored using distributed system such as EV cars.
+
+<a id="energy"></a>
+# Energy {#energy}
+
+
+Areas of interest:
+- [Smart Grids](#smart-grids)
+- [Energy Storage](#energy-storage)
+- [Demand forecasting](#demand-forecasting)
+- [Network Design](#network-design)
+- [Energy ABM](#energy-abm)
+
+Questions:
+- [How to model to improve demand forecasting](#how-to-model-to-improve-demand-forecasting)
+- What patterns can be identified in consumer behavior data to inform energy pricing strategies?
+- How can predictive maintenance be implemented using data from smart sensors in energy infrastructure?
+
+**Techniques:**
+- **[Differential Equations](#differential-equations)**: Used to model dynamic systems in energy generation and consumption. For example, they can describe the behavior of power systems over time or the thermal dynamics of energy storage systems.
+- **[Stochastic Modeling](#stochastic-modeling)**: Involves random variables to model uncertainties in energy production (e.g., variability in solar or wind energy) and consumption.
+- [Agent-Based Modelling](#agent-based-modelling)Simulates interactions of agents (consumers, producers, regulators) to understand complex systems and emergent phenomena in energy markets.
+- **Time Series Analysis**: Analyzing historical data to forecast future energy demand or production trends.
+- **[Regression](#regression) Analysis**: Used to model relationships between different variables, such as energy prices and consumption patterns.
+- [Neural network|Neural Network](#neural-networkneural-network) Particularly deep learning, is applied for complex pattern recognition in large datasets, such as detecting anomalies in energy consumption or predicting equipment failures.
+
+
+Dymanic pricing, incentised load management, local generation 
+  
+Use green energy if on grid
+
+<a id="environment-variables"></a>
+# Environment Variables {#environment-variables}
+
+Solution 1: Set Environment Variables Permanently (Recommended)
+This ensures that environment variables persist across sessions.
+
+On Windows (Permanent)
+Open Control Panel → System → Advanced system settings → Environment Variables.
+
+Under System Variables, click New.
+
+Variable Name: PG_USER
+
+Variable Value: postgres
+
+Click New again.
+
+Variable Name: PG_PASSWORD
+
+Variable Value: your_password
+
+Click OK and restart your computer.
+
+Once restarted, Jupyter Notebook should be able to access the variables.
+
+<a id="epoch"></a>
+# Epoch {#epoch}
+
+
+An epoch in machine learning is a single pass through the entire training dataset. The number of epochs, denoted as $N$, determines how many times the data is applied to the model.
+
+Why Use Multiple Epochs?
+- **Repetition for Learning:** The data is applied to the model $N$ times to improve learning and accuracy. For example, if $N = 10$, the model will see the entire dataset 10 times.
+
+Example
+```
+Epoch 1/10
+6250/6250 [<mark>=</mark><mark>=</mark><mark>=</mark><mark>=</mark><mark>=</mark><mark>=</mark>] - 6s 910us/step - loss: 0.1782
+```
+
+- **Epoch 1/10:** Indicates the model is currently on the first epoch out of a total of 10.
+- **Batches:** For efficiency, the dataset is divided into smaller groups called 'batches'. In TensorFlow, the default batch size is 32. With 200,000 examples, this results in 6,250 batches.
+- **Batch Execution:** The notation `6250/6250` shows the progress of batch execution within the current epoch.
+
+
+
+<a id="epub"></a>
+# Epub {#epub}
+
+
+An **EPUB** (short for *electronic publication*) file is a widely used **open eBook format** that is designed for **reflowable content**, meaning it can adapt its layout to fit various screen sizes—unlike PDFs, which preserve a fixed layout.
+
+### Key Features of EPUB
+- **Reflowable Text:** The content adjusts to screen size, font preferences, and orientation. This is ideal for smartphones, tablets, and e-readers like Kobo or Apple Books.
+- **HTML + CSS Based:** Internally, an EPUB file is a compressed archive (`.zip`) that contains HTML files, images, stylesheets, metadata, and a manifest.
+- **Navigation:** It supports **table of contents**, **internal links**, and **chapters** for easy navigation.
+- **Supports Rich Media:** EPUB 3 can include audio, video, interactive elements, and MathML.
+
+### How EPUB Shows “Pages”
+
+EPUB doesn't have fixed "pages" like PDF. Instead:
+
+- The **reading software** (like Apple Books, Calibre, or Kobo) dynamically **splits content into pages** based on screen size, font size, and user settings.
+- Pages can vary in number depending on:
+  - Device screen resolution
+  - Font size or style
+  - Margin settings
+
+Because of this, you can't refer to a fixed page number universally across devices.
+### EPUB vs PDF
+
+| Feature                | EPUB                                 | PDF                                |
+|------------------------|--------------------------------------|------------------------------------|
+| Layout                 | Reflowable                           | Fixed                              |
+| Usability on small screens | Excellent                         | Poor                               |
+| Internal format        | HTML + CSS + XML                     | PostScript-based (binary)          |
+| Navigation             | Flexible (TOC, links, metadata)      | Static (can have TOC, but fixed)   |
+
+
+<a id="estimator"></a>
+# Estimator {#estimator}
+
+Given a sample an estimator is a formula that approximates a population parameter i.e feature
 
 <a id="etl-pipeline-example"></a>
 # Etl Pipeline Example {#etl-pipeline-example}
@@ -7064,341 +7523,6 @@ To improve an ETL process, consider the following enhancements:
 
 [ETL](#etl)
    **Tags**: #data_transformation, #data_integration
-
-<a id="edge-machine-learning-models"></a>
-# Edge Machine Learning Models {#edge-machine-learning-models}
-
-**Edge ML** refers to deploying machine learning models directly on edge devices, such as IoT sensors, smartphones, or embedded systems, instead of relying on cloud-based processing. This is crucial in scenarios requiring low-latency, real-time decision-making, or environments with limited connectivity.
-
-#### Key Characteristics of Edge ML Models:
-
-1. **Low Latency**
-   - Models running at the edge can make real-time decisions with minimal delay. This is critical in applications like autonomous vehicles, industrial automation, or real-time health monitoring, where delays can have serious consequences.
-
-2. **Reduced Bandwidth Usage**
-   - By processing data locally, edge ML models reduce the need to send large amounts of data to the cloud for analysis. This is particularly valuable in environments with limited or expensive connectivity (e.g., remote locations or bandwidth-constrained networks).
-   
-3. **Privacy Preservation**
-   - Processing sensitive data on-device, instead of sending it to the cloud, enhances privacy and reduces the risk of data breaches. This is important in healthcare, financial services, or any scenario involving personal data.
-
-4. **Energy Efficiency**
-   - Edge devices often have limited power resources. As a result, models deployed at the edge need to be optimized for low energy consumption, ensuring they can operate for extended periods without requiring frequent battery replacements or recharging.
-
-#### Common Applications of Edge ML:
-   
-1. **Autonomous Systems (e.g., Drones, Robots, Vehicles)**
-   - Autonomous systems rely on real-time decision-making for navigation, obstacle detection, and control. Edge ML allows these systems to react instantaneously to their surroundings without depending on external servers.
-
-3. **Smart Cities and Industrial IoT**
-   - Edge ML powers applications such as **traffic monitoring**, **environmental sensing**, and **predictive maintenance** in smart factories. For example, sensors in factories can use edge models to predict equipment failure before it occurs, ensuring smooth operations without cloud reliance.
-
-#### Challenges in Edge ML:
-
-1. **Model Compression**
-   - Since edge devices often have limited storage and computational power, ML models need to be compressed or optimized (e.g., using techniques like quantization, pruning, or knowledge distillation) to run efficiently while maintaining accuracy.
-
-2. **On-Device Model Updates**
-   - Keeping models updated without frequent cloud interactions is a challenge. Edge devices need mechanisms for **incremental learning** or efficient updates without disrupting normal operations.
-#### Popular Frameworks for Edge ML:
-
-- **TensorFlow Lite**: A lightweight version of TensorFlow, designed to run on mobile and embedded devices.
-- **[PyTorch](#pytorch) Mobile**: PyTorch’s framework for deploying ML models on mobile devices.
-- **[ONNX](#onnx) Runtime**: Optimized for running machine learning models on various platforms, including edge devices.
-- **Edge Impulse**: A platform specifically for building ML models for edge devices, particularly for IoT applications.
-
-Edge ML is driving innovation in industries requiring decentralized, real-time intelligence, enabling devices to make smart decisions locally while minimizing reliance on cloud resources.
-
-<a id="education-and-training"></a>
-# Education And Training {#education-and-training}
-
-Adaptive Learning Systems
-
-- **Overview**: Adaptive learning systems use technology to tailor educational experiences to individual student needs. RL is instrumental in personalizing these systems.
-- **Applications**:
-    - **Personalized Learning Paths**: RL algorithms can create customized learning paths for students based on their performance, preferences, and engagement levels, adapting content delivery in real-time.
-    - **Feedback and Assessment**: Adaptive systems can provide immediate feedback based on student responses, reinforcing concepts through targeted exercises and adjusting difficulty levels as needed.
-    - **Engagement Strategies**: By analyzing student interactions, RL can suggest motivational strategies, such as gamification elements or timely reminders, to keep students engaged and motivated.
-
-<a id="elastic-net"></a>
-# Elastic Net {#elastic-net}
-
-
-This method combines both L1 ([Lasso](#lasso)) and L2 ([Ridge](#ridge)) regularization by adding both absolute and squared penalties to the loss function. It strikes a balance between Ridge and Lasso.
-
-It is particularly useful when you have high-dimensional datasets with highly correlated features.
-
-The Elastic Net loss function is:
-
-    $$\text{Loss} = \text{MSE} + \lambda_1 \sum_{i=1}^{n} |w_i| + \lambda_2 \sum_{i=1}^{n} w_i^2$$
-    
-where $\lambda_1$ controls the L1 regularization and $\lambda_2$ controls the L2 regularization.
-
-#### Code
-
-```python
-from sklearn.linear_model import ElasticNet
-
-# Initialize an Elastic Net model
-model = ElasticNet(alpha=0.1, l1_ratio=0.5)  # l1_ratio controls the L1/L2 mix
-model.fit(X_train, y_train)
-```
-
-<a id="embedded-methods"></a>
-# Embedded Methods {#embedded-methods}
-
-Embedded methods for [Feature Selection](#feature-selection) <mark>integrate feature selection directly into the model training process.</mark>
-
-Embedded methods provide a convenient and efficient approach to feature selection by seamlessly integrating it into the model training process, ultimately leading to models that are more parsimonious and potentially more interpretable.
-
-1. **Incorporated into Model Training**: Unlike [Filter method](#filter-method) and [Wrapper Methods](#wrapper-methods), which involve feature selection as a separate step from model training, embedded methods perform feature selection simultaneously with model training. This means that feature importance or relevance is determined within the context of the model itself.
-
-2. **Regularization Techniques**: Embedded methods commonly use [Regularisation](#regularisation) techniques to penalize the inclusion of unnecessary features during model training. 
-
-3. **Automatic Feature Selection**: Embedded methods automatically select the most relevant features by learning feature importance during the training process. The model adjusts the importance of features iteratively based on their contribution to minimizing the [Loss function](#loss-function).
-
-4. **Examples of Embedded Methods**:
-   - **[Lasso](#lasso) (L1 Regularization)**:
-   - [Elastic Net](#elastic-net): Elastic Net combines L1 ([Lasso](#lasso)) and L2 ([Ridge](#ridge)) regularization .
-   - **Tree-based Methods**: [Decision Tree](#decision-tree) and ensemble methods like [Random Forests](#random-forests) and [Gradient Boosting](#gradient-boosting) inherently perform feature selection during training by selecting the most informative features at each split node of the tree.
-
-5. **Advantages**:
-   - Simplicity: Embedded methods simplify the feature selection process by integrating it into model training, reducing the need for additional preprocessing steps.
-   - Efficiency: Because feature selection is performed during model training, embedded methods can be more computationally efficient compared to wrapper methods, which require training multiple models.
-
-6. **Considerations**:
-   - Hyperparameter Tuning: Tuning regularization parameters or other model-specific parameters may be necessary to optimize feature selection performance.
-   - Model [interpretability](#interpretability): While embedded methods can automatically select features, interpreting the resulting model may be challenging, especially for complex models like ensemble methods.
-
-
-
-<a id="encoding-categorical-variables"></a>
-# Encoding Categorical Variables {#encoding-categorical-variables}
-
-
-### Overview
-
-Categorical variables need to be converted into numerical representations to be used in models, particularly in [Regression](#regression) analysis. This process is essential for transforming categorical results into a format that algorithms can interpret.
-
-### Label Encoding
-
-This method assigns a unique integer to each category in the variable.
-
-```python
-from sklearn.preprocessing import LabelEncoder
-
-label_encoder = LabelEncoder()
-var1_cat = df['var1']  # Replace df with your DataFrame
-var1_encoded = label_encoder.fit_transform(var1_cat)
-```
-For example, if `df[col]` contains the categories `['apple', 'banana', 'orange']`, the `LabelEncoder` would transform them into `[0, 1, 2]`.
-
-However, keep in mind that this encoding can imply an order or hierarchy in the data, which might not be intended. In some cases, you might want to use `OneHotEncoder` instead, which creates a binary vector for each category.{}
-
-Given a term in the df you can transform it without needing to look up its value.
-```python
-company="google"
-company_n = LabelEncoder().transform([company])
-```
-### One-Hot Encoding
-
-This technique creates a binary column for each category, allowing the model to treat each category as a separate feature.
-
-```python
-from sklearn.preprocessing import OneHotEncoder
-
-binary_encoder = OneHotEncoder(categories='auto')
-var1_1hot = binary_encoder.fit_transform(var1_encoded.reshape(-1, 1))
-var1_1hot_mat = var1_1hot.toarray()
-var1_DF = pd.DataFrame(var1_1hot_mat, columns=['cat1', 'cat2', 'cat3'])  # Adjust column names as needed
-var1_DF.head()
-```
-
-Understanding OneHotEncoder:
-
-The `OneHotEncoder` from `sklearn.preprocessing` is used to convert categorical integer values into a format that can be provided to machine learning algorithms to do a better job in prediction. It creates a binary column for each category and returns a sparse matrix or dense array.
-
-### Converting All Categorical Variables to Dummies
-
-To convert all categorical variables in a DataFrame to dummy variables, you can use the following loop:
-
-```python
-for col in df.columns:
-    if df[col].dtype == 'object':
-        dummies = pd.get_dummies(df[col], drop_first=False)
-        dummies = dummies.add_prefix(f'{col}_')
-        df.drop(col, axis=1, inplace=True)
-        df = df.join(dummies)
-```
-
-Dummy Variable Trap:
-When using one-hot encoding, it's important to avoid the **dummy variable trap**, which occurs when one category can be perfectly predicted from the others. To prevent this, you can drop one of the dummy variables, as one column is sufficient to represent a binary choice (0 or 1).
-
-### Alternative Encoding Method
-Another way to encode categorical variables is by mapping them directly to integers:
-
-```python
-dataset['var1'] = dataset['var1'].map({'A': 0, 'B': 1, 'C': 2}).astype(int)
-```
-### Related Topics
-- **[Regression](#regression)**: Understanding how regression models utilize encoded variables.
-- **[Feature Engineering](#feature-engineering)**: Techniques to enhance model performance through better feature representation.
-### Overview
-
-- Categorical variables need to be converted into numerical representations for use in models. This is essential for transforming categorical data into a format that algorithms can interpret.
-
-### Methods
-
-- Label Encoding: Assigns a unique integer to each category.
-- One-Hot Encoding: Creates a binary column for each category, allowing the model to treat each category as a separate feature.
-
-### Example Code
-
-```python
-from sklearn.preprocessing import LabelEncoder, OneHotEncoder
-import pandas as pd
-
-# Label Encoding
-label_encoder = LabelEncoder()
-var1_encoded = label_encoder.fit_transform(df['var1'])
-
-# One-Hot Encoding
-binary_encoder = OneHotEncoder(categories='auto')
-var1_1hot = binary_encoder.fit_transform(var1_encoded.reshape(-1, 1))
-var1_1hot_mat = var1_1hot.toarray()
-var1_DF = pd.DataFrame(var1_1hot_mat, columns=['cat1', 'cat2', 'cat3'])
-```
-
-# Energy ABM
-
-- **Complex Systems Understanding**: Energy systems involve numerous stakeholders (producers, consumers, regulators) with diverse interests and behaviors. [Agent-Based Modelling|ABM](#agent-based-modellingabm) helps capture this complexity, providing a clearer picture of system dynamics.
-- **Adaptive Behavior**: Agents in ABM can adapt their behavior based on interactions, mirroring how consumers and producers might respond to incentives or changes in the market.
-- **Scenario Analysis**: ABM allows for "what-if" analyses, enabling stakeholders to explore different scenarios, such as the impact of implementing new technologies or policies on energy systems.
-- **Data-Driven Insights**: With the rise of smart meters and IoT devices, ABM can leverage real-time data to improve model accuracy and relevancy, enhancing decision-making processes.
-
-<a id="energy-storage"></a>
-# Energy Storage {#energy-storage}
-
-
-## Energy Storage
-
-Battery farms exist.
-
-Stored energy can be traded.
-
-Stored energy can be stored using distributed system such as EV cars.
-
-<a id="energy"></a>
-# Energy {#energy}
-
-
-Areas of interest:
-- [Smart Grids](#smart-grids)
-- [Energy Storage](#energy-storage)
-- [Demand forecasting](#demand-forecasting)
-- [Network Design](#network-design)
-- [Energy ABM](#energy-abm)
-
-Questions:
-- [How to model to improve demand forecasting](#how-to-model-to-improve-demand-forecasting)
-- What patterns can be identified in consumer behavior data to inform energy pricing strategies?
-- How can predictive maintenance be implemented using data from smart sensors in energy infrastructure?
-
-**Techniques:**
-- **[Differential Equations](#differential-equations)**: Used to model dynamic systems in energy generation and consumption. For example, they can describe the behavior of power systems over time or the thermal dynamics of energy storage systems.
-- **[Stochastic Modeling](#stochastic-modeling)**: Involves random variables to model uncertainties in energy production (e.g., variability in solar or wind energy) and consumption.
-- [Agent-Based Modelling](#agent-based-modelling)Simulates interactions of agents (consumers, producers, regulators) to understand complex systems and emergent phenomena in energy markets.
-- **Time Series Analysis**: Analyzing historical data to forecast future energy demand or production trends.
-- **[Regression](#regression) Analysis**: Used to model relationships between different variables, such as energy prices and consumption patterns.
-- [Neural network|Neural Network](#neural-networkneural-network) Particularly deep learning, is applied for complex pattern recognition in large datasets, such as detecting anomalies in energy consumption or predicting equipment failures.
-
-
-Dymanic pricing, incentised load management, local generation 
-  
-Use green energy if on grid
-
-<a id="environment-variables"></a>
-# Environment Variables {#environment-variables}
-
-Solution 1: Set Environment Variables Permanently (Recommended)
-This ensures that environment variables persist across sessions.
-
-On Windows (Permanent)
-Open Control Panel → System → Advanced system settings → Environment Variables.
-
-Under System Variables, click New.
-
-Variable Name: PG_USER
-
-Variable Value: postgres
-
-Click New again.
-
-Variable Name: PG_PASSWORD
-
-Variable Value: your_password
-
-Click OK and restart your computer.
-
-Once restarted, Jupyter Notebook should be able to access the variables.
-
-<a id="epoch"></a>
-# Epoch {#epoch}
-
-
-An epoch in machine learning is a single pass through the entire training dataset. The number of epochs, denoted as $N$, determines how many times the data is applied to the model.
-
-Why Use Multiple Epochs?
-- **Repetition for Learning:** The data is applied to the model $N$ times to improve learning and accuracy. For example, if $N = 10$, the model will see the entire dataset 10 times.
-
-Example
-```
-Epoch 1/10
-6250/6250 [<mark>=</mark><mark>=</mark><mark>=</mark><mark>=</mark><mark>=</mark><mark>=</mark>] - 6s 910us/step - loss: 0.1782
-```
-
-- **Epoch 1/10:** Indicates the model is currently on the first epoch out of a total of 10.
-- **Batches:** For efficiency, the dataset is divided into smaller groups called 'batches'. In TensorFlow, the default batch size is 32. With 200,000 examples, this results in 6,250 batches.
-- **Batch Execution:** The notation `6250/6250` shows the progress of batch execution within the current epoch.
-
-
-
-<a id="epub"></a>
-# Epub {#epub}
-
-
-An **EPUB** (short for *electronic publication*) file is a widely used **open eBook format** that is designed for **reflowable content**, meaning it can adapt its layout to fit various screen sizes—unlike PDFs, which preserve a fixed layout.
-
-### Key Features of EPUB
-- **Reflowable Text:** The content adjusts to screen size, font preferences, and orientation. This is ideal for smartphones, tablets, and e-readers like Kobo or Apple Books.
-- **HTML + CSS Based:** Internally, an EPUB file is a compressed archive (`.zip`) that contains HTML files, images, stylesheets, metadata, and a manifest.
-- **Navigation:** It supports **table of contents**, **internal links**, and **chapters** for easy navigation.
-- **Supports Rich Media:** EPUB 3 can include audio, video, interactive elements, and MathML.
-
-### How EPUB Shows “Pages”
-
-EPUB doesn't have fixed "pages" like PDF. Instead:
-
-- The **reading software** (like Apple Books, Calibre, or Kobo) dynamically **splits content into pages** based on screen size, font size, and user settings.
-- Pages can vary in number depending on:
-  - Device screen resolution
-  - Font size or style
-  - Margin settings
-
-Because of this, you can't refer to a fixed page number universally across devices.
-### EPUB vs PDF
-
-| Feature                | EPUB                                 | PDF                                |
-|------------------------|--------------------------------------|------------------------------------|
-| Layout                 | Reflowable                           | Fixed                              |
-| Usability on small screens | Excellent                         | Poor                               |
-| Internal format        | HTML + CSS + XML                     | PostScript-based (binary)          |
-| Navigation             | Flexible (TOC, links, metadata)      | Static (can have TOC, but fixed)   |
-
-
-<a id="estimator"></a>
-# Estimator {#estimator}
-
-Given a sample an estimator is a formula that approximates a population parameter i.e feature
 
 <a id="etlt"></a>
 # Etlt {#etlt}
@@ -7871,6 +7995,12 @@ Steps:
 Xlookup
 
 <a id="explain-different-gradient-descent-algorithms-their-advantages-and-limitations"></a>
+#question"
+importance: 
+engagement: 
+recency_of_interest: 2024-10-11
+category: DS
+---
 # Explain Different Gradient Descent Algorithms, Their Advantages, And Limitations. {#explain-different-gradient-descent-algorithms-their-advantages-and-limitations}
 
 
@@ -7925,91 +8055,6 @@ The <mark>epsilon-greedy strategy</mark> is commonly used, where a small probabi
 
 
 
-
-
-
-
-<a id="embeddings-for-oov-words"></a>
-# Embeddings For Oov Words {#embeddings-for-oov-words}
-
-Can you find words in a [Vector Embedding|word embedding](#vector-embeddingword-embedding) that where not used to creates the embedding?
-
-Yes, but with important caveats. If a word is not in the [spaCy](#spacy) model’s vocabulary with a vector, then:
-
-### ✅ What you can do
-
-#### Option 1: Filter out words without vectors (what you're doing now)
-This is the cleanest option:
-```python
-if token.has_vector:
-    embeddings.append(token.vector)
-    valid_words.append(word)
-```
-
-#### Option 2: Fallback to character-level embeddings (optional)
-If you're using `en_core_web_lg`, spaCy sometimes provides approximate vectors for out-of-vocabulary (OOV) words using subword features. But with `en_core_web_md`, OOV words truly lack vector meaning.
-
-#### Option 3: Use a different embedding model
-Use FastText or transformer-based models (e.g., Sentence Transformers), which can produce [embeddings for OOV words](#embeddings-for-oov-words) based on subword information or context.
-
-Example with [FastText](#fasttext) (using gensim):
-```python
-from gensim.models import KeyedVectors
-
-model = KeyedVectors.load_word2vec_format("cc.en.300.vec")  # or download from FastText
-embedding = model.get_vector("unseenword")  # FastText will synthesize it
-```
-
-### 💡 Summary
-
-| Approach                     | Handles OOV? | Notes |
-|-----------------------------|--------------|-------|
-| spaCy `en_core_web_md`      | ❌            | Skips words without vectors (recommended) |
-| spaCy `en_core_web_lg`      | ⚠️ Sometimes  | May infer vectors using subword info |
-| FastText / GloVe            | ✅            | Good for unseen words |
-| Sentence Transformers (BERT)| ✅            | Contextualized, ideal for phrases/sentences |
-
-#NLP #ml_process #ml_optimisation
-
-<a id="emergent-behavior"></a>
-# Emergent Behavior {#emergent-behavior}
-
-
-
-# F {#f}
-
-# F
-
-# Faiss {#faiss}
-
-
-FAISS (Facebook AI [Similarity Search](#similarity-search)) is a library developed by Facebook AI Research that enables efficient similarity search and [clustering](#clustering) of dense vectors. It is especially well-suited for applications involving high-dimensional vector data, such as [NLP](#nlp)
-
-Related terms:
-- [Vector Embedding](#vector-embedding)
-### Overview
-
-FAISS is optimized for:
-- **Fast retrieval** from large collections of vectors (millions or more).
-- **Approximate nearest neighbor (ANN)** search, which trades off accuracy for speed.
-- **Exact search**, depending on the chosen index type.
-- **GPU acceleration** for very large-scale search tasks.
-
-### Core Concept
-
-At its core, FAISS takes a large number of **high-dimensional vectors** (e.g., sentence or document embeddings), and enables fast **similarity search** to retrieve the most similar vectors to a given [Querying|query](#queryingquery).
-
-For example, in an NLP [Memory|context](#memorycontext):
-- Documents or notes are embedded into vector space using a model like SBERT.
-- These embeddings are stored in a FAISS index.
-- Given a query, its embedding is computed, and FAISS returns the nearest neighbors (i.e., most semantically similar notes).
-### Index Types
-
-FAISS offers different types of indices depending on use case:
-- `IndexFlatL2`: exact search using L2 (Euclidean) distance.
-- `IndexIVFFlat`: approximate search using inverted files.
-- `IndexHNSW`: Hierarchical Navigable Small World graph-based index (good for high recall).
-- `IndexPQ`: product quantization for memory-efficient indexing.
 
 
 
@@ -8169,6 +8214,41 @@ The two factors together capture a large portion of the total variance in the da
 Facts are quantitative data points that are typically stored in the [Fact Table](#fact-table).
 
 They represent measurable events or metrics, such as sales revenue or quantities sold.
+
+<a id="faiss"></a>
+# Faiss {#faiss}
+
+
+FAISS (Facebook AI [Similarity Search](#similarity-search)) is a library developed by Facebook AI Research that enables efficient similarity search and [clustering](#clustering) of dense vectors. It is especially well-suited for applications involving high-dimensional vector data, such as [NLP](#nlp)
+
+Related terms:
+- [Vector Embedding](#vector-embedding)
+### Overview
+
+FAISS is optimized for:
+- **Fast retrieval** from large collections of vectors (millions or more).
+- **Approximate nearest neighbor (ANN)** search, which trades off accuracy for speed.
+- **Exact search**, depending on the chosen index type.
+- **GPU acceleration** for very large-scale search tasks.
+
+### Core Concept
+
+At its core, FAISS takes a large number of **high-dimensional vectors** (e.g., sentence or document embeddings), and enables fast **similarity search** to retrieve the most similar vectors to a given [Querying|query](#queryingquery).
+
+For example, in an NLP [Memory|context](#memorycontext):
+- Documents or notes are embedded into vector space using a model like SBERT.
+- These embeddings are stored in a FAISS index.
+- Given a query, its embedding is computed, and FAISS returns the nearest neighbors (i.e., most semantically similar notes).
+### Index Types
+
+FAISS offers different types of indices depending on use case:
+- `IndexFlatL2`: exact search using L2 (Euclidean) distance.
+- `IndexIVFFlat`: approximate search using inverted files.
+- `IndexHNSW`: Hierarchical Navigable Small World graph-based index (good for high recall).
+- `IndexPQ`: product quantization for memory-efficient indexing.
+
+
+
 
 <a id="fastapi"></a>
 # Fastapi {#fastapi}
@@ -8549,6 +8629,13 @@ You can copy and paste these commands directly into `cmd` to test the API.
 Make sure your FastAPI server is running on `http://127.0.0.1:8000` before executing these commands.
 
 <a id="feature-engineering"></a>
+#ml_process"
+  - "#ml_optimisation"
+  - ml_process
+title: 
+aliases: 
+category:
+---
 # Feature Engineering {#feature-engineering}
 
 
@@ -8735,6 +8822,29 @@ This returns an array where each feature is standardized.
 
 ![Pasted image 20241224083928.png](../content/images/Pasted%20image%2020241224083928.png)
 
+<a id="feature-selection-and-creation"></a>
+# Feature Selection And Creation {#feature-selection-and-creation}
+
+[Feature Selection](#feature-selection)
+
+[Feature Engineering](#feature-engineering)
+
+After the data is ready.
+
+Which features have the best value, which play the biggest role.
+
+Combining features to simplify the
+
+How to select features.
+- Correlation between each two (poor)
+- Stepwise regression
+- Lasso and ridge regression
+
+When selecting features we ask:
+- Can we control it/select it?
+- Can we control it easily what do we gain from it
+- is it a sensible variable?
+
 <a id="feature-selection-vs-feature-importance"></a>
 # Feature Selection Vs Feature Importance {#feature-selection-vs-feature-importance}
 
@@ -8783,29 +8893,6 @@ After selecting features, it's essential to evaluate your model's performance ([
 1. Variance Thresholding: Check the [Variance](#variance) & [Distributions](#distributions) of each feature. Features with very low variance (close to zero) contribute little information and may be considered noisy. Removing such features can help simplify the model without sacrificing much predictive power.
 
 1. Univariate Feature Selection: Use statistical tests like chi-square for categorical variables or [ANOVA](#anova) for numerical variables to assess the relationship between each feature and the target variable. Features with low test scores or high p-values may be less relevant and can be pruned.
-
-<a id="feature-selection-and-creation"></a>
-# Feature Selection And Creation {#feature-selection-and-creation}
-
-[Feature Selection](#feature-selection)
-
-[Feature Engineering](#feature-engineering)
-
-After the data is ready.
-
-Which features have the best value, which play the biggest role.
-
-Combining features to simplify the
-
-How to select features.
-- Correlation between each two (poor)
-- Stepwise regression
-- Lasso and ridge regression
-
-When selecting features we ask:
-- Can we control it/select it?
-- Can we control it easily what do we gain from it
-- is it a sensible variable?
 
 <a id="feature_distributionpy"></a>
 # Feature_Distribution.Py {#feature_distributionpy}
@@ -8857,6 +8944,37 @@ A **Feedforward Neural Network (FFNN)** is the simplest type of [Neural network]
 <a id="filter-method"></a>
 # Filter Method {#filter-method}
 
+
+
+<a id="filter-methods"></a>
+# Filter Methods {#filter-methods}
+
+
+
+For [Feature Selection](#feature-selection)
+
+1. **Pearson [Correlation](#correlation) Coefficient**:
+   - Measures the linear correlation between two continuous variables.
+   - Features with low correlation with the target variable are considered less relevant.
+   - Features with high correlation among themselves might be redundant.
+
+2. **Mutual Information**:
+   - Measures the amount of information obtained about one variable through another variable.
+   - High mutual information indicates strong dependency between features and the target variable.
+   - Can handle both continuous and categorical variables.
+   - used to rank or score features based on their relevance to the target variable.
+   - joint probability distribution
+   - information theory,
+
+3. **[ANOVA](#anova) (Analysis of Variance)**:
+   - Assesses the differences in means among groups of a categorical variable.
+   - Calculates the F-statistic and p-value to determine if there are significant differences in the means of the target variable across different levels of a categorical feature.
+   - Useful for selecting features with significant impact on the target variable in classification tasks.
+
+4. **Chi-Squared Test**:
+   - Tests the independence between two [categorical](#categorical) variables.
+   - Calculates the chi-squared statistic and p-value to determine if the observed frequency distribution differs from the expected distribution.
+   - Helpful for [Feature Selection](#feature-selection) in classification tasks with categorical variables.
 
 
 <a id="firebase"></a>
@@ -8963,6 +9081,7 @@ Techniques:
 - [Learning Rate](#learning-rate) Scheduling: Reduce learning rate as training progresses to fine-tune the learning process.
 - Adaptive Learning Rates: Optimizers [Optimisation techniques](#optimisation-techniques)
 
+<a id="flaskflask"></a>
 #software 
 
 web app framework for writing web pages
@@ -8971,7 +9090,7 @@ uses decorators
 
 ![Pasted image 20240922202938.png](../content/images/Pasted%20image%2020240922202938.png)
 
-# [Flask](#flask)
+# [Flask](#flask) {#flaskflask}
 ## Flask app example
 
 https://www.youtube.com/watch?v=wBCEDCiQh3Q&list=PLcWfeUsAys2my8yUlOa6jEWB1-QbkNSUl
@@ -9126,46 +9245,6 @@ Foreign keys establish relationships between tables and maintain referential int
 > - [Backpropagation](#backpropagation) in neural networks  
 > - Activation functions in deep learning
 
-<a id="fuzzywuzzy"></a>
-# Fuzzywuzzy {#fuzzywuzzy}
-
-Tool used for correcting spelling with pandas.
-
-[Data Cleansing](#data-cleansing)
-
-
-
-<a id="filter-methods"></a>
-# Filter Methods {#filter-methods}
-
-
-
-For [Feature Selection](#feature-selection)
-
-1. **Pearson [Correlation](#correlation) Coefficient**:
-   - Measures the linear correlation between two continuous variables.
-   - Features with low correlation with the target variable are considered less relevant.
-   - Features with high correlation among themselves might be redundant.
-
-2. **Mutual Information**:
-   - Measures the amount of information obtained about one variable through another variable.
-   - High mutual information indicates strong dependency between features and the target variable.
-   - Can handle both continuous and categorical variables.
-   - used to rank or score features based on their relevance to the target variable.
-   - joint probability distribution
-   - information theory,
-
-3. **[ANOVA](#anova) (Analysis of Variance)**:
-   - Assesses the differences in means among groups of a categorical variable.
-   - Calculates the F-statistic and p-value to determine if there are significant differences in the means of the target variable across different levels of a categorical feature.
-   - Useful for selecting features with significant impact on the target variable in classification tasks.
-
-4. **Chi-Squared Test**:
-   - Tests the independence between two [categorical](#categorical) variables.
-   - Calculates the chi-squared statistic and p-value to determine if the observed frequency distribution differs from the expected distribution.
-   - Helpful for [Feature Selection](#feature-selection) in classification tasks with categorical variables.
-
-
 <a id="functional-programming"></a>
 # Functional Programming {#functional-programming}
 
@@ -9175,45 +9254,14 @@ Functional Programming is a style of building functions that threaten computatio
 
 See also [Programming Languages](programming%20languages.md).
 
-# G {#g}
+<a id="fuzzywuzzy"></a>
+# Fuzzywuzzy {#fuzzywuzzy}
 
-# G
+Tool used for correcting spelling with pandas.
 
-# Gis {#gis}
-
-Geographic information system.
-
-File formats: 
-
-The Web Map Tile Service (WMTS) and Web Feature Server (WFS) are both specifications used in the field of Geographic Information Systems (GIS) to serve different types of geographic data over the web. The primary differences between them lie in the type of data they serve and how they serve it.
-
-	[Web Map Tile Service (WMTS)](#web-map-tile-service-wmts)
-	[Web Feature Server (WFS)](#web-feature-server-wfs)
-	[Key Differences of Web Feature Server (WFS) and Web Feature Server (WFS)](#key-differences-of-web-feature-server-wfs-and-web-feature-server-wfs)
-
-[shapefile](#shapefile)
-
-There are free GIS softwares
+[Data Cleansing](#data-cleansing)
 
 
-
-
-<a id="gru"></a>
-# Gru {#gru}
-
-
-
-<a id="gsheets"></a>
-# Gsheets {#gsheets}
-
-
-Useful functions:
-- [QUERY GSheets](#query-gsheets)
-- ARRAYFORMULA
-- Indirect
-
-Accessing google sheets from a script:
-https://www.youtube.com/watch?v=zCEJurLGFRk
 
 <a id="gaussian-distribution"></a>
 # Gaussian Distribution {#gaussian-distribution}
@@ -9266,6 +9314,9 @@ GMMs can have difference [Covariance Structures](#covariance-structures)
 
 ![Pasted image 20250126135722.png|500](../content/images/Pasted%20image%2020250126135722.png|500)
 
+<a id="gaussian-model"></a>
+# Gaussian Model {#gaussian-model}
+
 ### Gaussian Model 
 
 (Univariate)
@@ -9312,6 +9363,15 @@ Follow-Up Questions
 
 
 
+
+<a id="generative-adversarial-networks"></a>
+# Generative Adversarial Networks {#generative-adversarial-networks}
+
+
+   Composed of two neural networks, a generator, and a discriminator, that compete against each other. GANs are used for tasks like generating realistic images or videos.
+
+<a id="generative-ai-from-theory-to-practice"></a>
+# Generative AI From Theory to Practice {#generative-ai-from-theory-to-practice}
 
 ### Objective:
 
@@ -9399,12 +9459,6 @@ Going round training data : called a Epochs
 # Generative Ai {#generative-ai}
 
 
-
-<a id="generative-adversarial-networks"></a>
-# Generative Adversarial Networks {#generative-adversarial-networks}
-
-
-   Composed of two neural networks, a generator, and a discriminator, that compete against each other. GANs are used for tasks like generating realistic images or videos.
 
 <a id="get-data"></a>
 # Get Data {#get-data}
@@ -9533,6 +9587,26 @@ where$p_i$ is the proportion of class$i$ in the node.
 A Gini impurity of 0.4422 indicates the level of impurity in this node. A Gini impurity of 0 would mean the node is pure (all samples belong to one class), while a higher value indicates more impurity or mixed classes.
 
 This calculation helps in deciding whether to split the node further or not. The goal is to choose splits that <mark>minimize the Gini impurity</mark>, leading to more homogeneous branches.
+
+<a id="gis"></a>
+# Gis {#gis}
+
+Geographic information system.
+
+File formats: 
+
+The Web Map Tile Service (WMTS) and Web Feature Server (WFS) are both specifications used in the field of Geographic Information Systems (GIS) to serve different types of geographic data over the web. The primary differences between them lie in the type of data they serve and how they serve it.
+
+	[Web Map Tile Service (WMTS)](#web-map-tile-service-wmts)
+	[Web Feature Server (WFS)](#web-feature-server-wfs)
+	[Key Differences of Web Feature Server (WFS) and Web Feature Server (WFS)](#key-differences-of-web-feature-server-wfs-and-web-feature-server-wfs)
+
+[shapefile](#shapefile)
+
+There are free GIS softwares
+
+
+
 
 <a id="git"></a>
 # Git {#git}
@@ -9719,6 +9793,74 @@ cd repo-folder
 ```
 
 
+
+<a id="gitlab-ciyml"></a>
+# Gitlab Ci.Yml {#gitlab-ciyml}
+
+The purpose of a `gitlab-ci.yml` file is to define and configure the **GitLab CI/CD pipeline** for automating tasks such as building, testing, and deploying your code. It is the core configuration file that GitLab uses to orchestrate and execute CI/CD workflows in a repository.
+
+### Key Purposes:
+
+1. **Automation of Workflows:**
+    - Automates repetitive tasks like running tests, building applications, linting code, and deploying updates.
+      
+2. **Pipeline Definition:**
+    - Specifies the **stages** (e.g., `build`, `test`, `deploy`) and their sequence.
+    - Defines the **jobs** within each stage and their respective commands.
+      
+3. **Consistency and Reliability:**
+    - Ensures consistent execution of tasks across environments, reducing errors caused by manual intervention.
+      
+4. **Integration with GitLab:**
+    - Automatically triggers pipelines in response to events such as code pushes, merge requests, or scheduled runs.
+      
+5. **Environment Management:**
+    - Manages deployments to various environments (e.g., development, staging, production) with variables, conditions, and manual approvals.
+      
+6. **Feedback and Reporting:**
+    - Provides immediate feedback on the status of tasks (e.g., whether tests passed) directly in the GitLab interface.
+    - Supports artifact generation and uploads (e.g., logs, reports, or compiled binaries).
+
+### Benefits:
+
+- Improves development velocity by automating workflows.
+- Increases code quality through consistent testing and linting.
+- Simplifies deployments to various environments.
+- Enables team collaboration with clear and visible pipeline progress.
+
+### Example 
+
+```yaml
+# Define the stages of the pipeline in the order they will be executed
+stages:
+  - build    # The stage where the application is built
+  - test     # The stage where tests are executed
+  - deploy   # The stage where the application is deployed
+
+# Job to build the project
+build_job:
+  stage: build           # Assign this job to the 'build' stage
+  script:                # Commands to execute during this job
+    - echo "Building the project" # Example build command (replace with actual build steps)
+  artifacts:             # Files or directories to save for use in subsequent jobs
+    paths:
+      - build/           # Save the 'build' directory as an artifact for later stages
+
+# Job to test the project
+test_job:
+  stage: test            # Assign this job to the 'test' stage
+  script:                # Commands to execute during this job
+    - echo "Running tests" # Example test command (replace with actual test steps)
+
+# Job to deploy the project
+deploy_job:
+  stage: deploy          # Assign this job to the 'deploy' stage
+  script:                # Commands to execute during this job
+    - echo "Deploying the application" # Example deployment command (replace with actual deployment steps)
+  only:                  # Specify when this job should run
+    - main               # Only run this job for commits to the 'main' branch
+
+```
 
 <a id="gitlab"></a>
 # Gitlab {#gitlab}
@@ -10014,6 +10156,55 @@ Grain
 
 can understand the Grammar as a method for acceptable sentences.
 
+<a id="granularity"></a>
+# Granularity {#granularity}
+
+
+Definition of Grain in [Dimensional Modelling](#dimensional-modelling)
+   - The grain of a [Fact Table](#fact-table) defines what a single row in the table represents. It is the level of detail captured by the fact table.
+   - Declaring the grain is essential because it sets the foundation for the entire dimensional model. It determines how detailed the data will be.
+
+Importance of Grain Declaration:
+   - The grain must be established before selecting [Dimensions](#dimensions) and [Facts](#facts) because all dimensions and facts must align with the grain.
+   - This alignment ensures consistency across the data model, which is critical for the performance and usability of [business intelligence](#business-intelligence) applications.
+
+Balancing Granularity:
+   - In the transformation layer, you need to decide the level of aggregation. For instance, you might aggregate hourly data into daily data to save storage space.
+   - Adding dimensions increases the number of rows exponentially, so it's important to carefully choose which dimensions to include.
+
+Semantic Layer:
+   - A [semantic layer](#semantic-layer) sits on top of transformed data in a data warehouse, providing flexibility and enabling ad-hoc analysis without needing to store every possible data representation.
+   - This is akin to [OLAP](#olap) cubes, where you can perform complex queries (slice-and-dice) on large datasets without pre-storing all combinations.
+
+## Choosing the level of granularity
+
+Granularity, or grain, refers to the <mark>level of detail</mark> represented by a single row in a fact table within a data warehouse. 
+
+The choice of granularity depends on the business requirements and the types of analyses you want to support. Finer granularity (e.g., transaction-level) provides more detailed insights but requires more storage and processing power. Coarser granularity (e.g., monthly product-level) reduces storage needs and can improve query performance but may limit the depth of analysis.
+
+By clearly defining the grain, you ensure that all dimensions and facts in the data model are consistent and aligned with the intended analytical use cases.
+
+### Example: Retail Sales Data
+
+Imagine you are designing a data warehouse for a retail company that tracks sales transactions. You need to decide the granularity of the sales fact table. Here are a few possible options:
+
+1. Transaction-Level Granularity:
+   - Grain: Each row represents a single sales transaction.
+   - Example: A row might include details such as transaction ID, date and time of sale, store location, product sold, quantity, and total sale amount.
+   - Use Case: This level of granularity is useful for detailed analysis, such as examining individual customer purchases or identifying specific transaction patterns.
+
+2. Daily Store-Level Granularity:
+   - Grain: Each row represents the total sales for a specific store on a specific day.
+   - Example: A row might include the store ID, date, total sales amount, and total number of transactions for that day.
+   - Use Case: This granularity is suitable for analyzing daily sales trends across different stores, comparing store performance, or identifying peak sales days.
+
+3. Monthly Product-Level Granularity:
+   - Grain: Each row represents the total sales for a specific product across all stores for a specific month.
+   - Example: A row might include the product ID, month, total sales amount, and total units sold.
+   - Use Case: This level is ideal for tracking product performance over time, identifying best-selling products, or planning inventory and supply chain logistics.
+
+
+
 <a id="graph-analysis-plugin"></a>
 # Graph Analysis Plugin {#graph-analysis-plugin}
 
@@ -10222,6 +10413,23 @@ plt.show()
 
 ![Pasted image 20250402212849.png](../content/images/Pasted%20image%2020250402212849.png)
 
+<a id="gru"></a>
+# Gru {#gru}
+
+
+
+<a id="gsheets"></a>
+# Gsheets {#gsheets}
+
+
+Useful functions:
+- [QUERY GSheets](#query-gsheets)
+- ARRAYFORMULA
+- Indirect
+
+Accessing google sheets from a script:
+https://www.youtube.com/watch?v=zCEJurLGFRk
+
 <a id="guardrails"></a>
 # Guardrails {#guardrails}
 
@@ -10249,127 +10457,7 @@ Controlling a [Generative AI](#generative-ai) in business through the use of [Gu
    - Tailor the AI to address specific business needs. For example, a generative AI for a legal firm should stick to legal advice and documentation, whereas a customer service chatbot should handle predefined topics like returns and product support.
    - [Data Observability|monitoring](#data-observabilitymonitoring) / Monitoring and Logging: Keep track of input and output interactions to ensure that the AI’s performance remains within its intended boundaries.
 
-<a id="gitlab-ciyml"></a>
-# Gitlab Ci.Yml {#gitlab-ciyml}
-
-The purpose of a `gitlab-ci.yml` file is to define and configure the **GitLab CI/CD pipeline** for automating tasks such as building, testing, and deploying your code. It is the core configuration file that GitLab uses to orchestrate and execute CI/CD workflows in a repository.
-
-### Key Purposes:
-
-1. **Automation of Workflows:**
-    - Automates repetitive tasks like running tests, building applications, linting code, and deploying updates.
-      
-2. **Pipeline Definition:**
-    - Specifies the **stages** (e.g., `build`, `test`, `deploy`) and their sequence.
-    - Defines the **jobs** within each stage and their respective commands.
-      
-3. **Consistency and Reliability:**
-    - Ensures consistent execution of tasks across environments, reducing errors caused by manual intervention.
-      
-4. **Integration with GitLab:**
-    - Automatically triggers pipelines in response to events such as code pushes, merge requests, or scheduled runs.
-      
-5. **Environment Management:**
-    - Manages deployments to various environments (e.g., development, staging, production) with variables, conditions, and manual approvals.
-      
-6. **Feedback and Reporting:**
-    - Provides immediate feedback on the status of tasks (e.g., whether tests passed) directly in the GitLab interface.
-    - Supports artifact generation and uploads (e.g., logs, reports, or compiled binaries).
-
-### Benefits:
-
-- Improves development velocity by automating workflows.
-- Increases code quality through consistent testing and linting.
-- Simplifies deployments to various environments.
-- Enables team collaboration with clear and visible pipeline progress.
-
-### Example 
-
-```yaml
-# Define the stages of the pipeline in the order they will be executed
-stages:
-  - build    # The stage where the application is built
-  - test     # The stage where tests are executed
-  - deploy   # The stage where the application is deployed
-
-# Job to build the project
-build_job:
-  stage: build           # Assign this job to the 'build' stage
-  script:                # Commands to execute during this job
-    - echo "Building the project" # Example build command (replace with actual build steps)
-  artifacts:             # Files or directories to save for use in subsequent jobs
-    paths:
-      - build/           # Save the 'build' directory as an artifact for later stages
-
-# Job to test the project
-test_job:
-  stage: test            # Assign this job to the 'test' stage
-  script:                # Commands to execute during this job
-    - echo "Running tests" # Example test command (replace with actual test steps)
-
-# Job to deploy the project
-deploy_job:
-  stage: deploy          # Assign this job to the 'deploy' stage
-  script:                # Commands to execute during this job
-    - echo "Deploying the application" # Example deployment command (replace with actual deployment steps)
-  only:                  # Specify when this job should run
-    - main               # Only run this job for commits to the 'main' branch
-
-```
-
-<a id="granularity"></a>
-# Granularity {#granularity}
-
-
-Definition of Grain in [Dimensional Modelling](#dimensional-modelling)
-   - The grain of a [Fact Table](#fact-table) defines what a single row in the table represents. It is the level of detail captured by the fact table.
-   - Declaring the grain is essential because it sets the foundation for the entire dimensional model. It determines how detailed the data will be.
-
-Importance of Grain Declaration:
-   - The grain must be established before selecting [Dimensions](#dimensions) and [Facts](#facts) because all dimensions and facts must align with the grain.
-   - This alignment ensures consistency across the data model, which is critical for the performance and usability of [business intelligence](#business-intelligence) applications.
-
-Balancing Granularity:
-   - In the transformation layer, you need to decide the level of aggregation. For instance, you might aggregate hourly data into daily data to save storage space.
-   - Adding dimensions increases the number of rows exponentially, so it's important to carefully choose which dimensions to include.
-
-Semantic Layer:
-   - A [semantic layer](#semantic-layer) sits on top of transformed data in a data warehouse, providing flexibility and enabling ad-hoc analysis without needing to store every possible data representation.
-   - This is akin to [OLAP](#olap) cubes, where you can perform complex queries (slice-and-dice) on large datasets without pre-storing all combinations.
-
-## Choosing the level of granularity
-
-Granularity, or grain, refers to the <mark>level of detail</mark> represented by a single row in a fact table within a data warehouse. 
-
-The choice of granularity depends on the business requirements and the types of analyses you want to support. Finer granularity (e.g., transaction-level) provides more detailed insights but requires more storage and processing power. Coarser granularity (e.g., monthly product-level) reduces storage needs and can improve query performance but may limit the depth of analysis.
-
-By clearly defining the grain, you ensure that all dimensions and facts in the data model are consistent and aligned with the intended analytical use cases.
-
-### Example: Retail Sales Data
-
-Imagine you are designing a data warehouse for a retail company that tracks sales transactions. You need to decide the granularity of the sales fact table. Here are a few possible options:
-
-1. Transaction-Level Granularity:
-   - Grain: Each row represents a single sales transaction.
-   - Example: A row might include details such as transaction ID, date and time of sale, store location, product sold, quantity, and total sale amount.
-   - Use Case: This level of granularity is useful for detailed analysis, such as examining individual customer purchases or identifying specific transaction patterns.
-
-2. Daily Store-Level Granularity:
-   - Grain: Each row represents the total sales for a specific store on a specific day.
-   - Example: A row might include the store ID, date, total sales amount, and total number of transactions for that day.
-   - Use Case: This granularity is suitable for analyzing daily sales trends across different stores, comparing store performance, or identifying peak sales days.
-
-3. Monthly Product-Level Granularity:
-   - Grain: Each row represents the total sales for a specific product across all stores for a specific month.
-   - Example: A row might include the product ID, month, total sales amount, and total units sold.
-   - Use Case: This level is ideal for tracking product performance over time, identifying best-selling products, or planning inventory and supply chain logistics.
-
-
-
-# H {#h}
-
-# H
-
+<a id="hadoop"></a>
 # Hadoop {#hadoop}
 
 
@@ -10530,6 +10618,44 @@ See:
  - [Dendrograms](#dendrograms)
 
 
+<a id="heterogeneous-features"></a>
+# Heterogeneous Features {#heterogeneous-features}
+
+
+## Description
+
+In machine learning, heterogeneous features refer to a situation where the input data contains a variety of different types of features. Let's break it down:
+
+### 1. **Features:**
+   - Features are the individual measurable properties or characteristics of the data used for making predictions in a machine learning model.
+   - For example, in a dataset about houses, features could include the number of bedrooms, square footage, location, and whether it has a garden.
+
+### 2. **Homogeneous vs. Heterogeneous:**
+   - **Homogeneous Features:** In some datasets, all features are of the same type, such as numerical or categorical. For instance, a dataset containing only numerical features like age, income, and temperature is homogeneous.
+   - **Heterogeneous Features:** In contrast, heterogeneous features refer to datasets where features are of different types. This means the dataset may contain a mix of numerical, categorical, text, image, or other types of data.
+
+### 3. **Examples of Heterogeneous Features:**
+   - **Numerical Features:** Represented by continuous values like age, income, or temperature.
+   - **Categorical Features:** Represented by discrete values such as gender, city, or type of car.
+   - **Text Features:** Textual data like product descriptions, customer reviews, or email content.
+   - **Image Features:** Visual data represented by pixels in an image, used in tasks like image recognition or object detection.
+
+### 4. **Challenges and Considerations:**
+   - Handling heterogeneous features requires specialized techniques in [Preprocessing](#preprocessing) and model building.
+   - Different types of features may need different preprocessing steps, such as encoding categorical variables, scaling numerical features, or extracting features from text or images.
+   - Models need to be capable of handling diverse data types, either through feature engineering or using algorithms specifically designed for heterogeneous data.
+
+### 5. **Applications:**
+   - Heterogeneous features are common in many real-world applications, such as e-commerce (combining text descriptions with numerical features), healthcare (integrating medical records with images or text), and social media analysis (analyzing text, images, and user profiles).
+
+### 6. **Resources for Further Learning:**
+   - Feature Engineering for Machine Learning: [https://www.datacamp.com/community/tutorials/feature-engineering-kaggle](https://www.datacamp.com/community/tutorials/feature-engineering-kaggle)
+   - Handling Text Data in Machine Learning: [https://towardsdatascience.com/handling-text-data-in-machine-learning-projects-b52bbc9531d7](https://towardsdatascience.com/handling-text-data-in-machine-learning-projects-b52bbc9531d7)
+   - Image Feature Extraction Techniques: [https://towardsdatascience.com/image-feature-extraction-techniques-91e8625616f1](https://towardsdatascience.com/image-feature-extraction-techniques-91e8625616f1)
+
+Understanding how to work with heterogeneous features is essential for building effective machine learning models that can handle diverse types of data and extract meaningful insights from them.
+
+
 <a id="hierarchical-clustering"></a>
 # Hierarchical Clustering {#hierarchical-clustering}
 
@@ -10618,28 +10744,6 @@ Once you have a simple Dash application.
 - ❌ May require a credit card to unlock some features
 
 
-<a id="how-llms-store-facts"></a>
-# How Llms Store Facts {#how-llms-store-facts}
-
-
-[How might LLMs store facts](https://www.youtube.com/watch?v=9-Jl0dxWQs8&list=PLZx_FHIHR8AwKD9csfl6Sl_pgCXX19eer&index=6)
-
-Not solved
-
-How do [Multilayer Perceptrons](#multilayer-perceptrons) store facts?
-
-Different directions encode information in [Vector Embedding](#vector-embedding) space.
-
-MLP's are blocks of vectors, these are acted on my the context matrix 
-
-[Johnson–Lindenstrauss lemma](#johnsonlindenstrauss-lemma)
-
-Sparse Autoencoder - used in [interpretability](#interpretability) of [LLM](#llm) responses
-
-See [Anthropic](#anthropic) posts
-- https://transformer-circuits.pub/2022/toy_model/index.html#adversarial
-- https://transformer-circuits.pub/2023/monosemantic-features
-
 <a id="how-businesses-use-gen-ai"></a>
 # How Businesses Use Gen Ai {#how-businesses-use-gen-ai}
 
@@ -10686,7 +10790,19 @@ The evaluation of [LLM](#llm) outputs involves various methodologies to assess t
 
 
 
+<a id="how-do-you-do-the-data-selection"></a>
+# How Do You Do The Data Selection {#how-do-you-do-the-data-selection}
+
+When you sample a dataset, [how do you do the data selection](#how-do-you-do-the-data-selection)? [Data Selection](#data-selection)
+A: By randomly sampling, by time period (use a feature)..
+
 <a id="how-is-reinforcement-learning-being-combined-with-deep-learning"></a>
+#question"
+importance: 
+engagement: 
+recency_of_interest: 
+category: DS
+---
 # How Is Reinforcement Learning Being Combined With Deep Learning {#how-is-reinforcement-learning-being-combined-with-deep-learning}
 
 
@@ -10697,11 +10813,41 @@ Exploring the potential of this combination in other domains and developing new 
 
 
 <a id="how-is-schema-evolution-done-in-practice-with-sql"></a>
+#question"
+importance: 
+engagement: 
+recency_of_interest: 2024-10-09
+---
 # How Is Schema Evolution Done In Practice With Sql {#how-is-schema-evolution-done-in-practice-with-sql}
 
 
 
 
+
+<a id="how-llms-store-facts"></a>
+# How Llms Store Facts {#how-llms-store-facts}
+
+
+[How might LLMs store facts](https://www.youtube.com/watch?v=9-Jl0dxWQs8&list=PLZx_FHIHR8AwKD9csfl6Sl_pgCXX19eer&index=6)
+
+Not solved
+
+How do [Multilayer Perceptrons](#multilayer-perceptrons) store facts?
+
+Different directions encode information in [Vector Embedding](#vector-embedding) space.
+
+MLP's are blocks of vectors, these are acted on my the context matrix 
+
+[Johnson–Lindenstrauss lemma](#johnsonlindenstrauss-lemma)
+
+Sparse Autoencoder - used in [interpretability](#interpretability) of [LLM](#llm) responses
+
+See [Anthropic](#anthropic) posts
+- https://transformer-circuits.pub/2022/toy_model/index.html#adversarial
+- https://transformer-circuits.pub/2023/monosemantic-features
+
+<a id="how-to-do-git-commit-messages-properly"></a>
+# How to do git commit messages properly {#how-to-do-git-commit-messages-properly}
 
 ## Structure of a goof [Git](#git) Commit Message
 
@@ -10804,6 +10950,11 @@ Exploring the potential of this combination in other domains and developing new 
 - **No Context**: A good commit message should allow anyone reviewing it to understand the change without needing additional context.
 
 <a id="how-to-model-to-improve-demand-forecasting"></a>
+#question"
+category: CAREER
+engagement: 
+recency_of_interest:
+---
 # How To Model To Improve Demand Forecasting {#how-to-model-to-improve-demand-forecasting}
 
 
@@ -10846,6 +10997,9 @@ Reducing the need for frequent [Generative AI](#generative-ai) (Gen AI) response
 2. [medium.com - Slash Your AI Costs by 80%](https://medium.com/gptalk/slash-ai-costs-by-80-the-game-changing-power-of-prompt-caching-d44bcaa2e772)
 3. [botpress.com - How to Optimize AI Spend Cost in Botpress](https://botpress.com/blog/how-to-optimize-ai-spend-cost-in-botpress)
 
+<a id="how-to-search-within-a-graph"></a>
+# How to search within a graph {#how-to-search-within-a-graph}
+
 ### Vector Search with Graph Context
 
 [Vector Embedding](#vector-embedding) plays a crucial role in enhancing search capabilities:
@@ -10867,6 +11021,12 @@ Useful in [GraphRAG](#graphrag) is understanding the relationships of nodes in a
 ![Pasted image 20241004074458.png](../content/images/Pasted%20image%2020241004074458.png)
 
 <a id="how-to-use-sklearn-pipeline"></a>
+#question"
+importance: 
+engagement: 
+recency_of_interest: 2024-10-23
+category: MLOPS
+---
 # How To Use Sklearn Pipeline {#how-to-use-sklearn-pipeline}
 
 
@@ -11020,54 +11180,7 @@ Multiple testing increases the likelihood of encountering false positives (Type 
 - [Testing](#testing)
 
 
-<a id="heterogeneous-features"></a>
-# Heterogeneous Features {#heterogeneous-features}
-
-
-## Description
-
-In machine learning, heterogeneous features refer to a situation where the input data contains a variety of different types of features. Let's break it down:
-
-### 1. **Features:**
-   - Features are the individual measurable properties or characteristics of the data used for making predictions in a machine learning model.
-   - For example, in a dataset about houses, features could include the number of bedrooms, square footage, location, and whether it has a garden.
-
-### 2. **Homogeneous vs. Heterogeneous:**
-   - **Homogeneous Features:** In some datasets, all features are of the same type, such as numerical or categorical. For instance, a dataset containing only numerical features like age, income, and temperature is homogeneous.
-   - **Heterogeneous Features:** In contrast, heterogeneous features refer to datasets where features are of different types. This means the dataset may contain a mix of numerical, categorical, text, image, or other types of data.
-
-### 3. **Examples of Heterogeneous Features:**
-   - **Numerical Features:** Represented by continuous values like age, income, or temperature.
-   - **Categorical Features:** Represented by discrete values such as gender, city, or type of car.
-   - **Text Features:** Textual data like product descriptions, customer reviews, or email content.
-   - **Image Features:** Visual data represented by pixels in an image, used in tasks like image recognition or object detection.
-
-### 4. **Challenges and Considerations:**
-   - Handling heterogeneous features requires specialized techniques in [Preprocessing](#preprocessing) and model building.
-   - Different types of features may need different preprocessing steps, such as encoding categorical variables, scaling numerical features, or extracting features from text or images.
-   - Models need to be capable of handling diverse data types, either through feature engineering or using algorithms specifically designed for heterogeneous data.
-
-### 5. **Applications:**
-   - Heterogeneous features are common in many real-world applications, such as e-commerce (combining text descriptions with numerical features), healthcare (integrating medical records with images or text), and social media analysis (analyzing text, images, and user profiles).
-
-### 6. **Resources for Further Learning:**
-   - Feature Engineering for Machine Learning: [https://www.datacamp.com/community/tutorials/feature-engineering-kaggle](https://www.datacamp.com/community/tutorials/feature-engineering-kaggle)
-   - Handling Text Data in Machine Learning: [https://towardsdatascience.com/handling-text-data-in-machine-learning-projects-b52bbc9531d7](https://towardsdatascience.com/handling-text-data-in-machine-learning-projects-b52bbc9531d7)
-   - Image Feature Extraction Techniques: [https://towardsdatascience.com/image-feature-extraction-techniques-91e8625616f1](https://towardsdatascience.com/image-feature-extraction-techniques-91e8625616f1)
-
-Understanding how to work with heterogeneous features is essential for building effective machine learning models that can handle diverse types of data and extract meaningful insights from them.
-
-
-<a id="how-do-you-do-the-data-selection"></a>
-# How Do You Do The Data Selection {#how-do-you-do-the-data-selection}
-
-When you sample a dataset, [how do you do the data selection](#how-do-you-do-the-data-selection)? [Data Selection](#data-selection)
-A: By randomly sampling, by time period (use a feature)..
-
-# I {#i}
-
-# I
-
+<a id="imbalanced-datasets"></a>
 # Imbalanced Datasets {#imbalanced-datasets}
 
 
@@ -11209,6 +11322,26 @@ summary(model) $coefficients %>% as_tibble
 
 
 
+<a id="imperative"></a>
+# Imperative {#imperative}
+
+
+An **imperative** pipeline tells <mark>_how_ to proceed</mark> at each step in a procedural manner. 
+
+In contrast, a **[declarative](term/declarative.md)** data pipeline does not tell the order it needs to be executed but instead <mark>allows each step/task to find the best time and way to run.</mark> 
+
+The *how* should be taken care of by the tool, framework, or platform running on. 
+
+For example, update an asset when upstream data has changed. 
+
+Both approaches result in the same output. 
+
+However, the declarative approach benefits from **leveraging compile-time query planners** and **considering runtime statistics** to choose the best way to compute and find patterns to reduce the amount of transformed data.
+
+
+
+
+
 <a id="implementing-database-schema"></a>
 # Implementing Database Schema {#implementing-database-schema}
 
@@ -11318,149 +11451,6 @@ Handling ambiguous entities in Named Entity Recognition (NER) can be quite chall
 5. **User Feedback**: Incorporate user feedback mechanisms to refine the model's predictions. If users can correct or confirm entity classifications, this can improve the model over time.
 
 
-<a id="industries-of-interest"></a>
-# Industries Of Interest {#industries-of-interest}
-
-
-Industries to investigate related to my background & interests:
-- [Energy](#energy)
-- [Telecommunications](#telecommunications)
-- [Education and Training](#education-and-training)
-
-Both Reinforcement Learning and Explainable AI offer exciting opportunities for mathematicians to contribute significantly. Your deep mathematical understanding allows you to tackle complex problems, develop new methodologies, and provide theoretical foundations for emerging techniques.
-
-Exploratory Questions
-- [What algorithms or models are used within the energy sector](#what-algorithms-or-models-are-used-within-the-energy-sector)
-- [What algorithms or models are used within the telecommunication sector](#what-algorithms-or-models-are-used-within-the-telecommunication-sector)
-
-### [Reinforcement learning](#reinforcement-learning)
-
-- **Stochastic Processes**: Your background will allow you to delve into the mathematical properties of [Markov Decision Processes](#markov-decision-processes) MDPs, optimizing transition dynamics, and improving algorithms based on theoretical insights.
-- **Theoretical Analysis**: You can contribute to the development of new algorithms by providing theoretical proofs of convergence and performance guarantees, applying concepts from real analysis and optimization.
-- **Complexity Analysis**: Understanding the computational complexity of various RL algorithms and contributing to the design of more efficient algorithms will leverage your mathematical skills.
-
-
-
-
-<a id="input-is-not-properly-sanitized"></a>
-# Input Is Not Properly Sanitized {#input-is-not-properly-sanitized}
-
-
-### Input is Not Properly Sanitized
-
-When we say that <mark>"input is not properly sanitized,"</mark> it means that the input data from users or external sources is not being adequately checked or cleaned before being processed by the application. Proper sanitization involves validating and filtering input to ensure it is safe and expected, preventing malicious data from causing harm. Without proper sanitization, applications can be vulnerable to various attacks, such as:
-
-- **Command Injection**: Malicious commands can be executed on the server.
-- **SQL Injection**: Malicious SQL queries can be executed against a database.
-- **Cross-Site Scripting (XSS)**: Malicious scripts can be injected into web pages.
-
-Sanitization typically involves:
-- Validating input against expected formats or values.
-- Escaping special characters that could be interpreted as code.
-- Removing or encoding potentially harmful content.
-
-<a id="interpreting-logistic-regression-model-parameters"></a>
-# Interpreting Logistic Regression Model Parameters {#interpreting-logistic-regression-model-parameters}
-
-How do this in terms of odds, probabilities ,odds ratio.
-
-[Logistic Regression](#logistic-regression)
-
-
- 
-
-
-<a id="interquartile-range-iqr-detection"></a>
-# Interquartile Range (Iqr) Detection {#interquartile-range-iqr-detection}
-
-https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Preprocess/Outliers/outliers_IQR.py
-
-Context:  
-
-The IQR method is a robust and widely used statistical technique for identifying outliers, especially in [univariate data](#univariate-data). It is based on the distribution of data and is less sensitive to extreme values compared to methods reliant on mean and standard deviation.
-
-Steps:
-- Compute the IQR:
-    - The IQR is the range within which the central 50% of the data lies.
-    - Formula:  
-        $\text{IQR} = Q3 - Q1$  
-        where:
-        - $Q1$: The first quartile (25th percentile)
-        - $Q3$: The third quartile (75th percentile).
-          
-- Determine the bounds:
-    - Define lower and upper bounds to detect potential outliers:  
-        $\text{Lower Bound} = Q1 - 1.5 \cdot \text{IQR}$  
-        $\text{Upper Bound} = Q3 + 1.5 \cdot \text{IQR}$
-        
-- Identify anomalies:
-    - Any data point outside the lower or upper bounds is flagged as an anomaly.
-
-Applications:
-- Best suited for non-Gaussian distributions.
-- Commonly used in boxplots for visualizing outliers.
-
-<a id="isolated-forest"></a>
-# Isolated Forest {#isolated-forest}
-
-
-
- Isolation Forest (iForest) is an [Model Ensemble](#model-ensemble)-based method used for anomaly detection. It operates by isolating data points using a series of random binary splits.
- 
-The key idea is that [standardised/Outliers|anomalies](#standardisedoutliersanomalies), being rare and different, are easier to isolate and thus require fewer splits. 
-
-Mathematically, the isolation of a point is captured by the path length in a decision tree, where shorter paths indicate anomalies. The algorithm constructs multiple isolation trees, and the <mark>anomaly score of a point</mark> is determined by the average path length across all trees. 
-
-Isolation Forest is highly efficient for large datasets and is particularly useful when the assumption is that anomalies are rare and distinct from normal instances.
-
-**Steps:**
-- Randomly select a feature and a split value between the maximum and minimum values of that feature.
-- Repeat this process to create a tree structure.
-- Anomalies are isolated faster than normal points, leading to shorter path lengths in the tree.
-- The average path length across multiple trees is used to compute an anomaly score.
-
-
- Key Components:  
- - **Isolation Trees (iTrees)**: Binary trees where the goal is to isolate observations based on randomly chosen features and split values.  
- - **Anomaly Score**: Calculated based on the average path length across all isolation trees.  
- - **Path Length**: Anomalies tend to have shorter path lengths as they are easier to isolate.  
- - **Random Splitting**: Random feature selection and splitting result in the separation of instances, with fewer splits isolating anomalies.
-
-Important
- - Anomalies are identified based on shorter average path lengths in the isolation forest, <mark>indicating that fewer splits are needed to isolate them.</mark>  
- - The method scales well with large datasets because it relies on randomly generated trees, avoiding complex distance or density computations.
- - Isolation Forest assumes that anomalies are few and distinct; it may perform poorly when anomalies are not easily distinguishable.  
- - The method is sensitive to the [Hyperparameter](#hyperparameter) such as the number of trees and sample size.
-
-Follow up questions
- - How does the isolation forest compare to density-based methods like [DBSCAN](#dbscan) in terms of detecting complex anomalies?  [Anomaly Detection with Clustering](#anomaly-detection-with-clustering)
- - What impact does the choice of sample size have on the performance and accuracy of isolation forests in high-dimensional data?
-
-Related Topics
- - [Random Forests](#random-forests) for classification and regression  
- - One-Class [Support Vector Machines|SVM](#support-vector-machinessvm) for anomaly detection
-
-
-<a id="imperative"></a>
-# Imperative {#imperative}
-
-
-An **imperative** pipeline tells <mark>_how_ to proceed</mark> at each step in a procedural manner. 
-
-In contrast, a **[declarative](term/declarative.md)** data pipeline does not tell the order it needs to be executed but instead <mark>allows each step/task to find the best time and way to run.</mark> 
-
-The *how* should be taken care of by the tool, framework, or platform running on. 
-
-For example, update an asset when upstream data has changed. 
-
-Both approaches result in the same output. 
-
-However, the declarative approach benefits from **leveraging compile-time query planners** and **considering runtime statistics** to choose the best way to compute and find patterns to reduce the amount of transformed data.
-
-
-
-
-
 <a id="in-memory-format"></a>
 # In Memory Format {#in-memory-format}
 
@@ -11489,6 +11479,30 @@ The opposed to in-memory formats are [Data Lake File Formats](Data%20Lake%20File
 
 <a id="incremental-synchronization"></a>
 # Incremental Synchronization {#incremental-synchronization}
+
+
+
+<a id="industries-of-interest"></a>
+# Industries Of Interest {#industries-of-interest}
+
+
+Industries to investigate related to my background & interests:
+- [Energy](#energy)
+- [Telecommunications](#telecommunications)
+- [Education and Training](#education-and-training)
+
+Both Reinforcement Learning and Explainable AI offer exciting opportunities for mathematicians to contribute significantly. Your deep mathematical understanding allows you to tackle complex problems, develop new methodologies, and provide theoretical foundations for emerging techniques.
+
+Exploratory Questions
+- [What algorithms or models are used within the energy sector](#what-algorithms-or-models-are-used-within-the-energy-sector)
+- [What algorithms or models are used within the telecommunication sector](#what-algorithms-or-models-are-used-within-the-telecommunication-sector)
+
+### [Reinforcement learning](#reinforcement-learning)
+
+- **Stochastic Processes**: Your background will allow you to delve into the mathematical properties of [Markov Decision Processes](#markov-decision-processes) MDPs, optimizing transition dynamics, and improving algorithms based on theoretical insights.
+- **Theoretical Analysis**: You can contribute to the development of new algorithms by providing theoretical proofs of convergence and performance guarantees, applying concepts from real analysis and optimization.
+- **Complexity Analysis**: Understanding the computational complexity of various RL algorithms and contributing to the design of more efficient algorithms will leverage your mathematical skills.
+
 
 
 
@@ -11538,6 +11552,23 @@ Information theory has profound implications and applications across various dom
 7. **Rate-Distortion Theory**: This aspect of information theory deals with the trade-offs between the fidelity of data representation and the amount of compression, which is crucial in applications like audio and video compression.
 
 
+
+<a id="input-is-not-properly-sanitized"></a>
+# Input Is Not Properly Sanitized {#input-is-not-properly-sanitized}
+
+
+### Input is Not Properly Sanitized
+
+When we say that <mark>"input is not properly sanitized,"</mark> it means that the input data from users or external sources is not being adequately checked or cleaned before being processed by the application. Proper sanitization involves validating and filtering input to ensure it is safe and expected, preventing malicious data from causing harm. Without proper sanitization, applications can be vulnerable to various attacks, such as:
+
+- **Command Injection**: Malicious commands can be executed on the server.
+- **SQL Injection**: Malicious SQL queries can be executed against a database.
+- **Cross-Site Scripting (XSS)**: Malicious scripts can be injected into web pages.
+
+Sanitization typically involves:
+- Validating input against expected formats or values.
+- Escaping special characters that could be interpreted as code.
+- Removing or encoding potentially harmful content.
 
 <a id="interoperable"></a>
 # Interoperable {#interoperable}
@@ -11644,6 +11675,47 @@ Need comprehensibility and accuracy in explanations to enhance user understandin
 - Use techniques like feature importance scores or LIME to explain individual predictions.
 
 - **How can we design machine learning models that are both accurate and interpretable?** While deep learning models often achieve high accuracy, their complexity can make them difficult to interpret. This raises questions about how to balance accuracy and interpretability. Exploring techniques for visualizing and understanding the internal representations learned by deep networks, or developing inherently interpretable models that still achieve high performance, could lead to greater trust and adoption of machine learning in critical applications like healthcare and finance.
+
+<a id="interpreting-logistic-regression-model-parameters"></a>
+# Interpreting Logistic Regression Model Parameters {#interpreting-logistic-regression-model-parameters}
+
+How do this in terms of odds, probabilities ,odds ratio.
+
+[Logistic Regression](#logistic-regression)
+
+
+ 
+
+
+<a id="interquartile-range-iqr-detection"></a>
+# Interquartile Range (Iqr) Detection {#interquartile-range-iqr-detection}
+
+https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Preprocess/Outliers/outliers_IQR.py
+
+Context:  
+
+The IQR method is a robust and widely used statistical technique for identifying outliers, especially in [univariate data](#univariate-data). It is based on the distribution of data and is less sensitive to extreme values compared to methods reliant on mean and standard deviation.
+
+Steps:
+- Compute the IQR:
+    - The IQR is the range within which the central 50% of the data lies.
+    - Formula:  
+        $\text{IQR} = Q3 - Q1$  
+        where:
+        - $Q1$: The first quartile (25th percentile)
+        - $Q3$: The third quartile (75th percentile).
+          
+- Determine the bounds:
+    - Define lower and upper bounds to detect potential outliers:  
+        $\text{Lower Bound} = Q1 - 1.5 \cdot \text{IQR}$  
+        $\text{Upper Bound} = Q3 + 1.5 \cdot \text{IQR}$
+        
+- Identify anomalies:
+    - Any data point outside the lower or upper bounds is flagged as an anomaly.
+
+Applications:
+- Best suited for non-Gaussian distributions.
+- Commonly used in boxplots for visualizing outliers.
 
 <a id="interview-notepad"></a>
 # Interview Notepad {#interview-notepad}
@@ -11771,10 +11843,48 @@ jupyter nbconvert --to html --TemplateExporter.exclude_input=True Querying.ipynb
 
 
 
-# J {#j}
+<a id="isolated-forest"></a>
+# Isolated Forest {#isolated-forest}
 
-# J
 
+
+ Isolation Forest (iForest) is an [Model Ensemble](#model-ensemble)-based method used for anomaly detection. It operates by isolating data points using a series of random binary splits.
+ 
+The key idea is that [standardised/Outliers|anomalies](#standardisedoutliersanomalies), being rare and different, are easier to isolate and thus require fewer splits. 
+
+Mathematically, the isolation of a point is captured by the path length in a decision tree, where shorter paths indicate anomalies. The algorithm constructs multiple isolation trees, and the <mark>anomaly score of a point</mark> is determined by the average path length across all trees. 
+
+Isolation Forest is highly efficient for large datasets and is particularly useful when the assumption is that anomalies are rare and distinct from normal instances.
+
+**Steps:**
+- Randomly select a feature and a split value between the maximum and minimum values of that feature.
+- Repeat this process to create a tree structure.
+- Anomalies are isolated faster than normal points, leading to shorter path lengths in the tree.
+- The average path length across multiple trees is used to compute an anomaly score.
+
+
+ Key Components:  
+ - **Isolation Trees (iTrees)**: Binary trees where the goal is to isolate observations based on randomly chosen features and split values.  
+ - **Anomaly Score**: Calculated based on the average path length across all isolation trees.  
+ - **Path Length**: Anomalies tend to have shorter path lengths as they are easier to isolate.  
+ - **Random Splitting**: Random feature selection and splitting result in the separation of instances, with fewer splits isolating anomalies.
+
+Important
+ - Anomalies are identified based on shorter average path lengths in the isolation forest, <mark>indicating that fewer splits are needed to isolate them.</mark>  
+ - The method scales well with large datasets because it relies on randomly generated trees, avoiding complex distance or density computations.
+ - Isolation Forest assumes that anomalies are few and distinct; it may perform poorly when anomalies are not easily distinguishable.  
+ - The method is sensitive to the [Hyperparameter](#hyperparameter) such as the number of trees and sample size.
+
+Follow up questions
+ - How does the isolation forest compare to density-based methods like [DBSCAN](#dbscan) in terms of detecting complex anomalies?  [Anomaly Detection with Clustering](#anomaly-detection-with-clustering)
+ - What impact does the choice of sample size have on the performance and accuracy of isolation forests in high-dimensional data?
+
+Related Topics
+ - [Random Forests](#random-forests) for classification and regression  
+ - One-Class [Support Vector Machines|SVM](#support-vector-machinessvm) for anomaly detection
+
+
+<a id="java-vs-javascript"></a>
 # Java Vs Javascript {#java-vs-javascript}
 
 
@@ -11804,6 +11914,48 @@ Although their names are similar, **Java** and **JavaScript** are fundamentally 
 
 
 
+<a id="jinja-template"></a>
+# Jinja Template {#jinja-template}
+
+
+### Resources
+
+[LINK](https://www.youtube.com/watch?v=OraYXEr0Irg)
+
+### Practical
+
+jinja2 works with python 3.
+
+![Pasted image 20240922201606.png](../content/images/Pasted%20image%2020240922201606.png)
+
+Renders templates with variable substitutions 
+
+You can use tags too.
+
+![Pasted image 20240922202345.png](../content/images/Pasted%20image%2020240922202345.png)
+
+Get gpt to generate example if necessary.
+
+can get a csv to export the data.
+
+context dictionaries are used can do html and flask.
+
+jinja used to manage web pages
+
+[Flask](#flask)
+
+makes me think about how [Quartz](#quartz) is constructed.
+
+### About
+
+Jinja is a fast, expressive, extensible templating engine. Special placeholders in the template allow writing code similar to [Python](term/python.md) syntax. Then the template is passed data to render the final document.
+
+Most popularized by [dbt](#dbt).  Read more on the [Jinja Documentation](https://jinja.palletsprojects.com/).
+
+integrates with [Flask](#flask).
+
+
+<a id="list-of-vectors-in-some-dimension-with-many"></a>
 ## Johnson–Lindenstrauss lemma
 
 #math 
@@ -11823,7 +11975,7 @@ import torch
 import matplotlib.pyplot as plt
 from tqdm import tqdm
 
-# List of vectors in some dimension, with many
+# List of vectors in some dimension, with many {#list-of-vectors-in-some-dimension-with-many}
 # more vectors than there are dimensions
 num_vectors = 10000
 vector_len = 100
@@ -11874,13 +12026,14 @@ plt.show()
 
 ```
 
+<a id="merge"></a>
 ### Joining Datasets
 
 In [DE_Tools](#de_tools) see:
 - https://github.com/rhyslwells/DE_Tools/blob/main/Explorations/Transformation/Joining.ipynb
 
 ```python
-# Merge
+# Merge {#merge}
 df1 = pd.DataFrame({'key': ['A', 'B'], 'value': [1, 2]})
 df2 = pd.DataFrame({'key': ['A', 'B'], 'value': [3, 4]})
 merged_df = pd.merge(df1, df2, on='key')
@@ -12003,51 +12156,7 @@ JSON data embedded inside of a string, is an example of semi-structured data. Th
 
 
 
-<a id="jinja-template"></a>
-# Jinja Template {#jinja-template}
-
-
-### Resources
-
-[LINK](https://www.youtube.com/watch?v=OraYXEr0Irg)
-
-### Practical
-
-jinja2 works with python 3.
-
-![Pasted image 20240922201606.png](../content/images/Pasted%20image%2020240922201606.png)
-
-Renders templates with variable substitutions 
-
-You can use tags too.
-
-![Pasted image 20240922202345.png](../content/images/Pasted%20image%2020240922202345.png)
-
-Get gpt to generate example if necessary.
-
-can get a csv to export the data.
-
-context dictionaries are used can do html and flask.
-
-jinja used to manage web pages
-
-[Flask](#flask)
-
-makes me think about how [Quartz](#quartz) is constructed.
-
-### About
-
-Jinja is a fast, expressive, extensible templating engine. Special placeholders in the template allow writing code similar to [Python](term/python.md) syntax. Then the template is passed data to render the final document.
-
-Most popularized by [dbt](#dbt).  Read more on the [Jinja Documentation](https://jinja.palletsprojects.com/).
-
-integrates with [Flask](#flask).
-
-
-# K {#k}
-
-# K
-
+<a id="k-means"></a>
 # K Means {#k-means}
 
 
@@ -12201,6 +12310,9 @@ Both (sklearn)[`StratifiedKFold`](https://scikit-learn.org/stable/modules/gener
 
 
 
+<a id="key-differences-of-web-feature-server-wfs-and-web-feature-server-wfs"></a>
+# Key Differences of Web Feature Server (WFS) and Web Feature Server (WFS) {#key-differences-of-web-feature-server-wfs-and-web-feature-server-wfs}
+
 ### Key Differences of Web Feature Server (WFS) and Web Feature Server (WFS)
 
 1. **Data Type**:
@@ -12225,6 +12337,9 @@ Both (sklearn)[`StratifiedKFold`](https://scikit-learn.org/stable/modules/gener
 
 In summary, WMTS is focused on efficiently serving map images for fast visualization, while WFS provides access to detailed, manipulable geographic feature data for more in-depth spatial analysis and querying.
 
+<a id="kmeans-vs-gmm"></a>
+# Kmeans vs GMM {#kmeans-vs-gmm}
+
 ### **Key Differences Between [k-Means](#k-means) and GMM**
 
 #### Cluster Shape
@@ -12242,6 +12357,37 @@ In summary, WMTS is focused on efficiently serving map images for fast visualiza
 
 - **k-Means**: Performs well when clusters are **spherical** and well-separated.
 - **GMM**: Handles **overlapping clusters** and clusters with **different shapes**, leveraging its covariance modeling capability.
+
+<a id="knowledge-graph-vs-rag-setup"></a>
+# Knowledge Graph Vs Rag Setup {#knowledge-graph-vs-rag-setup}
+
+
+### Comparison: Knowledge Graph vs. RAG Setup
+
+- <mark>**Knowledge Graphs** are structured representations of entities and their relationships, designed primarily for querying, reasoning, and storing factual information.</mark>
+- <mark>**RAG setups** enhance generative models by retrieving external knowledge (from unstructured or semi-structured data) and integrating it into the generation process.</mark>
+
+While not the same, these two concepts can be used together to build systems that combine structured knowledge retrieval with the natural language generation capabilities of RAG models.
+
+While **knowledge graphs** and **RAG** are distinct, they can be integrated to improve certain systems:
+- <mark>A **RAG model** could use a **knowledge graph** as the retrieval source.</mark> Instead of retrieving unstructured text documents, the RAG model could retrieve structured, factual triples from a knowledge graph and incorporate this into the generation process. This would improve the accuracy of fact-based questions and answers.
+
+A [Knowledge Graph](#knowledge-graph) and a **Retrieval-Augmented Generation ([RAG](#rag))** setup are related but distinct concepts, particularly in how they handle knowledge representation and retrieval. While they can complement each other in certain applications, they serve different purposes and operate in different ways.
+
+| Aspect                      | Knowledge Graph                                                                         | RAG Setup                                                                             |
+| --------------------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| **Purpose**                 | Stores and organizes knowledge for querying and reasoning                               | Combines retrieval of external information with <mark>text generation</mark>                   |
+| **Data Structure**          | <mark>Highly structured</mark> (graph with nodes and edges)                                      | Unstructured or semi-structured (documents, text snippets)                            |
+| **Retrieval Mechanism**     | Queries are made through graph traversal or SPARQL-like languages                       | Information is retrieved via search mechanisms (e.g., dense embeddings)               |
+| **Usage**                   | Often used for querying factual data, answering structured queries, [Semantic Relationships](#semantic-relationships) | Used to enhance the factual accuracy of generative models by retrieving external data |
+| **Reasoning and Inference** | Capable of logical reasoning based on relationships                                     | Does not perform reasoning; it retrieves and integrates relevant text                 |
+| **Scalability**             | Requires careful design to manage large, complex graphs                                 | Can handle large text corpora, but retrieval quality affects the final generation     |
+| **Generative Capabilities** | Not generative (focused on querying existing knowledge)                                 | [Generative](#generative) (synthesizes and generates natural language responses)                 |
+
+
+
+
+
 
 <a id="knowledge-graph"></a>
 # Knowledge Graph {#knowledge-graph}
@@ -12339,212 +12485,11 @@ Knowledge work refers to tasks that primarily involve handling or using informat
 - Strategic planning
 - Writing and content creation
 
-<a id="knowledge-graph-vs-rag-setup"></a>
-# Knowledge Graph Vs Rag Setup {#knowledge-graph-vs-rag-setup}
-
-
-### Comparison: Knowledge Graph vs. RAG Setup
-
-- <mark>**Knowledge Graphs** are structured representations of entities and their relationships, designed primarily for querying, reasoning, and storing factual information.</mark>
-- <mark>**RAG setups** enhance generative models by retrieving external knowledge (from unstructured or semi-structured data) and integrating it into the generation process.</mark>
-
-While not the same, these two concepts can be used together to build systems that combine structured knowledge retrieval with the natural language generation capabilities of RAG models.
-
-While **knowledge graphs** and **RAG** are distinct, they can be integrated to improve certain systems:
-- <mark>A **RAG model** could use a **knowledge graph** as the retrieval source.</mark> Instead of retrieving unstructured text documents, the RAG model could retrieve structured, factual triples from a knowledge graph and incorporate this into the generation process. This would improve the accuracy of fact-based questions and answers.
-
-A [Knowledge Graph](#knowledge-graph) and a **Retrieval-Augmented Generation ([RAG](#rag))** setup are related but distinct concepts, particularly in how they handle knowledge representation and retrieval. While they can complement each other in certain applications, they serve different purposes and operate in different ways.
-
-| Aspect                      | Knowledge Graph                                                                         | RAG Setup                                                                             |
-| --------------------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| **Purpose**                 | Stores and organizes knowledge for querying and reasoning                               | Combines retrieval of external information with <mark>text generation</mark>                   |
-| **Data Structure**          | <mark>Highly structured</mark> (graph with nodes and edges)                                      | Unstructured or semi-structured (documents, text snippets)                            |
-| **Retrieval Mechanism**     | Queries are made through graph traversal or SPARQL-like languages                       | Information is retrieved via search mechanisms (e.g., dense embeddings)               |
-| **Usage**                   | Often used for querying factual data, answering structured queries, [Semantic Relationships](#semantic-relationships) | Used to enhance the factual accuracy of generative models by retrieving external data |
-| **Reasoning and Inference** | Capable of logical reasoning based on relationships                                     | Does not perform reasoning; it retrieves and integrates relevant text                 |
-| **Scalability**             | Requires careful design to manage large, complex graphs                                 | Can handle large text corpora, but retrieval quality affects the final generation     |
-| **Generative Capabilities** | Not generative (focused on querying existing knowledge)                                 | [Generative](#generative) (synthesizes and generates natural language responses)                 |
-
-
-
-
-
-
 <a id="kubernetes"></a>
 # Kubernetes {#kubernetes}
 
 
 It’s a platform that allows you to run and orchestrate container workloads. [**Kubernetes**](https://stackoverflow.blog/2020/05/29/why-kubernetes-getting-so-popular/) **has become the de-facto standard** for your cloud-native apps to (auto-) [scale-out](https://stackoverflow.com/a/11715598/5246670) and deploy your open-source zoo fast, cloud-provider-independent. No lock-in here. Kubernetes is the **move from infrastructure as code** towards **infrastructure as data**, specifically as [YAML](term/yaml.md). With Kubernetes, developers can quickly write applications that run across multiple operating environments. Costs can be reduced by scaling down.
-
-# L {#l}
-
-# L
-
-# Lbfgs {#lbfgs}
-
-LBFGS stands for Limited-memory Broyden-Fletcher-Goldfarb-Shanno, which is an [Optimisation function](#optimisation-function)optimization algorithm used to find the minimum of a function. In the context of [logistic regression](#logistic-regression), LBFGS is a method for optimizing the cost function to find the optimal [model parameters](#model-parameters) (such as the intercept and coefficients).
-
-Here's a breakdown of the key features of LBFGS:
-
-1. Quasi-Newton Method: LBFGS is a type of Quasi-Newton method, which approximates the inverse of the Hessian matrix (second-order derivatives of the cost function). Instead of computing the full Hessian matrix, it uses an approximation, which makes it more efficient for large datasets.
-    
-2. Limited Memory: The "limited-memory" part refers to the fact that LBFGS does not store the entire Hessian matrix, which is computationally expensive and memory-intensive. Instead, it keeps a limited amount of information from previous iterations, making it well-suited for large-scale problems where full memory-based methods might not be feasible.
-    
-3. Optimization for Smooth, Differentiable Functions: It is designed to optimize smooth, differentiable functions like the [cost function](#cost-function) in logistic regression.
-    
-
-In the context of logistic regression with sklearn, LBFGS is used as a solver for optimization. When you set `solver='lbfgs'`, [Sklearn](#sklearn)'s logistic regression uses this algorithm to iteratively adjust the model parameters (the intercept and coefficients) to minimize the logistic loss (the cost function) while possibly incorporating regularization.
-
-LBFGS is often preferred for its efficiency and ability to converge quickly without needing a lot of iterations, especially when the number of features is large.
-
-<a id="llm-evaluation-metrics"></a>
-# Llm Evaluation Metrics {#llm-evaluation-metrics}
-
-[LLM Evaluation Metrics](#llm-evaluation-metrics)
-- BLEU, 
-- ROUGE, 
-- perplexity
-which quantify the similarity between generated text and reference outputs.
-
-[LLM](#llm)
-
-<a id="llm"></a>
-# Llm {#llm}
-
-
-A Large Language Model (LLM) is a type of language model designed for language understanding and generation. They can perform a variety of tasks, including:
-
-- Text generation
-- Machine translation
-- Summary writing
-- Image generation from text
-- Machine coding
-- Chatbots or Conversational AI
-# Questions
-
-- [How do we evaluate of LLM Outputs](#how-do-we-evaluate-of-llm-outputs)
-- [Memory|What is LLM memory](#memorywhat-is-llm-memory)
-- [Relationships in memory|Managing LLM memory](#relationships-in-memorymanaging-llm-memory)
-- [Mixture of Experts](#mixture-of-experts): having multiple experts instead of one big model.
-- [Distillation](#distillation)
-- Mathematics on the parameter usage [Attention mechanism](#attention-mechanism)
-- Use of [Reinforcement learning](#reinforcement-learning) in training [Chain of thought](#chain-of-thought) methods in LLM's (deepseek)
-
-## How do Large Language Models (LLMs) Work?
-
-Large [Language Models](#language-models) (LLMs) are a type of artificial intelligence model that is designed to understand and generate human language. Key aspects of how they work include:
-
-- Word Vectors: LLMs represent words as long lists of numbers, known as word vectors ([standardised/Vector Embedding|word embedding](#standardisedvector-embeddingword-embedding)).
-- Neural Network Architecture: They are built on a neural network architecture known as the [Transformer](#transformer). This architecture enables the model to identify relationships between words in a sentence, irrespective of their position in the sequence.
-- [Transfer Learning](#transfer-learning): LLMs are trained using a technique known as transfer learning, where a pre-trained model is adapted to a specific task.
-
-## Characteristics of LLMs
-
-- <mark>Non-Deterministic:</mark> LLMs are non-deterministic, meaning the types of problems they can be applied to are of a probabilistic nature (<mark>temperature</mark>).
-- Data Dependency: The performance and behaviour of LLMs are heavily influenced by the data they are trained on.
-
-
-
-
-<a id="lstm"></a>
-# Lstm {#lstm}
-
-
-# What is LSTM
-
-LSTM (Long Short-Term Memory) networks are a specialized type of Recurrent Neural Network (RNN) designed to overcome the [vanishing and exploding gradients problem](#vanishing-and-exploding-gradients-problem) that affects traditional [Recurrent Neural Networks](#recurrent-neural-networks). 
-
-LSTMs address this challenge through their unique architecture.
-
-Used for tasks that require the retention of information over time, and problems involving <mark>sequential data.</mark> 
-
-The key strength of LSTMs is their ability to manage <mark>long-term dependencies</mark> using their <mark>gating mechanisms</mark>.
-### Key Components of LSTM Networks:
-
-Resources: [Understanding LSTM Networks](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
-
-$x_t$ input, $h_t$ output, cell state $C_t$, conveyer belt
-
-![Pasted image 20241015211424.png|500](../content/images/Pasted%20image%2020241015211424.png|500)
-
-Memory Cell:
-   - The core of an LSTM network is the memory cell, which maintains information over long time intervals. This cell helps store, forget, or pass on information from previous time steps.
-
-<mark>Gates</mark>:
-   - Input Gate: Controls how much of the input should be allowed into the memory cell.
-   - Forget Gate: Determines which information should be discarded from the memory cell.
-   - Output Gate: Controls what part of the cell's memory should be output as the hidden state for the current time step.
-
-These gates are regulated by <mark>sigmoid</mark> activation, which output values between 0 and 1, acting like a filter to determine the amount of information that should pass through. This gate mechanism allows the LSTM network to maintain a balance between retaining relevant data and discarding unnecessary information over time.
-# Why is LSTM less favourable over using transformers
-
->[!Summary]  
-> Long Short-Term Memory (LSTM) networks, a type of Recurrent Neural Network ([RNN](#rnn)), are less favorable than [Transformer](#transformer) for many modern tasks, especially in Natural Language Processing ([NLP](#nlp)). LSTMs process sequences of data one step at a time, making them inherently sequential and difficult to parallelize. Transformers, on the other hand, leverage a self-attention mechanism that allows them to process entire sequences simultaneously, leading to faster training and the ability to capture long-range dependencies more effectively. 
-> 
-> Mathematically, LSTM’s sequential nature leads to slower computations, while the Transformer’s attention mechanism computes relationships between all tokens in a sequence, allowing better scalability and performance for tasks like translation, summarization, and language modeling.
-
->[!Breakdown]  
-> Key Components:  
-> - Sequential Processing in LSTM: Each time step relies on the previous one, creating a bottleneck for long sequences.  
-> - Self-Attention Mechanism in Transformers: Allows simultaneous processing of all elements in a sequence.  
-> - Parallelization: Transformers leverage parallel computing more effectively due to non-sequential data processing.  
-> - Positional Encoding: Used by Transformers to retain the order of the sequence, overcoming the need for explicit recurrence.
-
->[!important]  
-> - LSTMs are slower in training due to their sequential nature, as calculations depend on previous states.  
-> - Transformers efficiently handle long-range dependencies using self-attention, which calculates the relationships between tokens directly without needing previous time steps.
-
->[!attention]  
-> - LSTMs suffer from vanishing/exploding gradient issues, especially in long sequences, limiting their effectiveness for long-term dependencies.  
-> - Transformers require more data and computational power to train, which can be a limitation in resource-constrained environments.
-
->[!Example]  
-> In a language translation task, LSTMs process words sequentially, making them less efficient in handling long sentences. In contrast, a Transformer can analyze the entire sentence at once, using self-attention to determine relationships between all words, leading to faster and more accurate translations.
-
->[!Follow up questions]  
-> - How does the attention mechanism in Transformers improve the model's ability to capture long-range dependencies compared to LSTM’s <mark>cell structure?</mark>  
-> - In what cases might LSTM still be a better option over Transformers, despite their limitations?
-
->[!Related Topics]  
-> - [Attention mechanism](#attention-mechanism) in deep learning  
-> - [BERT](#bert) (Bidirectional Encoder Representations from Transformers)  
-> - [GRU](#gru) (Gated Recurrent Unit) as an alternative to LSTM
-
-
-### Example Workflow in Python using Keras:
-
-In this example, we define a simple LSTM model in [Keras](#keras) for a time series forecasting task. The model processes sequences with 1000 time steps, and the LSTM layer has 50 units, followed by a fully connected (Dense) layer for the final prediction.
-
-```python
-import numpy as np
-from keras.models import Sequential
-from keras.layers import LSTM, Dense
-
-# Sample data: time series with 1000 timesteps and 1 feature
-time_steps = 1000
-features = 1
-X_train = np.random.rand(1000, time_steps, features)
-y_train = np.random.rand(1000)
-
-# Define LSTM model
-model = Sequential()
-model.add(LSTM(50, activation='tanh', return_sequences=False, input_shape=(time_steps, features)))
-model.add(Dense(1))  # Output layer for regression tasks
-
-model.compile(optimizer='adam', loss='mse')
-
-# Train the model
-model.fit(X_train, y_train, epochs=10, batch_size=64)
-```
-
-# notes
-
-[LSTM](#lstm)
-How to implement [LSTM](#lstm) with [PyTorch](#pytorch)?
-https://lightning.ai/lightning-ai/studios/statquest-long-short-term-memory-lstm-with-pytorch-lightning?view=public&section=all
-without lightning - there is a script there
-
-[LSTM](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
 
 <a id="label-encoding"></a>
 # Label Encoding {#label-encoding}
@@ -12558,6 +12503,62 @@ Possible missing labelling or bias in the data, or under-represented data. Const
 
 Examples:
 - ImageNet
+
+
+<a id="lambda-architecture"></a>
+# Lambda Architecture {#lambda-architecture}
+
+
+Lambda architecture is a data-processing architecture designed to handle massive quantities of data by taking advantage of both batch and stream-processing methods. [Data Streaming](#data-streaming)
+
+This approach to architecture attempts to balance <mark>latency, throughput, and fault tolerance</mark> using batch processing to provide comprehensive and accurate views of batch data, while simultaneously using real-time stream processing to provide views of online data. 
+
+The two view outputs may be joined before the presentation. The rise of lambda architecture is correlated with the growth of big data, real-time analytics, and the drive to mitigate the latencies of [MapReduce](term/map%20reduce.md).
+
+Lambda architecture is a [design pattern](#design-pattern) for processing large volumes of data by combining both batch and stream processing methods. It aims to provide a comprehensive and efficient way to handle big data by addressing the needs for low-latency data processing, high throughput, and fault tolerance. 
+
+[Batch Processing](#batch-processing)
+
+Lambda architecture is particularly useful in scenarios where <mark>both historical</mark> and <mark>real-time data insights</mark> are crucial, such as in financial services, telecommunications, and online retail. It allows organizations to leverage the strengths of both batch and stream processing to meet diverse data processing needs.
+
+### Components of Lambda Architecture
+
+1. **Batch Layer**:
+   - **Purpose**: To process large sets of historical data in batches.
+   - **Functionality**: It computes results from all available data, ensuring accuracy and completeness.
+   - **Tools**: Often uses distributed processing frameworks like Hadoop or Spark for batch processing.
+   - **Output**: Produces a batch view, which is a complete and accurate dataset that can be queried.
+
+2. **Speed Layer**:
+   - **Purpose**: To process real-time data streams with low latency.
+   - **Functionality**: It provides immediate insights by processing data as it arrives.
+   - **Tools**: Utilizes stream processing frameworks like Apache Storm, Apache Flink, or Spark Streaming.
+   - **Output**: Generates a real-time view that reflects the most recent data.
+
+3. **Serving Layer**:
+   - **Purpose**: To merge and serve the results from both the batch and speed layers.
+   - **Functionality**: It combines the batch view and real-time view to provide a unified, queryable dataset.
+   - **Tools**: Databases or data stores optimized for fast reads, such as Cassandra or HBase, are often used.
+
+### How Lambda Architecture Works
+
+- **Data Ingestion**: Data is ingested into both the batch and speed layers simultaneously.
+- **Batch Processing**: The batch layer processes data in large volumes, typically with higher latency, to ensure accuracy and completeness.
+- **Stream Processing**: The speed layer processes data in real-time, providing low-latency updates.
+- **Data Serving**: The serving layer combines outputs from both layers, allowing users to query the most up-to-date and accurate data.
+
+### Benefits of Lambda Architecture
+
+- **Fault Tolerance**: By separating batch and real-time processing, the architecture can handle failures more gracefully.
+- **Scalability**: It can scale to handle large volumes of data by leveraging distributed processing frameworks.
+- **Flexibility**: Supports both historical and real-time data processing, making it suitable for a wide range of applications.
+
+### Challenges
+
+- **Complexity**: Maintaining two separate processing paths (batch and speed) can increase system complexity.
+- **Data Consistency**: Ensuring consistency between batch and real-time views can be challenging.
+- **Maintenance**: Requires more effort to maintain and update due to its dual-layer nature.
+
 
 
 <a id="langchain"></a>
@@ -12617,6 +12618,9 @@ In information theory, several techniques can be applied to measure and optimize
 8. [Attention Mechanism](#attention-mechanism): While not strictly an information theory concept, attention mechanisms in neural networks can be seen as a way to dynamically allocate information processing resources, focusing on the most informative parts of the input.
 
 
+
+<a id="language-models-large-llms-vs-small-slms"></a>
+# Language Models Large (LLMs) vs Small (SLMs) {#language-models-large-llms-vs-small-slms}
 
 ### Overview
 Language models can be categorized into **large language models ([LLM](#llm))** and **small language models ([SLM](#slm))**. While LLMs boast extensive general-purpose knowledge and capabilities, SLMs offer distinct advantages in certain scenarios, particularly when it comes to efficiency, resource constraints, and task-specific environments.
@@ -12774,6 +12778,59 @@ for index, topic in enumerate(lda.components_):
 - **Dimensionality Reduction**: LDA reduces the complexity of the text data by modeling it with a smaller number of topics instead of many individual words.
 
 
+<a id="lbfgs"></a>
+# Lbfgs {#lbfgs}
+
+LBFGS stands for Limited-memory Broyden-Fletcher-Goldfarb-Shanno, which is an [Optimisation function](#optimisation-function)optimization algorithm used to find the minimum of a function. In the context of [logistic regression](#logistic-regression), LBFGS is a method for optimizing the cost function to find the optimal [model parameters](#model-parameters) (such as the intercept and coefficients).
+
+Here's a breakdown of the key features of LBFGS:
+
+1. Quasi-Newton Method: LBFGS is a type of Quasi-Newton method, which approximates the inverse of the Hessian matrix (second-order derivatives of the cost function). Instead of computing the full Hessian matrix, it uses an approximation, which makes it more efficient for large datasets.
+    
+2. Limited Memory: The "limited-memory" part refers to the fact that LBFGS does not store the entire Hessian matrix, which is computationally expensive and memory-intensive. Instead, it keeps a limited amount of information from previous iterations, making it well-suited for large-scale problems where full memory-based methods might not be feasible.
+    
+3. Optimization for Smooth, Differentiable Functions: It is designed to optimize smooth, differentiable functions like the [cost function](#cost-function) in logistic regression.
+    
+
+In the context of logistic regression with sklearn, LBFGS is used as a solver for optimization. When you set `solver='lbfgs'`, [Sklearn](#sklearn)'s logistic regression uses this algorithm to iteratively adjust the model parameters (the intercept and coefficients) to minimize the logistic loss (the cost function) while possibly incorporating regularization.
+
+LBFGS is often preferred for its efficiency and ability to converge quickly without needing a lot of iterations, especially when the number of features is large.
+
+<a id="learning-rate"></a>
+# Learning Rate {#learning-rate}
+
+
+### Description
+
+The learning rate is a  [Hyperparameter](#hyperparameter) in machine learning that <mark>determines the step size at which a model's parameters are updated during training</mark>. It plays a significant role in the optimization process, particularly in algorithms like [Gradient Descent](#gradient-descent) which are used to minimize the [Loss function](#loss-function).
+
+### Key Points about Learning Rate:
+
+1. **Parameter Updates**:
+   - During training, the model's parameters (such as weights and biases in neural networks) are adjusted iteratively to minimize the loss function.
+   - The learning rate controls how much the parameters are changed in response to the estimated error each time the model weights are updated.
+
+2. **Impact on Training**/ Convergence
+   - A high learning rate can lead to faster convergence but <mark>risks overshooting</mark> the optimal solution, potentially causing the model to diverge.
+   - A low learning rate ensures more stable and precise convergence but may result in slow training and can get stuck in local minima. A lower learning rate makes the model more robust but requires more iterations to converge.
+   - 
+1. **Tuning**:
+   - The learning rate is a hyperparameter that needs careful tuning. It can be adjusted manually or through automated hyperparameter optimization techniques like [standardised/Optuna](#standardisedoptuna). 
+   - The optimal learning rate depends on various factors, including the dataset, model complexity, and the specific optimization algorithm used.
+
+3. **Practical Considerations**:
+   - It's common to start with a moderate learning rate and adjust based on the model's performance during training.
+   - Techniques like learning rate schedules or adaptive learning rate methods (e.g., [Adam Optimizer](#adam-optimizer)) can dynamically adjust the learning rate during training to improve convergence.
+
+
+This impacts the efficiency of [Gradient Descent](#gradient-descent)
+
+Effects occur if too small (takes long), or too large (over shoots missing the minima).
+
+What happens if you are at a local minima? Then no change.
+
+![Pasted image 20241216204925.png](../content/images/Pasted%20image%2020241216204925.png)
+
 <a id="learning-styles"></a>
 # Learning Styles {#learning-styles}
 
@@ -12793,6 +12850,18 @@ What does the data look like [continuous](#continuous) or [categorical](#categor
 
 
 
+
+<a id="lemmatization"></a>
+# Lemmatization {#lemmatization}
+
+
+Lemmatization is the process of <mark>reducing a word to its base or root</mark> form, known as the "lemma." 
+
+Unlike stemming, which simply cuts off word endings, lemmatization considers the context and morphological analysis of the words. 
+
+It ensures that the root word is a valid word in the language. <mark>For example, the words "running," "ran," and "runs" would all be lemmatized to "run."</mark> 
+
+This process helps in normalizing text data for natural language processing tasks by grouping together different forms of a word.
 
 <a id="lightgbm-vs-xgboost-vs-catboost"></a>
 # Lightgbm Vs Xgboost Vs Catboost {#lightgbm-vs-xgboost-vs-catboost}
@@ -13022,6 +13091,55 @@ ll.delete(20)
 ll.display()  # Output: 10 -> 30 -> None
 ```
 
+<a id="llm-evaluation-metrics"></a>
+# Llm Evaluation Metrics {#llm-evaluation-metrics}
+
+[LLM Evaluation Metrics](#llm-evaluation-metrics)
+- BLEU, 
+- ROUGE, 
+- perplexity
+which quantify the similarity between generated text and reference outputs.
+
+[LLM](#llm)
+
+<a id="llm"></a>
+# Llm {#llm}
+
+
+A Large Language Model (LLM) is a type of language model designed for language understanding and generation. They can perform a variety of tasks, including:
+
+- Text generation
+- Machine translation
+- Summary writing
+- Image generation from text
+- Machine coding
+- Chatbots or Conversational AI
+# Questions
+
+- [How do we evaluate of LLM Outputs](#how-do-we-evaluate-of-llm-outputs)
+- [Memory|What is LLM memory](#memorywhat-is-llm-memory)
+- [Relationships in memory|Managing LLM memory](#relationships-in-memorymanaging-llm-memory)
+- [Mixture of Experts](#mixture-of-experts): having multiple experts instead of one big model.
+- [Distillation](#distillation)
+- Mathematics on the parameter usage [Attention mechanism](#attention-mechanism)
+- Use of [Reinforcement learning](#reinforcement-learning) in training [Chain of thought](#chain-of-thought) methods in LLM's (deepseek)
+
+## How do Large Language Models (LLMs) Work?
+
+Large [Language Models](#language-models) (LLMs) are a type of artificial intelligence model that is designed to understand and generate human language. Key aspects of how they work include:
+
+- Word Vectors: LLMs represent words as long lists of numbers, known as word vectors ([standardised/Vector Embedding|word embedding](#standardisedvector-embeddingword-embedding)).
+- Neural Network Architecture: They are built on a neural network architecture known as the [Transformer](#transformer). This architecture enables the model to identify relationships between words in a sentence, irrespective of their position in the sequence.
+- [Transfer Learning](#transfer-learning): LLMs are trained using a technique known as transfer learning, where a pre-trained model is adapted to a specific task.
+
+## Characteristics of LLMs
+
+- <mark>Non-Deterministic:</mark> LLMs are non-deterministic, meaning the types of problems they can be applied to are of a probabilistic nature (<mark>temperature</mark>).
+- Data Dependency: The performance and behaviour of LLMs are heavily influenced by the data they are trained on.
+
+
+
+
 <a id="load-balancing"></a>
 # Load Balancing {#load-balancing}
 
@@ -13085,6 +13203,50 @@ Logical Model
    - Details the attributes of each data entity.
    - Specifies relationships without depending on a specific database management system.
 
+<a id="logistic-regression-does-not-predict-probabilities"></a>
+# Logistic Regression Does Not Predict Probabilities {#logistic-regression-does-not-predict-probabilities}
+
+In logistic regression, the model predicts the <mark>odds of an event happening rather than directly predicting probabilities.</mark> The odds are defined as:
+
+$$ \text{Odds} = \frac{P(\text{success})}{P(\text{failure})} = \frac{p}{1-p} $$
+
+  where $p$ is the probability of success. The log-odds (or logit function) is the natural logarithm of the odds:
+  $$ \text{Log-Odds} = \ln\left(\frac{p}{1-p}\right) = b_0 + b_1 x $$
+  This <mark>transformation makes the relationship between the independent variables and the dependent variable linear,</mark> allowing logistic regression to estimate the parameters $b_0$ and $b_1$.
+
+Resources:
+- [Explanation of log odds](https://www.youtube.com/watch?v=ARfXDSkQf1Y)
+- [Explanation of log odd function](https://www.youtube.com/watch?v=fJ53tIDbvTM)
+
+[What is the difference between odds and probability](#what-is-the-difference-between-odds-and-probability)
+
+<a id="logistic-regression-in-sklearn--gradient-descent"></a>
+# Logistic regression in sklearn & Gradient Descent {#logistic-regression-in-sklearn--gradient-descent}
+
+sklearn's Logistic Regression implementation does not use [Gradient Descent](#gradient-descent) by default. Instead, it uses more sophisticated optimization techniques depending on the solver specified. These solvers are more efficient and robust for finding the optimal parameters for logistic regression. Here's a summary:
+
+### [Optimisation function](#optimisation-function): Solvers in sklearn's Logistic Regression**
+
+1. **`lbfgs` (default in many cases)**:
+    - Stands for Limited-memory Broyden–Fletcher–Goldfarb–Shanno.
+    - It's a quasi-Newton method, which approximates the second derivatives (Hessian matrix) to find the minimum of the cost function efficiently.
+      
+2. **`liblinear`**:
+    - Uses the coordinate descent method for optimization.
+    - Ideal for small datasets or when `penalty='l1'` is used.
+      
+3. **`sag` (Stochastic Average Gradient)**:
+    - An iterative solver similar to stochastic gradient descent (SGD) but averages gradients over all samples.
+    - Efficient for large datasets.
+      
+4. **`saga`**:
+    - An improved version of `sag`, supporting both `l1` and `l2` penalties.
+    - Suitable for sparse and large datasets.
+      
+5. **`newton-cg`**:
+    - Uses the Newton method with conjugate gradients.
+    - Efficient for datasets with many features.
+
 <a id="logistic-regression-statsmodel-summary-table"></a>
 # Logistic Regression Statsmodel Summary Table {#logistic-regression-statsmodel-summary-table}
 
@@ -13105,23 +13267,6 @@ Specifically a graph such as,
 
 
 $$\mathbb{N}$$
-
-<a id="logistic-regression-does-not-predict-probabilities"></a>
-# Logistic Regression Does Not Predict Probabilities {#logistic-regression-does-not-predict-probabilities}
-
-In logistic regression, the model predicts the <mark>odds of an event happening rather than directly predicting probabilities.</mark> The odds are defined as:
-
-$$ \text{Odds} = \frac{P(\text{success})}{P(\text{failure})} = \frac{p}{1-p} $$
-
-  where $p$ is the probability of success. The log-odds (or logit function) is the natural logarithm of the odds:
-  $$ \text{Log-Odds} = \ln\left(\frac{p}{1-p}\right) = b_0 + b_1 x $$
-  This <mark>transformation makes the relationship between the independent variables and the dependent variable linear,</mark> allowing logistic regression to estimate the parameters $b_0$ and $b_1$.
-
-Resources:
-- [Explanation of log odds](https://www.youtube.com/watch?v=ARfXDSkQf1Y)
-- [Explanation of log odd function](https://www.youtube.com/watch?v=fJ53tIDbvTM)
-
-[What is the difference between odds and probability](#what-is-the-difference-between-odds-and-probability)
 
 <a id="logistic-regression"></a>
 # Logistic Regression {#logistic-regression}
@@ -13202,32 +13347,6 @@ Logistic regression can be extended to handle non-linear decision boundaries thr
 [Explaining logistic regression](https://www.youtube.com/watch?v=Iju8l2qgaJU)
 
 
-# Logistic regression in sklearn & Gradient Descent
-
-sklearn's Logistic Regression implementation does not use [Gradient Descent](#gradient-descent) by default. Instead, it uses more sophisticated optimization techniques depending on the solver specified. These solvers are more efficient and robust for finding the optimal parameters for logistic regression. Here's a summary:
-
-### [Optimisation function](#optimisation-function): Solvers in sklearn's Logistic Regression**
-
-1. **`lbfgs` (default in many cases)**:
-    - Stands for Limited-memory Broyden–Fletcher–Goldfarb–Shanno.
-    - It's a quasi-Newton method, which approximates the second derivatives (Hessian matrix) to find the minimum of the cost function efficiently.
-      
-2. **`liblinear`**:
-    - Uses the coordinate descent method for optimization.
-    - Ideal for small datasets or when `penalty='l1'` is used.
-      
-3. **`sag` (Stochastic Average Gradient)**:
-    - An iterative solver similar to stochastic gradient descent (SGD) but averages gradients over all samples.
-    - Efficient for large datasets.
-      
-4. **`saga`**:
-    - An improved version of `sag`, supporting both `l1` and `l2` penalties.
-    - Suitable for sparse and large datasets.
-      
-5. **`newton-cg`**:
-    - Uses the Newton method with conjugate gradients.
-    - Efficient for datasets with many features.
-
 <a id="looker-studio"></a>
 # Looker Studio {#looker-studio}
 
@@ -13280,123 +13399,105 @@ In machine learning, the terms "loss function" and "cost function" are often use
 [Model parameters vs hyperparameters](#model-parameters-vs-hyperparameters)
 
 
-<a id="lambda-architecture"></a>
-# Lambda Architecture {#lambda-architecture}
+<a id="lstm"></a>
+# Lstm {#lstm}
 
 
-Lambda architecture is a data-processing architecture designed to handle massive quantities of data by taking advantage of both batch and stream-processing methods. [Data Streaming](#data-streaming)
+# What is LSTM
 
-This approach to architecture attempts to balance <mark>latency, throughput, and fault tolerance</mark> using batch processing to provide comprehensive and accurate views of batch data, while simultaneously using real-time stream processing to provide views of online data. 
+LSTM (Long Short-Term Memory) networks are a specialized type of Recurrent Neural Network (RNN) designed to overcome the [vanishing and exploding gradients problem](#vanishing-and-exploding-gradients-problem) that affects traditional [Recurrent Neural Networks](#recurrent-neural-networks). 
 
-The two view outputs may be joined before the presentation. The rise of lambda architecture is correlated with the growth of big data, real-time analytics, and the drive to mitigate the latencies of [MapReduce](term/map%20reduce.md).
+LSTMs address this challenge through their unique architecture.
 
-Lambda architecture is a [design pattern](#design-pattern) for processing large volumes of data by combining both batch and stream processing methods. It aims to provide a comprehensive and efficient way to handle big data by addressing the needs for low-latency data processing, high throughput, and fault tolerance. 
+Used for tasks that require the retention of information over time, and problems involving <mark>sequential data.</mark> 
 
-[Batch Processing](#batch-processing)
+The key strength of LSTMs is their ability to manage <mark>long-term dependencies</mark> using their <mark>gating mechanisms</mark>.
+### Key Components of LSTM Networks:
 
-Lambda architecture is particularly useful in scenarios where <mark>both historical</mark> and <mark>real-time data insights</mark> are crucial, such as in financial services, telecommunications, and online retail. It allows organizations to leverage the strengths of both batch and stream processing to meet diverse data processing needs.
+Resources: [Understanding LSTM Networks](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
 
-### Components of Lambda Architecture
+$x_t$ input, $h_t$ output, cell state $C_t$, conveyer belt
 
-1. **Batch Layer**:
-   - **Purpose**: To process large sets of historical data in batches.
-   - **Functionality**: It computes results from all available data, ensuring accuracy and completeness.
-   - **Tools**: Often uses distributed processing frameworks like Hadoop or Spark for batch processing.
-   - **Output**: Produces a batch view, which is a complete and accurate dataset that can be queried.
+![Pasted image 20241015211424.png|500](../content/images/Pasted%20image%2020241015211424.png|500)
 
-2. **Speed Layer**:
-   - **Purpose**: To process real-time data streams with low latency.
-   - **Functionality**: It provides immediate insights by processing data as it arrives.
-   - **Tools**: Utilizes stream processing frameworks like Apache Storm, Apache Flink, or Spark Streaming.
-   - **Output**: Generates a real-time view that reflects the most recent data.
+Memory Cell:
+   - The core of an LSTM network is the memory cell, which maintains information over long time intervals. This cell helps store, forget, or pass on information from previous time steps.
 
-3. **Serving Layer**:
-   - **Purpose**: To merge and serve the results from both the batch and speed layers.
-   - **Functionality**: It combines the batch view and real-time view to provide a unified, queryable dataset.
-   - **Tools**: Databases or data stores optimized for fast reads, such as Cassandra or HBase, are often used.
+<mark>Gates</mark>:
+   - Input Gate: Controls how much of the input should be allowed into the memory cell.
+   - Forget Gate: Determines which information should be discarded from the memory cell.
+   - Output Gate: Controls what part of the cell's memory should be output as the hidden state for the current time step.
 
-### How Lambda Architecture Works
+These gates are regulated by <mark>sigmoid</mark> activation, which output values between 0 and 1, acting like a filter to determine the amount of information that should pass through. This gate mechanism allows the LSTM network to maintain a balance between retaining relevant data and discarding unnecessary information over time.
+# Why is LSTM less favourable over using transformers
 
-- **Data Ingestion**: Data is ingested into both the batch and speed layers simultaneously.
-- **Batch Processing**: The batch layer processes data in large volumes, typically with higher latency, to ensure accuracy and completeness.
-- **Stream Processing**: The speed layer processes data in real-time, providing low-latency updates.
-- **Data Serving**: The serving layer combines outputs from both layers, allowing users to query the most up-to-date and accurate data.
+>[!Summary]  
+> Long Short-Term Memory (LSTM) networks, a type of Recurrent Neural Network ([RNN](#rnn)), are less favorable than [Transformer](#transformer) for many modern tasks, especially in Natural Language Processing ([NLP](#nlp)). LSTMs process sequences of data one step at a time, making them inherently sequential and difficult to parallelize. Transformers, on the other hand, leverage a self-attention mechanism that allows them to process entire sequences simultaneously, leading to faster training and the ability to capture long-range dependencies more effectively. 
+> 
+> Mathematically, LSTM’s sequential nature leads to slower computations, while the Transformer’s attention mechanism computes relationships between all tokens in a sequence, allowing better scalability and performance for tasks like translation, summarization, and language modeling.
 
-### Benefits of Lambda Architecture
+>[!Breakdown]  
+> Key Components:  
+> - Sequential Processing in LSTM: Each time step relies on the previous one, creating a bottleneck for long sequences.  
+> - Self-Attention Mechanism in Transformers: Allows simultaneous processing of all elements in a sequence.  
+> - Parallelization: Transformers leverage parallel computing more effectively due to non-sequential data processing.  
+> - Positional Encoding: Used by Transformers to retain the order of the sequence, overcoming the need for explicit recurrence.
 
-- **Fault Tolerance**: By separating batch and real-time processing, the architecture can handle failures more gracefully.
-- **Scalability**: It can scale to handle large volumes of data by leveraging distributed processing frameworks.
-- **Flexibility**: Supports both historical and real-time data processing, making it suitable for a wide range of applications.
+>[!important]  
+> - LSTMs are slower in training due to their sequential nature, as calculations depend on previous states.  
+> - Transformers efficiently handle long-range dependencies using self-attention, which calculates the relationships between tokens directly without needing previous time steps.
 
-### Challenges
+>[!attention]  
+> - LSTMs suffer from vanishing/exploding gradient issues, especially in long sequences, limiting their effectiveness for long-term dependencies.  
+> - Transformers require more data and computational power to train, which can be a limitation in resource-constrained environments.
 
-- **Complexity**: Maintaining two separate processing paths (batch and speed) can increase system complexity.
-- **Data Consistency**: Ensuring consistency between batch and real-time views can be challenging.
-- **Maintenance**: Requires more effort to maintain and update due to its dual-layer nature.
+>[!Example]  
+> In a language translation task, LSTMs process words sequentially, making them less efficient in handling long sentences. In contrast, a Transformer can analyze the entire sentence at once, using self-attention to determine relationships between all words, leading to faster and more accurate translations.
 
+>[!Follow up questions]  
+> - How does the attention mechanism in Transformers improve the model's ability to capture long-range dependencies compared to LSTM’s <mark>cell structure?</mark>  
+> - In what cases might LSTM still be a better option over Transformers, despite their limitations?
 
-
-<a id="learning-rate"></a>
-# Learning Rate {#learning-rate}
-
-
-### Description
-
-The learning rate is a  [Hyperparameter](#hyperparameter) in machine learning that <mark>determines the step size at which a model's parameters are updated during training</mark>. It plays a significant role in the optimization process, particularly in algorithms like [Gradient Descent](#gradient-descent) which are used to minimize the [Loss function](#loss-function).
-
-### Key Points about Learning Rate:
-
-1. **Parameter Updates**:
-   - During training, the model's parameters (such as weights and biases in neural networks) are adjusted iteratively to minimize the loss function.
-   - The learning rate controls how much the parameters are changed in response to the estimated error each time the model weights are updated.
-
-2. **Impact on Training**/ Convergence
-   - A high learning rate can lead to faster convergence but <mark>risks overshooting</mark> the optimal solution, potentially causing the model to diverge.
-   - A low learning rate ensures more stable and precise convergence but may result in slow training and can get stuck in local minima. A lower learning rate makes the model more robust but requires more iterations to converge.
-   - 
-1. **Tuning**:
-   - The learning rate is a hyperparameter that needs careful tuning. It can be adjusted manually or through automated hyperparameter optimization techniques like [standardised/Optuna](#standardisedoptuna). 
-   - The optimal learning rate depends on various factors, including the dataset, model complexity, and the specific optimization algorithm used.
-
-3. **Practical Considerations**:
-   - It's common to start with a moderate learning rate and adjust based on the model's performance during training.
-   - Techniques like learning rate schedules or adaptive learning rate methods (e.g., [Adam Optimizer](#adam-optimizer)) can dynamically adjust the learning rate during training to improve convergence.
+>[!Related Topics]  
+> - [Attention mechanism](#attention-mechanism) in deep learning  
+> - [BERT](#bert) (Bidirectional Encoder Representations from Transformers)  
+> - [GRU](#gru) (Gated Recurrent Unit) as an alternative to LSTM
 
 
-This impacts the efficiency of [Gradient Descent](#gradient-descent)
+### Example Workflow in Python using Keras:
 
-Effects occur if too small (takes long), or too large (over shoots missing the minima).
+In this example, we define a simple LSTM model in [Keras](#keras) for a time series forecasting task. The model processes sequences with 1000 time steps, and the LSTM layer has 50 units, followed by a fully connected (Dense) layer for the final prediction.
 
-What happens if you are at a local minima? Then no change.
+```python
+import numpy as np
+from keras.models import Sequential
+from keras.layers import LSTM, Dense
 
-![Pasted image 20241216204925.png](../content/images/Pasted%20image%2020241216204925.png)
+# Sample data: time series with 1000 timesteps and 1 feature
+time_steps = 1000
+features = 1
+X_train = np.random.rand(1000, time_steps, features)
+y_train = np.random.rand(1000)
 
-<a id="lemmatization"></a>
-# Lemmatization {#lemmatization}
+# Define LSTM model
+model = Sequential()
+model.add(LSTM(50, activation='tanh', return_sequences=False, input_shape=(time_steps, features)))
+model.add(Dense(1))  # Output layer for regression tasks
 
+model.compile(optimizer='adam', loss='mse')
 
-Lemmatization is the process of <mark>reducing a word to its base or root</mark> form, known as the "lemma." 
+# Train the model
+model.fit(X_train, y_train, epochs=10, batch_size=64)
+```
 
-Unlike stemming, which simply cuts off word endings, lemmatization considers the context and morphological analysis of the words. 
+# notes
 
-It ensures that the root word is a valid word in the language. <mark>For example, the words "running," "ran," and "runs" would all be lemmatized to "run."</mark> 
+[LSTM](#lstm)
+How to implement [LSTM](#lstm) with [PyTorch](#pytorch)?
+https://lightning.ai/lightning-ai/studios/statquest-long-short-term-memory-lstm-with-pytorch-lightning?view=public&section=all
+without lightning - there is a script there
 
-This process helps in normalizing text data for natural language processing tasks by grouping together different forms of a word.
-
-# M {#m}
-
-# M
-
-# Ml Engineer {#ml-engineer}
-
-ML Engineer
-  - Configures and optimizes production ML models.
-  - Monitors the performance and accuracy of ML models in production environments.
-
-<a id="mnist"></a>
-# Mnist {#mnist}
-
-[Datasets](#datasets)
+[LSTM](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
 
 <a id="machine-learning-algorithms"></a>
 # Machine Learning Algorithms {#machine-learning-algorithms}
@@ -13496,6 +13597,11 @@ Machine learning (ML) is a type of artificial intelligence (AI) that allows soft
 
 
 
+
+
+
+<a id="maintainability"></a>
+# Maintainability {#maintainability}
 
 
 
@@ -13620,6 +13726,9 @@ Methods like **<mark>Isomap</mark>** aim to preserve the geodesic distances betw
 
 
 
+<a id="many-to-many-relationships"></a>
+# Many to Many Relationships {#many-to-many-relationships}
+
 ### Many-to-Many Relationships
 
 Occurs when multiple records in one table are associated with multiple records in another table.
@@ -13682,6 +13791,47 @@ WHERE enrollments.student_id = 1;  -- Replace 1 with the desired student ID
    - <mark>Requires a junction table</mark> to manage the relationships.
    - Example: Students and Courses tables with a junction table Enrollments.
 
+<a id="map-reduce"></a>
+# Map Reduce {#map-reduce}
+
+
+MapReduce is a programming model and processing technique used for processing and generating large data sets with a parallel, distributed algorithm on a cluster. [Distributed Computing](#distributed-computing)
+
+It is a core component of the Apache Hadoop [Hadoop](#hadoop) framework, which is designed to handle vast amounts of data across many servers. The MapReduce model simplifies data processing across large clusters by breaking down the task into two main functions: **Map** and **Reduce**.
+
+MapReduce is particularly effective for [Batch Processing](#batch-processing)  tasks where the data can be processed independently and aggregated later. However, it may not be the best choice for [real-time processing](#real-time-processing)  or tasks that require low-latency responses, where other frameworks like [Apache Spark](#apache-spark) might be more suitable.
+### Key Components of MapReduce
+
+1. **Map Function**:
+   - **Purpose**: To process and transform input data into a set of intermediate key-value pairs.
+   - **Functionality**: Each input data element is processed independently, and the output is a collection of key-value pairs.
+   - **Example**: In a word count application, the map function reads a document and emits each word as a key with a count of one as the value.
+
+2. **Shuffle and Sort**:
+   - **Purpose**: To organize the intermediate data by keys.
+   - **Functionality**: The framework sorts the output of the map function and groups all values associated with the same key together. This step is crucial for the reduce function to process data efficiently.
+
+3. **Reduce Function**:
+   - **Purpose**: To aggregate and summarize the intermediate data.
+   - **Functionality**: The reduce function takes the grouped key-value pairs and processes them to produce a smaller set of output values.
+   - **Example**: Continuing with the word count example, the reduce function sums up the counts for each word, resulting in the total count for each word across all documents.
+
+### Why MapReduce is Used
+
+- **Scalability**: MapReduce can process petabytes of data by distributing the workload across a large number of servers in a cluster.
+- **Fault Tolerance**: The framework automatically handles failures by reassigning tasks to other nodes, ensuring that the processing continues without data loss.
+- **Simplicity**: It abstracts the complexity of parallel processing, allowing developers to focus on the map and reduce logic without worrying about the underlying infrastructure.
+- **Flexibility**: MapReduce can be used for a wide range of applications, including data mining, log analysis, and machine learning, among others.
+- **Cost-Effectiveness**: By using commodity hardware and open-source software, organizations can process large data sets without significant investment in specialized hardware.
+
+
+
+<a id="markov-chain"></a>
+# Markov Chain {#markov-chain}
+
+Is a stochastic model that describes a sequence of events in which the probability of each event depends only on the state attained in the previous event.
+
+
 <a id="markov-decision-processes"></a>
 # Markov Decision Processes {#markov-decision-processes}
 
@@ -13696,10 +13846,32 @@ architecture
 [Markov Decision Processes](#markov-decision-processes) 
 ([Markov Decision Processes|MDP](#markov-decision-processesmdp)s): The mathematical framework for modelling decision-making, characterized by states, actions, transition probabilities, and rewards. Your understanding of probability theory and stochastic processes will be crucial here.
 
-<a id="markov-chain"></a>
-# Markov Chain {#markov-chain}
+<a id="master-data-management"></a>
+# Master Data Management {#master-data-management}
 
-Is a stochastic model that describes a sequence of events in which the probability of each event depends only on the state attained in the previous event.
+
+Master data management is a method to <mark>centralize</mark> master data.
+
+It's the bridge between the business that maintain the data and know them best and the data folks, and it's a tool of choice. It helps with uniformity, accuracy, stewardship, semantic consistency, and accountability of mostly enterprise master data assets.
+
+Master [Data Management](#data-management)(MDM) refers to the processes, technologies, and tools used to define, manage, and maintain an organization's critical data entities, such as customers, products, employees, suppliers, and locations, <mark>ensuring that this data is accurate, consistent, and up-to-date across all systems and departments.</mark> The goal of MDM is to create a single, authoritative [source of truth](#source-of-truth) for master data, which is shared and synchronized across the organization to improve decision-making, reduce duplication, and maintain data integrity.
+
+MDM is especially important in large organizations where data is often siloed across various departments and systems, leading to <mark>inconsistencies, duplication, and errors.</mark> By centralizing the management of key data, MDM helps improve operational efficiency, regulatory compliance, and the overall effectiveness of business processes.
+
+Key aspects of MDM include:
+
+1. [Data Governance](#data-governance): Establishing policies, rules, and standards for how master data is managed, who is responsible for it, and how data quality is monitored.
+
+2. **Data Integration**: Consolidating and harmonizing data from various sources (e.g., databases, applications) to create a unified, consistent view of master data.
+
+3. [Data Quality](#data-quality): Ensuring that the data is complete, accurate, valid, and consistent across the organization.
+
+4. **Data Stewardship**: Assigning roles and responsibilities for managing the master data and ensuring that it complies with the established governance policies.
+
+5. **Metadata Management**: Maintaining a consistent definition of data entities, relationships, and attributes, helping stakeholders understand the meaning and usage of the data.
+
+6. **Data Synchronization**: Ensuring that any updates or changes to master data in one system are reflected across all relevant systems.
+
 
 
 <a id="master-observability-datadog"></a>
@@ -13729,6 +13901,11 @@ logging
 
 
 <a id="mathematical-reasoning-in-transformers"></a>
+#question"
+category: LANG
+engagement: 
+recency_of_interest:
+---
 # Mathematical Reasoning In Transformers {#mathematical-reasoning-in-transformers}
 
 
@@ -13789,6 +13966,11 @@ Assumptions for MLE:
 [parametric vs non-parametric models](#parametric-vs-non-parametric-models)
 
 Likelihood is a function of a parameter
+
+<a id="mean-absolute-error"></a>
+# Mean Absolute Error {#mean-absolute-error}
+
+
 
 <a id="mean-squared-error"></a>
 # Mean Squared Error {#mean-squared-error}
@@ -13936,6 +14118,9 @@ Supports evolving and persistent memory systems tailored to specific tasks.
 
 
 
+<a id="methods-for-handling-outliers"></a>
+# Methods for Handling Outliers {#methods-for-handling-outliers}
+
 ### Trimming
 
 - Description: Removing data points identified as outliers based on criteria such as being beyond a certain number of standard deviations from the mean or outside a specified percentile range.
@@ -14039,6 +14224,18 @@ activating
 
 
 
+
+<a id="ml-engineer"></a>
+# Ml Engineer {#ml-engineer}
+
+ML Engineer
+  - Configures and optimizes production ML models.
+  - Monitors the performance and accuracy of ML models in production environments.
+
+<a id="mnist"></a>
+# Mnist {#mnist}
+
+[Datasets](#datasets)
 
 <a id="model-building"></a>
 # Model Building {#model-building}
@@ -14215,6 +14412,14 @@ Global Surrogate Models
 
 
 <a id="model-observability"></a>
+#model_explainability"
+importance: 6
+engagement: 8
+recency_of_interest: 2024-09-28
+aliases:
+  - Observability
+category:
+---
 # Model Observability {#model-observability}
 
 
@@ -14328,6 +14533,28 @@ On the right:
     - the error on the trained data (blue) decreases as the model complexity increases as expected
     - the error of the cross-validation data decreases initially as the model starts to conform to the data, but then increases as the model starts to over-fit on the training data (fails to *generalize*).
 
+<a id="model-parameters-vs-hyperparameters"></a>
+# Model Parameters Vs Hyperparameters {#model-parameters-vs-hyperparameters}
+
+Model parameters and hyperparameters serve different roles:
+
+[Model Parameters](#model-parameters)
+   - These are the internal variables of the model that are learned from the training data. They define the model's structure and are adjusted during the training process to minimize the [Loss function](#loss-function).
+   - Examples include:
+	   - the weights and biases in a neural network,
+	   - the coefficients in a linear regression model,
+	   - or the support vectors in a support vector machine.
+   - Model parameters are directly influenced by the data and are optimized through algorithms like [Gradient Descent](#gradient-descent).
+
+[Hyperparameter](#hyperparameter)
+   - These are external configurations set before the training process begins. They are not learned from the data but are used for controlling the learning process and the model's architecture.
+   - Examples include the:
+	   - [learning rate](#learning-rate), 
+	   - the number of hidden layers in a [Neural network](#neural-network),
+	   - the number of trees in a random forest,
+	   - or the regularization parameter in a regression model.
+   - Hyperparameters are typically tuned through methods like grid search or random search to find the best configuration that results in optimal model performance.
+
 <a id="model-parameters"></a>
 # Model Parameters {#model-parameters}
 
@@ -14362,6 +14589,19 @@ See also:
 6. **[K-Means](#k-means) [Clustering](#clustering)**:
    - Centroids: The center points of each cluster.
 
+
+
+<a id="model-preparation"></a>
+# Model Preparation {#model-preparation}
+
+
+```python
+model = 
+model.fit(X_train, y_train)
+print(model)
+y_pred = model.predict(X_test)
+print(accuracy_score(y_expect, y_pred))
+```
 
 
 <a id="model-selection"></a>
@@ -14400,41 +14640,6 @@ Model Validation refers to the process of evaluating a machine learning model's 
 [Model Observability](#model-observability), on the other hand, involves monitoring and understanding the model's performance and behavior in production over time. It includes tracking metrics, detecting [Performance Drift](#performance-drift), and ensuring the model continues to function as expected in dynamic environments.
 
 While model validation is a step in the model development process, model observability is an ongoing practice once the model is deployed. Both are related in that they aim to ensure the model's reliability and effectiveness, but they occur at different stages of the model lifecycle. Validation is about initial performance assessment, whereas observability is about continuous monitoring and maintenance.
-
-<a id="model-parameters-vs-hyperparameters"></a>
-# Model Parameters Vs Hyperparameters {#model-parameters-vs-hyperparameters}
-
-Model parameters and hyperparameters serve different roles:
-
-[Model Parameters](#model-parameters)
-   - These are the internal variables of the model that are learned from the training data. They define the model's structure and are adjusted during the training process to minimize the [Loss function](#loss-function).
-   - Examples include:
-	   - the weights and biases in a neural network,
-	   - the coefficients in a linear regression model,
-	   - or the support vectors in a support vector machine.
-   - Model parameters are directly influenced by the data and are optimized through algorithms like [Gradient Descent](#gradient-descent).
-
-[Hyperparameter](#hyperparameter)
-   - These are external configurations set before the training process begins. They are not learned from the data but are used for controlling the learning process and the model's architecture.
-   - Examples include the:
-	   - [learning rate](#learning-rate), 
-	   - the number of hidden layers in a [Neural network](#neural-network),
-	   - the number of trees in a random forest,
-	   - or the regularization parameter in a regression model.
-   - Hyperparameters are typically tuned through methods like grid search or random search to find the best configuration that results in optimal model performance.
-
-<a id="model-preparation"></a>
-# Model Preparation {#model-preparation}
-
-
-```python
-model = 
-model.fit(X_train, y_train)
-print(model)
-y_pred = model.predict(X_test)
-print(accuracy_score(y_expect, y_pred))
-```
-
 
 <a id="momentum"></a>
 # Momentum {#momentum}
@@ -14520,6 +14725,12 @@ Simulation studies:
 
 
 <a id="multi-agent-reinforcement-learning"></a>
+#question"
+importance: 
+engagement: 
+recency_of_interest: 
+category: DS
+---
 # Multi Agent Reinforcement Learning {#multi-agent-reinforcement-learning}
 
 
@@ -14690,131 +14901,6 @@ The following table shows us the size and range of numbers we can store in each 
 !["Table of integer types in MySQL"|500](https://cs50.harvard.edu/sql/2024/notes/6/images/12.jpg)
 ### Tags
 - **Tags**: #relational_database, #data_management
-
-<a id="maintainability"></a>
-# Maintainability {#maintainability}
-
-
-
-<a id="map-reduce"></a>
-# Map Reduce {#map-reduce}
-
-
-MapReduce is a programming model and processing technique used for processing and generating large data sets with a parallel, distributed algorithm on a cluster. [Distributed Computing](#distributed-computing)
-
-It is a core component of the Apache Hadoop [Hadoop](#hadoop) framework, which is designed to handle vast amounts of data across many servers. The MapReduce model simplifies data processing across large clusters by breaking down the task into two main functions: **Map** and **Reduce**.
-
-MapReduce is particularly effective for [Batch Processing](#batch-processing)  tasks where the data can be processed independently and aggregated later. However, it may not be the best choice for [real-time processing](#real-time-processing)  or tasks that require low-latency responses, where other frameworks like [Apache Spark](#apache-spark) might be more suitable.
-### Key Components of MapReduce
-
-1. **Map Function**:
-   - **Purpose**: To process and transform input data into a set of intermediate key-value pairs.
-   - **Functionality**: Each input data element is processed independently, and the output is a collection of key-value pairs.
-   - **Example**: In a word count application, the map function reads a document and emits each word as a key with a count of one as the value.
-
-2. **Shuffle and Sort**:
-   - **Purpose**: To organize the intermediate data by keys.
-   - **Functionality**: The framework sorts the output of the map function and groups all values associated with the same key together. This step is crucial for the reduce function to process data efficiently.
-
-3. **Reduce Function**:
-   - **Purpose**: To aggregate and summarize the intermediate data.
-   - **Functionality**: The reduce function takes the grouped key-value pairs and processes them to produce a smaller set of output values.
-   - **Example**: Continuing with the word count example, the reduce function sums up the counts for each word, resulting in the total count for each word across all documents.
-
-### Why MapReduce is Used
-
-- **Scalability**: MapReduce can process petabytes of data by distributing the workload across a large number of servers in a cluster.
-- **Fault Tolerance**: The framework automatically handles failures by reassigning tasks to other nodes, ensuring that the processing continues without data loss.
-- **Simplicity**: It abstracts the complexity of parallel processing, allowing developers to focus on the map and reduce logic without worrying about the underlying infrastructure.
-- **Flexibility**: MapReduce can be used for a wide range of applications, including data mining, log analysis, and machine learning, among others.
-- **Cost-Effectiveness**: By using commodity hardware and open-source software, organizations can process large data sets without significant investment in specialized hardware.
-
-
-
-<a id="master-data-management"></a>
-# Master Data Management {#master-data-management}
-
-
-Master data management is a method to <mark>centralize</mark> master data.
-
-It's the bridge between the business that maintain the data and know them best and the data folks, and it's a tool of choice. It helps with uniformity, accuracy, stewardship, semantic consistency, and accountability of mostly enterprise master data assets.
-
-Master [Data Management](#data-management)(MDM) refers to the processes, technologies, and tools used to define, manage, and maintain an organization's critical data entities, such as customers, products, employees, suppliers, and locations, <mark>ensuring that this data is accurate, consistent, and up-to-date across all systems and departments.</mark> The goal of MDM is to create a single, authoritative [source of truth](#source-of-truth) for master data, which is shared and synchronized across the organization to improve decision-making, reduce duplication, and maintain data integrity.
-
-MDM is especially important in large organizations where data is often siloed across various departments and systems, leading to <mark>inconsistencies, duplication, and errors.</mark> By centralizing the management of key data, MDM helps improve operational efficiency, regulatory compliance, and the overall effectiveness of business processes.
-
-Key aspects of MDM include:
-
-1. [Data Governance](#data-governance): Establishing policies, rules, and standards for how master data is managed, who is responsible for it, and how data quality is monitored.
-
-2. **Data Integration**: Consolidating and harmonizing data from various sources (e.g., databases, applications) to create a unified, consistent view of master data.
-
-3. [Data Quality](#data-quality): Ensuring that the data is complete, accurate, valid, and consistent across the organization.
-
-4. **Data Stewardship**: Assigning roles and responsibilities for managing the master data and ensuring that it complies with the established governance policies.
-
-5. **Metadata Management**: Maintaining a consistent definition of data entities, relationships, and attributes, helping stakeholders understand the meaning and usage of the data.
-
-6. **Data Synchronization**: Ensuring that any updates or changes to master data in one system are reflected across all relevant systems.
-
-
-
-<a id="mean-absolute-error"></a>
-# Mean Absolute Error {#mean-absolute-error}
-
-
-
-# N {#n}
-
-# N
-
-# Nlp {#nlp}
-
-
-Natural Language Processing (NLP) involves the interaction between computers and humans using natural language. It encompasses various techniques and models to process and analyze large amounts of natural language data.
-
-## Key Concepts
-
-### [Preprocessing](#preprocessing)
-- **[Normalisation of Text](#normalisation-of-text)**: The process of converting text into a standard format, which may include lowercasing, removing punctuation, and stemming or [lemmatization](#lemmatization).
-- **[Part of speech tagging](#part-of-speech-tagging)**: Assigning a specific part-of-speech category (such as noun, verb, adjective, etc.) to each word in a text.
-
-### Models
-- **[Bag of words](#bag-of-words)**: Represents text data by counting the occurrence of each word in a document, ignoring grammar and word order. It takes key terms of a text in normalized **unordered** form.
-- **[TF-IDF](#tf-idf)**: Stands for Term Frequency-Inverse Document Frequency. It improves on Bag of Words by considering the importance of a word in a document relative to its frequency across multiple documents.
-- **Vectorization**: Converting text into numerical vectors. Techniques like Bag of Words, TF-IDF, or [standardised/Vector Embedding](#standardisedvector-embedding) (e.g., Word2Vec, GloVe) are used to represent text data numerically.
-
-### Analysis
-- **[One Hot Encoding](#one-hot-encoding)**: Converts categorical data into a binary vector representation, indicating the presence or absence of a word from a list in the given text.
-
-### Methods
-- **[Ngrams](#ngrams)**: Creates tokens from groupings of words, not just single words. Useful for capturing context and meaning in text data.
-- **[Grammar method](#grammar-method)**: Involves analyzing the grammatical structure of sentences to extract meaning and relationships between words.
-
-### Actions
-- **[Summarisation](#summarisation)**: The process of distilling the most important information from a text to produce a concise version.
-
-## Tools and Libraries
-
-### General Imports
-
-```python
-import re
-import nltk
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
-from nltk.stem import WordNetLemmatizer, PorterStemmer
-
-porter_stemmer = PorterStemmer()
-wordnet_lemmatizer = WordNetLemmatizer()
-```
-
-- **[nltk](#nltk)**: A leading platform for building Python programs to work with human language data. It provides easy-to-use interfaces to over 50 corpora and lexical resources.
-  - **punkt**: An unsupervised trainable model for tokenizing text into sentences and words.
-  - **stopwords**: Commonly used words (such as "the", "is", "in") that are often removed from text data because they do not carry significant meaning.
-  - **wordnet**: A lexical database for the English language that groups words into sets of synonyms and provides short definitions and usage examples.
-  - **re**: Regular expressions for pattern matching and text manipulation.
-
 
 <a id="naive-bayes"></a>
 # Naive Bayes {#naive-bayes}
@@ -15072,6 +15158,16 @@ NER has significant implications in information extraction, search engines, and 
  - Text classification in [NLP](#nlp)  
  - Information extraction techniques  
 
+<a id="nbconvert"></a>
+# Nbconvert {#nbconvert}
+
+
+
+<a id="neo4j"></a>
+# Neo4J {#neo4j}
+
+
+
 <a id="network-design"></a>
 # Network Design {#network-design}
 
@@ -15108,6 +15204,116 @@ In [clustering](#clustering)-based classification, we group the probability dist
 - [Imbalanced Datasets](#imbalanced-datasets): If the classes are imbalanced, the choice of threshold or number of clusters can be significantly affected. Techniques like oversampling, undersampling, or using weighted loss functions can help mitigate the impact of class imbalance.
 - [Data Quality](#data-quality): The quality of the training data can also influence the choice of threshold or number of clusters. If the data is noisy or contains outliers, the chosen values may not be optimal.
 - [Evaluation Metrics](#evaluation-metrics): Choose evaluation metrics that are appropriate for the specific problem and the desired trade-off between different types of errors. 
+
+<a id="neural-network-in-practice"></a>
+# Neural Network In Practice {#neural-network-in-practice}
+
+
+This guide provides practical insights into building and using [Neural network](#neural-network).
+
+Refer to [ML_Tools](#ml_tools) for more details: `Neural_Net_Build.py`
+
+## Softmax Placement at the End
+
+Numerical stability is crucial. One way to enhance stability is by grouping the softmax function with the loss function rather than placing it at the output layer.
+
+### Building the Model
+
+**Final Dense Layer**: 
+  - Use a 'linear' activation function, which means no activation is applied. This setup allows the model to output raw logits.
+  
+**Model Compilation**: 
+  - When compiling the model, specify `from_logits=True` in the loss function to indicate that the outputs are raw logits.
+  ```python
+  loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)
+  ```
+**Target Form**: 
+  - The target format remains unchanged. For instance, with SparseCategoricalCrossentropy, the target is the expected class label (e.g., digits 0-9 in the MNIST dataset).
+  - See [SparseCategorialCrossentropy or CategoricalCrossEntropy](#sparsecategorialcrossentropy-or-categoricalcrossentropy)
+
+**Output Probabilities**: 
+  - Since the model outputs logits, apply a softmax function to convert these logits into probabilities if needed for interpretation or further processing.
+
+## TensorFlow History Loss (Cost)
+
+Monitoring the cost, or loss, during training is essential for understanding how well the model is learning.
+
+**Monitoring Progress**: 
+  - Track the progress of gradient descent by observing the cost, referred to as `loss` in TensorFlow. Ideally, the loss should decrease as training progresses.
+**Loss Display**: 
+  - The loss is displayed at each epoch during the execution of `model.fit`, providing real-time feedback on training performance.
+**History Variable**: 
+  - The `.fit` method returns a `history` object containing various metrics, including the loss. This object is stored in the `history` variable for further analysis.
+
+The `history` object can capture additional metrics such as accuracy, validation loss, and other performance indicators, depending on what was specified during model compilation and fitting. This information is valuable for evaluating the model's performance [Model Evaluation](#model-evaluation).
+
+
+
+<a id="neural-network"></a>
+#deep_learning"
+  - drafting
+importance: 6
+engagement: 7
+recency_of_interest: 2024-09-28
+aliases:
+  - Neural Network
+---
+# Neural Network {#neural-network}
+
+
+A [Neural network|Neural Network](#neural-networkneural-network) is a computational model inspired by biological neural networks in the human brain. It consists of layers of interconnected nodes (neurons) that process and transmit information. Neural networks are fundamental to [Deep Learning](#deep-learning).
+
+Resources:  
+- [Keras Guide](https://keras.io/guides/sequential_model/)
+
+Also see:  
+- [Types of Neural Networks](#types-of-neural-networks)  
+- [Neural network in Practice](#neural-network-in-practice)
+### Key Components
+
+The number of starting nodes depends on the input parameter, similar for output. The width and depth of the net are called [Hyperparameter](#hyperparameter).
+
+Neurons (Nodes):  
+- The basic units of a neural network. Each neuron receives input, processes it, and passes it to the next layer. A neuron’s output is typically computed using a mathematical function known as the activation function.
+
+Layers:  
+- Neural networks are structured in layers of neurons:
+  - Input Layer: Receives the raw input data (features) that are fed into the network.
+  - Hidden Layers: Process the inputs received from the previous layer. There can be multiple hidden layers, making a neural network "deep." These layers transform the data to learn complex relationships and patterns.
+  - Output Layer: Produces the final prediction or result, such as a class label in classification tasks or a continuous value in regression.
+
+Weights and Biases:  [Model Parameters](#model-parameters)
+- There are weights and biases at each layer. The shape of the weights is determined by the number of units in the previous layer and the number of units in the current layer.
+- Each connection between neurons has a weight that determines how much influence one neuron has on another. Weights are adjusted during the learning process to minimize prediction errors.
+- Biases allow the network to shift the output of the [activation function](#activation-function) and help it better fit the data.
+
+Training:  See [Fitting weights and biases of a neural network](#fitting-weights-and-biases-of-a-neural-network)
+
+Optimization:  See [Optimisation techniques](#optimisation-techniques)
+- The optimization process (often gradient descent) updates the network's weights to minimize the loss function, ensuring the model improves with training and generalizes well to new, unseen data.
+
+Inputs:
+- We need [Normalisation](#normalisation) of values (inputs) here for feeding the network to have balanced weights at the nodes.
+
+### Context
+
+Example of Neural Network:  
+A neural network can be used for a task like image classification. For instance:
+- The input layer receives the pixel values of the image.
+- Hidden layers transform these pixel values through a series of mathematical operations, learning important features such as edges, shapes, and textures.
+- The output layer classifies the image into one of the predefined categories (e.g., "cat" or "dog").
+
+Pros:  
+- Flexibility: Can model complex, non-linear relationships.
+- Adaptability: Can be applied to a wide range of problems like image recognition, speech processing, and game playing.
+- Automatic Feature Extraction: Neural networks, especially CNNs, can automatically learn important features from raw data without manual intervention.
+
+Cons:  
+- Data-hungry: Neural networks typically require large datasets to perform well.
+- Computationally Intensive: Training deep networks can require substantial computational resources.
+- Black Box Nature: The internal decision-making process is often difficult to interpret, although research into interpretability is addressing this.
+
+
 
 <a id="neural-scaling-laws"></a>
 # Neural Scaling Laws {#neural-scaling-laws}
@@ -15178,108 +15384,6 @@ $$LOSS < D^{-4/d}$$
 
 
 
-<a id="neural-network-in-practice"></a>
-# Neural Network In Practice {#neural-network-in-practice}
-
-
-This guide provides practical insights into building and using [Neural network](#neural-network).
-
-Refer to [ML_Tools](#ml_tools) for more details: `Neural_Net_Build.py`
-
-## Softmax Placement at the End
-
-Numerical stability is crucial. One way to enhance stability is by grouping the softmax function with the loss function rather than placing it at the output layer.
-
-### Building the Model
-
-**Final Dense Layer**: 
-  - Use a 'linear' activation function, which means no activation is applied. This setup allows the model to output raw logits.
-  
-**Model Compilation**: 
-  - When compiling the model, specify `from_logits=True` in the loss function to indicate that the outputs are raw logits.
-  ```python
-  loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)
-  ```
-**Target Form**: 
-  - The target format remains unchanged. For instance, with SparseCategoricalCrossentropy, the target is the expected class label (e.g., digits 0-9 in the MNIST dataset).
-  - See [SparseCategorialCrossentropy or CategoricalCrossEntropy](#sparsecategorialcrossentropy-or-categoricalcrossentropy)
-
-**Output Probabilities**: 
-  - Since the model outputs logits, apply a softmax function to convert these logits into probabilities if needed for interpretation or further processing.
-
-## TensorFlow History Loss (Cost)
-
-Monitoring the cost, or loss, during training is essential for understanding how well the model is learning.
-
-**Monitoring Progress**: 
-  - Track the progress of gradient descent by observing the cost, referred to as `loss` in TensorFlow. Ideally, the loss should decrease as training progresses.
-**Loss Display**: 
-  - The loss is displayed at each epoch during the execution of `model.fit`, providing real-time feedback on training performance.
-**History Variable**: 
-  - The `.fit` method returns a `history` object containing various metrics, including the loss. This object is stored in the `history` variable for further analysis.
-
-The `history` object can capture additional metrics such as accuracy, validation loss, and other performance indicators, depending on what was specified during model compilation and fitting. This information is valuable for evaluating the model's performance [Model Evaluation](#model-evaluation).
-
-
-
-<a id="neural-network"></a>
-# Neural Network {#neural-network}
-
-
-A [Neural network|Neural Network](#neural-networkneural-network) is a computational model inspired by biological neural networks in the human brain. It consists of layers of interconnected nodes (neurons) that process and transmit information. Neural networks are fundamental to [Deep Learning](#deep-learning).
-
-Resources:  
-- [Keras Guide](https://keras.io/guides/sequential_model/)
-
-Also see:  
-- [Types of Neural Networks](#types-of-neural-networks)  
-- [Neural network in Practice](#neural-network-in-practice)
-### Key Components
-
-The number of starting nodes depends on the input parameter, similar for output. The width and depth of the net are called [Hyperparameter](#hyperparameter).
-
-Neurons (Nodes):  
-- The basic units of a neural network. Each neuron receives input, processes it, and passes it to the next layer. A neuron’s output is typically computed using a mathematical function known as the activation function.
-
-Layers:  
-- Neural networks are structured in layers of neurons:
-  - Input Layer: Receives the raw input data (features) that are fed into the network.
-  - Hidden Layers: Process the inputs received from the previous layer. There can be multiple hidden layers, making a neural network "deep." These layers transform the data to learn complex relationships and patterns.
-  - Output Layer: Produces the final prediction or result, such as a class label in classification tasks or a continuous value in regression.
-
-Weights and Biases:  [Model Parameters](#model-parameters)
-- There are weights and biases at each layer. The shape of the weights is determined by the number of units in the previous layer and the number of units in the current layer.
-- Each connection between neurons has a weight that determines how much influence one neuron has on another. Weights are adjusted during the learning process to minimize prediction errors.
-- Biases allow the network to shift the output of the [activation function](#activation-function) and help it better fit the data.
-
-Training:  See [Fitting weights and biases of a neural network](#fitting-weights-and-biases-of-a-neural-network)
-
-Optimization:  See [Optimisation techniques](#optimisation-techniques)
-- The optimization process (often gradient descent) updates the network's weights to minimize the loss function, ensuring the model improves with training and generalizes well to new, unseen data.
-
-Inputs:
-- We need [Normalisation](#normalisation) of values (inputs) here for feeding the network to have balanced weights at the nodes.
-
-### Context
-
-Example of Neural Network:  
-A neural network can be used for a task like image classification. For instance:
-- The input layer receives the pixel values of the image.
-- Hidden layers transform these pixel values through a series of mathematical operations, learning important features such as edges, shapes, and textures.
-- The output layer classifies the image into one of the predefined categories (e.g., "cat" or "dog").
-
-Pros:  
-- Flexibility: Can model complex, non-linear relationships.
-- Adaptability: Can be applied to a wide range of problems like image recognition, speech processing, and game playing.
-- Automatic Feature Extraction: Neural networks, especially CNNs, can automatically learn important features from raw data without manual intervention.
-
-Cons:  
-- Data-hungry: Neural networks typically require large datasets to perform well.
-- Computationally Intensive: Training deep networks can require substantial computational resources.
-- Black Box Nature: The internal decision-making process is often difficult to interpret, although research into interpretability is addressing this.
-
-
-
 <a id="ngrams"></a>
 # Ngrams {#ngrams}
 
@@ -15299,13 +15403,59 @@ N-grams are used to analyze and <mark>model the structure of language</mark>, an
 
 This can be does through kwargs in CountVectorizer.
 
-<a id="nosql"></a>
-# Nosql {#nosql}
+<a id="nlp"></a>
+# Nlp {#nlp}
 
 
-(Not Only SQL):** <mark>Non-relational</mark> database management systems offering flexibility and scalability for unstructured or document-based data.
+Natural Language Processing (NLP) involves the interaction between computers and humans using natural language. It encompasses various techniques and models to process and analyze large amounts of natural language data.
 
- **NoSQL Databases**: Accommodate unstructured data and can be represented through graph theory or document-based structures, allowing for flexible data models.
+## Key Concepts
+
+### [Preprocessing](#preprocessing)
+- **[Normalisation of Text](#normalisation-of-text)**: The process of converting text into a standard format, which may include lowercasing, removing punctuation, and stemming or [lemmatization](#lemmatization).
+- **[Part of speech tagging](#part-of-speech-tagging)**: Assigning a specific part-of-speech category (such as noun, verb, adjective, etc.) to each word in a text.
+
+### Models
+- **[Bag of words](#bag-of-words)**: Represents text data by counting the occurrence of each word in a document, ignoring grammar and word order. It takes key terms of a text in normalized **unordered** form.
+- **[TF-IDF](#tf-idf)**: Stands for Term Frequency-Inverse Document Frequency. It improves on Bag of Words by considering the importance of a word in a document relative to its frequency across multiple documents.
+- **Vectorization**: Converting text into numerical vectors. Techniques like Bag of Words, TF-IDF, or [standardised/Vector Embedding](#standardisedvector-embedding) (e.g., Word2Vec, GloVe) are used to represent text data numerically.
+
+### Analysis
+- **[One Hot Encoding](#one-hot-encoding)**: Converts categorical data into a binary vector representation, indicating the presence or absence of a word from a list in the given text.
+
+### Methods
+- **[Ngrams](#ngrams)**: Creates tokens from groupings of words, not just single words. Useful for capturing context and meaning in text data.
+- **[Grammar method](#grammar-method)**: Involves analyzing the grammatical structure of sentences to extract meaning and relationships between words.
+
+### Actions
+- **[Summarisation](#summarisation)**: The process of distilling the most important information from a text to produce a concise version.
+
+## Tools and Libraries
+
+### General Imports
+
+```python
+import re
+import nltk
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+from nltk.stem import WordNetLemmatizer, PorterStemmer
+
+porter_stemmer = PorterStemmer()
+wordnet_lemmatizer = WordNetLemmatizer()
+```
+
+- **[nltk](#nltk)**: A leading platform for building Python programs to work with human language data. It provides easy-to-use interfaces to over 50 corpora and lexical resources.
+  - **punkt**: An unsupervised trainable model for tokenizing text into sentences and words.
+  - **stopwords**: Commonly used words (such as "the", "is", "in") that are often removed from text data because they do not carry significant meaning.
+  - **wordnet**: A lexical database for the English language that groups words into sets of synonyms and provides short definitions and usage examples.
+  - **re**: Regular expressions for pattern matching and text manipulation.
+
+
+<a id="nltk"></a>
+# Nltk {#nltk}
+
+
 
 <a id="nodejs"></a>
 # Node.Js {#nodejs}
@@ -15314,6 +15464,15 @@ This can be does through kwargs in CountVectorizer.
 
 <a id="non-parametric-tests"></a>
 # Non Parametric Tests {#non-parametric-tests}
+
+
+
+<a id="normalisation-of-data"></a>
+# Normalisation Of Data {#normalisation-of-data}
+
+Normalization is the process of structuring data from the source into a format appropriate for consumption in the destination. 
+
+For example, when writing data from a nested, dynamically typed source like a [JSON](#json) [API](#api) to a relational destination like [PostgreSQL](#postgresql), normalization is the process that un-nests JSON from the source into a relational table format that uses the appropriate column types in the destination.
 
 
 
@@ -15374,15 +15533,6 @@ def normalize_document(document, stemmer=porter_stemmer, lemmatizer=wodnet_lemma
     temp = [lemmatizer.lemmatize(token) for token in temp]
     return temp
 ```
-
-
-
-<a id="normalisation-of-data"></a>
-# Normalisation Of Data {#normalisation-of-data}
-
-Normalization is the process of structuring data from the source into a format appropriate for consumption in the destination. 
-
-For example, when writing data from a nested, dynamically typed source like a [JSON](#json) [API](#api) to a relational destination like [PostgreSQL](#postgresql), normalization is the process that un-nests JSON from the source into a relational table format that uses the appropriate column types in the destination.
 
 
 
@@ -15464,6 +15614,14 @@ This is achieved by applying formal rules during the creation of a new database 
 [Normalisation of data](#normalisation-of-data)
 
 
+<a id="nosql"></a>
+# Nosql {#nosql}
+
+
+(Not Only SQL):** <mark>Non-relational</mark> database management systems offering flexibility and scalability for unstructured or document-based data.
+
+ **NoSQL Databases**: Accommodate unstructured data and can be represented through graph theory or document-based structures, allowing for flexible data models.
+
 <a id="notebooklm"></a>
 # Notebooklm {#notebooklm}
 
@@ -15489,21 +15647,6 @@ Focus knowledge retrieval
 FAQ 
 
 Note: #portal  can help with file extraction rem utils function (for [NotebookLM](#notebooklm))
-
-<a id="nbconvert"></a>
-# Nbconvert {#nbconvert}
-
-
-
-<a id="neo4j"></a>
-# Neo4J {#neo4j}
-
-
-
-<a id="nltk"></a>
-# Nltk {#nltk}
-
-
 
 <a id="npy-files-a-numpy-array-storage"></a>
 # Npy Files A Numpy Array Storage {#npy-files-a-numpy-array-storage}
@@ -15538,10 +15681,7 @@ Creating an .npy File:
 ```
 
 
-# O {#o}
-
-# O
-
+<a id="olap-online-analytical-processing"></a>
 # Olap (Online Analytical Processing) {#olap-online-analytical-processing}
 
 
@@ -15575,12 +15715,18 @@ To interact with the OLAP cube, users typically utilize tools such as:
 
 
 
+<a id="oltp-online-transactional-processing"></a>
+# Oltp (Online Transactional Processing) {#oltp-online-transactional-processing}
+
+
+
 <a id="oltp"></a>
 # Oltp {#oltp}
 
 In online transaction processing (**OLTP**), information systems typically facilitate and manage **transaction-oriented** applications. It's the opposite of [OLAP (Online Analytical Processing)](standardised/OLAP%20(online%20analytical%20processing).md).
 
-# Proposal: [Project name]
+<a id="proposal-project-name"></a>
+# Proposal: [Project name] {#proposal-project-name}
 
 # About this doc
 
@@ -15742,25 +15888,8 @@ Optimization Solvers in [Sklearn](#sklearn) : Scikit-learn solvers improve on Gr
 
 
 
-<a id="optimising-neural-networks"></a>
-# Optimising Neural Networks {#optimising-neural-networks}
-
-
-
-[Deep Learning](#deep-learning)
-
-Ways to improve in using a [Neural network](#neural-network) 
-more data, 
-bigger network, 
-diverse training set, 
-try dropout, 
-change network architechure.
-
-<mark>Need strategies that will point towards whats the best methods to try.</mark>
-
-
-
-# Optimising a [Logistic Regression](#logistic-regression) Model
+<a id="optimising-a-logistic-regressionlogistic-regression-model"></a>
+# Optimising a [Logistic Regression](#logistic-regression) Model {#optimising-a-logistic-regressionlogistic-regression-model}
 
 In `sklearn`, the logistic regression model uses an optimization algorithm to find the best parameters (intercept and coefficients) that minimize a loss function, typically the logistic loss (cross-entropy loss). Here's an overview of how it works:
 
@@ -15800,6 +15929,24 @@ The goal is to minimize this [cost function](#cost-function) by finding the opti
 - Convergence tolerance (`tol`): This is the threshold for when the optimization stops. When the improvement in the cost function between iterations becomes smaller than `tol`, the process stops.
 - Maximum iterations (`max_iter`): The maximum number of iterations allowed before the solver stops. If convergence is not achieved within the allowed iterations, the algorithm will stop, and a warning will be issued.
 
+
+
+
+<a id="optimising-neural-networks"></a>
+# Optimising Neural Networks {#optimising-neural-networks}
+
+
+
+[Deep Learning](#deep-learning)
+
+Ways to improve in using a [Neural network](#neural-network) 
+more data, 
+bigger network, 
+diverse training set, 
+try dropout, 
+change network architechure.
+
+<mark>Need strategies that will point towards whats the best methods to try.</mark>
 
 
 
@@ -15993,15 +16140,422 @@ Universal approximation theory
 > - [Cross Validation](#cross-validation) techniques (e.g., $k$-fold, Leave-One-Out cross-validation)  
 > - [Bias and variance](#bias-and-variance)radeoff in machine learning models  
 
-<a id="oltp-online-transactional-processing"></a>
-# Oltp (Online Transactional Processing) {#oltp-online-transactional-processing}
+<a id="p-values"></a>
+# P Values {#p-values}
+
+
+A p-value is a measure of the evidence against a null hypothesis.
+ p-values indicate whether an effect exists
+Used in [Feature Selection](#feature-selection)
+
+<a id="p-values-in-linear-regression-in-sklearn"></a>
+# P Values In Linear Regression In Sklearn {#p-values-in-linear-regression-in-sklearn}
+
+
+# Question How to include [p values](#p-values) in sklearn for a [Linear Regression](#linear-regression)? 
+
+import scipy.stats as stat.
+
+You can modify the class of LinearRegression() from sklearn to include them
+
+C:\Users\RhysL\Desktop\DS_Obs\1_Inbox\Work\Udemy\Part_5_Advanced_Statistical_Methods_(Machine_Learning)\multiple_linear_regression\sklearn - How to properly include p-values.ipynb
+
+# What is f_regression and why can it compute p values?
+
+from sklearn.feature_selection 
+import f_regression
+p_values = f_regression(x,y)[1]
+p_values
+
+[link](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.f_regression.html)
+
+We will look into: f_regression
+f_regression finds the F-statistics for the *simple* regressions created with each of the independent variables
+In our case, this would mean running a simple linear regression on GPA where SAT is the independent variable
+and a simple linear regression on GPA where Rand 1,2,3 is the indepdent variable
+The limitation of this approach is that it doe<mark>s not take into account the mutual effect of the two features</mark>
+
+f_regression(x,y)
+
+There are two output arrays
+The first one contains the F-statistics for each of the regressions
+The second one contains the p-values of these F-statistics
+
+outputs:
+(array([56.04804786, 0.17558437]), array([7.19951844e-11, 6.76291372e-01]))
+
+<a id="page-rank"></a>
+# Page Rank {#page-rank}
+
+PageRank is an algorithm originally developed by Larry Page and Sergey Brin (founders of Google) to rank web pages in search engine results. It measures the relative importance of each node (e.g., webpage) in a directed graph based on the structure of incoming links.
+###  Intuition
+
+The core idea is:
+> A node is important if many other important nodes link to it.
+
+PageRank simulates a “random surfer” who clicks on links at random:
+- With probability $d$ (typically 0.85), the surfer follows a link from the current page.
+- With probability $1 - d$, the surfer jumps to a random page.
+
+### Mathematical Formulation
+
+Given a graph with $N$ nodes, the PageRank of node $i$ is defined recursively as:
+
+$$
+PR(i) = \frac{1 - d}{N} + d \sum_{j \in \text{In}(i)} \frac{PR(j)}{L(j)}
+$$
+
+Where:
+- $d$ is the damping factor (usually 0.85),
+- $\text{In}(i)$ is the set of nodes linking to $i$,
+- $L(j)$ is the number of outbound links from node $j$.
 
 
 
-# P {#p}
+### Implementation (using NetworkX)
 
-# P
+```python
+import networkx as nx
 
+G = nx.DiGraph()
+G.add_edges_from([
+    ('A', 'B'), ('B', 'C'), ('C', 'A'), ('A', 'D'), ('D', 'C')
+])
+
+pagerank_scores = nx.pagerank(G, alpha=0.85)
+for node, score in pagerank_scores.items():
+    print(f"{node}: {score:.4f}")
+```
+
+
+
+### 📊 Use Cases
+- Graph-based NLP: Keyword extraction (e.g., TextRank).
+
+#graph #data_visualization
+
+<a id="pandas-dataframe-agent"></a>
+# Pandas Dataframe Agent {#pandas-dataframe-agent}
+
+Example:
+https://github.com/AssemblyAI/youtube-tutorials/tree/main/pandas-dataframe-agent
+
+
+Follow:
+
+https://www.youtube.com/watch?v=ZIfzpmO8MdA&list=PLcWfeUsAys2kC31F4_ED1JXlkdmu6tlrm&index=7
+
+Can as pandas questions to a dataframe. 
+
+Types of questions:
+- what is the max value of "col1"
+
+<a id="pandas-join-vs-merge"></a>
+# Pandas Join Vs Merge {#pandas-join-vs-merge}
+
+In pandas, both `.join()` and `pd.merge()` are used to combine DataFrames, but they differ in **syntax**, **defaults**, and **use cases**.
+
+[Merge](#merge) is better than Join.
+
+|Feature|`df.join()`|`pd.merge()`|
+|---|---|---|
+|**Default key**|Uses index of caller and index/column of other|Requires explicit column(s) to merge on|
+|**Syntax style**|Method on a DataFrame|Function (`pd.merge(left, right)`)|
+|**Column join**|Must specify `on=` and use one column from each|Can merge on multiple columns|
+|**Index join**|Default behavior (index-to-index)|Requires `left_index=True`, `right_index=True`|
+|**Suffixes**|`lsuffix`, `rsuffix`|`suffixes=('_x', '_y')`|
+|**Complex joins**|Not well-suited|Supports full SQL-style joins|
+|**Use case**|Simple joins on index or one column|Complex joins with control over join behavior|
+#data_cleaning #data_integration 
+
+<a id="pandas-pivot-table"></a>
+# Pandas Pivot Table {#pandas-pivot-table}
+
+
+Pivot Table: Summarize Data
+```python
+df = pd.DataFrame({'A': ['foo', 'foo', 'bar'], 'B': ['one', 'two', 'one'], 'C': [1, 2, 3]})
+pivot_table = df.pivot_table(values='C', index='A', columns='B', aggfunc='sum')
+```
+
+Relevant links:
+- https://pandas.pydata.org/docs/reference/api/pandas.pivot_table.html
+
+In [DE_Tools](#de_tools) see:
+- https://github.com/rhyslwells/DE_Tools/blob/main/Explorations/Transformation/pivot_table.ipynb
+
+<a id="pandas-stack"></a>
+# Pandas Stack {#pandas-stack}
+
+
+Tool for reshaping data, particularly when you need to pivot a DataFrame ([Pandas Pivot Table](#pandas-pivot-table)) from a wide format to a long format. 
+
+See:
+- [Pandas_Common.py](#pandas_commonpy)
+- [Pandas_Stack.py](#pandas_stackpy)
+
+In [DE_Tools](#de_tools) see:
+- https://github.com/rhyslwells/DE_Tools/blob/main/Explorations/Transformation/reshaping.ipynb
+#### Why Use `stack`? ([Data Transformation](#data-transformation))
+
+Data Reshaping:
+   - <mark>Wide to Long Format</mark>: Convert a DataFrame from a wide format to a long format, which is often preferred for statistical models and visualizations.
+
+Handling Multi-Index DataFrames:
+   - Simplifying Structure: Move the inner level of a column MultiIndex to the row index, simplifying the DataFrame's structure.
+
+[Data Cleansing](#data-cleansing):
+   - Aggregation and Operations: Facilitate data cleaning by allowing aggregation or operations across columns in a more manageable long format.
+
+Preparing Data for Grouping or Aggregation ([Groupby](#groupby)):
+   - Ease of Grouping: Simplify group-by operations and aggregations on data with columns representing different categories or time periods.
+#### Example of Using `stack`
+
+Consider the following example to illustrate how `stack` works:
+
+```python
+import pandas as pd
+
+# Sample DataFrame
+data = {
+    'A': [1, 2, 3],
+    'B': [4, 5, 6],
+    'C': [7, 8, 9]
+}
+
+df = pd.DataFrame(data)
+print("Original DataFrame:")
+print(df)
+
+# Using stack
+stacked_df = df.stack()
+print("\nStacked DataFrame:")
+print(stacked_df)
+```
+
+Output:
+```
+Original DataFrame:
+   A  B  C
+0  1  4  7
+1  2  5  8
+2  3  6  9
+
+Stacked DataFrame:
+0  A    1
+   B    4
+   C    7
+1  A    2
+   B    5
+   C    8
+2  A    3
+   B    6
+   C    9
+dtype: int64
+```
+
+In this example:
+- The original DataFrame has three columns ('A', 'B', 'C') and three rows.
+- After stacking, the DataFrame is transformed into a Series with a MultiIndex/[Multi-level index](#multi-level-index). The outer level of the index corresponds to the original DataFrame’s row index, and the inner level corresponds to the original column labels.
+
+#### When Not to Use `stack`
+
+- Wide Format Requirements: If your analysis or processing requires a wide format, such as some [Machine Learning Algorithms](#machine-learning-algorithms), stacking may not be appropriate.
+- Complexity: If stacking makes the data too complex to manage or understand, it might be better to keep the original structure.
+- Simplicity: When the current structure of your DataFrame already suits your analysis needs, stacking may be unnecessary.
+
+<a id="pandas"></a>
+# Pandas {#pandas}
+
+
+In [ML_Tools](#ml_tools) see:
+- [Pandas_Common.py](#pandas_commonpy)
+
+Areas:
+- [Handling Missing Data](#handling-missing-data) 
+- [Data Selection](#data-selection)
+- [Data Transformation](#data-transformation)
+
+
+
+
+
+
+
+
+<a id="pandas_commonpy"></a>
+# Pandas_Common.Py {#pandas_commonpy}
+
+https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Utilities/Pandas_Common.py
+
+<a id="pandas_stackpy"></a>
+# Pandas_Stack.Py {#pandas_stackpy}
+
+https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Utilities/Pandas_Stack.py
+
+<a id="parametric-tests"></a>
+# Parametric Tests {#parametric-tests}
+
+
+
+<a id="parametric-vs-non-parametric-models"></a>
+# Parametric Vs Non Parametric Models {#parametric-vs-non-parametric-models}
+
+
+### Parametric Models
+
+In [Statistics](#statistics)
+
+**Definition:** Models  that summarize data with a <mark>set of parameters of fixed size, regardless of the number of data points.</mark>
+
+**Characteristics:**
+  - Assumes a specific form for the function mapping inputs to outputs (e.g., linear regression assumes a linear relationship).
+  - Requires estimation of a finite number of parameters.
+  - Generally faster to train and predict due to their simplicity.
+  - Risk of underfitting if the model assumptions do not align well with the data.
+
+  **Examples:** 
+  - Linear [regression](#regression), logistic regression, neural networks (with a fixed architecture), [Bernoulli](#bernoulli)
+
+### Non-parametric Models
+
+- **Definition:** Models that do not assume a fixed form for the function mapping inputs to outputs and can grow in complexity with more data.
+- **Characteristics:**
+  - Do not make strong assumptions about the underlying data distribution.
+  - Can adapt to the data's complexity, potentially capturing more intricate patterns.
+  - Generally require more data to make accurate predictions.
+  - Risk of overfitting, especially with small datasets, as they can model noise in the data.
+- **Examples:** K-nearest neighbors, decision trees, [support vector machines](#support-vector-machines) (with certain kernels).
+
+### Key Differences
+
+- **Flexibility:** Non-parametric models are more flexible and can model complex relationships, while parametric models are simpler and rely on assumptions about the data.
+- **Data Requirements:** Non-parametric models typically require more data to achieve good performance compared to parametric models.
+- **Computation:** Parametric models are usually computationally less intensive than non-parametric models.
+
+
+<a id="parametric-vs-non-parametric-tests"></a>
+# Parametric Vs Non Parametric Tests {#parametric-vs-non-parametric-tests}
+
+[Parametric tests ](#parametric-tests) are statistical tests that make <mark>assumptions about the distribution</mark> of the data. For example, a t-test assumes that the data is normally distributed. Non-parametric tests do not make assumptions about the distribution of the data. Parametric tests are generally more powerful than non-parametric tests, but they are only valid if the data meets the [Statistical Assumptions](#statistical-assumptions) of the test.
+
+[Non-parametric tests ](#non-parametric-tests) are less powerful than parametric tests, but they can be used on any type of data, regardless of the distribution.
+
+
+<a id="parquet"></a>
+# Parquet {#parquet}
+
+
+A **Parquet file** is a **columnar storage file format** specifically designed for storing large amounts of data efficiently. It is commonly used in [Big Data](#big-data) ecosystems due to its optimised performance for both storage and querying.
+
+[Data Storage](#data-storage)
+### Key Features of Parquet:
+
+1. **Columnar Storage Format:**
+    - Data is stored **column by column** instead of row by row.
+    - This design is highly efficient for analytical queries that access only specific columns, reducing the amount of data read.
+      
+2. **Optimised for Big Data:**
+    - Parquet is designed for distributed systems like Apache [Hadoop](#hadoop), [Apache Spark](#apache-spark), and other big data processing tools.
+      
+3. **Compression:**
+    - It supports multiple compression algorithms (e.g., Snappy, GZIP) for reducing file size while maintaining fast read and write performance.
+      
+4. **[Schema Evolution](#schema-evolution):**
+    - Parquet supports flexible schemas, allowing fields to be added or modified without breaking compatibility with older data.
+      
+5. **Efficient [Metadata Handling](#metadata-handling):**
+    - Metadata is stored along with the data, making it easier to retrieve and query information about the dataset without scanning the entire file.
+
+### Advantages of Parquet:
+
+1. **Improved Query Performance:**
+    - Since data is stored column-wise, queries that require only a few columns read less data compared to row-based formats like CSV.
+      
+2. **Lower Storage Costs:**
+    - Built-in compression and columnar storage **significantly reduce file size.**
+      
+3. **Compatibility:**
+    - Parquet is compatible with most big data processing tools, such as Hadoop, Spark, Hive, Presto, and AWS Athena.
+
+1. **Efficient I/O:**
+    - Parquet’s columnar format minimises disk I/O, making it faster to process large datasets.
+
+---
+
+### When to Use Parquet:
+- **Analytical Workloads:** Ideal for scenarios where you need to perform aggregations, filtering, or processing large datasets.
+- **Big Data Processing:** Frequently used with tools like Spark, Hive, and Presto in data lakes.
+- **Cloud Storage:** Supported by [Cloud Providers](#cloud-providers) platforms.
+
+### Example Use Case:
+
+Imagine a dataset with 10 million rows and 100 columns.
+
+- If you query just 3 columns in a row-based format (e.g., CSV), you must read all 100 columns for every row.
+- In Parquet, only the 3 relevant columns are read, significantly improving performance.
+
+---
+
+### File Structure:
+
+- **Row Group:** Data is divided into chunks called row groups, enabling efficient data retrieval.
+- **Columns:** Each column in a row group is stored together for fast access.
+- **Footer:** Contains metadata, such as schema definitions and row group locations, allowing quick navigation of the file.
+
+---
+
+### How to Work with Parquet in Python:
+
+You can use libraries like **pandas** or **pyarrow**:
+
+```python
+import pandas as pd
+
+# Write a DataFrame to a Parquet file
+df = pd.DataFrame({'col1': [1, 2], 'col2': [3, 4]})
+df.to_parquet('example.parquet', engine='pyarrow')
+
+# Read a Parquet file into a DataFrame
+df_read = pd.read_parquet('example.parquet')
+print(df_read)
+```
+
+---
+
+In summary, Parquet is an efficient, compact, and scalable file format ideal for big data analytics and storage, providing faster performance and reduced costs.
+
+<a id="parsimonious"></a>
+# Parsimonious {#parsimonious}
+
+**Parsimonious** refers to a principle in [Model Selection](#model-selection) and statistical modeling that emphasizes <mark>simplicity</mark>. In the context of regression and other statistical models, a parsimonious model is one that explains the data with the fewest possible parameters or predictors while still providing a good fit.
+
+A parsimonious model is one that achieves a good balance between simplicity and explanatory power.
+### Key Points about Parsimonious Models:
+
+1. **Simplicity**: A parsimonious model avoids unnecessary complexity. It uses only the essential variables that contribute meaningfully to the prediction or explanation of the outcome.
+
+2. **Avoiding [Overfitting](#overfitting)**: By keeping the model simple, a parsimonious approach helps prevent overfitting, where a model learns the noise in the training data rather than the underlying pattern. Overfitting can lead to poor generalization to new, unseen data.
+
+3. **Interpretability**: Simpler models are often easier to interpret and understand. This is particularly important in fields where explaining the model's decisions is crucial, such as healthcare or finance.
+
+4. **Balance**: The goal is to strike a balance between model accuracy and complexity. A parsimonious model should provide a good fit to the data without being overly complicated.
+
+
+
+<a id="part-of-speech-tagging"></a>
+# Part Of Speech Tagging {#part-of-speech-tagging}
+
+Part of speech tagging : assigning a specific part-of-speech category (such as noun, verb, adjective, etc.) to each word in a text
+
+Part-of-speech tagging involves assigning a specific part-of-speech category (such as noun, verb, adjective, etc.) to each word in a text
+```python
+from nltk import pos_tag
+pos_tag(temp[:20])
+```
+will get outputs such as [('history', 'NN'), ('poland', 'NN'), ('roots', 'NNS'), ('early', 'JJ').
+
+<a id="pca-explained-variance-ratio"></a>
 # Pca Explained Variance Ratio {#pca-explained-variance-ratio}
 
 [PCA Explained Variance Ratio](#pca-explained-variance-ratio)
@@ -16155,10 +16709,95 @@ Summary:
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Preprocess/PCA/PCA_Based_Anomaly_Detection.py
 
+<a id="pdgrouper"></a>
+# Pd.Grouper {#pdgrouper}
+
+`pd.Grouper` is a utility in pandas used with `.groupby()` to flexibly group data by a specific column, often useful for time-based grouping, multi-index grouping, or applying custom frequency aggregation.
+
+See:
+- [Groupby](#groupby)
+- [Multi-level index](#multi-level-index)
+
+### Why Use `pd.Grouper`?
+- Allows more readable and declarative code when working with time-indexed data.
+- Supports multi-index groupings without restructuring your data.
+- Enables resampling-like grouping without setting the index.
+### Syntax
+```python
+pd.Grouper(key=None, level=None, freq=None, axis=0, sort=False)
+```
+### Parameters
+- `key`: The column name to group by.
+- `level`: For MultiIndex, the level to group by.
+- `freq`: Used to group time-series data (e.g., `'D'` for daily, `'M'` for monthly).
+- `axis`: Default is 0 (rows).
+- `sort`: Whether to sort the result.
+
+
+
+
+
+
 <a id="pdf"></a>
 # Pdf++ {#pdf}
 
 https://www.youtube.com/watch?v=4dU6WXULSqg
+
+<a id="pdoc"></a>
+# Pdoc {#pdoc}
+
+[PDOC](https://pdoc.dev/) is a documentation generator specifically designed for Python projects. Here are some key features and details:
+
+1. **Automatic Documentation**: It scans your Python code and automatically generates documentation based on the docstrings you include in your code. This means that as long as you write clear comments and descriptions in your code, pdoc can create documentation without much extra work.
+
+2. **Modern and Clean Design**: The output documentation is visually appealing and easy to navigate. It uses a modern design that enhances readability, making it user-friendly for anyone who needs to understand your code.
+
+3. **Customization Options**: While pdoc generates documentation automatically, it also allows for some customization. You can configure settings to adjust how the documentation looks and what content is included.
+
+4. **Markdown Support**: pdoc supports Markdown, which means you can use Markdown syntax in your docstrings to format your documentation with headings, lists, links, and more.
+
+5. **Easy Integration**: It can be easily integrated into your development workflow, allowing you to generate documentation as part of your build process or whenever you need it.
+
+6. **No Manual Guides Required**: With pdoc, you can avoid the tedious task of writing extensive documentation manually. Instead, you can focus on writing code, and pdoc will handle the documentation generation for you.
+
+Once you generate the HTML files using [pdoc](#pdoc), you have several options for what to do with them:
+
+1. **Local Viewing**: You can open the generated HTML files directly in your web browser to view the documentation locally. This is useful for personal reference or for sharing with a small team.
+
+2. **Hosting on a Web Server**: You can upload the generated HTML files to a web server to make the documentation accessible to a wider audience. This is a common practice for open-source projects or any project where you want to share documentation with users or collaborators.
+
+3. **Integrating with Project Repositories**: If you're using version control systems like Git, you can include the generated documentation in your repository. This way, anyone who clones the repository can access the documentation easily.
+
+4. **Publishing to Documentation Platforms**: You can publish the HTML files to documentation hosting platforms like Read the Docs, GitHub Pages, or similar services. These platforms often provide additional features like versioning, search functionality, and easy navigation.
+
+5. **Archiving**: You can keep the generated HTML files as part of your project archive for future reference. This is useful for maintaining a history of your documentation as your project evolves.
+
+6. **Sharing with Stakeholders**: If you are working on a project with stakeholders or clients, you can share the HTML documentation with them to provide insights into the project's structure and functionality.
+
+---
+To explicitly tell pdoc to document the local `scripts` directory, you need to prepend `./` to the directory name.
+
+Here’s how to do it:
+
+1. **Open your terminal**.
+2. **Navigate to the directory** where your `scripts` folder is located (which seems to be `C:\Users\RhysL\Desktop\Auto_YAML`).
+3. **Run the pdoc command** with the `-o` option and prepend `./` to the `scripts` directory name:
+
+   ```bash
+   pdoc -o docs ./scripts
+   ```
+
+This command tells pdoc to generate documentation for the local `scripts` directory and save the output in the `docs` folder.
+
+After running this command, you should find the generated documentation in the `docs` folder, which you can then open in your web browser.
+
+## what to do next
+
+1. **View Locally**: Open the HTML files in your web browser to view the documentation. You can start by opening the `index.html` file in the `docs` folder. This file typically serves as the main entry point for your documentation
+
+2. **Host on a Web Server**: If you want to make the documentation accessible online, you can upload the `docs` folder to a web server. This could be a personal website, a cloud storage service that supports HTML hosting, or a documentation hosting platform like GitHub Pages or Read the Docs.
+    
+3. **Integrate into a Project Repository**: If you're using version control (like Git), you can include the `docs` folder in your repository. This way, anyone who clones the repository can easily access the documentation.
 
 <a id="pdp-and-ice"></a>
 # Pdp And Ice {#pdp-and-ice}
@@ -16180,315 +16819,6 @@ Categorical Example
 ![Pasted image 20241204203413.png](../content/images/Pasted%20image%2020241204203413.png)
 
 
-
-<a id="page-rank"></a>
-# Page Rank {#page-rank}
-
-PageRank is an algorithm originally developed by Larry Page and Sergey Brin (founders of Google) to rank web pages in search engine results. It measures the relative importance of each node (e.g., webpage) in a directed graph based on the structure of incoming links.
-###  Intuition
-
-The core idea is:
-> A node is important if many other important nodes link to it.
-
-PageRank simulates a “random surfer” who clicks on links at random:
-- With probability $d$ (typically 0.85), the surfer follows a link from the current page.
-- With probability $1 - d$, the surfer jumps to a random page.
-
-### Mathematical Formulation
-
-Given a graph with $N$ nodes, the PageRank of node $i$ is defined recursively as:
-
-$$
-PR(i) = \frac{1 - d}{N} + d \sum_{j \in \text{In}(i)} \frac{PR(j)}{L(j)}
-$$
-
-Where:
-- $d$ is the damping factor (usually 0.85),
-- $\text{In}(i)$ is the set of nodes linking to $i$,
-- $L(j)$ is the number of outbound links from node $j$.
-
-
-
-### Implementation (using NetworkX)
-
-```python
-import networkx as nx
-
-G = nx.DiGraph()
-G.add_edges_from([
-    ('A', 'B'), ('B', 'C'), ('C', 'A'), ('A', 'D'), ('D', 'C')
-])
-
-pagerank_scores = nx.pagerank(G, alpha=0.85)
-for node, score in pagerank_scores.items():
-    print(f"{node}: {score:.4f}")
-```
-
-
-
-### 📊 Use Cases
-- Graph-based NLP: Keyword extraction (e.g., TextRank).
-
-#graph #data_visualization
-
-<a id="pandas-dataframe-agent"></a>
-# Pandas Dataframe Agent {#pandas-dataframe-agent}
-
-Example:
-https://github.com/AssemblyAI/youtube-tutorials/tree/main/pandas-dataframe-agent
-
-
-Follow:
-
-https://www.youtube.com/watch?v=ZIfzpmO8MdA&list=PLcWfeUsAys2kC31F4_ED1JXlkdmu6tlrm&index=7
-
-Can as pandas questions to a dataframe. 
-
-Types of questions:
-- what is the max value of "col1"
-
-<a id="pandas-pivot-table"></a>
-# Pandas Pivot Table {#pandas-pivot-table}
-
-
-Pivot Table: Summarize Data
-```python
-df = pd.DataFrame({'A': ['foo', 'foo', 'bar'], 'B': ['one', 'two', 'one'], 'C': [1, 2, 3]})
-pivot_table = df.pivot_table(values='C', index='A', columns='B', aggfunc='sum')
-```
-
-Relevant links:
-- https://pandas.pydata.org/docs/reference/api/pandas.pivot_table.html
-
-In [DE_Tools](#de_tools) see:
-- https://github.com/rhyslwells/DE_Tools/blob/main/Explorations/Transformation/pivot_table.ipynb
-
-<a id="pandas-stack"></a>
-# Pandas Stack {#pandas-stack}
-
-
-Tool for reshaping data, particularly when you need to pivot a DataFrame ([Pandas Pivot Table](#pandas-pivot-table)) from a wide format to a long format. 
-
-See:
-- [Pandas_Common.py](#pandas_commonpy)
-- [Pandas_Stack.py](#pandas_stackpy)
-
-In [DE_Tools](#de_tools) see:
-- https://github.com/rhyslwells/DE_Tools/blob/main/Explorations/Transformation/reshaping.ipynb
-#### Why Use `stack`? ([Data Transformation](#data-transformation))
-
-Data Reshaping:
-   - <mark>Wide to Long Format</mark>: Convert a DataFrame from a wide format to a long format, which is often preferred for statistical models and visualizations.
-
-Handling Multi-Index DataFrames:
-   - Simplifying Structure: Move the inner level of a column MultiIndex to the row index, simplifying the DataFrame's structure.
-
-[Data Cleansing](#data-cleansing):
-   - Aggregation and Operations: Facilitate data cleaning by allowing aggregation or operations across columns in a more manageable long format.
-
-Preparing Data for Grouping or Aggregation ([Groupby](#groupby)):
-   - Ease of Grouping: Simplify group-by operations and aggregations on data with columns representing different categories or time periods.
-#### Example of Using `stack`
-
-Consider the following example to illustrate how `stack` works:
-
-```python
-import pandas as pd
-
-# Sample DataFrame
-data = {
-    'A': [1, 2, 3],
-    'B': [4, 5, 6],
-    'C': [7, 8, 9]
-}
-
-df = pd.DataFrame(data)
-print("Original DataFrame:")
-print(df)
-
-# Using stack
-stacked_df = df.stack()
-print("\nStacked DataFrame:")
-print(stacked_df)
-```
-
-Output:
-```
-Original DataFrame:
-   A  B  C
-0  1  4  7
-1  2  5  8
-2  3  6  9
-
-Stacked DataFrame:
-0  A    1
-   B    4
-   C    7
-1  A    2
-   B    5
-   C    8
-2  A    3
-   B    6
-   C    9
-dtype: int64
-```
-
-In this example:
-- The original DataFrame has three columns ('A', 'B', 'C') and three rows.
-- After stacking, the DataFrame is transformed into a Series with a MultiIndex/[Multi-level index](#multi-level-index). The outer level of the index corresponds to the original DataFrame’s row index, and the inner level corresponds to the original column labels.
-
-#### When Not to Use `stack`
-
-- Wide Format Requirements: If your analysis or processing requires a wide format, such as some [Machine Learning Algorithms](#machine-learning-algorithms), stacking may not be appropriate.
-- Complexity: If stacking makes the data too complex to manage or understand, it might be better to keep the original structure.
-- Simplicity: When the current structure of your DataFrame already suits your analysis needs, stacking may be unnecessary.
-
-<a id="pandas-join-vs-merge"></a>
-# Pandas Join Vs Merge {#pandas-join-vs-merge}
-
-In pandas, both `.join()` and `pd.merge()` are used to combine DataFrames, but they differ in **syntax**, **defaults**, and **use cases**.
-
-[Merge](#merge) is better than Join.
-
-|Feature|`df.join()`|`pd.merge()`|
-|---|---|---|
-|**Default key**|Uses index of caller and index/column of other|Requires explicit column(s) to merge on|
-|**Syntax style**|Method on a DataFrame|Function (`pd.merge(left, right)`)|
-|**Column join**|Must specify `on=` and use one column from each|Can merge on multiple columns|
-|**Index join**|Default behavior (index-to-index)|Requires `left_index=True`, `right_index=True`|
-|**Suffixes**|`lsuffix`, `rsuffix`|`suffixes=('_x', '_y')`|
-|**Complex joins**|Not well-suited|Supports full SQL-style joins|
-|**Use case**|Simple joins on index or one column|Complex joins with control over join behavior|
-#data_cleaning #data_integration 
-
-<a id="pandas"></a>
-# Pandas {#pandas}
-
-
-In [ML_Tools](#ml_tools) see:
-- [Pandas_Common.py](#pandas_commonpy)
-
-Areas:
-- [Handling Missing Data](#handling-missing-data) 
-- [Data Selection](#data-selection)
-- [Data Transformation](#data-transformation)
-
-
-
-
-
-
-
-
-<a id="pandas_commonpy"></a>
-# Pandas_Common.Py {#pandas_commonpy}
-
-https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Utilities/Pandas_Common.py
-
-<a id="pandas_stackpy"></a>
-# Pandas_Stack.Py {#pandas_stackpy}
-
-https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Utilities/Pandas_Stack.py
-
-<a id="parametric-tests"></a>
-# Parametric Tests {#parametric-tests}
-
-
-
-<a id="parquet"></a>
-# Parquet {#parquet}
-
-
-A **Parquet file** is a **columnar storage file format** specifically designed for storing large amounts of data efficiently. It is commonly used in [Big Data](#big-data) ecosystems due to its optimised performance for both storage and querying.
-
-[Data Storage](#data-storage)
-### Key Features of Parquet:
-
-1. **Columnar Storage Format:**
-    - Data is stored **column by column** instead of row by row.
-    - This design is highly efficient for analytical queries that access only specific columns, reducing the amount of data read.
-      
-2. **Optimised for Big Data:**
-    - Parquet is designed for distributed systems like Apache [Hadoop](#hadoop), [Apache Spark](#apache-spark), and other big data processing tools.
-      
-3. **Compression:**
-    - It supports multiple compression algorithms (e.g., Snappy, GZIP) for reducing file size while maintaining fast read and write performance.
-      
-4. **[Schema Evolution](#schema-evolution):**
-    - Parquet supports flexible schemas, allowing fields to be added or modified without breaking compatibility with older data.
-      
-5. **Efficient [Metadata Handling](#metadata-handling):**
-    - Metadata is stored along with the data, making it easier to retrieve and query information about the dataset without scanning the entire file.
-
-### Advantages of Parquet:
-
-1. **Improved Query Performance:**
-    - Since data is stored column-wise, queries that require only a few columns read less data compared to row-based formats like CSV.
-      
-2. **Lower Storage Costs:**
-    - Built-in compression and columnar storage **significantly reduce file size.**
-      
-3. **Compatibility:**
-    - Parquet is compatible with most big data processing tools, such as Hadoop, Spark, Hive, Presto, and AWS Athena.
-
-1. **Efficient I/O:**
-    - Parquet’s columnar format minimises disk I/O, making it faster to process large datasets.
-
----
-
-### When to Use Parquet:
-- **Analytical Workloads:** Ideal for scenarios where you need to perform aggregations, filtering, or processing large datasets.
-- **Big Data Processing:** Frequently used with tools like Spark, Hive, and Presto in data lakes.
-- **Cloud Storage:** Supported by [Cloud Providers](#cloud-providers) platforms.
-
-### Example Use Case:
-
-Imagine a dataset with 10 million rows and 100 columns.
-
-- If you query just 3 columns in a row-based format (e.g., CSV), you must read all 100 columns for every row.
-- In Parquet, only the 3 relevant columns are read, significantly improving performance.
-
----
-
-### File Structure:
-
-- **Row Group:** Data is divided into chunks called row groups, enabling efficient data retrieval.
-- **Columns:** Each column in a row group is stored together for fast access.
-- **Footer:** Contains metadata, such as schema definitions and row group locations, allowing quick navigation of the file.
-
----
-
-### How to Work with Parquet in Python:
-
-You can use libraries like **pandas** or **pyarrow**:
-
-```python
-import pandas as pd
-
-# Write a DataFrame to a Parquet file
-df = pd.DataFrame({'col1': [1, 2], 'col2': [3, 4]})
-df.to_parquet('example.parquet', engine='pyarrow')
-
-# Read a Parquet file into a DataFrame
-df_read = pd.read_parquet('example.parquet')
-print(df_read)
-```
-
----
-
-In summary, Parquet is an efficient, compact, and scalable file format ideal for big data analytics and storage, providing faster performance and reduced costs.
-
-<a id="part-of-speech-tagging"></a>
-# Part Of Speech Tagging {#part-of-speech-tagging}
-
-Part of speech tagging : assigning a specific part-of-speech category (such as noun, verb, adjective, etc.) to each word in a text
-
-Part-of-speech tagging involves assigning a specific part-of-speech category (such as noun, verb, adjective, etc.) to each word in a text
-```python
-from nltk import pos_tag
-pos_tag(temp[:20])
-```
-will get outputs such as [('history', 'NN'), ('poland', 'NN'), ('roots', 'NNS'), ('early', 'JJ').
 
 <a id="percentile-detection"></a>
 # Percentile Detection {#percentile-detection}
@@ -16614,6 +16944,13 @@ Physical Model
 
 
 
+<a id="pmdarima"></a>
+# Pmdarima {#pmdarima}
+
+Helps find [Model Parameters](#model-parameters) for [ARIMA](#arima) models
+
+[Forecasting_AutoArima.py](#forecasting_autoarimapy)
+
 <a id="poetry"></a>
 # Poetry {#poetry}
 
@@ -16644,6 +16981,14 @@ poetry add numpy
 
 
 <a id="policy"></a>
+#question"
+aliases:
+  - policies
+category: DS
+importance: 
+engagement: 
+recency_of_interest:
+---
 # Policy {#policy}
 
 
@@ -16726,49 +17071,6 @@ pgadmin tools: to check system information
 
 Business analytics tool for data visualization and reporting.
 
-<a id="powershell"></a>
-# Powershell {#powershell}
-
-
-Why is Powershell better than [Command Prompt|cmd](#command-promptcmd)?
-
-PowerShell is often considered better than Command Prompt (cmd) for several reasons:
-
-1. **Object-Oriented**: PowerShell is built on the [.NET](#net) framework and works with objects rather than plain text. This allows for more complex data manipulation and easier handling of outputs.
-
-2. **Powerful Scripting Capabilities**: PowerShell supports advanced scripting features, including functions, loops, and error handling, making it more suitable for automation and complex tasks.
-
-3. **Access to .NET Framework**: PowerShell can leverage the full power of the .NET framework, allowing users to utilize a vast array of libraries and functionalities.
-
-4. **Cmdlets**: PowerShell uses cmdlets, which are specialized .NET classes designed to perform specific functions. This makes it easier to perform tasks compared to the simpler commands in cmd.
-
-5. **Remote Management**: PowerShell has built-in capabilities for remote management, allowing users to manage multiple systems from a single console.
-
-6. **Pipeline Support**: PowerShell allows for the use of pipelines to pass objects between cmdlets, enabling more efficient and powerful command chaining.
-
-7. **Integrated Help System**: PowerShell includes a robust help system that can be accessed directly from the command line, making it easier to learn and use.
-
-8. **Cross-Platform**: PowerShell Core (now known as PowerShell 7) is cross-platform, meaning it can run on Windows, macOS, and Linux, unlike cmd, which is Windows-only.
-
-## Scripts
-
-PowerShell interacts with several types of scripts and scripting languages, including:
-
-1. **PowerShell Scripts (.ps1)**: These are the primary script files used in PowerShell. They contain a series of PowerShell commands and can automate tasks.
-
-2. **[Batch Files](#batch-files) ( or .cmd)**: PowerShell can execute traditional Windows batch files, allowing for integration with legacy scripts.
-
-3. **VBScript (.vbs)**: PowerShell can run VBScript files, which can be useful for interacting with older systems or applications that rely on VBScript.
-
-4. **Windows Management Instrumentation (WMI)**: PowerShell can interact with WMI scripts to manage and monitor system resources.
-
-5. **.NET Scripts**: Since PowerShell is built on the .NET framework, it can execute .NET code and interact with .NET assemblies.
-
-6. **Python and Other Scripting Languages**: PowerShell can call scripts written in other languages (like Python) using the appropriate command-line interfaces.
-
-7. **JSON and XML**: PowerShell can parse and manipulate JSON and XML data, which are often used in configuration files and data exchange.
-
-
 <a id="powerquery"></a>
 # Powerquery {#powerquery}
 
@@ -16777,6 +17079,11 @@ PowerShell interacts with several types of scripts and scripting languages, incl
 
 
 <a id="powershell-versus-cmd"></a>
+#software"
+aliases: 
+type: 
+created: 2024-06-22 21:32
+---
 # Powershell Versus Cmd {#powershell-versus-cmd}
 
 
@@ -16886,6 +17193,49 @@ The choice between [PowerShell](#powershell) and [Bash](#bash) largely depends o
 - **Simplicity**: Bash scripts are often simpler and more straightforward for basic tasks, especially for file manipulation and text processing.
 - **Community and Resources**: There is a vast amount of community support, tutorials, and resources available for Bash, especially in the open-source community.
 - **Cross-Platform**: While traditionally associated with Unix/Linux, Bash can also be used on Windows through [Windows Subsystem for Linux](#windows-subsystem-for-linux) (WSL) or [Git](#git) Bash.
+
+<a id="powershell"></a>
+# Powershell {#powershell}
+
+
+Why is Powershell better than [Command Prompt|cmd](#command-promptcmd)?
+
+PowerShell is often considered better than Command Prompt (cmd) for several reasons:
+
+1. **Object-Oriented**: PowerShell is built on the [.NET](#net) framework and works with objects rather than plain text. This allows for more complex data manipulation and easier handling of outputs.
+
+2. **Powerful Scripting Capabilities**: PowerShell supports advanced scripting features, including functions, loops, and error handling, making it more suitable for automation and complex tasks.
+
+3. **Access to .NET Framework**: PowerShell can leverage the full power of the .NET framework, allowing users to utilize a vast array of libraries and functionalities.
+
+4. **Cmdlets**: PowerShell uses cmdlets, which are specialized .NET classes designed to perform specific functions. This makes it easier to perform tasks compared to the simpler commands in cmd.
+
+5. **Remote Management**: PowerShell has built-in capabilities for remote management, allowing users to manage multiple systems from a single console.
+
+6. **Pipeline Support**: PowerShell allows for the use of pipelines to pass objects between cmdlets, enabling more efficient and powerful command chaining.
+
+7. **Integrated Help System**: PowerShell includes a robust help system that can be accessed directly from the command line, making it easier to learn and use.
+
+8. **Cross-Platform**: PowerShell Core (now known as PowerShell 7) is cross-platform, meaning it can run on Windows, macOS, and Linux, unlike cmd, which is Windows-only.
+
+## Scripts
+
+PowerShell interacts with several types of scripts and scripting languages, including:
+
+1. **PowerShell Scripts (.ps1)**: These are the primary script files used in PowerShell. They contain a series of PowerShell commands and can automate tasks.
+
+2. **[Batch Files](#batch-files) ( or .cmd)**: PowerShell can execute traditional Windows batch files, allowing for integration with legacy scripts.
+
+3. **VBScript (.vbs)**: PowerShell can run VBScript files, which can be useful for interacting with older systems or applications that rely on VBScript.
+
+4. **Windows Management Instrumentation (WMI)**: PowerShell can interact with WMI scripts to manage and monitor system resources.
+
+5. **.NET Scripts**: Since PowerShell is built on the .NET framework, it can execute .NET code and interact with .NET assemblies.
+
+6. **Python and Other Scripting Languages**: PowerShell can call scripts written in other languages (like Python) using the appropriate command-line interfaces.
+
+7. **JSON and XML**: PowerShell can parse and manipulate JSON and XML data, which are often used in configuration files and data exchange.
+
 
 <a id="precision-or-recall"></a>
 # Precision Or Recall {#precision-or-recall}
@@ -17002,6 +17352,17 @@ $$\bar{x} \pm t_{\alpha/2, n-1} \cdot s \cdot \sqrt{1 + \frac{1}{n}}$$
 
 
 <a id="preprocessing"></a>
+#ml_optimisation"
+  - data_transformation
+  - data_cleaning
+  - data_collection
+  - portal
+title: 
+importance: 
+engagement: 
+recency_of_interest: 2024-10-08
+category:
+---
 # Preprocessing {#preprocessing}
 
 
@@ -17155,6 +17516,11 @@ What assumption can we make based on the problem?
 
 
 
+<a id="programming-languages"></a>
+# Programming Languages {#programming-languages}
+
+
+
 <a id="prompt-engineering"></a>
 # Prompt Engineering {#prompt-engineering}
 
@@ -17199,6 +17565,9 @@ For instance, if a user wants to generate a summary of a scientific article, a p
 ### Follow-Up Questions
 1. [What are the best practices for evaluating the effectiveness of different prompts](#what-are-the-best-practices-for-evaluating-the-effectiveness-of-different-prompts)
 2. [How can prompt engineering be integrated into existing NLP workflows to enhance performance](#how-can-prompt-engineering-be-integrated-into-existing-nlp-workflows-to-enhance-performance)
+
+<a id="proportion-test"></a>
+# Proportion Test {#proportion-test}
 
 ### Proportion Test
 
@@ -17252,6 +17621,9 @@ Ensures continuous data flow, in contrast to [batch processing](#batch-processin
 - This decoupling means that the producer does not need to know how many consumers are listening or what they are doing with the data.
 
 
+
+<a id="pull-request-template"></a>
+# Pull Request Template {#pull-request-template}
 
 ## Tl;dr
 
@@ -17365,6 +17737,151 @@ Object or functional APIs
 - Educational purposes for teaching machine learning concepts.
 - Rapid development of machine learning solutions for business problems.
 
+<a id="pycaret_anomalyipynb"></a>
+# Pycaret_Anomaly.Ipynb {#pycaret_anomalyipynb}
+
+https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Preprocess/Outliers/Pycaret_Anomaly.ipynb
+
+
+
+<a id="pycaret_examplepy"></a>
+# Pycaret_Example.Py {#pycaret_examplepy}
+
+https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Deployment/Pycaret/Pycaret_Example.py
+
+
+
+<a id="pydantic"></a>
+# Pydantic {#pydantic}
+
+Pydantic is a Python library used for [data validation](#data-validation) and settings management using Python type annotations.
+
+It provides a way to define data models with type hints, and it automatically validates and parses input data to ensure it matches the specified types. 
+
+Pydantic is often used in applications where data integrity is crucial, such as in web APIs, configuration management, and data processing pipelines. It helps developers catch errors early by enforcing type constraints and providing clear error messages when data does not conform to the expected format.
+
+In [ML_Tools](#ml_tools) see:
+- [Pydantic.py](#pydanticpy)
+- [Pydantic_More.py](#pydantic_morepy)
+### What Pydantic Does:
+
+1. **[Data Validation](#data-validation) and Parsing**  
+    Pydantic takes raw input data (e.g., dictionaries, JSON) and validates it against the [type checking](#type-checking) types and constraints defined in a `BaseModel`. If the input data doesn't match the requirements (e.g., wrong type, missing fields, invalid values), it raises a `ValidationError`.
+    
+    Example:
+    
+    ```python
+    from pydantic import BaseModel
+    
+    class User(BaseModel):
+        id: int
+        name: str
+    user = User(id="1", name="Alice")  # Automatically parses "1" to integer.
+    ```
+    
+2. **Automatic Type Conversion**  
+    Pydantic can coerce compatible types into the expected type. For example, if a field expects an `int` but receives a string `"123"`, it will try to convert it to an integer.
+    
+3. **Error Messaging**  
+    If validation fails, Pydantic provides detailed error messages explaining what went wrong, making debugging easier.
+    
+4. **Nested and Complex Data Models**  
+    Pydantic supports nested models and complex data structures, enabling you to handle hierarchical data easily.
+    
+5. **Settings Management**  
+    Pydantic can load configuration from environment variables or other sources using its `BaseSettings` class, making it handy for managing application settings.
+    
+6. **Serialization and Deserialization**  
+    Pydantic models support converting data into [JSON](#json) or dictionaries, making it easy to work with web APIs or store validated data.
+
+### Key Advantages of Pydantic:
+
+1. **Type-Safe Programming**:  
+    By relying on Python’s type hints, Pydantic promotes better coding practices and helps prevent runtime errors.
+    
+2. **Ease of Use**:  
+    Pydantic abstracts a lot of the boilerplate code you'd write manually for validating and parsing data.
+    
+3. **Error Reporting**:  
+    Pydantic provides clear and structured error messages, making [debugging](#debugging) simpler.
+    
+4. **Interoperability**:  
+    It works well with libraries like [FastAPI](#fastapi), where it powers request/response validation and serialization.
+
+### Use Cases:
+
+1. **Web APIs**:  
+    Validating incoming HTTP requests and outgoing responses (e.g., with FastAPI).
+2. **Data Processing**:  
+    Ensuring raw input data from files or APIs meets requirements before processing.
+3. **Configuration Management**:  
+    Validating and loading application settings from environment variables or files.
+4. **Data Pipelines**:  
+    Verifying the integrity of data as it moves through pipeline stages.
+
+### Analogy to Summarize:
+
+Think of Pydantic as a **data traffic cop**. It stands at the intersection where raw data enters your application, ensuring that:
+
+- The data is well-formed.
+- It complies with rules you’ve set (type, format, constraints).
+- It’s transformed into the expected structure (if possible).
+
+By using Pydantic, you focus on defining the rules, and it ensures the data fits them—saving you from writing repetitive validation code.
+
+### Is Pydantic [Object-Oriented Programming](#object-oriented-programming) (OOP)?
+
+While Pydantic uses classes and inheritance (features of OOP), it is **not purely OOP in intent or design**. Instead, it is:
+
+- **Data-centric**: Focused on defining and validating data structures rather than encapsulating behavior like traditional OOP.
+- **Declarative**: Pydantic models are [declarative](#declarative) in nature. You define the "shape" of your data (fields and their types) and rely on Pydantic to handle validation, parsing, and serialization.
+
+#### Differences from Typical OOP:
+
+- **Behavior vs. Structure**:  
+    Traditional OOP often centers on defining behavior (methods) alongside data. Pydantic, on the other hand, prioritizes defining and validating data.
+- **State Management**:  
+    In OOP, objects encapsulate their state and methods for interacting with it. Pydantic models are more lightweight and focused on validation, not managing stateful objects.
+
+#### Similarities to OOP:
+
+- **Class-Based Models**:  
+    Pydantic models are Python classes, and you can use inheritance, encapsulation, and even add methods to your models.
+- **Reusability**:  
+    You can define base models and extend them, similar to class inheritance in OOP.
+
+<a id="pydanticpy"></a>
+# Pydantic.Py {#pydanticpy}
+
+https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Utilities/Pydantic.py
+### Explanation:
+
+- **BaseModel**: This is the base class for creating data models in Pydantic. You define your model by subclassing `BaseModel` and specifying fields with type annotations.
+- **Optional**: Used to indicate that a field is optional.
+- **List**: Used to specify a list of items, in this case, a list of strings for friends.
+- **Validator**: A custom validator is used to enforce additional constraints, such as ensuring the age is positive.
+- **ValidationError**: This exception is raised when the input data does not conform to the model's constraints.
+
+This script demonstrates how Pydantic can be used to validate and parse data, ensuring it meets the specified types and constraints.
+
+
+
+
+
+<a id="pydantic_morepy"></a>
+# Pydantic_More.Py {#pydantic_morepy}
+
+https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Utilities/Pydantic_More.py
+### Key Features Demonstrated in the Script:
+
+1. **Nested Models:** Use of the `Friend` model inside the `User` model.
+2. **Custom Validators:** Validating `age` and `email` fields with specific logic.
+3. **Dynamic Defaults:** Using `datetime.now` for `created_at`.
+4. **Field Aliases:** Supporting different key names during parsing and serialization.
+5. **Configuration Options:** Stripping whitespace and enabling strict typing.
+6. **Model Inheritance:** Extending the `User` model to create an `AdminUser` model.
+7. **Parsing Raw Data:** Demonstrating `parse_raw` for JSON strings.
+
 <a id="pygraphviz"></a>
 # Pygraphviz {#pygraphviz}
 
@@ -17392,7 +17909,73 @@ python
 from networkx.drawing.nx_agraph import graphviz_layout
 pos = graphviz_layout(G, prog="dot")
 
+<a id="pyright-vs-pydantic"></a>
+# Pyright Vs Pydantic {#pyright-vs-pydantic}
+
+While [Pyright](#pyright) and [Pydantic](#pydantic) serve different roles in Python development, they complement each other well. 
+
+Pyright helps ensure that the code adheres to <mark>type constraints before execution</mark>, while Pydantic ensures that the <mark>data being processed</mark> adheres to the expected types and formats during runtime. 
+
+### Key Differences
+
+1. **Purpose**:
+   - **Pyright** is aimed at improving code quality through static analysis and type checking.
+   - **Pydantic** is focused on runtime [data validation](#data-validation), ensuring that the data conforms to specified types and constraints.
+
+2. **Functionality**:
+   - **Pyright** checks for type errors and enforces type hints during development, preventing potential issues before the code is executed.
+   - **Pydantic** validates and parses data at runtime, providing clear error messages when data does not conform to the expected format.
+
+3. **Use Cases**:
+   - **Pyright** is beneficial in any Python project where type safety is desired, especially in large codebases.
+   - **Pydantic** is particularly useful in applications that require data validation, such as web frameworks (e.g., [FastAPI](#fastapi)) and data processing pipelines.
+
+### Key Similarities
+
+4. **Type Annotations**:
+   - Both utilize Python's type hints to define and enforce types, promoting better coding practices and reducing runtime errors.
+
+5. **Error Handling**:
+   - Both tools provide mechanisms for error reporting, although they do so at different stages (compile-time for Pyright and runtime for Pydantic).
+
+6. **Improving Code Quality**:
+   - Both contribute to overall code quality and maintainability, albeit through different approaches—Pyright through static analysis and Pydantic through runtime validation.
+
+
+
+
+<a id="pyright"></a>
+# Pyright {#pyright}
+
+
+Pyright is a <mark>static type checker</mark> for Python that enhances code reliability by enforcing type constraints <mark>at compile-time.</mark>
+
+It utilizes type hints to identify potential errors, such as type mismatches, before runtime, thereby improving code robustness. 
+
+Pyright significantly reduces runtime errors by enforcing type constraints at compile-time.
+
+The use of type hints in Pyright improves code readability and maintainability, serving as [Documentation & Meetings](#documentation--meetings) for function signatures.
+
+### Related Topics
+
+- Type inference in programming languages
+- The role of type systems in [functional programming](#functional-programming)
+- [Debugging](#debugging)
+- [Maintainable Code](#maintainable-code)
+- [type checking](#type-checking)
+
+### Follow up questions
+
+- How does the inclusion of Pyright impact the performance of large-scale Python applications?
+- What are the trade-offs between using Pyright and other static type checkers in terms of accuracy and speed?
+
 <a id="pyspark"></a>
+#data_orchestration"
+  - software
+aliases: 
+type: term
+created:
+---
 # Pyspark {#pyspark}
 
 
@@ -17414,6 +17997,236 @@ Similar to [Pandas](#pandas)
 
 
 
+
+<a id="pytest"></a>
+# Pytest {#pytest}
+
+### **`@pytest.fixture` Explanation**
+
+`@pytest.fixture` is a decorator in `pytest` used to define reusable test setup functions. It allows tests to use shared resources without redundant code.
+
+#### **Example & Usage**
+
+python
+
+Copy code
+
+`import pytest  @pytest.fixture def sample_data():     return {"name": "John Doe", "age": 30}      def test_example(sample_data):     assert sample_data["name"] <mark> "John Doe"     assert sample_data["age"] </mark> 30`
+
+🔹 **How it works:**
+
+- The function `sample_data()` is decorated with `@pytest.fixture`, making it a fixture.
+- The test function `test_example()` receives `sample_data` as an argument.
+- `pytest` automatically provides the fixture data when running the test.
+
+#### **Why use fixtures?**
+
+- Avoids repetitive setup code.
+- Ensures clean test environments.
+- Can handle resource management (e.g., opening/closing database connections, creating temporary files).
+
+<a id="python-click"></a>
+# Python Click {#python-click}
+
+
+Python Click, or "Command Line Interface Creation Kit," is a library for building command-line interfaces (CLIs). It supports arbitrary nesting of commands, automatic help page generation, and lazy loading of subcommands. 
+
+In [ML_Tools](#ml_tools) see: [Click_Implementation.py](#click_implementationpy)
+## Installation
+
+To install Click, use pip:
+
+```sh
+pip install click
+```
+
+## Creating a Command Group
+
+Click uses groups to organize related commands. A group serves as a container for multiple commands.
+
+```python
+import click
+import json
+
+@click.group("cli")
+@click.pass_context
+@click.argument("document")
+def cli(ctx, document):
+    """An example CLI for interfacing with a document"""
+    with open(document) as _stream:
+        _dict = json.load(_stream)
+    ctx.obj = _dict
+
+def main():
+    cli(prog_name="cli")
+
+if __name__ == '__main__':
+    main()
+```
+
+Running `python script.py --help` generates an automatic help page.
+
+## Adding Commands
+
+Commands can be added to a Click group using the `@<group>.command` decorator.
+
+### Checking Context Object
+
+```python
+import pprint
+
+@cli.command("check_context_object")
+@click.pass_context
+def check_context(ctx):
+    pprint.pprint(type(ctx.obj))
+```
+
+### Custom Pass Decorator
+
+A pass decorator allows passing specific objects through context.
+
+```python
+pass_dict = click.make_pass_decorator(dict)
+```
+
+### Retrieving Keys from Context
+
+```python
+@cli.command("get_keys")
+@pass_dict
+def get_keys(_dict):
+    keys = list(_dict.keys())
+    click.secho("The keys in our dictionary are", fg="green")
+    click.echo(click.style(str(keys), fg="blue"))
+```
+
+### Retrieving a Specific Key
+
+```python
+@cli.command("get_key")
+@click.argument("key")
+@click.pass_context
+def get_key(ctx, key):
+    if key in ctx.obj:
+        pprint.pprint(ctx.obj[key])
+    else:
+        click.echo(f"Key '{key}' not found in document.", err=True)
+```
+
+### Arbitrary Nesting of Commands
+
+```python
+@cli.command("get_summary")
+@click.pass_context
+def get_summary(ctx):
+    ctx.invoke(get_key, key="summary")
+```
+
+## Adding Optional Parameters
+
+Optional parameters can be defined using the `@click.option` decorator.
+
+```python
+@cli.command("get_results")
+@click.option("-d", "--download", is_flag=True, help="Download the result to a JSON file")
+@click.option("-k", "--key", help="Specify a key from the results")
+@click.pass_context
+def get_results(ctx, download, key):
+    results = ctx.obj.get('results', [])
+    if key:
+        results = {key: sum(entry.get(key, 0) for entry in results)}
+    if download:
+        filename = f"{key or 'results'}.json"
+        with open(filename, 'w') as w:
+            json.dump(results, w)
+        click.echo(f"File saved to {filename}")
+    else:
+        pprint.pprint(results)
+```
+
+## Using `@click.pass_obj`
+
+`@click.pass_obj` passes only `ctx.obj` instead of the full context.
+
+```python
+@cli.command("get_text")
+@click.option("-s", "--sentences", is_flag=True, help="Return sentences")
+@click.option("-p", "--paragraphs", is_flag=True, help="Return paragraphs")
+@click.option("-d", "--download", is_flag=True, help="Download as JSON file")
+@click.pass_obj
+def get_text(_dict, sentences, paragraphs, download):
+    results = _dict.get('results', [])
+    text = {} if paragraphs else {'text': ''}
+    for idx, entry in enumerate(results):
+        if paragraphs:
+            text[idx] = entry.get('text', '')
+        else:
+            text['text'] += entry.get('text', '')
+    if sentences:
+        text = {i: s for i, s in enumerate(text.get('text', '').split('.')) if s}
+    pprint.pprint(text)
+    if download:
+        filename = "paragraphs.json" if paragraphs else "text.json"
+        with open(filename, 'w') as w:
+            json.dump(text, w)
+        click.echo(f"File saved to {filename}")
+```
+
+## Handling User Input
+
+Click provides `@click.prompt` to interact with users.
+
+```python
+@cli.command("prompt_user")
+@click.pass_context
+def prompt_user(ctx):
+    name = click.prompt("Enter your name")
+    age = click.prompt("Enter your age", type=int)
+    click.echo(f"Hello {name}, you are {age} years old!")
+```
+
+## Handling Confirmation
+
+Use `@click.confirm` to get user confirmation before proceeding.
+
+```python
+@cli.command("confirm_action")
+@click.pass_context
+def confirm_action(ctx):
+    if click.confirm("Do you want to proceed?"):
+        click.echo("Proceeding with action...")
+    else:
+        click.echo("Action canceled.")
+```
+
+## Conclusion
+
+Python Click simplifies CLI creation with its decorators and built-in features like automatic help generation and context passing. This guide provides a foundation for building more advanced command-line applications. Additionally, handling user input and confirmations enhances the interactivity of CLI applications.
+
+<a id="python"></a>
+# Python {#python}
+
+
+dynamic language
+lower learning, support
+object orientated
+
+[Immutable vs mutable](#immutable-vs-mutable)
+
+
+
+
+<a id="pytorch-vs-tensorflow"></a>
+# Pytorch Vs Tensorflow {#pytorch-vs-tensorflow}
+
+
+
+- [Tensorflow](#tensorflow) is widely adopted but pytorch picking up
+- Dynamic vs static graph
+- Tensorboard is better than [pytorch](#pytorch) visualization
+- Plain tensorflow looks pretty much like a library
+- Abstraction is better in pytorch, even data parallelism
+- Tf.contrib, [keras](#keras) to rescue
 
 <a id="pytorch"></a>
 # Pytorch {#pytorch}
@@ -17685,645 +18498,7 @@ optimizer.step()  # Update model weights
 print("Training step completed on:", device)
 ```
 
-<a id="pycaret_anomalyipynb"></a>
-# Pycaret_Anomaly.Ipynb {#pycaret_anomalyipynb}
-
-https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Preprocess/Outliers/Pycaret_Anomaly.ipynb
-
-
-
-<a id="pycaret_examplepy"></a>
-# Pycaret_Example.Py {#pycaret_examplepy}
-
-https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Deployment/Pycaret/Pycaret_Example.py
-
-
-
-<a id="pydantic"></a>
-# Pydantic {#pydantic}
-
-Pydantic is a Python library used for [data validation](#data-validation) and settings management using Python type annotations.
-
-It provides a way to define data models with type hints, and it automatically validates and parses input data to ensure it matches the specified types. 
-
-Pydantic is often used in applications where data integrity is crucial, such as in web APIs, configuration management, and data processing pipelines. It helps developers catch errors early by enforcing type constraints and providing clear error messages when data does not conform to the expected format.
-
-In [ML_Tools](#ml_tools) see:
-- [Pydantic.py](#pydanticpy)
-- [Pydantic_More.py](#pydantic_morepy)
-### What Pydantic Does:
-
-1. **[Data Validation](#data-validation) and Parsing**  
-    Pydantic takes raw input data (e.g., dictionaries, JSON) and validates it against the [type checking](#type-checking) types and constraints defined in a `BaseModel`. If the input data doesn't match the requirements (e.g., wrong type, missing fields, invalid values), it raises a `ValidationError`.
-    
-    Example:
-    
-    ```python
-    from pydantic import BaseModel
-    
-    class User(BaseModel):
-        id: int
-        name: str
-    user = User(id="1", name="Alice")  # Automatically parses "1" to integer.
-    ```
-    
-2. **Automatic Type Conversion**  
-    Pydantic can coerce compatible types into the expected type. For example, if a field expects an `int` but receives a string `"123"`, it will try to convert it to an integer.
-    
-3. **Error Messaging**  
-    If validation fails, Pydantic provides detailed error messages explaining what went wrong, making debugging easier.
-    
-4. **Nested and Complex Data Models**  
-    Pydantic supports nested models and complex data structures, enabling you to handle hierarchical data easily.
-    
-5. **Settings Management**  
-    Pydantic can load configuration from environment variables or other sources using its `BaseSettings` class, making it handy for managing application settings.
-    
-6. **Serialization and Deserialization**  
-    Pydantic models support converting data into [JSON](#json) or dictionaries, making it easy to work with web APIs or store validated data.
-
-### Key Advantages of Pydantic:
-
-1. **Type-Safe Programming**:  
-    By relying on Python’s type hints, Pydantic promotes better coding practices and helps prevent runtime errors.
-    
-2. **Ease of Use**:  
-    Pydantic abstracts a lot of the boilerplate code you'd write manually for validating and parsing data.
-    
-3. **Error Reporting**:  
-    Pydantic provides clear and structured error messages, making [debugging](#debugging) simpler.
-    
-4. **Interoperability**:  
-    It works well with libraries like [FastAPI](#fastapi), where it powers request/response validation and serialization.
-
-### Use Cases:
-
-1. **Web APIs**:  
-    Validating incoming HTTP requests and outgoing responses (e.g., with FastAPI).
-2. **Data Processing**:  
-    Ensuring raw input data from files or APIs meets requirements before processing.
-3. **Configuration Management**:  
-    Validating and loading application settings from environment variables or files.
-4. **Data Pipelines**:  
-    Verifying the integrity of data as it moves through pipeline stages.
-
-### Analogy to Summarize:
-
-Think of Pydantic as a **data traffic cop**. It stands at the intersection where raw data enters your application, ensuring that:
-
-- The data is well-formed.
-- It complies with rules you’ve set (type, format, constraints).
-- It’s transformed into the expected structure (if possible).
-
-By using Pydantic, you focus on defining the rules, and it ensures the data fits them—saving you from writing repetitive validation code.
-
-### Is Pydantic [Object-Oriented Programming](#object-oriented-programming) (OOP)?
-
-While Pydantic uses classes and inheritance (features of OOP), it is **not purely OOP in intent or design**. Instead, it is:
-
-- **Data-centric**: Focused on defining and validating data structures rather than encapsulating behavior like traditional OOP.
-- **Declarative**: Pydantic models are [declarative](#declarative) in nature. You define the "shape" of your data (fields and their types) and rely on Pydantic to handle validation, parsing, and serialization.
-
-#### Differences from Typical OOP:
-
-- **Behavior vs. Structure**:  
-    Traditional OOP often centers on defining behavior (methods) alongside data. Pydantic, on the other hand, prioritizes defining and validating data.
-- **State Management**:  
-    In OOP, objects encapsulate their state and methods for interacting with it. Pydantic models are more lightweight and focused on validation, not managing stateful objects.
-
-#### Similarities to OOP:
-
-- **Class-Based Models**:  
-    Pydantic models are Python classes, and you can use inheritance, encapsulation, and even add methods to your models.
-- **Reusability**:  
-    You can define base models and extend them, similar to class inheritance in OOP.
-
-<a id="pydanticpy"></a>
-# Pydantic.Py {#pydanticpy}
-
-https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Utilities/Pydantic.py
-### Explanation:
-
-- **BaseModel**: This is the base class for creating data models in Pydantic. You define your model by subclassing `BaseModel` and specifying fields with type annotations.
-- **Optional**: Used to indicate that a field is optional.
-- **List**: Used to specify a list of items, in this case, a list of strings for friends.
-- **Validator**: A custom validator is used to enforce additional constraints, such as ensuring the age is positive.
-- **ValidationError**: This exception is raised when the input data does not conform to the model's constraints.
-
-This script demonstrates how Pydantic can be used to validate and parse data, ensuring it meets the specified types and constraints.
-
-
-
-
-
-<a id="pydantic_morepy"></a>
-# Pydantic_More.Py {#pydantic_morepy}
-
-https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Utilities/Pydantic_More.py
-### Key Features Demonstrated in the Script:
-
-1. **Nested Models:** Use of the `Friend` model inside the `User` model.
-2. **Custom Validators:** Validating `age` and `email` fields with specific logic.
-3. **Dynamic Defaults:** Using `datetime.now` for `created_at`.
-4. **Field Aliases:** Supporting different key names during parsing and serialization.
-5. **Configuration Options:** Stripping whitespace and enabling strict typing.
-6. **Model Inheritance:** Extending the `User` model to create an `AdminUser` model.
-7. **Parsing Raw Data:** Demonstrating `parse_raw` for JSON strings.
-
-<a id="pyright-vs-pydantic"></a>
-# Pyright Vs Pydantic {#pyright-vs-pydantic}
-
-While [Pyright](#pyright) and [Pydantic](#pydantic) serve different roles in Python development, they complement each other well. 
-
-Pyright helps ensure that the code adheres to <mark>type constraints before execution</mark>, while Pydantic ensures that the <mark>data being processed</mark> adheres to the expected types and formats during runtime. 
-
-### Key Differences
-
-1. **Purpose**:
-   - **Pyright** is aimed at improving code quality through static analysis and type checking.
-   - **Pydantic** is focused on runtime [data validation](#data-validation), ensuring that the data conforms to specified types and constraints.
-
-2. **Functionality**:
-   - **Pyright** checks for type errors and enforces type hints during development, preventing potential issues before the code is executed.
-   - **Pydantic** validates and parses data at runtime, providing clear error messages when data does not conform to the expected format.
-
-3. **Use Cases**:
-   - **Pyright** is beneficial in any Python project where type safety is desired, especially in large codebases.
-   - **Pydantic** is particularly useful in applications that require data validation, such as web frameworks (e.g., [FastAPI](#fastapi)) and data processing pipelines.
-
-### Key Similarities
-
-4. **Type Annotations**:
-   - Both utilize Python's type hints to define and enforce types, promoting better coding practices and reducing runtime errors.
-
-5. **Error Handling**:
-   - Both tools provide mechanisms for error reporting, although they do so at different stages (compile-time for Pyright and runtime for Pydantic).
-
-6. **Improving Code Quality**:
-   - Both contribute to overall code quality and maintainability, albeit through different approaches—Pyright through static analysis and Pydantic through runtime validation.
-
-
-
-
-<a id="pyright"></a>
-# Pyright {#pyright}
-
-
-Pyright is a <mark>static type checker</mark> for Python that enhances code reliability by enforcing type constraints <mark>at compile-time.</mark>
-
-It utilizes type hints to identify potential errors, such as type mismatches, before runtime, thereby improving code robustness. 
-
-Pyright significantly reduces runtime errors by enforcing type constraints at compile-time.
-
-The use of type hints in Pyright improves code readability and maintainability, serving as [Documentation & Meetings](#documentation--meetings) for function signatures.
-
-### Related Topics
-
-- Type inference in programming languages
-- The role of type systems in [functional programming](#functional-programming)
-- [Debugging](#debugging)
-- [Maintainable Code](#maintainable-code)
-- [type checking](#type-checking)
-
-### Follow up questions
-
-- How does the inclusion of Pyright impact the performance of large-scale Python applications?
-- What are the trade-offs between using Pyright and other static type checkers in terms of accuracy and speed?
-
-### **`@pytest.fixture` Explanation**
-
-`@pytest.fixture` is a decorator in `pytest` used to define reusable test setup functions. It allows tests to use shared resources without redundant code.
-
-#### **Example & Usage**
-
-python
-
-Copy code
-
-`import pytest  @pytest.fixture def sample_data():     return {"name": "John Doe", "age": 30}      def test_example(sample_data):     assert sample_data["name"] <mark> "John Doe"     assert sample_data["age"] </mark> 30`
-
-🔹 **How it works:**
-
-- The function `sample_data()` is decorated with `@pytest.fixture`, making it a fixture.
-- The test function `test_example()` receives `sample_data` as an argument.
-- `pytest` automatically provides the fixture data when running the test.
-
-#### **Why use fixtures?**
-
-- Avoids repetitive setup code.
-- Ensures clean test environments.
-- Can handle resource management (e.g., opening/closing database connections, creating temporary files).
-
-<a id="python-click"></a>
-# Python Click {#python-click}
-
-
-Python Click, or "Command Line Interface Creation Kit," is a library for building command-line interfaces (CLIs). It supports arbitrary nesting of commands, automatic help page generation, and lazy loading of subcommands. 
-
-In [ML_Tools](#ml_tools) see: [Click_Implementation.py](#click_implementationpy)
-## Installation
-
-To install Click, use pip:
-
-```sh
-pip install click
-```
-
-## Creating a Command Group
-
-Click uses groups to organize related commands. A group serves as a container for multiple commands.
-
-```python
-import click
-import json
-
-@click.group("cli")
-@click.pass_context
-@click.argument("document")
-def cli(ctx, document):
-    """An example CLI for interfacing with a document"""
-    with open(document) as _stream:
-        _dict = json.load(_stream)
-    ctx.obj = _dict
-
-def main():
-    cli(prog_name="cli")
-
-if __name__ == '__main__':
-    main()
-```
-
-Running `python script.py --help` generates an automatic help page.
-
-## Adding Commands
-
-Commands can be added to a Click group using the `@<group>.command` decorator.
-
-### Checking Context Object
-
-```python
-import pprint
-
-@cli.command("check_context_object")
-@click.pass_context
-def check_context(ctx):
-    pprint.pprint(type(ctx.obj))
-```
-
-### Custom Pass Decorator
-
-A pass decorator allows passing specific objects through context.
-
-```python
-pass_dict = click.make_pass_decorator(dict)
-```
-
-### Retrieving Keys from Context
-
-```python
-@cli.command("get_keys")
-@pass_dict
-def get_keys(_dict):
-    keys = list(_dict.keys())
-    click.secho("The keys in our dictionary are", fg="green")
-    click.echo(click.style(str(keys), fg="blue"))
-```
-
-### Retrieving a Specific Key
-
-```python
-@cli.command("get_key")
-@click.argument("key")
-@click.pass_context
-def get_key(ctx, key):
-    if key in ctx.obj:
-        pprint.pprint(ctx.obj[key])
-    else:
-        click.echo(f"Key '{key}' not found in document.", err=True)
-```
-
-### Arbitrary Nesting of Commands
-
-```python
-@cli.command("get_summary")
-@click.pass_context
-def get_summary(ctx):
-    ctx.invoke(get_key, key="summary")
-```
-
-## Adding Optional Parameters
-
-Optional parameters can be defined using the `@click.option` decorator.
-
-```python
-@cli.command("get_results")
-@click.option("-d", "--download", is_flag=True, help="Download the result to a JSON file")
-@click.option("-k", "--key", help="Specify a key from the results")
-@click.pass_context
-def get_results(ctx, download, key):
-    results = ctx.obj.get('results', [])
-    if key:
-        results = {key: sum(entry.get(key, 0) for entry in results)}
-    if download:
-        filename = f"{key or 'results'}.json"
-        with open(filename, 'w') as w:
-            json.dump(results, w)
-        click.echo(f"File saved to {filename}")
-    else:
-        pprint.pprint(results)
-```
-
-## Using `@click.pass_obj`
-
-`@click.pass_obj` passes only `ctx.obj` instead of the full context.
-
-```python
-@cli.command("get_text")
-@click.option("-s", "--sentences", is_flag=True, help="Return sentences")
-@click.option("-p", "--paragraphs", is_flag=True, help="Return paragraphs")
-@click.option("-d", "--download", is_flag=True, help="Download as JSON file")
-@click.pass_obj
-def get_text(_dict, sentences, paragraphs, download):
-    results = _dict.get('results', [])
-    text = {} if paragraphs else {'text': ''}
-    for idx, entry in enumerate(results):
-        if paragraphs:
-            text[idx] = entry.get('text', '')
-        else:
-            text['text'] += entry.get('text', '')
-    if sentences:
-        text = {i: s for i, s in enumerate(text.get('text', '').split('.')) if s}
-    pprint.pprint(text)
-    if download:
-        filename = "paragraphs.json" if paragraphs else "text.json"
-        with open(filename, 'w') as w:
-            json.dump(text, w)
-        click.echo(f"File saved to {filename}")
-```
-
-## Handling User Input
-
-Click provides `@click.prompt` to interact with users.
-
-```python
-@cli.command("prompt_user")
-@click.pass_context
-def prompt_user(ctx):
-    name = click.prompt("Enter your name")
-    age = click.prompt("Enter your age", type=int)
-    click.echo(f"Hello {name}, you are {age} years old!")
-```
-
-## Handling Confirmation
-
-Use `@click.confirm` to get user confirmation before proceeding.
-
-```python
-@cli.command("confirm_action")
-@click.pass_context
-def confirm_action(ctx):
-    if click.confirm("Do you want to proceed?"):
-        click.echo("Proceeding with action...")
-    else:
-        click.echo("Action canceled.")
-```
-
-## Conclusion
-
-Python Click simplifies CLI creation with its decorators and built-in features like automatic help generation and context passing. This guide provides a foundation for building more advanced command-line applications. Additionally, handling user input and confirmations enhances the interactivity of CLI applications.
-
-<a id="python"></a>
-# Python {#python}
-
-
-dynamic language
-lower learning, support
-object orientated
-
-[Immutable vs mutable](#immutable-vs-mutable)
-
-
-
-
-<a id="pytorch-vs-tensorflow"></a>
-# Pytorch Vs Tensorflow {#pytorch-vs-tensorflow}
-
-
-
-- [Tensorflow](#tensorflow) is widely adopted but pytorch picking up
-- Dynamic vs static graph
-- Tensorboard is better than [pytorch](#pytorch) visualization
-- Plain tensorflow looks pretty much like a library
-- Abstraction is better in pytorch, even data parallelism
-- Tf.contrib, [keras](#keras) to rescue
-
-<a id="p-values"></a>
-# P Values {#p-values}
-
-
-A p-value is a measure of the evidence against a null hypothesis.
- p-values indicate whether an effect exists
-Used in [Feature Selection](#feature-selection)
-
-<a id="p-values-in-linear-regression-in-sklearn"></a>
-# P Values In Linear Regression In Sklearn {#p-values-in-linear-regression-in-sklearn}
-
-
-# Question How to include [p values](#p-values) in sklearn for a [Linear Regression](#linear-regression)? 
-
-import scipy.stats as stat.
-
-You can modify the class of LinearRegression() from sklearn to include them
-
-C:\Users\RhysL\Desktop\DS_Obs\1_Inbox\Work\Udemy\Part_5_Advanced_Statistical_Methods_(Machine_Learning)\multiple_linear_regression\sklearn - How to properly include p-values.ipynb
-
-# What is f_regression and why can it compute p values?
-
-from sklearn.feature_selection 
-import f_regression
-p_values = f_regression(x,y)[1]
-p_values
-
-[link](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.f_regression.html)
-
-We will look into: f_regression
-f_regression finds the F-statistics for the *simple* regressions created with each of the independent variables
-In our case, this would mean running a simple linear regression on GPA where SAT is the independent variable
-and a simple linear regression on GPA where Rand 1,2,3 is the indepdent variable
-The limitation of this approach is that it doe<mark>s not take into account the mutual effect of the two features</mark>
-
-f_regression(x,y)
-
-There are two output arrays
-The first one contains the F-statistics for each of the regressions
-The second one contains the p-values of these F-statistics
-
-outputs:
-(array([56.04804786, 0.17558437]), array([7.19951844e-11, 6.76291372e-01]))
-
-<a id="parametric-vs-non-parametric-models"></a>
-# Parametric Vs Non Parametric Models {#parametric-vs-non-parametric-models}
-
-
-### Parametric Models
-
-In [Statistics](#statistics)
-
-**Definition:** Models  that summarize data with a <mark>set of parameters of fixed size, regardless of the number of data points.</mark>
-
-**Characteristics:**
-  - Assumes a specific form for the function mapping inputs to outputs (e.g., linear regression assumes a linear relationship).
-  - Requires estimation of a finite number of parameters.
-  - Generally faster to train and predict due to their simplicity.
-  - Risk of underfitting if the model assumptions do not align well with the data.
-
-  **Examples:** 
-  - Linear [regression](#regression), logistic regression, neural networks (with a fixed architecture), [Bernoulli](#bernoulli)
-
-### Non-parametric Models
-
-- **Definition:** Models that do not assume a fixed form for the function mapping inputs to outputs and can grow in complexity with more data.
-- **Characteristics:**
-  - Do not make strong assumptions about the underlying data distribution.
-  - Can adapt to the data's complexity, potentially capturing more intricate patterns.
-  - Generally require more data to make accurate predictions.
-  - Risk of overfitting, especially with small datasets, as they can model noise in the data.
-- **Examples:** K-nearest neighbors, decision trees, [support vector machines](#support-vector-machines) (with certain kernels).
-
-### Key Differences
-
-- **Flexibility:** Non-parametric models are more flexible and can model complex relationships, while parametric models are simpler and rely on assumptions about the data.
-- **Data Requirements:** Non-parametric models typically require more data to achieve good performance compared to parametric models.
-- **Computation:** Parametric models are usually computationally less intensive than non-parametric models.
-
-
-<a id="parametric-vs-non-parametric-tests"></a>
-# Parametric Vs Non Parametric Tests {#parametric-vs-non-parametric-tests}
-
-[Parametric tests ](#parametric-tests) are statistical tests that make <mark>assumptions about the distribution</mark> of the data. For example, a t-test assumes that the data is normally distributed. Non-parametric tests do not make assumptions about the distribution of the data. Parametric tests are generally more powerful than non-parametric tests, but they are only valid if the data meets the [Statistical Assumptions](#statistical-assumptions) of the test.
-
-[Non-parametric tests ](#non-parametric-tests) are less powerful than parametric tests, but they can be used on any type of data, regardless of the distribution.
-
-
-<a id="parsimonious"></a>
-# Parsimonious {#parsimonious}
-
-**Parsimonious** refers to a principle in [Model Selection](#model-selection) and statistical modeling that emphasizes <mark>simplicity</mark>. In the context of regression and other statistical models, a parsimonious model is one that explains the data with the fewest possible parameters or predictors while still providing a good fit.
-
-A parsimonious model is one that achieves a good balance between simplicity and explanatory power.
-### Key Points about Parsimonious Models:
-
-1. **Simplicity**: A parsimonious model avoids unnecessary complexity. It uses only the essential variables that contribute meaningfully to the prediction or explanation of the outcome.
-
-2. **Avoiding [Overfitting](#overfitting)**: By keeping the model simple, a parsimonious approach helps prevent overfitting, where a model learns the noise in the training data rather than the underlying pattern. Overfitting can lead to poor generalization to new, unseen data.
-
-3. **Interpretability**: Simpler models are often easier to interpret and understand. This is particularly important in fields where explaining the model's decisions is crucial, such as healthcare or finance.
-
-4. **Balance**: The goal is to strike a balance between model accuracy and complexity. A parsimonious model should provide a good fit to the data without being overly complicated.
-
-
-
-<a id="pdgrouper"></a>
-# Pd.Grouper {#pdgrouper}
-
-`pd.Grouper` is a utility in pandas used with `.groupby()` to flexibly group data by a specific column, often useful for time-based grouping, multi-index grouping, or applying custom frequency aggregation.
-
-See:
-- [Groupby](#groupby)
-- [Multi-level index](#multi-level-index)
-
-### Why Use `pd.Grouper`?
-- Allows more readable and declarative code when working with time-indexed data.
-- Supports multi-index groupings without restructuring your data.
-- Enables resampling-like grouping without setting the index.
-### Syntax
-```python
-pd.Grouper(key=None, level=None, freq=None, axis=0, sort=False)
-```
-### Parameters
-- `key`: The column name to group by.
-- `level`: For MultiIndex, the level to group by.
-- `freq`: Used to group time-series data (e.g., `'D'` for daily, `'M'` for monthly).
-- `axis`: Default is 0 (rows).
-- `sort`: Whether to sort the result.
-
-
-
-
-
-
-<a id="pdoc"></a>
-# Pdoc {#pdoc}
-
-[PDOC](https://pdoc.dev/) is a documentation generator specifically designed for Python projects. Here are some key features and details:
-
-1. **Automatic Documentation**: It scans your Python code and automatically generates documentation based on the docstrings you include in your code. This means that as long as you write clear comments and descriptions in your code, pdoc can create documentation without much extra work.
-
-2. **Modern and Clean Design**: The output documentation is visually appealing and easy to navigate. It uses a modern design that enhances readability, making it user-friendly for anyone who needs to understand your code.
-
-3. **Customization Options**: While pdoc generates documentation automatically, it also allows for some customization. You can configure settings to adjust how the documentation looks and what content is included.
-
-4. **Markdown Support**: pdoc supports Markdown, which means you can use Markdown syntax in your docstrings to format your documentation with headings, lists, links, and more.
-
-5. **Easy Integration**: It can be easily integrated into your development workflow, allowing you to generate documentation as part of your build process or whenever you need it.
-
-6. **No Manual Guides Required**: With pdoc, you can avoid the tedious task of writing extensive documentation manually. Instead, you can focus on writing code, and pdoc will handle the documentation generation for you.
-
-Once you generate the HTML files using [pdoc](#pdoc), you have several options for what to do with them:
-
-1. **Local Viewing**: You can open the generated HTML files directly in your web browser to view the documentation locally. This is useful for personal reference or for sharing with a small team.
-
-2. **Hosting on a Web Server**: You can upload the generated HTML files to a web server to make the documentation accessible to a wider audience. This is a common practice for open-source projects or any project where you want to share documentation with users or collaborators.
-
-3. **Integrating with Project Repositories**: If you're using version control systems like Git, you can include the generated documentation in your repository. This way, anyone who clones the repository can access the documentation easily.
-
-4. **Publishing to Documentation Platforms**: You can publish the HTML files to documentation hosting platforms like Read the Docs, GitHub Pages, or similar services. These platforms often provide additional features like versioning, search functionality, and easy navigation.
-
-5. **Archiving**: You can keep the generated HTML files as part of your project archive for future reference. This is useful for maintaining a history of your documentation as your project evolves.
-
-6. **Sharing with Stakeholders**: If you are working on a project with stakeholders or clients, you can share the HTML documentation with them to provide insights into the project's structure and functionality.
-
----
-To explicitly tell pdoc to document the local `scripts` directory, you need to prepend `./` to the directory name.
-
-Here’s how to do it:
-
-1. **Open your terminal**.
-2. **Navigate to the directory** where your `scripts` folder is located (which seems to be `C:\Users\RhysL\Desktop\Auto_YAML`).
-3. **Run the pdoc command** with the `-o` option and prepend `./` to the `scripts` directory name:
-
-   ```bash
-   pdoc -o docs ./scripts
-   ```
-
-This command tells pdoc to generate documentation for the local `scripts` directory and save the output in the `docs` folder.
-
-After running this command, you should find the generated documentation in the `docs` folder, which you can then open in your web browser.
-
-## what to do next
-
-1. **View Locally**: Open the HTML files in your web browser to view the documentation. You can start by opening the `index.html` file in the `docs` folder. This file typically serves as the main entry point for your documentation
-
-2. **Host on a Web Server**: If you want to make the documentation accessible online, you can upload the `docs` folder to a web server. This could be a personal website, a cloud storage service that supports HTML hosting, or a documentation hosting platform like GitHub Pages or Read the Docs.
-    
-3. **Integrate into a Project Repository**: If you're using version control (like Git), you can include the `docs` folder in your repository. This way, anyone who clones the repository can easily access the documentation.
-
-<a id="pmdarima"></a>
-# Pmdarima {#pmdarima}
-
-Helps find [Model Parameters](#model-parameters) for [ARIMA](#arima) models
-
-[Forecasting_AutoArima.py](#forecasting_autoarimapy)
-
-<a id="programming-languages"></a>
-# Programming Languages {#programming-languages}
-
-
-
-# Q {#q}
-
-# Q
-
+<a id="q-learning"></a>
 # Q Learning {#q-learning}
 
 
@@ -18359,6 +18534,20 @@ $$
 
 
 
+<a id="quartz"></a>
+# Quartz {#quartz}
+
+
+[Vim](#vim): telescope? Search preview feature?
+
+https://www.youtube.com/watch?v=v5LGaczJaf0
+
+How does quartz work of a software level:
+- Transforming text. Think [jinja template](#jinja-template). 
+- Manipulating markdown notes
+- There is a diagram showing how markdown goes to html.
+- [JavaScript](#javascript) for static site generators already existed.
+
 <a id="query-gsheets"></a>
 # Query Gsheets {#query-gsheets}
 
@@ -18374,20 +18563,6 @@ Since `QUERY` does not support dynamic `NOT IN`, you can first filter out the ex
 - `FILTER(A1:D, ISNA(MATCH(A1:A, X1:X10, 0)))`: Removes rows where column A matches any value in `X1:X10`.
 - `QUERY(..., "SELECT Col1, Col2, Col3, Col4", 1)`: Runs a query on the filtered data.
 
-
-<a id="quartz"></a>
-# Quartz {#quartz}
-
-
-[Vim](#vim): telescope? Search preview feature?
-
-https://www.youtube.com/watch?v=v5LGaczJaf0
-
-How does quartz work of a software level:
-- Transforming text. Think [jinja template](#jinja-template). 
-- Manipulating markdown notes
-- There is a diagram showing how markdown goes to html.
-- [JavaScript](#javascript) for static site generators already existed.
 
 <a id="query-optimisation"></a>
 # Query Optimisation {#query-optimisation}
@@ -18513,10 +18688,7 @@ sorted_arr = quick_sort(arr)
 print("\nFinal sorted array:", sorted_arr)
 ```
 
-# R {#r}
-
-# R
-
+<a id="r-squared"></a>
 # R Squared {#r-squared}
 
 
@@ -18560,6 +18732,11 @@ R-squared (R²) is a commonly used metric for assessing the performance of regre
 
 <a id="r"></a>
 # R {#r}
+
+
+
+<a id="race-conditions"></a>
+# Race Conditions {#race-conditions}
 
 
 
@@ -18621,189 +18798,6 @@ or other tools
  Spare retrievers, BM25, dense retrtivers. Use Bert for similarity matching:
 
 ![Pasted image 20241017165540.png](../content/images/Pasted%20image%2020241017165540.png)
-
-#### REST API
-- REST stands for Representational State Transfer.
-- It is a <mark>standardized</mark> software architecture style used for API communication between a client and a server.
-
-**Benefits of REST APIs:**
-1. **Simplicity and Standardization:**
-   - Data formatting and request structuring are standardized and widely adopted.
-2. **Scalability and Statelessness:**
-   - Easily modifiable as service complexity grows without tracking data states across client and server.
-3. **High Performance:**
-   - Supports <mark>caching</mark>, maintaining high performance even as complexity increases.
-
-**Main Building Blocks:**
-1. **<mark>Request</mark>:**
-   - Actions (<mark>[CRUD](#crud)</mark>): Create (POST), Read (GET), Update (PUT), Delete (DELETE).
-   - Components: Operation (<mark>HTTP method</mark>), Endpoint, Parameters/Body, Headers.
-2. **Response:**
-   - Typically in [JSON](#json) format.
-
-**REST API Example:** 
-ice cream shop inteacting with cloud database.
-- Endpoint example: "icecream.com/api/flavors"
-  - "api" indicates the API portion.
-  - "flavors" refers to the <mark>resource</mark> being accessed or modified.
-
-**Real-world Examples:**
-1. **Get Flavors:**
-   - Operation: <mark>GET</mark>
-   - Endpoint: "/api/flavors"
-   - Response: Array of flavor resources.
-2. **Update Flavor:**
-   - Operation: <mark>PUT</mark>
-   - Endpoint: "/api/flavors/1"
-   - Body: New flavor data.
-   - Response: Confirmation of update.
-3. **Create New Flavor:**
-   - Operation: <mark>POST</mark>
-   - Endpoint: "/api/flavors"
-   - Body: New flavor data.
-   - Response: Confirmation of creation.
-
-<a id="roc-receiver-operating-characteristic"></a>
-# Roc (Receiver Operating Characteristic) {#roc-receiver-operating-characteristic}
-
-
-**ROC (Receiver Operating Characteristic)** is a graphical representation of a classifier's performance across different thresholds, showing the trade-off between sensitivity (true positive rate) and specificity (1 - false positive rate).
-
- A graphical plot that illustrates the diagnostic ability of a binary classifier system as its discrimination threshold is varied.
-
-It plots the true positive rate (TPR) against the false positive rate (FPR) at different threshold settings.
-
-In [ML_Tools](#ml_tools) see: [ROC_Curve.py](#roc_curvepy)
-#### Why Use Predicted Probabilities?
-
-In ROC analysis, predicted probabilities (`y_probs`) are used instead of predicted classes (`y_pred`) because the ROC curve evaluates the model's performance across different threshold levels. Probabilities allow you to adjust the threshold to see how it affects sensitivity and specificity.
-
-#### Threshold Level
-
-The threshold level is the probability value above which an instance is classified as the positive class. Adjusting the threshold affects [Recall](#recall) and [Specificity](#specificity)
-
-- Lower Threshold: Increases sensitivity but may decrease specificity.
-- Higher Threshold: Increases specificity but may decrease sensitivity.
-
-#### Example Code
-
-```python
-from sklearn.metrics import roc_curve, RocCurveDisplay
-import matplotlib.pyplot as plt
-
-# Actual and predicted values
-y_act = [1, 0, 1, 1, 0]
-y_pred = [1, 1, 0, 1, 0]
-
-# Compute ROC curve
-fpr, tpr, thresholds = roc_curve(y_act, y_pred)
-
-# Display ROC curve
-roc_display = RocCurveDisplay(fpr=fpr, tpr=tpr).plot()
-plt.show()
-```
-
-#### [Logistic Regression](#logistic-regression) Example
-
-```python
-from sklearn.linear_model import LogisticRegression
-
-# Train a logistic regression model
-logreg = LogisticRegression()
-logreg.fit(X_train, y_train)
-
-# Predict probabilities for the positive class
-y_probs = logreg.predict_proba(X_test)[:, 1]
-
-# Compute ROC curve and AUC
-fpr, tpr, thresholds = roc_curve(y_test, y_probs)
-roc_auc = roc_auc_score(y_test, y_probs)
-
-# Plot ROC curve
-plt.figure(figsize=(10, 6))
-plt.plot(fpr, tpr, color='blue', lw=2, label=f'ROC Curve (AUC = {roc_auc:.2f})')
-plt.plot([0, 1], [0, 1], color='red', linestyle='--', lw=2, label='Random Guessing')
-plt.title('Receiver Operating Characteristic (ROC) Curve')
-plt.xlabel('False Positive Rate (FPR)')
-plt.ylabel('True Positive Rate (TPR)')
-plt.legend()
-plt.show()
-```
-
-<a id="roc_curvepy"></a>
-# Roc_Curve.Py {#roc_curvepy}
-
-https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Selection/ROC_Curve.py
-## **Overview**
-
-This script demonstrates how to compute and interpret Receiver Operating Characteristic (ROC) curves and Area Under the ROC Curve (AUROC) scores using Random Forest and Naive Bayes classifiers. Below is the step-by-step breakdown:
-## **Script Flow**
-
-- **Generate Synthetic Dataset**  
-  - Creates a binary classification dataset with 2,000 samples and 10 features.  
-  - Simulates a realistic classification problem.
-
-- **Add Noisy Features**  
-  - Appends random, irrelevant features to increase the dataset's complexity.  
-  - Mimics challenging real-world scenarios where not all features are informative.
-
-- **Split the Data**  
-  - Divides the dataset into training (80%) and testing (20%) subsets.  
-  - Ensures unbiased model evaluation on unseen data.
-
-- **Train Classification Models**  
-  - Builds two models:  
-    - **Random Forest**: A robust ensemble-based classifier.  
-    - **Naive Bayes**: A simple probabilistic model based on Bayes' theorem.
-
-- **Generate Prediction Probabilities**  
-  - Computes predicted probabilities for each class.  
-  - Retains probabilities for the positive class to construct the ROC curve.
-
-- **Compute AUROC and ROC Curve Values**  
-  - Calculates:  
-    - **AUROC**: Measures model performance (higher is better).  
-    - **ROC Values**: False Positive Rate (FPR) and True Positive Rate (TPR) across thresholds.
-
-- **Visualize ROC Curve**  
-  - Plots FPR (x-axis) against TPR (y-axis) for each model.  
-  - Includes AUROC scores in the legend for comparison.
-## **Key Outputs**
-- **AUROC Scores**  
-  - Evaluates the overall discriminative power of the classifiers.  
-
-- **ROC Plot**  
-  - Visualizes how well each model distinguishes between positive and negative classes across thresholds.  
-  - A random prediction baseline is included for reference.
-## **Conclusion**
-This script illustrates the process of building, evaluating, and visualizing classification models using ROC curves. It highlights the strengths and weaknesses of different models in distinguishing classes.
-
-# Output
-
-### Interpretation of the Script Output
-
-- **Random (Chance) Prediction: AUROC = 0.500**
-    - An AUROC score of **0.500** represents a random guessing model with no predictive power.
-    - The model's True Positive Rate (TPR) is equal to its False Positive Rate (FPR) across all thresholds, resulting in a diagonal line on the ROC curve.
-    
-- **Random Forest: AUROC = 0.922**
-    - An AUROC score of **0.922** indicates excellent model performance.
-    - The Random Forest classifier has a high ability to distinguish between positive and negative classes, with a much higher TPR than FPR across thresholds.
-- 
-- **Naive Bayes: AUROC = 0.993**
-    - An AUROC score of **0.993** suggests near-perfect model performance.
-    - The Naive Bayes classifier has an extremely high discriminative power, with TPR approaching 1 and FPR close to 0 for most thresholds.
-
-### Summary
-
-- The **Naive Bayes classifier** outperforms the **Random Forest classifier** in this specific setup.
-- Both models significantly outperform random guessing (baseline AUROC = 0.500), indicating their utility for this classification task.
-- However, such high performance (especially for Naive Bayes) may suggest that the dataset or features are particularly well-suited to the model, or there may be minimal noise in the classification task. Further evaluation (e.g., on new datasets) is recommended to confirm robustness.
-
-<a id="race-conditions"></a>
-# Race Conditions {#race-conditions}
-
-
 
 <a id="random-forest-regression"></a>
 # Random Forest Regression {#random-forest-regression}
@@ -19438,6 +19432,67 @@ Organizing memory in graph structures allows LLMs to improve relational understa
 
 Insights from cognitive science inform memory design and improve human-AI interaction. By integrating these insights, LLMs can mimic human-like memory processes, enhancing their ability to form, maintain, and retrieve relationships in memory, leading to more natural and effective interactions.
 
+<a id="requirementstxt"></a>
+# Requirements.Txt {#requirementstxt}
+
+
+
+<a id="rest-api"></a>
+# REST API {#rest-api}
+
+#### REST API
+- REST stands for Representational State Transfer.
+- It is a <mark>standardized</mark> software architecture style used for API communication between a client and a server.
+
+**Benefits of REST APIs:**
+1. **Simplicity and Standardization:**
+   - Data formatting and request structuring are standardized and widely adopted.
+2. **Scalability and Statelessness:**
+   - Easily modifiable as service complexity grows without tracking data states across client and server.
+3. **High Performance:**
+   - Supports <mark>caching</mark>, maintaining high performance even as complexity increases.
+
+**Main Building Blocks:**
+1. **<mark>Request</mark>:**
+   - Actions (<mark>[CRUD](#crud)</mark>): Create (POST), Read (GET), Update (PUT), Delete (DELETE).
+   - Components: Operation (<mark>HTTP method</mark>), Endpoint, Parameters/Body, Headers.
+2. **Response:**
+   - Typically in [JSON](#json) format.
+
+**REST API Example:** 
+ice cream shop inteacting with cloud database.
+- Endpoint example: "icecream.com/api/flavors"
+  - "api" indicates the API portion.
+  - "flavors" refers to the <mark>resource</mark> being accessed or modified.
+
+**Real-world Examples:**
+1. **Get Flavors:**
+   - Operation: <mark>GET</mark>
+   - Endpoint: "/api/flavors"
+   - Response: Array of flavor resources.
+2. **Update Flavor:**
+   - Operation: <mark>PUT</mark>
+   - Endpoint: "/api/flavors/1"
+   - Body: New flavor data.
+   - Response: Confirmation of update.
+3. **Create New Flavor:**
+   - Operation: <mark>POST</mark>
+   - Endpoint: "/api/flavors"
+   - Body: New flavor data.
+   - Response: Confirmation of creation.
+
+<a id="reverse-etl"></a>
+# Reverse Etl {#reverse-etl}
+
+
+Reverse [ETL](#etl) is the flip side of the [ETL](ETL.md)/[ELT](term/elt.md). **With Reverse ETL, the data warehouse becomes the source rather than the destination**. Data is taken from the warehouse, transformed to match the destination's data formatting requirements, and loaded into an application – for example, a CRM like Salesforce – to enable action.
+
+In a way, the Reverse ETL concept is not new to data engineers, who have been enabling data movement warehouses to business applications for a long time. 
+
+As [Maxime Beauchemin](term/maxime%20beauchemin.md) mentions in [his article](https://preset.io/blog/reshaping-data-engineering/), Reverse ETL “appears to be a modern new means of addressing a subset of what was formerly known as  [Master Data Management (MDM)](master%20data%20management.md).”
+
+Read more about in [Reverse ETL Explained](https://airbyte.com/blog/reverse-etl#so-what-is-a-reverse-etl).
+
 <a id="reward-function"></a>
 # Reward Function {#reward-function}
 
@@ -19519,6 +19574,151 @@ from tensorflow.keras.regularizers import l2
 Dense(25, activation="relu", kernel_regularizer=l2(0.01))
 ```
 
+<a id="roc-receiver-operating-characteristic"></a>
+# Roc (Receiver Operating Characteristic) {#roc-receiver-operating-characteristic}
+
+
+**ROC (Receiver Operating Characteristic)** is a graphical representation of a classifier's performance across different thresholds, showing the trade-off between sensitivity (true positive rate) and specificity (1 - false positive rate).
+
+ A graphical plot that illustrates the diagnostic ability of a binary classifier system as its discrimination threshold is varied.
+
+It plots the true positive rate (TPR) against the false positive rate (FPR) at different threshold settings.
+
+In [ML_Tools](#ml_tools) see: [ROC_Curve.py](#roc_curvepy)
+#### Why Use Predicted Probabilities?
+
+In ROC analysis, predicted probabilities (`y_probs`) are used instead of predicted classes (`y_pred`) because the ROC curve evaluates the model's performance across different threshold levels. Probabilities allow you to adjust the threshold to see how it affects sensitivity and specificity.
+
+#### Threshold Level
+
+The threshold level is the probability value above which an instance is classified as the positive class. Adjusting the threshold affects [Recall](#recall) and [Specificity](#specificity)
+
+- Lower Threshold: Increases sensitivity but may decrease specificity.
+- Higher Threshold: Increases specificity but may decrease sensitivity.
+
+#### Example Code
+
+```python
+from sklearn.metrics import roc_curve, RocCurveDisplay
+import matplotlib.pyplot as plt
+
+# Actual and predicted values
+y_act = [1, 0, 1, 1, 0]
+y_pred = [1, 1, 0, 1, 0]
+
+# Compute ROC curve
+fpr, tpr, thresholds = roc_curve(y_act, y_pred)
+
+# Display ROC curve
+roc_display = RocCurveDisplay(fpr=fpr, tpr=tpr).plot()
+plt.show()
+```
+
+#### [Logistic Regression](#logistic-regression) Example
+
+```python
+from sklearn.linear_model import LogisticRegression
+
+# Train a logistic regression model
+logreg = LogisticRegression()
+logreg.fit(X_train, y_train)
+
+# Predict probabilities for the positive class
+y_probs = logreg.predict_proba(X_test)[:, 1]
+
+# Compute ROC curve and AUC
+fpr, tpr, thresholds = roc_curve(y_test, y_probs)
+roc_auc = roc_auc_score(y_test, y_probs)
+
+# Plot ROC curve
+plt.figure(figsize=(10, 6))
+plt.plot(fpr, tpr, color='blue', lw=2, label=f'ROC Curve (AUC = {roc_auc:.2f})')
+plt.plot([0, 1], [0, 1], color='red', linestyle='--', lw=2, label='Random Guessing')
+plt.title('Receiver Operating Characteristic (ROC) Curve')
+plt.xlabel('False Positive Rate (FPR)')
+plt.ylabel('True Positive Rate (TPR)')
+plt.legend()
+plt.show()
+```
+
+<a id="roc_curvepy"></a>
+# Roc_Curve.Py {#roc_curvepy}
+
+https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Selection/ROC_Curve.py
+## **Overview**
+
+This script demonstrates how to compute and interpret Receiver Operating Characteristic (ROC) curves and Area Under the ROC Curve (AUROC) scores using Random Forest and Naive Bayes classifiers. Below is the step-by-step breakdown:
+## **Script Flow**
+
+- **Generate Synthetic Dataset**  
+  - Creates a binary classification dataset with 2,000 samples and 10 features.  
+  - Simulates a realistic classification problem.
+
+- **Add Noisy Features**  
+  - Appends random, irrelevant features to increase the dataset's complexity.  
+  - Mimics challenging real-world scenarios where not all features are informative.
+
+- **Split the Data**  
+  - Divides the dataset into training (80%) and testing (20%) subsets.  
+  - Ensures unbiased model evaluation on unseen data.
+
+- **Train Classification Models**  
+  - Builds two models:  
+    - **Random Forest**: A robust ensemble-based classifier.  
+    - **Naive Bayes**: A simple probabilistic model based on Bayes' theorem.
+
+- **Generate Prediction Probabilities**  
+  - Computes predicted probabilities for each class.  
+  - Retains probabilities for the positive class to construct the ROC curve.
+
+- **Compute AUROC and ROC Curve Values**  
+  - Calculates:  
+    - **AUROC**: Measures model performance (higher is better).  
+    - **ROC Values**: False Positive Rate (FPR) and True Positive Rate (TPR) across thresholds.
+
+- **Visualize ROC Curve**  
+  - Plots FPR (x-axis) against TPR (y-axis) for each model.  
+  - Includes AUROC scores in the legend for comparison.
+## **Key Outputs**
+- **AUROC Scores**  
+  - Evaluates the overall discriminative power of the classifiers.  
+
+- **ROC Plot**  
+  - Visualizes how well each model distinguishes between positive and negative classes across thresholds.  
+  - A random prediction baseline is included for reference.
+## **Conclusion**
+This script illustrates the process of building, evaluating, and visualizing classification models using ROC curves. It highlights the strengths and weaknesses of different models in distinguishing classes.
+
+# Output
+
+### Interpretation of the Script Output
+
+- **Random (Chance) Prediction: AUROC = 0.500**
+    - An AUROC score of **0.500** represents a random guessing model with no predictive power.
+    - The model's True Positive Rate (TPR) is equal to its False Positive Rate (FPR) across all thresholds, resulting in a diagonal line on the ROC curve.
+    
+- **Random Forest: AUROC = 0.922**
+    - An AUROC score of **0.922** indicates excellent model performance.
+    - The Random Forest classifier has a high ability to distinguish between positive and negative classes, with a much higher TPR than FPR across thresholds.
+- 
+- **Naive Bayes: AUROC = 0.993**
+    - An AUROC score of **0.993** suggests near-perfect model performance.
+    - The Naive Bayes classifier has an extremely high discriminative power, with TPR approaching 1 and FPR close to 0 for most thresholds.
+
+### Summary
+
+- The **Naive Bayes classifier** outperforms the **Random Forest classifier** in this specific setup.
+- Both models significantly outperform random guessing (baseline AUROC = 0.500), indicating their utility for this classification task.
+- However, such high performance (especially for Naive Bayes) may suggest that the dataset or features are particularly well-suited to the model, or there may be minimal noise in the classification task. Further evaluation (e.g., on new datasets) is recommended to confirm robustness.
+
+<a id="rollup"></a>
+# Rollup {#rollup}
+
+
+Rollup refers to aggregating data to a higher level of [granularity](#granularity), such as summarizing hourly data into daily totals.
+
+[Database](#database)
+
 <a id="row-based-storage"></a>
 # Row Based Storage {#row-based-storage}
 
@@ -19543,605 +19743,6 @@ In **row-based storage**, entire records (rows) are stored together. For example
 When performing an **insert** or **update**, the entire row can be read and written back quickly, making this method ideal for transactional operations where complete records need to be processed together.
 
 Use case [OLTP](#oltp). For instance, inserting a new order or updating an existing one (like modifying `order_amount` or `customer_id`) is efficient because all the data for a single record is stored together in a row.
-
-<a id="requirementstxt"></a>
-# Requirements.Txt {#requirementstxt}
-
-
-
-<a id="reverse-etl"></a>
-# Reverse Etl {#reverse-etl}
-
-
-Reverse [ETL](#etl) is the flip side of the [ETL](ETL.md)/[ELT](term/elt.md). **With Reverse ETL, the data warehouse becomes the source rather than the destination**. Data is taken from the warehouse, transformed to match the destination's data formatting requirements, and loaded into an application – for example, a CRM like Salesforce – to enable action.
-
-In a way, the Reverse ETL concept is not new to data engineers, who have been enabling data movement warehouses to business applications for a long time. 
-
-As [Maxime Beauchemin](term/maxime%20beauchemin.md) mentions in [his article](https://preset.io/blog/reshaping-data-engineering/), Reverse ETL “appears to be a modern new means of addressing a subset of what was formerly known as  [Master Data Management (MDM)](master%20data%20management.md).”
-
-Read more about in [Reverse ETL Explained](https://airbyte.com/blog/reverse-etl#so-what-is-a-reverse-etl).
-
-<a id="rollup"></a>
-# Rollup {#rollup}
-
-
-Rollup refers to aggregating data to a higher level of [granularity](#granularity), such as summarizing hourly data into daily totals.
-
-[Database](#database)
-
-# S {#s}
-
-# S
-
-# Shapley Additive Explanations {#shapley-additive-explanations}
-
-
-SHAP provides a unified approach to measure [Feature Importance](#feature-importance) by computing the contribution of each feature to each prediction, based on game theory.
-
-### Key Points
-
-- **Purpose**: SHAP provides consistent and locally accurate explanations by assigning each feature <mark>an importance value based</mark> on Shapley values from cooperative game theory.
-
-- **How it Works**: 
-  - It calculates how each feature contributes to the model's output by comparing predictions with and without the feature, across various feature value combinations.
-
-- **Use Cases**: Suitable for complex models like neural networks, random forests, or gradient boosting machines, where internal logic is difficult to understand.
-
-- **Advantage**: 
-  - Provides global explanations (model-wide feature importance) and local explanations (individual prediction reasons).
-
-- **Scenario**: 
-  - A financial institution uses a black-box XGBoost model to predict whether a loan applicant should be approved. The model takes several factors into account, such as credit score, income, employment history, and outstanding debts.
-  - **SHAP Explanation**: For a specific loan rejection case, SHAP values reveal that the applicant’s high debt-to-income ratio and short employment history contributed the most to the rejection decision. These factors had the highest negative SHAP values for this prediction, providing actionable insights to both the applicant and the loan officers.
-
-### Example Code
-
-To compute SHAP values, you can use the SHAP library to interpret feature importance for any machine learning model:
-
-```python
-import shap
-
-# Explain the model's predictions using SHAP
-explainer = shap.TreeExplainer(model)
-shap_values = explainer.shap_values(X_test)
-
-# Plot the summary plot of feature importance
-shap.summary_plot(shap_values, X_test)
-```
-
-<a id="smote-synthetic-minority-over-sampling-technique"></a>
-# Smote (Synthetic Minority Over Sampling Technique) {#smote-synthetic-minority-over-sampling-technique}
-
-
-SMOTE (Synthetic Minority Over-sampling Technique)
-
-Generate synthetic samples for the minority class by interpolating between existing samples.
-
-SMOTE: This technique generates synthetic samples for the minority class (female resumes) by creating new instances that are interpolations of existing ones.
-
-<a id="smss"></a>
-# Smss {#smss}
-
-microsoft sql server management.
-
-<a id="sql-groupby"></a>
-# Sql Groupby {#sql-groupby}
-
-The [SQL](#sql) `GROUP BY` clause is used to group rows that have the same values in specified columns into summary rows, like "total sales per region" or "average age per department." 
-
-It is often used in conjunction with aggregate functions such as `COUNT()`, `SUM()`, `AVG()`, `MAX()`, and `MIN()` to perform calculations on each group.
-### Basic Syntax
-
-```sql
-SELECT column1, aggregate_function(column2)
-FROM table_name
-WHERE condition
-GROUP BY column1;
-```
-
-### Example Usage
-
-Let's say you have a table called `sales` with the following columns:
-
-- `id`: Unique identifier for each sale
-- `product`: The name of the product sold
-- `amount`: The sale amount
-- `region`: The region where the sale occurred
-
-#### 1. Count the Number of Sales per Product
-
-To count how many sales were made for each product, you would use:
-
-```sql
-SELECT product, COUNT(*) AS total_sales
-FROM sales
-GROUP BY product;
-```
-
-#### 2. Calculate Total Sales Amount per Region
-
-To calculate the total sales amount for each region, you would use:
-
-```sql
-SELECT region, SUM(amount) AS total_sales_amount
-FROM sales
-GROUP BY region;
-```
-
-### Using `HAVING` with `GROUP BY`
-
-You can also filter the results of a `GROUP BY` [Querying|query](#queryingquery) using the `HAVING` clause. This is useful when you want to filter groups based on aggregate values.
-
-#### Example: Filter Groups
-
-For example, to find products with total sales greater than $1000:
-
-```sql
-SELECT product, SUM(amount) AS total_sales_amount
-FROM sales
-GROUP BY product
-HAVING SUM(amount) > 1000;
-```
-
-### Important Points
-
-- **Columns in SELECT**: When using `GROUP BY`, all columns in the `SELECT` statement must either be included in the `GROUP BY` clause or be used in an aggregate function.
-- **Order of Execution**: The `GROUP BY` clause is processed after the `WHERE` clause but before the `ORDER BY` clause in the SQL execution order.
-
-
-
-
-
-[SQL Groupby](#sql-groupby)
-   **Tags**: #data_transformation  #querying
-
-<a id="sql-injection"></a>
-# Sql Injection {#sql-injection}
-
-SQL injection is a code injection technique that targets applications using SQL databases. It occurs when a malicious user injects harmful SQL code into a query, potentially compromising the security of the database. 
-
-### How SQL Injection Works
-
-Consider a scenario where a website prompts users to log in with their username and password. The application might execute a query like this:
-
-```sql
-SELECT `id` FROM `users`
-WHERE `user` = 'Carter' AND `password` = 'password';
-```
-
-If the user named Carter enters their credentials correctly, the query functions as intended. However, a malicious user could input a different string, such as:
-
-```
-password' OR '1' = '1
-```
-
-This alters the query to:
-
-```sql
-SELECT `id` FROM `users`
-WHERE `user` = 'Carter' AND `password` = 'password' OR '1' = '1';
-```
-
-As a result, the attacker could gain unauthorized access to the database.
-
-### Example of Vulnerable Code
-
-The following Python function demonstrates how SQL injection can occur due to unsafe query construction:
-
-```python
-import sqlite3
-
-def unsafe_query(user_input):
-    query = "SELECT * FROM users WHERE name = '" + user_input + "'"
-    conn = sqlite3.connect('example.db')
-    conn.execute(query)
-```
-
-In this example, the `unsafe_query` function constructs SQL queries using string concatenation, making it vulnerable if user input is not properly sanitized.
-
-### Preventing SQL Injection
-
-To mitigate the risk of SQL injection, it is essential to use prepared statements or parameterized queries. For example, consider an SQL injection attack that aims to display all user accounts from the `accounts` table:
-
-```sql
-SELECT * FROM `accounts`
-WHERE `id` = 1 UNION SELECT * FROM `accounts`;
-```
-
-Using a prepared statement, we can safeguard against such attacks:
-
-```sql
-PREPARE `balance_check`
-FROM 'SELECT * FROM `accounts`
-WHERE `id` = ?';
-```
-
-In this statement, the question mark acts as a placeholder for user input, preventing the execution of unintended SQL code.
-
-### Executing the Prepared Statement
-
-To execute the prepared statement and check a user’s balance, we can set a variable for the user ID:
-
-```sql
-SET @id = 1;
-EXECUTE `balance_check` USING @id;
-```
-
-Here, the `SET` statement simulates obtaining the user’s ID through the application, with the `@` symbol denoting a variable in MySQL.
-
-### Testing with Malicious Input
-
-If we attempt to run the same statements with a malicious ID:
-
-```sql
-SET @id = '1 UNION SELECT * FROM `accounts`';
-EXECUTE `balance_check` USING @id;
-```
-
-The output will still reflect the balance of the user with ID 1, without exposing any additional data. This demonstrates that prepared statements effectively prevent SQL injection attacks.
-
-### Mitigation Strategies
-
-- **Use Parameterized Queries**: Always use parameterized queries or prepared statements to prevent SQL injection.
-- **Validate and Sanitize Inputs**: Ensure user inputs are validated and sanitized before being processed.
-
-
-<a id="sql-joins"></a>
-# Sql Joins {#sql-joins}
-
-In [DE_Tools](#de_tools) see:
-- https://github.com/rhyslwells/DE_Tools/blob/main/Explorations/Transformation/Joining.ipynb
-
-
-![Pasted image 20250323083319.png|800](../content/images/Pasted%20image%2020250323083319.png|800)
-
-<a id="sql-window-functions"></a>
-# Sql Window Functions {#sql-window-functions}
-
-SQL Window Functions are a feature in SQL that allow you to perform calculations across a set of table rows that are somehow related to the current row. 
-
-Unlike regular aggregate functions, which return a single value for a group of rows, window functions return a value for each row in the result set while still allowing access to the individual row data.
-
-### Key Characteristics of Window Functions
-
-1. Non-Aggregating: Window functions do not collapse rows into a single output row. Instead, they perform calculations across a defined "window" of rows related to the current row.
-
-2. OVER Clause: Window functions are defined using the `OVER` clause, which specifies the window of rows to be considered for the function.
-
-3. Partitioning: You can partition the result set into groups using the `PARTITION BY` clause within the `OVER` clause. Each partition is processed independently.
-
-4. Ordering: You can specify the order of rows within each partition using the `ORDER BY` clause within the `OVER` clause.
-### Example Use Case
-
-Suppose you have a table `sales` with columns `salesperson`, `region`, and `amount`. You can use window functions to calculate the total sales for each salesperson while still displaying individual sales records:
-
-Initial Table: `employees`
-
-| id | name    | department | salary |
-|----|---------|------------|--------|
-| 1  | Alice   | Sales      | 50000  |
-| 2  | Bob     | Sales      | 60000  |
-| 3  | Charlie | HR         | 55000  |
-| 4  | David   | HR         | 70000  |
-| 5  | Eve     | IT         | 80000  |
-| 6  | Frank   | IT         | 75000  |
-
-### Example [Querying|Queries](#queryingqueries) Using SQL Window Functions
-
-#### 1. Using `ROW_NUMBER()`
-
-The `ROW_NUMBER()` function assigns a unique rank to each employee within their department based on their salary.
-
-```sql
-SELECT 
-    id, 
-    name, 
-    department, 
-    salary, 
-    ROW_NUMBER() OVER (PARTITION BY department ORDER BY salary DESC) AS rank
-FROM employees;
-```
-
-Resulting Table:
-
-| id | name    | department | salary | rank |
-|----|---------|------------|--------|------|
-| 2  | Bob     | Sales      | 60000  | 1    |
-| 1  | Alice   | Sales      | 50000  | 2    |
-| 4  | David   | HR         | 70000  | 1    |
-| 3  | Charlie | HR         | 55000  | 2    |
-| 5  | Eve     | IT         | 80000  | 1    |
-| 6  | Frank   | IT         | 75000  | 2    |
-
-#### 2. Using `SUM()` similar AVG
-
-The `SUM()` function calculates the total salary for each department, showing the same total for each employee in that department.
-
-```sql
-SELECT 
-    id, 
-    name, 
-    department, 
-    salary, 
-    SUM(salary) OVER (PARTITION BY department) AS total_department_salary
-FROM employees;
-```
-
-Resulting Table:
-
-| id | name    | department | salary | total_department_salary |
-|----|---------|------------|--------|-------------------------|
-| 1  | Alice   | Sales      | 50000  | 110000                  |
-| 2  | Bob     | Sales      | 60000  | 110000                  |
-| 3  | Charlie | HR         | 55000  | 125000                  |
-| 4  | David   | HR         | 70000  | 125000                  |
-| 5  | Eve     | IT         | 80000  | 155000                  |
-| 6  | Frank   | IT         | 75000  | 155000                  |
-
-
-
-
-
-
-
-
-
-[SQL Window functions](#sql-window-functions)
-   **Tags**: #data_analysis, #querying
-
-<a id="sql-vs-nosql"></a>
-# Sql Vs Nosql {#sql-vs-nosql}
-
-
-[NoSQL](#nosql)
-
-<a id="sql"></a>
-# Sql {#sql}
-
-
-Structured Query Language (SQL) is the standard language for interacting with relational databases, enabling efficient data [Querying](#querying) and manipulation. It serves as a common interface for [Database](#database)s and data lakes.
-
-Features: 
-  - Declarative language for storing and querying structured data.
-  - Transactional properties enhance speed and efficiency.
-  
-### Good Practices
-
-Capitalization: 
-  - Use uppercase for SQL keywords for better readability.
-  - Use lowercase for table and column names.
-  
-Quotes:
-  - Use double quotes for SQL identifiers (table and column names).
-  - Use single quotes for string values.
-
-### Related terms
-
-[Database Techniques](#database-techniques)
-
-### SQLAlchemy vs. sqlite3: Which One Should You Use?
-
-The choice between [SQLAlchemy](#sqlalchemy) and [SQLite](#sqlite) depends on your specific needs. Here’s a comparison based on key factors:
-
-### 1. Abstraction and Ease of Use
-
-| Feature     | SQLAlchemy                                 | sqlite3                          |
-| ----------- | ------------------------------------------ | -------------------------------- |
-| Abstraction | High-level ORM (Object Relational Mapping) | Low-level, direct SQL execution  |
-| Ease of Use | Pythonic API for working with databases    | Requires writing raw SQL queries |
-| Best for    | Large projects, scalable applications      | Simple scripts, small projects   |
-
-✅ Use SQLAlchemy if you want to work with database tables as Python objects (ORM).  
-✅ Use sqlite3 if you are comfortable writing SQL queries directly.
-
-### 2. Supported Databases
-
-|Feature|SQLAlchemy|sqlite3|
-|---|---|---|
-|Database Support|Works with MySQL, PostgreSQL, SQLite, MSSQL, etc.|Only works with SQLite|
-|Portability|Can switch databases easily|Tied to SQLite only|
-
-✅ Use SQLAlchemy if you need flexibility to work with different databases.  
-✅ Use sqlite3 if you are only working with SQLite.
-
-### 3. Performance and Scalability
-
-|Feature|SQLAlchemy|sqlite3|
-|---|---|---|
-|Performance|Slightly slower due to ORM overhead|Faster for simple queries|
-|Scalability|Supports connection pooling, transactions, and large-scale applications|Best for local, single-user applications|
-
-✅ Use SQLAlchemy for large applications with complex relationships.  
-✅ Use sqlite3 if you just need a simple, fast database for local use.
-
-### 4. Querying and Data Manipulation
-
-|Feature|SQLAlchemy|sqlite3|
-|---|---|---|
-|Querying|Can use both ORM and raw SQL queries|Only supports raw SQL queries|
-|Ease of Data Manipulation|Object-oriented approach (e.g., `session.add(obj)`)|SQL execution via `cursor.execute(query)`|
-
-✅ Use SQLAlchemy if you prefer writing queries in a Pythonic way (ORM).  
-✅ Use sqlite3 if you are fine with executing raw SQL statements.
-
-
-
-### 5. Transaction Handling
-
-|Feature|SQLAlchemy|sqlite3|
-|---|---|---|
-|Transaction Control|Automatic transaction management|Manual transaction handling (`conn.commit()`)|
-|Rollback Support|Easier and more reliable|Must be explicitly handled|
-
-✅ Use SQLAlchemy for better transaction control in complex applications.  
-✅ Use sqlite3 if you want manual control over transactions.
-
-### 6. Learning Curve
-
-|Feature|SQLAlchemy|sqlite3|
-|---|---|---|
-|Difficulty Level|Higher due to ORM concepts|Easier to get started|
-
-✅ Use sqlite3 if you want a simple database solution with SQL queries.  
-✅ Use SQLAlchemy if you are comfortable with an ORM and want a scalable approach.
-
----
-
-### When to Use SQLAlchemy?
-
-- You are building a large, scalable application.
-- You need database flexibility (MySQL, PostgreSQL, etc.).
-- You prefer Pythonic ORM instead of writing raw SQL.
-- You want better transaction handling and connection management.
-
-### When to Use sqlite3?
-
-- You need a lightweight, single-file database.
-- You are working on a small project or script.
-- You are comfortable writing raw SQL queries.
-- You do not need an ORM or multiple database support.
-
-### Final Recommendation
-
-- For simple SQLite-based projects: Use `sqlite3` (faster, simpler).
-- For larger applications needing scalability and maintainability: Use `SQLAlchemy`.
-
-<a id="sqlalchemy"></a>
-# Sqlalchemy {#sqlalchemy}
-
-SQLAlchemy is a Python SQL toolkit and <mark>Object Relational Mapper</mark> (ORM) that provides tools to interact with databases in a more Pythonic way. It allows you to work with relational databases such as MySQL, PostgreSQL, SQLite, and others without writing raw [SQL](#sql) queries manually.
-
-Related:
-- [SQLAlchemy vs. sqlite3](#sqlalchemy-vs-sqlite3)
-
-In [DE_Tools](#de_tools) see:
-- https://github.com/rhyslwells/DE_Tools/blob/main/Explorations/SQLAlchemy/sql_alchemy.ipynb
-
-### Why Use SQLAlchemy?
-
-- Reduces SQL complexity: Write Python code instead of SQL queries.
-- Prevents [SQL Injection](#sql-injection): ORM prevents unsafe queries.
-- Improves [maintainability](#maintainability): Easier to refactor code.
-- Handles connection pooling: Manages database connections efficiently.
-- Works with Pandas: Can load and save data directly to databases.
-### Key Features of SQLAlchemy
-
-1. Database Connectivity
-    - Provides a unified interface to connect to different databases.
-      
-2. SQL Query Execution
-    - Allows execution of raw SQL queries using [Pandas](#pandas)
-      
-3. ORM (Object Relational Mapping)
-    - Converts database tables into Python objects (classes).
-    - Eliminates the need to write SQL [Querying|Queries](#queryingqueries) manually.
-    - Example:
-        ```python
-        from sqlalchemy.orm import declarative_base
-        from sqlalchemy import Column, Integer, String
-        
-        Base = declarative_base()
-        
-        class Customer(Base):
-            __tablename__ = 'customers'
-            id = Column(Integer, primary_key=True)
-            name = Column(String)
-            phone_number = Column(String)
-        ```
-4. Transaction Management
-    - Provides robust control over commit and rollback operations.
-    - Ensures data integrity by handling failures safely.
-      
-5. Efficient Query Building
-    - Allows writing Pythonic queries instead of raw SQL.
-    - Example:
-        
-        ```python
-        from sqlalchemy.orm import sessionmaker
-        
-        Session = sessionmaker(bind=engine)
-        session = Session()
-        
-        customers = session.query(Customer).filter_by(name="John Doe").all()
-        ```
-        
-6. Supports Multiple Databases
-    - Works with [[MySql],[PostgreSQL](#postgresql),[SQLite](#sqlite), etc.
-    - Easily switch databases without changing the core logic.
-
-
-<a id="sqlite-studio"></a>
-# Sqlite Studio {#sqlite-studio}
-
-
-
-<a id="sqlite"></a>
-# Sqlite {#sqlite}
-
-
-Lightweight [Database Management System (DBMS)|DBMS](#database-management-system-dbmsdbms) used in various applications (phone apps, desktop apps, websites).
-
-Note [SQLite Studio](#sqlite-studio) exists
-
-To get in terminal enter: 
-
-sqlite3 database.db
-
-
-Related notes:
-- [Querying](#querying)
-- [Concurrency](#concurrency)
-- [SQL](#sql)
-
-<a id="svm_examplepy"></a>
-# Svm_Example.Py {#svm_examplepy}
-
-https://github.com/rhyslwells/ML_Tools/blob/main\Explorations/Build/Classifiers/SVM/SVM_Example.py
-
-## **Overview**
-
-- **Objective**: To classify Iris flowers using SVM and explore various hyperparameters like kernel type, regularization (C), and gamma.
-- **Dataset**: The Iris dataset contains information about sepal and petal dimensions for three flower species.
-- To explore the effect of **soft boundaries** in SVMs, you can adjust the regularization parameter CCC. A smaller CCC allows a **softer boundary** (more margin violations), prioritizing generalization. A larger CCC enforces a **harder boundary** with fewer margin violations, but may lead to overfitting. Here's an extended version of the script to include this exploration:
-
-### **Steps in the Script**
-
-#### 1. **Data Loading and Preparation**
-
-- The Iris dataset is loaded using `sklearn.datasets.load_iris`.
-- A DataFrame is created with:
-    - Features: Sepal and petal dimensions.
-    - Target: Numerical representation of flower species.
-    - Flower name: Categorical species name derived from the target.
-
-#### 2. **Data Visualization**
-
-- The data is visualized to explore relationships between features:
-    - **Sepal Length vs. Sepal Width** for two species (Setosa vs. Versicolor).
-    - **Petal Length vs. Petal Width** for the same species.
-- Scatter plots are used to identify separable patterns.
-
-#### 3. **Model Training**
-
-- The data is split into training and testing sets (80%-20%).
-- An **SVM classifier** (`sklearn.svm.SVC`) is trained on the training set.
-- The model's performance is evaluated using the `.score()` method.
-
-#### 4. **Hyperparameter Tuning**
-
-- **Regularization (C)**:
-    - Adjusting `C` controls the trade-off between achieving a large margin and minimizing classification errors.
-    - Lower values of `C` allow a larger margin but can tolerate misclassified points.
-    - Higher values of `C` prioritize correct classification over a larger margin.
-- **Gamma**:
-    - Controls the influence of individual data points. A high value means data points closer to the hyperplane have more influence.
-- **Kernel**:
-    - Different kernels (e.g., `linear`, `rbf`) are tested to find the best mapping of data into higher dimensions for better separation.
-
-#### 5. **Prediction and Accuracy**
-
-- The model is used to predict flower species for new samples.
-- The accuracy of the model is reported for each combination of hyperparameters.
 
 <a id="sarsa"></a>
 # Sarsa {#sarsa}
@@ -20473,6 +20074,62 @@ Related:
 
 
 
+<a id="semantic-layer"></a>
+# Semantic Layer {#semantic-layer}
+
+
+A [Semantic Layer](semantic%20layer.md) is much more flexible and makes the most sense on top of [transformed data](Data%20Transformation.md) in a [Data Warehouse](Data%20Warehouse.md).
+
+A semantic layer in the context of a data warehouse is an abstraction layer that sits between the raw data stored in the warehouse and the end users who need to access and analyze that data.
+
+Its primary purpose is to simplify complex data structures and present them in a more user-friendly and business-oriented way. This allows users to interact with the data without needing to understand the underlying complexities of the database schema or query languages.
+
+Bridging the gap between complex data systems and business users, enabling more effective and efficient data-driven decision-making.
+
+Avoid extensive reshuffles or reprocesses of large amounts of data. 
+
+Think of [OLAP](standardised/OLAP%20(online%20analytical%20processing).md) cubes where you can dice-and-slice ad-hoc on significant amounts of data without storing them ahead of time
+
+### Key Features of a Semantic Layer
+
+1. Business-Friendly Terminology:
+   - Translates technical database terms into business-friendly language that is easier for non-technical users to understand.
+   - For example, instead of using column names like `cust_id` or `prod_sku`, the semantic layer might present them as "Customer ID" or "Product SKU."
+
+2. Data Abstraction:
+   - Hides the complexity of the underlying data model, such as joins, table structures, and data transformations.
+   - Users can focus on business concepts rather than technical details.
+
+3. Consistent [Metric](#metric) and Calculations:
+   - Provides a centralized definition of key metrics and calculations, ensuring consistency across reports and analyses.
+   - For example, a metric like "Total Revenue" would be consistently calculated and presented, regardless of who is querying the data.
+
+4. Security and Access Control:
+   - Implements security rules and access controls to ensure that users only see data they are authorized to access.
+   - This can include row-level security, column-level security, and user-specific data views.
+
+5. Enhanced Query Performance:
+   - Optimizes queries by pre-aggregating data or using materialized views, reducing the load on the data warehouse and improving response times for users.
+
+### Benefits of a Semantic Layer
+
+- Ease of Use: Makes it easier for business users to access and analyze data without needing deep technical knowledge.
+- Faster Insights: Users can quickly generate reports and dashboards using familiar business terms and concepts.
+- Consistency: Ensures that all users are working with the same definitions and calculations, reducing discrepancies in reporting.
+- Scalability: Supports a wide range of analytical tools and applications, allowing organizations to scale their data analytics capabilities.
+
+### Implementation
+
+A semantic layer can be implemented using various tools and technologies, such as:
+
+- Business Intelligence (BI) Tools: Many BI platforms, like [Tableau](#tableau), [PowerBI](#powerbi), and Looker, offer built-in semantic layer capabilities.
+- [Data Virtualization](#data-virtualization) Tools: Tools like Denodo or Dremio provide semantic layer functionality by creating virtual views of data.
+- Custom Solutions: Organizations can build custom semantic layers using middleware or data modeling tools.
+
+
+
+
+
 <a id="semantic-relationships"></a>
 # Semantic Relationships {#semantic-relationships}
 
@@ -20499,6 +20156,31 @@ Another valuable resource is **SentiWordNet**, which extends WordNet by assignin
 Documents discussing similar topics might also share similar sentiments, strengthening the case for a semantic link. NLTK provides access to SentiWordNet, allowing you to incorporate sentiment analysis into your exploration of semantic relationships.
 
 
+<a id="semi-structured-data"></a>
+# Semi Structured Data {#semi-structured-data}
+
+
+
+Semi-structured data is data that lacks a rigid structure and that does not conform directly to a data model, but that has tags, metadata, or elements that describe the data. 
+
+Examples of semi-structured data are JSON or [XML](#xml) files. 
+
+<mark>Semi-structured data often contains enough information that it can be relatively easily converted into </mark> [structured data](#structured-data). 
+
+[JSON](#json) data embedded inside of a string, is an example of semi-structured data. The string contains all the information required to understand the structure of the data, but is still for the moment just a string -- it hasn't been structured yet.
+
+|          | **data**                        |
+| -------- | ------------------------------- |
+| Record 1 | \"{'id': 1, 'name': 'Mary X'}\" |
+| Record 2 | \"{'id': 2, 'name': 'John D'}\" |
+
+
+It is often relatively straightforward to convert semi-structured data into structured data. Converting semi-structured data into structured data is often done during the [Data Transformation](Data%20Transformation.md) stage in an [ETL](ETL.md) or [ELT](term/elt.md) process.  
+
+
+
+
+
 <a id="sentence-similarity"></a>
 # Sentence Similarity {#sentence-similarity}
 
@@ -20522,6 +20204,89 @@ There are several methods to measure sentence similarity:
 5. **Hybrid Approaches**: Combining multiple methods to leverage both lexical and semantic information for a more robust similarity measure.
 
 Each method has its strengths and weaknesses, and the choice of method often depends on the specific requirements of the task and the available computational resources.
+
+<a id="shapefile"></a>
+# Shapefile {#shapefile}
+
+
+A shapefile is a popular geospatial vector data format for geographic information system (GIS) software. It is widely used for storing the location, shape, and attributes of geographic features. Developed by Esri, shapefiles are commonly used in the GIS community for exchanging and managing geospatial data.
+
+A shapefile is a widely used [GIS](#gis) vector data format consisting of multiple files that store both spatial geometry and attribute data. Its ease of use and broad compatibility have made it a standard format for geospatial data exchange and analysis in the GIS community.
+### Components of a Shapefile
+
+A shapefile is not a single file, but rather a set of several files that work together. The primary components include:
+
+1. **.shp file**: This file contains the geometry data (points, lines, polygons) that represents the spatial features.
+
+2. **.shx file**: This is an index file that allows for quick access to the geometry data in the .shp file.
+
+3. **.dbf file**: This file stores attribute data in tabular format, linked to the spatial data in the .shp file. It uses the dBASE format to hold the attributes of each shape, such as names, categories, or other descriptive information.
+
+In addition to these mandatory files, a shapefile can also include several optional files that provide additional information:
+
+4. **.prj file**: Contains the coordinate system and projection information for the spatial data. This file is crucial for ensuring that the data is displayed correctly in GIS software.
+
+5. **.cpg file**: Defines the character encoding to be used for the .dbf file, ensuring that text attributes are interpreted correctly.
+
+6. **.qix file**: An optional spatial index file that can improve the performance of spatial queries on the shapefile.
+
+### Characteristics of Shapefiles
+
+- **Geometry Types**: Shapefiles can store different types of geometric data, including points, lines, and polygons. However, each shapefile can contain only one type of geometry.
+- **Attribute Data**: The .dbf file allows shapefiles to store descriptive data about each spatial feature, which can be used for analysis and mapping.
+- **Limitations**: Shapefiles have some limitations, such as a maximum file size of 2 GB for each component file, lack of support for advanced geometric types (like curves), and potential data redundancy and inefficiencies.
+
+### Usage of Shapefiles
+
+Shapefiles are extensively used in GIS for various purposes, including:
+
+- **Mapping**: Displaying geographic features on maps for visualization.
+- **Spatial Analysis**: Performing spatial queries, analysis, and geoprocessing tasks.
+- **Data Exchange**: Sharing geospatial data between different GIS software and systems.
+
+### Example Scenario
+
+Consider a city planning department that wants to map all the parks within the city. They might use a shapefile to store the polygon geometries representing park boundaries along with attributes such as park names, areas, and facilities available. This shapefile can then be loaded into GIS software to create maps, analyze park distributions, and manage urban planning tasks.
+
+
+
+
+<a id="shapley-additive-explanations"></a>
+# Shapley Additive Explanations {#shapley-additive-explanations}
+
+
+SHAP provides a unified approach to measure [Feature Importance](#feature-importance) by computing the contribution of each feature to each prediction, based on game theory.
+
+### Key Points
+
+- **Purpose**: SHAP provides consistent and locally accurate explanations by assigning each feature <mark>an importance value based</mark> on Shapley values from cooperative game theory.
+
+- **How it Works**: 
+  - It calculates how each feature contributes to the model's output by comparing predictions with and without the feature, across various feature value combinations.
+
+- **Use Cases**: Suitable for complex models like neural networks, random forests, or gradient boosting machines, where internal logic is difficult to understand.
+
+- **Advantage**: 
+  - Provides global explanations (model-wide feature importance) and local explanations (individual prediction reasons).
+
+- **Scenario**: 
+  - A financial institution uses a black-box XGBoost model to predict whether a loan applicant should be approved. The model takes several factors into account, such as credit score, income, employment history, and outstanding debts.
+  - **SHAP Explanation**: For a specific loan rejection case, SHAP values reveal that the applicant’s high debt-to-income ratio and short employment history contributed the most to the rejection decision. These factors had the highest negative SHAP values for this prediction, providing actionable insights to both the applicant and the loan officers.
+
+### Example Code
+
+To compute SHAP values, you can use the SHAP library to interpret feature importance for any machine learning model:
+
+```python
+import shap
+
+# Explain the model's predictions using SHAP
+explainer = shap.TreeExplainer(model)
+shap_values = explainer.shap_values(X_test)
+
+# Plot the summary plot of feature importance
+shap.summary_plot(shap_values, X_test)
+```
 
 <a id="sharepoint"></a>
 # Sharepoint {#sharepoint}
@@ -20631,6 +20396,19 @@ results in a single unified location for accessing and analyzing all the inform
 
 [Single Source of Truth](#single-source-of-truth)
    **Tags**: #data_management, #data_storage
+
+<a id="sklearn-datasets"></a>
+# Sklearn Datasets {#sklearn-datasets}
+
+make a dataframe by 
+
+```python
+ds = datasets.load_dataset()
+df = pd.DataFrame(ds.data,columns=ds.feature_names)
+df.head()
+#add target column
+df['target'] = ds.target
+
 
 <a id="sklearn-pipiline"></a>
 # Sklearn Pipiline {#sklearn-pipiline}
@@ -20765,6 +20543,21 @@ Help with carbon commitment
     - **Load Balancing**: RL can manage the distribution of electricity by dynamically balancing load across different sources, minimizing energy loss and enhancing stability.
     - **Renewable Energy Integration**: RL helps in integrating renewable energy sources (e.g., solar, wind) into the grid by optimizing the usage of these variable resources and managing their unpredictability.
 
+<a id="smote-synthetic-minority-over-sampling-technique"></a>
+# Smote (Synthetic Minority Over Sampling Technique) {#smote-synthetic-minority-over-sampling-technique}
+
+
+SMOTE (Synthetic Minority Over-sampling Technique)
+
+Generate synthetic samples for the minority class by interpolating between existing samples.
+
+SMOTE: This technique generates synthetic samples for the minority class (female resumes) by creating new instances that are interpolations of existing ones.
+
+<a id="smss"></a>
+# Smss {#smss}
+
+microsoft sql server management.
+
 <a id="snowflake-schema"></a>
 # Snowflake Schema {#snowflake-schema}
 
@@ -20772,6 +20565,9 @@ Snowflake Schema
    - Description: A more [Normalised Schema](#normalised-schema) normalized form of a star schema where dimension tables are further broken down into additional tables.
    - Advantages: Reduces data redundancy and can save storage space, but may be more complex to query.
    - A variation of the [Star Schema](#star-schema), the snowflake schema normalizes dimension tables into multiple related tables. This can reduce data redundancy and improve data integrity but may complicate queries due to the additional joins required.
+
+<a id="snowflake"></a>
+# Snowflake {#snowflake}
 
 ### **Snowflake**
 
@@ -21148,6 +20944,10 @@ p1.send("Hello");
 
 
 <a id="software-development-life-cycle"></a>
+#data_orchestration"
+aliases:
+  - sdlc
+---
 # Software Development Life Cycle {#software-development-life-cycle}
 
 
@@ -21206,6 +21006,11 @@ See agile manifesto : Working software over documentation
 
 ### [DevOps](#devops)
 
+<a id="spacy"></a>
+# Spacy {#spacy}
+
+
+
 <a id="sparsecategorialcrossentropy-or-categoricalcrossentropy"></a>
 # Sparsecategorialcrossentropy Or Categoricalcrossentropy {#sparsecategorialcrossentropy-or-categoricalcrossentropy}
 
@@ -21260,6 +21065,485 @@ Compared to spreadsheets, databases offer:
 
 ### Tags
 - **Tags**: #data_management, #data_storage
+
+<a id="sql-groupby"></a>
+# Sql Groupby {#sql-groupby}
+
+The [SQL](#sql) `GROUP BY` clause is used to group rows that have the same values in specified columns into summary rows, like "total sales per region" or "average age per department." 
+
+It is often used in conjunction with aggregate functions such as `COUNT()`, `SUM()`, `AVG()`, `MAX()`, and `MIN()` to perform calculations on each group.
+### Basic Syntax
+
+```sql
+SELECT column1, aggregate_function(column2)
+FROM table_name
+WHERE condition
+GROUP BY column1;
+```
+
+### Example Usage
+
+Let's say you have a table called `sales` with the following columns:
+
+- `id`: Unique identifier for each sale
+- `product`: The name of the product sold
+- `amount`: The sale amount
+- `region`: The region where the sale occurred
+
+#### 1. Count the Number of Sales per Product
+
+To count how many sales were made for each product, you would use:
+
+```sql
+SELECT product, COUNT(*) AS total_sales
+FROM sales
+GROUP BY product;
+```
+
+#### 2. Calculate Total Sales Amount per Region
+
+To calculate the total sales amount for each region, you would use:
+
+```sql
+SELECT region, SUM(amount) AS total_sales_amount
+FROM sales
+GROUP BY region;
+```
+
+### Using `HAVING` with `GROUP BY`
+
+You can also filter the results of a `GROUP BY` [Querying|query](#queryingquery) using the `HAVING` clause. This is useful when you want to filter groups based on aggregate values.
+
+#### Example: Filter Groups
+
+For example, to find products with total sales greater than $1000:
+
+```sql
+SELECT product, SUM(amount) AS total_sales_amount
+FROM sales
+GROUP BY product
+HAVING SUM(amount) > 1000;
+```
+
+### Important Points
+
+- **Columns in SELECT**: When using `GROUP BY`, all columns in the `SELECT` statement must either be included in the `GROUP BY` clause or be used in an aggregate function.
+- **Order of Execution**: The `GROUP BY` clause is processed after the `WHERE` clause but before the `ORDER BY` clause in the SQL execution order.
+
+
+
+
+
+[SQL Groupby](#sql-groupby)
+   **Tags**: #data_transformation  #querying
+
+<a id="sql-injection"></a>
+# Sql Injection {#sql-injection}
+
+SQL injection is a code injection technique that targets applications using SQL databases. It occurs when a malicious user injects harmful SQL code into a query, potentially compromising the security of the database. 
+
+### How SQL Injection Works
+
+Consider a scenario where a website prompts users to log in with their username and password. The application might execute a query like this:
+
+```sql
+SELECT `id` FROM `users`
+WHERE `user` = 'Carter' AND `password` = 'password';
+```
+
+If the user named Carter enters their credentials correctly, the query functions as intended. However, a malicious user could input a different string, such as:
+
+```
+password' OR '1' = '1
+```
+
+This alters the query to:
+
+```sql
+SELECT `id` FROM `users`
+WHERE `user` = 'Carter' AND `password` = 'password' OR '1' = '1';
+```
+
+As a result, the attacker could gain unauthorized access to the database.
+
+### Example of Vulnerable Code
+
+The following Python function demonstrates how SQL injection can occur due to unsafe query construction:
+
+```python
+import sqlite3
+
+def unsafe_query(user_input):
+    query = "SELECT * FROM users WHERE name = '" + user_input + "'"
+    conn = sqlite3.connect('example.db')
+    conn.execute(query)
+```
+
+In this example, the `unsafe_query` function constructs SQL queries using string concatenation, making it vulnerable if user input is not properly sanitized.
+
+### Preventing SQL Injection
+
+To mitigate the risk of SQL injection, it is essential to use prepared statements or parameterized queries. For example, consider an SQL injection attack that aims to display all user accounts from the `accounts` table:
+
+```sql
+SELECT * FROM `accounts`
+WHERE `id` = 1 UNION SELECT * FROM `accounts`;
+```
+
+Using a prepared statement, we can safeguard against such attacks:
+
+```sql
+PREPARE `balance_check`
+FROM 'SELECT * FROM `accounts`
+WHERE `id` = ?';
+```
+
+In this statement, the question mark acts as a placeholder for user input, preventing the execution of unintended SQL code.
+
+### Executing the Prepared Statement
+
+To execute the prepared statement and check a user’s balance, we can set a variable for the user ID:
+
+```sql
+SET @id = 1;
+EXECUTE `balance_check` USING @id;
+```
+
+Here, the `SET` statement simulates obtaining the user’s ID through the application, with the `@` symbol denoting a variable in MySQL.
+
+### Testing with Malicious Input
+
+If we attempt to run the same statements with a malicious ID:
+
+```sql
+SET @id = '1 UNION SELECT * FROM `accounts`';
+EXECUTE `balance_check` USING @id;
+```
+
+The output will still reflect the balance of the user with ID 1, without exposing any additional data. This demonstrates that prepared statements effectively prevent SQL injection attacks.
+
+### Mitigation Strategies
+
+- **Use Parameterized Queries**: Always use parameterized queries or prepared statements to prevent SQL injection.
+- **Validate and Sanitize Inputs**: Ensure user inputs are validated and sanitized before being processed.
+
+
+<a id="sql-joins"></a>
+# Sql Joins {#sql-joins}
+
+In [DE_Tools](#de_tools) see:
+- https://github.com/rhyslwells/DE_Tools/blob/main/Explorations/Transformation/Joining.ipynb
+
+
+![Pasted image 20250323083319.png|800](../content/images/Pasted%20image%2020250323083319.png|800)
+
+<a id="sql-vs-nosql"></a>
+#question"
+  - software
+importance: 
+engagement: 
+recency_of_interest: 2024-10-08
+category: DEVOPS
+---
+# Sql Vs Nosql {#sql-vs-nosql}
+
+
+[NoSQL](#nosql)
+
+<a id="sql-window-functions"></a>
+# Sql Window Functions {#sql-window-functions}
+
+SQL Window Functions are a feature in SQL that allow you to perform calculations across a set of table rows that are somehow related to the current row. 
+
+Unlike regular aggregate functions, which return a single value for a group of rows, window functions return a value for each row in the result set while still allowing access to the individual row data.
+
+### Key Characteristics of Window Functions
+
+1. Non-Aggregating: Window functions do not collapse rows into a single output row. Instead, they perform calculations across a defined "window" of rows related to the current row.
+
+2. OVER Clause: Window functions are defined using the `OVER` clause, which specifies the window of rows to be considered for the function.
+
+3. Partitioning: You can partition the result set into groups using the `PARTITION BY` clause within the `OVER` clause. Each partition is processed independently.
+
+4. Ordering: You can specify the order of rows within each partition using the `ORDER BY` clause within the `OVER` clause.
+### Example Use Case
+
+Suppose you have a table `sales` with columns `salesperson`, `region`, and `amount`. You can use window functions to calculate the total sales for each salesperson while still displaying individual sales records:
+
+Initial Table: `employees`
+
+| id | name    | department | salary |
+|----|---------|------------|--------|
+| 1  | Alice   | Sales      | 50000  |
+| 2  | Bob     | Sales      | 60000  |
+| 3  | Charlie | HR         | 55000  |
+| 4  | David   | HR         | 70000  |
+| 5  | Eve     | IT         | 80000  |
+| 6  | Frank   | IT         | 75000  |
+
+### Example [Querying|Queries](#queryingqueries) Using SQL Window Functions
+
+#### 1. Using `ROW_NUMBER()`
+
+The `ROW_NUMBER()` function assigns a unique rank to each employee within their department based on their salary.
+
+```sql
+SELECT 
+    id, 
+    name, 
+    department, 
+    salary, 
+    ROW_NUMBER() OVER (PARTITION BY department ORDER BY salary DESC) AS rank
+FROM employees;
+```
+
+Resulting Table:
+
+| id | name    | department | salary | rank |
+|----|---------|------------|--------|------|
+| 2  | Bob     | Sales      | 60000  | 1    |
+| 1  | Alice   | Sales      | 50000  | 2    |
+| 4  | David   | HR         | 70000  | 1    |
+| 3  | Charlie | HR         | 55000  | 2    |
+| 5  | Eve     | IT         | 80000  | 1    |
+| 6  | Frank   | IT         | 75000  | 2    |
+
+#### 2. Using `SUM()` similar AVG
+
+The `SUM()` function calculates the total salary for each department, showing the same total for each employee in that department.
+
+```sql
+SELECT 
+    id, 
+    name, 
+    department, 
+    salary, 
+    SUM(salary) OVER (PARTITION BY department) AS total_department_salary
+FROM employees;
+```
+
+Resulting Table:
+
+| id | name    | department | salary | total_department_salary |
+|----|---------|------------|--------|-------------------------|
+| 1  | Alice   | Sales      | 50000  | 110000                  |
+| 2  | Bob     | Sales      | 60000  | 110000                  |
+| 3  | Charlie | HR         | 55000  | 125000                  |
+| 4  | David   | HR         | 70000  | 125000                  |
+| 5  | Eve     | IT         | 80000  | 155000                  |
+| 6  | Frank   | IT         | 75000  | 155000                  |
+
+
+
+
+
+
+
+
+
+[SQL Window functions](#sql-window-functions)
+   **Tags**: #data_analysis, #querying
+
+<a id="sql"></a>
+# Sql {#sql}
+
+
+Structured Query Language (SQL) is the standard language for interacting with relational databases, enabling efficient data [Querying](#querying) and manipulation. It serves as a common interface for [Database](#database)s and data lakes.
+
+Features: 
+  - Declarative language for storing and querying structured data.
+  - Transactional properties enhance speed and efficiency.
+  
+### Good Practices
+
+Capitalization: 
+  - Use uppercase for SQL keywords for better readability.
+  - Use lowercase for table and column names.
+  
+Quotes:
+  - Use double quotes for SQL identifiers (table and column names).
+  - Use single quotes for string values.
+
+### Related terms
+
+[Database Techniques](#database-techniques)
+
+<a id="sqlalchemy-vs-sqlite3"></a>
+# SQLAlchemy vs. sqlite3 {#sqlalchemy-vs-sqlite3}
+
+### SQLAlchemy vs. sqlite3: Which One Should You Use?
+
+The choice between [SQLAlchemy](#sqlalchemy) and [SQLite](#sqlite) depends on your specific needs. Here’s a comparison based on key factors:
+
+### 1. Abstraction and Ease of Use
+
+| Feature     | SQLAlchemy                                 | sqlite3                          |
+| ----------- | ------------------------------------------ | -------------------------------- |
+| Abstraction | High-level ORM (Object Relational Mapping) | Low-level, direct SQL execution  |
+| Ease of Use | Pythonic API for working with databases    | Requires writing raw SQL queries |
+| Best for    | Large projects, scalable applications      | Simple scripts, small projects   |
+
+✅ Use SQLAlchemy if you want to work with database tables as Python objects (ORM).  
+✅ Use sqlite3 if you are comfortable writing SQL queries directly.
+
+### 2. Supported Databases
+
+|Feature|SQLAlchemy|sqlite3|
+|---|---|---|
+|Database Support|Works with MySQL, PostgreSQL, SQLite, MSSQL, etc.|Only works with SQLite|
+|Portability|Can switch databases easily|Tied to SQLite only|
+
+✅ Use SQLAlchemy if you need flexibility to work with different databases.  
+✅ Use sqlite3 if you are only working with SQLite.
+
+### 3. Performance and Scalability
+
+|Feature|SQLAlchemy|sqlite3|
+|---|---|---|
+|Performance|Slightly slower due to ORM overhead|Faster for simple queries|
+|Scalability|Supports connection pooling, transactions, and large-scale applications|Best for local, single-user applications|
+
+✅ Use SQLAlchemy for large applications with complex relationships.  
+✅ Use sqlite3 if you just need a simple, fast database for local use.
+
+### 4. Querying and Data Manipulation
+
+|Feature|SQLAlchemy|sqlite3|
+|---|---|---|
+|Querying|Can use both ORM and raw SQL queries|Only supports raw SQL queries|
+|Ease of Data Manipulation|Object-oriented approach (e.g., `session.add(obj)`)|SQL execution via `cursor.execute(query)`|
+
+✅ Use SQLAlchemy if you prefer writing queries in a Pythonic way (ORM).  
+✅ Use sqlite3 if you are fine with executing raw SQL statements.
+
+
+
+### 5. Transaction Handling
+
+|Feature|SQLAlchemy|sqlite3|
+|---|---|---|
+|Transaction Control|Automatic transaction management|Manual transaction handling (`conn.commit()`)|
+|Rollback Support|Easier and more reliable|Must be explicitly handled|
+
+✅ Use SQLAlchemy for better transaction control in complex applications.  
+✅ Use sqlite3 if you want manual control over transactions.
+
+### 6. Learning Curve
+
+|Feature|SQLAlchemy|sqlite3|
+|---|---|---|
+|Difficulty Level|Higher due to ORM concepts|Easier to get started|
+
+✅ Use sqlite3 if you want a simple database solution with SQL queries.  
+✅ Use SQLAlchemy if you are comfortable with an ORM and want a scalable approach.
+
+---
+
+### When to Use SQLAlchemy?
+
+- You are building a large, scalable application.
+- You need database flexibility (MySQL, PostgreSQL, etc.).
+- You prefer Pythonic ORM instead of writing raw SQL.
+- You want better transaction handling and connection management.
+
+### When to Use sqlite3?
+
+- You need a lightweight, single-file database.
+- You are working on a small project or script.
+- You are comfortable writing raw SQL queries.
+- You do not need an ORM or multiple database support.
+
+### Final Recommendation
+
+- For simple SQLite-based projects: Use `sqlite3` (faster, simpler).
+- For larger applications needing scalability and maintainability: Use `SQLAlchemy`.
+
+<a id="sqlalchemy"></a>
+# Sqlalchemy {#sqlalchemy}
+
+SQLAlchemy is a Python SQL toolkit and <mark>Object Relational Mapper</mark> (ORM) that provides tools to interact with databases in a more Pythonic way. It allows you to work with relational databases such as MySQL, PostgreSQL, SQLite, and others without writing raw [SQL](#sql) queries manually.
+
+Related:
+- [SQLAlchemy vs. sqlite3](#sqlalchemy-vs-sqlite3)
+
+In [DE_Tools](#de_tools) see:
+- https://github.com/rhyslwells/DE_Tools/blob/main/Explorations/SQLAlchemy/sql_alchemy.ipynb
+
+### Why Use SQLAlchemy?
+
+- Reduces SQL complexity: Write Python code instead of SQL queries.
+- Prevents [SQL Injection](#sql-injection): ORM prevents unsafe queries.
+- Improves [maintainability](#maintainability): Easier to refactor code.
+- Handles connection pooling: Manages database connections efficiently.
+- Works with Pandas: Can load and save data directly to databases.
+### Key Features of SQLAlchemy
+
+1. Database Connectivity
+    - Provides a unified interface to connect to different databases.
+      
+2. SQL Query Execution
+    - Allows execution of raw SQL queries using [Pandas](#pandas)
+      
+3. ORM (Object Relational Mapping)
+    - Converts database tables into Python objects (classes).
+    - Eliminates the need to write SQL [Querying|Queries](#queryingqueries) manually.
+    - Example:
+        ```python
+        from sqlalchemy.orm import declarative_base
+        from sqlalchemy import Column, Integer, String
+        
+        Base = declarative_base()
+        
+        class Customer(Base):
+            __tablename__ = 'customers'
+            id = Column(Integer, primary_key=True)
+            name = Column(String)
+            phone_number = Column(String)
+        ```
+4. Transaction Management
+    - Provides robust control over commit and rollback operations.
+    - Ensures data integrity by handling failures safely.
+      
+5. Efficient Query Building
+    - Allows writing Pythonic queries instead of raw SQL.
+    - Example:
+        
+        ```python
+        from sqlalchemy.orm import sessionmaker
+        
+        Session = sessionmaker(bind=engine)
+        session = Session()
+        
+        customers = session.query(Customer).filter_by(name="John Doe").all()
+        ```
+        
+6. Supports Multiple Databases
+    - Works with [[MySql],[PostgreSQL](#postgresql),[SQLite](#sqlite), etc.
+    - Easily switch databases without changing the core logic.
+
+
+<a id="sqlite-studio"></a>
+# Sqlite Studio {#sqlite-studio}
+
+
+
+<a id="sqlite"></a>
+# Sqlite {#sqlite}
+
+
+Lightweight [Database Management System (DBMS)|DBMS](#database-management-system-dbmsdbms) used in various applications (phone apps, desktop apps, websites).
+
+Note [SQLite Studio](#sqlite-studio) exists
+
+To get in terminal enter: 
+
+sqlite3 database.db
+
+
+Related notes:
+- [Querying](#querying)
+- [Concurrency](#concurrency)
+- [SQL](#sql)
 
 <a id="stacking"></a>
 # Stacking {#stacking}
@@ -21501,6 +21785,19 @@ Shorting words to the key term.
 
 [Gradient Descent](#gradient-descent)
 
+<a id="storage-layer-object-store"></a>
+# Storage Layer Object Store {#storage-layer-object-store}
+
+
+A storage layer or object storage are services from the three big [Cloud Providers](#cloud-providers), 
+
+AWS S3,[S3 bucket](#s3-bucket)
+Azure Blob Storage,
+and Google Cloud Storage. 
+
+The web user interface is easy to use. **Its features are very basic, where, in fact, these object stores store distributed files exceptionally well.** They are also highly configurable, with solid security and reliability built-in.
+
+
 <a id="stored-procedures"></a>
 # Stored Procedures {#stored-procedures}
 
@@ -21643,6 +21940,61 @@ let text = "Hello";
 text = text + number;  // No error, result is "Hello5"
 ```
 
+
+<a id="structured-data"></a>
+# Structured Data {#structured-data}
+
+
+Structured data refers to data that has been formatted into a well-defined schema ([Database Schema](#database-schema)). An example would be data that is stored with precisely defined columns in a relational [Database](#database) or excel spreadsheet. Examples of <mark>structured fields could be age, name, phone number, credit card numbers or address.</mark> Storing data in a structured format allows it to be easily understood and queried by machines and with tools such as SQL.
+
+## Example of structure data
+
+Below is an example of structured data as it would appear in a database:
+
+|         |  **age**| **name**| **phone**| 
+|---------|-----|------|-----|
+|Record 1| 29 | Bob | 123-456 |
+|Record 2| 30 | Sue | 789-123 | 
+
+It may seem that all data is structured, but this is not always the case -- data can be unstructured, or semi-structured. The differences are best understood by example, and are discussed in the following sections. 
+
+## Structured data vs. unstructured data
+
+Structured data can be contrasted with [unstructured data](unstructured%20data.md), which does not conform to a data model and has no easily identifiable structure. Unstructured data cannot be easily used by programs, and is difficult to analyze. Examples of unstructured data could be the contents of an email, contents of a word document, data from social media, photos, videos, survey results, etc.   
+
+An simple example of unstructured data is a string that contains interesting information inside of it, but that has not been formatted into a well defined schema. An example is given below:
+
+|               |  **UnstructuredString**|
+|---------| -----------|
+|Record 1| "Bob is 29" |
+|Record 2| "Mary just turned 30"|
+
+## Structuring of unstructured data
+
+Converting unstructured data into structured data can be done during the [Data Transformation](Data%20Transformation.md) stage in an [ETL](ETL.md) or [ELT](term/elt.md) process.  
+
+For example, in order to efficiently make use of the unstructured data given in the previous example, it may desirable to transform it into structured data such as the following:
+
+|               |  **name** | **age** |
+|---------| -----------|---- |
+|Record 1| "Bob" | 29 |
+|Record 2| "Mary"| 30 |
+
+Storing the data in a structured manner makes it much more efficient to query the data. For example, after structuring the data it is possible to easily and efficiently execute the following query on the structured data:
+  
+``` SQL
+SELECT * FROM X where Age=29
+```
+
+A query such as this would be expensive and/or more difficult to execute on unstructured data.
+
+## Structured data vs. semi-structured data
+
+Structured data can also be contrasted with [semi-structured data](term/semi-structured%20data.md), which lacks a rigid structure and does not conform directly to a data model. However, semi-structured data has tags and elements that describe the data. 
+
+Examples of semi-structured data are [JSON](#json) or [XML](#xml) files. Semi-structured data often contains enough information that it can be relatively easily converted into structured data. 
+
+<mark>[structured data](term/structured%20data.md) refers to data that has been formatted into a well-defined schema</mark>. An example would be data that is stored with precisely defined columns in a relational database or excel spreadsheet. Examples of structured fields could be age, name, phone number, credit card numbers or address.
 
 <a id="structuring-and-organizing-data"></a>
 # Structuring And Organizing Data {#structuring-and-organizing-data}
@@ -21806,6 +22158,56 @@ Support Vector Regression use similar principles to [Support Vector Machines|SVM
 
 
 
+<a id="svm_examplepy"></a>
+# Svm_Example.Py {#svm_examplepy}
+
+https://github.com/rhyslwells/ML_Tools/blob/main\Explorations/Build/Classifiers/SVM/SVM_Example.py
+
+## **Overview**
+
+- **Objective**: To classify Iris flowers using SVM and explore various hyperparameters like kernel type, regularization (C), and gamma.
+- **Dataset**: The Iris dataset contains information about sepal and petal dimensions for three flower species.
+- To explore the effect of **soft boundaries** in SVMs, you can adjust the regularization parameter CCC. A smaller CCC allows a **softer boundary** (more margin violations), prioritizing generalization. A larger CCC enforces a **harder boundary** with fewer margin violations, but may lead to overfitting. Here's an extended version of the script to include this exploration:
+
+### **Steps in the Script**
+
+#### 1. **Data Loading and Preparation**
+
+- The Iris dataset is loaded using `sklearn.datasets.load_iris`.
+- A DataFrame is created with:
+    - Features: Sepal and petal dimensions.
+    - Target: Numerical representation of flower species.
+    - Flower name: Categorical species name derived from the target.
+
+#### 2. **Data Visualization**
+
+- The data is visualized to explore relationships between features:
+    - **Sepal Length vs. Sepal Width** for two species (Setosa vs. Versicolor).
+    - **Petal Length vs. Petal Width** for the same species.
+- Scatter plots are used to identify separable patterns.
+
+#### 3. **Model Training**
+
+- The data is split into training and testing sets (80%-20%).
+- An **SVM classifier** (`sklearn.svm.SVC`) is trained on the training set.
+- The model's performance is evaluated using the `.score()` method.
+
+#### 4. **Hyperparameter Tuning**
+
+- **Regularization (C)**:
+    - Adjusting `C` controls the trade-off between achieving a large margin and minimizing classification errors.
+    - Lower values of `C` allow a larger margin but can tolerate misclassified points.
+    - Higher values of `C` prioritize correct classification over a larger margin.
+- **Gamma**:
+    - Controls the influence of individual data points. A high value means data points closer to the hyperplane have more influence.
+- **Kernel**:
+    - Different kernels (e.g., `linear`, `rbf`) are tested to find the best mapping of data into higher dimensions for better separation.
+
+#### 5. **Prediction and Accuracy**
+
+- The model is used to predict flower species for new samples.
+- The accuracy of the model is reported for each combination of hyperparameters.
+
 <a id="symbolic-computation"></a>
 # Symbolic Computation {#symbolic-computation}
 
@@ -21856,219 +22258,6 @@ Wolfram Alpha is designed specifically for symbolic computation and uses rule-ba
 
 
 
-<a id="semantic-layer"></a>
-# Semantic Layer {#semantic-layer}
-
-
-A [Semantic Layer](semantic%20layer.md) is much more flexible and makes the most sense on top of [transformed data](Data%20Transformation.md) in a [Data Warehouse](Data%20Warehouse.md).
-
-A semantic layer in the context of a data warehouse is an abstraction layer that sits between the raw data stored in the warehouse and the end users who need to access and analyze that data.
-
-Its primary purpose is to simplify complex data structures and present them in a more user-friendly and business-oriented way. This allows users to interact with the data without needing to understand the underlying complexities of the database schema or query languages.
-
-Bridging the gap between complex data systems and business users, enabling more effective and efficient data-driven decision-making.
-
-Avoid extensive reshuffles or reprocesses of large amounts of data. 
-
-Think of [OLAP](standardised/OLAP%20(online%20analytical%20processing).md) cubes where you can dice-and-slice ad-hoc on significant amounts of data without storing them ahead of time
-
-### Key Features of a Semantic Layer
-
-1. Business-Friendly Terminology:
-   - Translates technical database terms into business-friendly language that is easier for non-technical users to understand.
-   - For example, instead of using column names like `cust_id` or `prod_sku`, the semantic layer might present them as "Customer ID" or "Product SKU."
-
-2. Data Abstraction:
-   - Hides the complexity of the underlying data model, such as joins, table structures, and data transformations.
-   - Users can focus on business concepts rather than technical details.
-
-3. Consistent [Metric](#metric) and Calculations:
-   - Provides a centralized definition of key metrics and calculations, ensuring consistency across reports and analyses.
-   - For example, a metric like "Total Revenue" would be consistently calculated and presented, regardless of who is querying the data.
-
-4. Security and Access Control:
-   - Implements security rules and access controls to ensure that users only see data they are authorized to access.
-   - This can include row-level security, column-level security, and user-specific data views.
-
-5. Enhanced Query Performance:
-   - Optimizes queries by pre-aggregating data or using materialized views, reducing the load on the data warehouse and improving response times for users.
-
-### Benefits of a Semantic Layer
-
-- Ease of Use: Makes it easier for business users to access and analyze data without needing deep technical knowledge.
-- Faster Insights: Users can quickly generate reports and dashboards using familiar business terms and concepts.
-- Consistency: Ensures that all users are working with the same definitions and calculations, reducing discrepancies in reporting.
-- Scalability: Supports a wide range of analytical tools and applications, allowing organizations to scale their data analytics capabilities.
-
-### Implementation
-
-A semantic layer can be implemented using various tools and technologies, such as:
-
-- Business Intelligence (BI) Tools: Many BI platforms, like [Tableau](#tableau), [PowerBI](#powerbi), and Looker, offer built-in semantic layer capabilities.
-- [Data Virtualization](#data-virtualization) Tools: Tools like Denodo or Dremio provide semantic layer functionality by creating virtual views of data.
-- Custom Solutions: Organizations can build custom semantic layers using middleware or data modeling tools.
-
-
-
-
-
-<a id="semi-structured-data"></a>
-# Semi Structured Data {#semi-structured-data}
-
-
-
-Semi-structured data is data that lacks a rigid structure and that does not conform directly to a data model, but that has tags, metadata, or elements that describe the data. 
-
-Examples of semi-structured data are JSON or [XML](#xml) files. 
-
-<mark>Semi-structured data often contains enough information that it can be relatively easily converted into </mark> [structured data](#structured-data). 
-
-[JSON](#json) data embedded inside of a string, is an example of semi-structured data. The string contains all the information required to understand the structure of the data, but is still for the moment just a string -- it hasn't been structured yet.
-
-|          | **data**                        |
-| -------- | ------------------------------- |
-| Record 1 | \"{'id': 1, 'name': 'Mary X'}\" |
-| Record 2 | \"{'id': 2, 'name': 'John D'}\" |
-
-
-It is often relatively straightforward to convert semi-structured data into structured data. Converting semi-structured data into structured data is often done during the [Data Transformation](Data%20Transformation.md) stage in an [ETL](ETL.md) or [ELT](term/elt.md) process.  
-
-
-
-
-
-<a id="shapefile"></a>
-# Shapefile {#shapefile}
-
-
-A shapefile is a popular geospatial vector data format for geographic information system (GIS) software. It is widely used for storing the location, shape, and attributes of geographic features. Developed by Esri, shapefiles are commonly used in the GIS community for exchanging and managing geospatial data.
-
-A shapefile is a widely used [GIS](#gis) vector data format consisting of multiple files that store both spatial geometry and attribute data. Its ease of use and broad compatibility have made it a standard format for geospatial data exchange and analysis in the GIS community.
-### Components of a Shapefile
-
-A shapefile is not a single file, but rather a set of several files that work together. The primary components include:
-
-1. **.shp file**: This file contains the geometry data (points, lines, polygons) that represents the spatial features.
-
-2. **.shx file**: This is an index file that allows for quick access to the geometry data in the .shp file.
-
-3. **.dbf file**: This file stores attribute data in tabular format, linked to the spatial data in the .shp file. It uses the dBASE format to hold the attributes of each shape, such as names, categories, or other descriptive information.
-
-In addition to these mandatory files, a shapefile can also include several optional files that provide additional information:
-
-4. **.prj file**: Contains the coordinate system and projection information for the spatial data. This file is crucial for ensuring that the data is displayed correctly in GIS software.
-
-5. **.cpg file**: Defines the character encoding to be used for the .dbf file, ensuring that text attributes are interpreted correctly.
-
-6. **.qix file**: An optional spatial index file that can improve the performance of spatial queries on the shapefile.
-
-### Characteristics of Shapefiles
-
-- **Geometry Types**: Shapefiles can store different types of geometric data, including points, lines, and polygons. However, each shapefile can contain only one type of geometry.
-- **Attribute Data**: The .dbf file allows shapefiles to store descriptive data about each spatial feature, which can be used for analysis and mapping.
-- **Limitations**: Shapefiles have some limitations, such as a maximum file size of 2 GB for each component file, lack of support for advanced geometric types (like curves), and potential data redundancy and inefficiencies.
-
-### Usage of Shapefiles
-
-Shapefiles are extensively used in GIS for various purposes, including:
-
-- **Mapping**: Displaying geographic features on maps for visualization.
-- **Spatial Analysis**: Performing spatial queries, analysis, and geoprocessing tasks.
-- **Data Exchange**: Sharing geospatial data between different GIS software and systems.
-
-### Example Scenario
-
-Consider a city planning department that wants to map all the parks within the city. They might use a shapefile to store the polygon geometries representing park boundaries along with attributes such as park names, areas, and facilities available. This shapefile can then be loaded into GIS software to create maps, analyze park distributions, and manage urban planning tasks.
-
-
-
-
-<a id="sklearn-datasets"></a>
-# Sklearn Datasets {#sklearn-datasets}
-
-make a dataframe by 
-
-```python
-ds = datasets.load_dataset()
-df = pd.DataFrame(ds.data,columns=ds.feature_names)
-df.head()
-#add target column
-df['target'] = ds.target
-
-
-<a id="spacy"></a>
-# Spacy {#spacy}
-
-
-
-<a id="storage-layer-object-store"></a>
-# Storage Layer Object Store {#storage-layer-object-store}
-
-
-A storage layer or object storage are services from the three big [Cloud Providers](#cloud-providers), 
-
-AWS S3,[S3 bucket](#s3-bucket)
-Azure Blob Storage,
-and Google Cloud Storage. 
-
-The web user interface is easy to use. **Its features are very basic, where, in fact, these object stores store distributed files exceptionally well.** They are also highly configurable, with solid security and reliability built-in.
-
-
-<a id="structured-data"></a>
-# Structured Data {#structured-data}
-
-
-Structured data refers to data that has been formatted into a well-defined schema ([Database Schema](#database-schema)). An example would be data that is stored with precisely defined columns in a relational [Database](#database) or excel spreadsheet. Examples of <mark>structured fields could be age, name, phone number, credit card numbers or address.</mark> Storing data in a structured format allows it to be easily understood and queried by machines and with tools such as SQL.
-
-## Example of structure data
-
-Below is an example of structured data as it would appear in a database:
-
-|         |  **age**| **name**| **phone**| 
-|---------|-----|------|-----|
-|Record 1| 29 | Bob | 123-456 |
-|Record 2| 30 | Sue | 789-123 | 
-
-It may seem that all data is structured, but this is not always the case -- data can be unstructured, or semi-structured. The differences are best understood by example, and are discussed in the following sections. 
-
-## Structured data vs. unstructured data
-
-Structured data can be contrasted with [unstructured data](unstructured%20data.md), which does not conform to a data model and has no easily identifiable structure. Unstructured data cannot be easily used by programs, and is difficult to analyze. Examples of unstructured data could be the contents of an email, contents of a word document, data from social media, photos, videos, survey results, etc.   
-
-An simple example of unstructured data is a string that contains interesting information inside of it, but that has not been formatted into a well defined schema. An example is given below:
-
-|               |  **UnstructuredString**|
-|---------| -----------|
-|Record 1| "Bob is 29" |
-|Record 2| "Mary just turned 30"|
-
-## Structuring of unstructured data
-
-Converting unstructured data into structured data can be done during the [Data Transformation](Data%20Transformation.md) stage in an [ETL](ETL.md) or [ELT](term/elt.md) process.  
-
-For example, in order to efficiently make use of the unstructured data given in the previous example, it may desirable to transform it into structured data such as the following:
-
-|               |  **name** | **age** |
-|---------| -----------|---- |
-|Record 1| "Bob" | 29 |
-|Record 2| "Mary"| 30 |
-
-Storing the data in a structured manner makes it much more efficient to query the data. For example, after structuring the data it is possible to easily and efficiently execute the following query on the structured data:
-  
-``` SQL
-SELECT * FROM X where Age=29
-```
-
-A query such as this would be expensive and/or more difficult to execute on unstructured data.
-
-## Structured data vs. semi-structured data
-
-Structured data can also be contrasted with [semi-structured data](term/semi-structured%20data.md), which lacks a rigid structure and does not conform directly to a data model. However, semi-structured data has tags and elements that describe the data. 
-
-Examples of semi-structured data are [JSON](#json) or [XML](#xml) files. Semi-structured data often contains enough information that it can be relatively easily converted into structured data. 
-
-<mark>[structured data](term/structured%20data.md) refers to data that has been formatted into a well-defined schema</mark>. An example would be data that is stored with precisely defined columns in a relational database or excel spreadsheet. Examples of structured fields could be age, name, phone number, credit card numbers or address.
-
 <a id="syntactic-relationships"></a>
 # Syntactic Relationships {#syntactic-relationships}
 
@@ -22078,10 +22267,71 @@ Syntactic relationships refer to the structural connections between words or phr
 
 The key difference is that syntactic relationships are concerned with the form and structure of language, while semantic relationships are concerned with meaning and interpretation.
 
-# T {#t}
+<a id="t-sne"></a>
+# T Sne {#t-sne}
 
-# T
 
+t-SNE (t-distributed Stochastic Neighbor Embedding) is a [Dimensionality Reduction](#dimensionality-reduction) technique used primarily for visualizing high-dimensional data. Unlike methods such as **[Principal Component Analysis|PCA](#principal-component-analysispca)** (Principal Component Analysis), which are linear, t-SNE is a **non-linear** method that excels at preserving the local structure of the data. 
+
+### Key Characteristics of t-SNE:
+- **Non-linear Mapping**: It attempts to capture non-linear relationships in the data by embedding it in a lower-dimensional space (usually 2D or 3D).
+- **Local Similarities**: t-SNE preserves the local structure of the data. This means that points that are close in the high-dimensional space remain close in the lower-dimensional space.
+- **Global Structure**: t-SNE may distort global structures to focus more on local relationships, which is both a strength and limitation.
+  
+### How t-SNE Works:
+1. **Pairwise Similarities**: t-SNE first calculates pairwise similarities between data points in the high-dimensional space.
+2. **Probability Distribution**: These similarities are transformed into probabilities representing how likely it is that two points are neighbors.
+3. **Lower-Dimensional Mapping**: t-SNE tries to replicate this distribution of neighbors in the lower-dimensional space by iteratively adjusting the positions of the points.
+
+### Applications:
+- **Data Visualization**: t-SNE is widely used in data visualization, especially when exploring clusters or patterns in high-dimensional datasets.
+- **Exploratory Data Analysis (EDA)**: It helps in finding clusters or subgroups in complex datasets, such as in genomics, image processing, or natural language processing.
+
+### Limitations:
+- **Computationally Intensive**: t-SNE can be slow and resource-heavy, particularly on large datasets.
+- **Random Initialization**: Results can vary due to its sensitivity to initialization and the perplexity parameter (which controls how t-SNE balances attention between local and global data structure).
+- **Difficult to Interpret**: While t-SNE is great for visualization, interpreting the precise distances and positions of points can be tricky.
+
+### example
+
+
+```python
+# Importing libraries
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.datasets import load_iris
+from sklearn.manifold import TSNE
+from sklearn.preprocessing import StandardScaler
+
+# Load the Iris dataset
+iris = load_iris()
+X = iris.data
+y = iris.target
+
+# Standardizing the features
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
+
+# Applying t-SNE
+tsne = TSNE(n_components=2, random_state=42)
+X_tsne = tsne.fit_transform(X_scaled)
+
+# Plotting the results
+plt.figure(figsize=(8, 6))
+plt.scatter(X_tsne[:, 0], X_tsne[:, 1], c=y, cmap='viridis')
+plt.colorbar()
+plt.title('t-SNE visualization of Iris dataset')
+plt.xlabel('t-SNE Component 1')
+plt.ylabel('t-SNE Component 2')
+plt.show()
+
+```
+
+
+![Pasted image 20241015211844.png](../content/images/Pasted%20image%2020241015211844.png)
+
+<a id="t-test"></a>
 # T Test {#t-test}
 
 The T-test is a statistical method <mark>used to determine if there is a significant difference between the means of two groups, especially when the population [standard deviation](#standard-deviation) is unknown.</mark> It is particularly useful when dealing with small sample sizes.
@@ -22126,193 +22376,6 @@ This formulation condenses all the data into a single variable, allowing for [hy
 
 The T-test is a Uniformly Most Powerful Unbiased (UMPU) test, meaning it is optimal for detecting differences in means under the specified conditions.
 
-
-<a id="tf-idf"></a>
-# Tf Idf {#tf-idf}
-
-
-TF-IDF is a statistical technique used in text analysis to determine the importance of a word in a document relative to a collection of documents (corpus). It balances two ideas:
-
-- Term Frequency (TF): Captures how often a term occurs in a document.
-- Inverse Document Frequency (IDF): Discounts terms that appear in many documents.
-
-High TF-IDF scores indicate terms that are frequent in a document but rare in the corpus, making them useful for distinguishing between documents in tasks such as information retrieval, document classification, and recommendation.
-
-TF-IDF combines local and global term [Statistics](#statistics):
-- TF gives high scores to frequent terms in a document
-- IDF reduces the weight of common terms across documents
-- TF-IDF identifies terms that are both frequent and distinctive
-
-### Equations
-
-#### Term Frequency
-
-$TF(t, d)$ measures how often a term $t$ appears in a document $d$, normalized by the total number of terms in $d$:
-
-$$
-TF(t, d) = \frac{f_{t,d}}{\sum_k f_{k,d}}
-$$
-
-Where:
-- $f_{t,d}$ is the raw count of term $t$ in document $d$  
-- $\sum_k f_{k,d}$ is the total number of terms in $d$ (i.e. the document length)
-
-#### Inverse Document Frequency
-
-IDF assigns lower weights to frequent terms:
-
-$$
-IDF(t, D) = \log \left( \frac{N}{1 + |\{d \in D : t \in d\}|} \right)
-$$
-
-Where:
-- $N$ is the number of documents in the corpus $D$  
-- $|\{d \in D : t \in d\}|$ is the number of documents containing term $t$  
-- Adding 1 to the denominator avoids division by zero
-
-#### TF-IDF Score
-
-The final score is:
-
-$$
-TF\text{-}IDF(t, d, D) = TF(t, d) \times IDF(t, D)
-$$
-
-### Related Notes
-
-- [Bag of words](#bag-of-words)
-- [Tokenisation](#tokenisation)
-- [Clustering](#clustering)
-- [Search](#search)
-- [Recommender systems](#recommender-systems)
-- [nltk](#nltk)
-
-### Exploratory Ideas
-- Can track TF-IDF over time (e.g., note evolution)
-- Can cluster or classify the documents using TF-IDF?
-## Implementations 
-
-### Python Script (scikit-learn version)
-
-```python
-from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
-
-# Step 1: Tokenize and vectorize using Bag of Words
-bow = CountVectorizer(tokenizer=normalize_document)
-X_counts = bow.fit_transform(corpus)
-
-# Step 2: Apply TF-IDF transformation
-tfidf_transformer = TfidfTransformer()
-X_tfidf = tfidf_transformer.fit_transform(X_counts)
-
-# Optional: View TF-IDF scores per document
-for doc_id in range(len(corpus)):
-    print(f"Document {doc_id}: {corpus[doc_id]}")
-    print("TF-IDF values:")
-    tfidf_vector = X_tfidf[doc_id].T.toarray()
-    for term, score in zip(bow.get_feature_names_out(), tfidf_vector):
-        if score > 0:
-            print(f"{term.rjust(10)} : {score[0]:.4f}")
-```
-
-### Python Script (custom TF-IDF implementation)
-
-```python
-import math
-from nltk.corpus import stopwords
-from nltk.tokenize import RegexpTokenizer
-from nltk.util import bigrams, trigrams
-
-stop_words = stopwords.words('english')
-tokenizer = RegexpTokenizer(r'\w+')
-
-def tokenize(text):
-    tokens = tokenizer.tokenize(text.lower())
-    tokens = [t for t in tokens if len(t) > 2 and t not in stop_words]
-    return tokens + [' '.join(b) for b in bigrams(tokens)] + [' '.join(t) for t in trigrams(tokens)]
-
-def tf(term, doc_tokens):
-    return doc_tokens.count(term) / len(doc_tokens)
-
-def idf(term, docs_tokens):
-    doc_count = sum(1 for doc in docs_tokens if term in doc)
-    return math.log(len(docs_tokens) / (1 + doc_count))
-
-def compute_tfidf(docs):
-    docs_tokens = [tokenize(doc) for doc in docs]
-    all_terms = set(term for doc in docs_tokens for term in doc)
-    tfidf_scores = []
-    for tokens in docs_tokens:
-        tfidf = {}
-        for term in all_terms:
-            if term in tokens:
-                tfidf[term] = tf(term, tokens) * idf(term, docs_tokens)
-        tfidf_scores.append(tfidf)
-    return tfidf_scores
-```
-
-
-
-
-
-<a id="toml"></a>
-# Toml {#toml}
-
-A `.toml` file is a configuration file format that stands for "Tom's Obvious, Minimal Language." 
-
-It is designed to be easy to read due to its simple syntax. TOML files are often used for configuration because they are straightforward to parse and write for both humans and machines. 
-
-The format supports basic data types like strings, integers, floats, booleans, arrays, and tables (which are similar to dictionaries or objects in other programming languages).
-
-```toml
-title = "TOML Example"
-
-[owner]
-name = "Tom Preston-Werner"
-dob = 1979-05-27T07:32:00Z
-
-[database]
-server = "192.168.1.1"
-ports = [ 8001, 8001, 8002 ]
-connection_max = 5000
-enabled = true
-```
-
-In this example, you can see how different data types and structures are represented in a TOML file.
-
-## What can you do with these files?
-
-TOML files are primarily used for configuration purposes. 
-
-1. **Application Configuration**: Many software applications use TOML files to store configuration settings. This allows users to easily modify settings without altering the code.
-
-2. **Project Metadata**: In some programming environments, TOML files are used to define project metadata, such as dependencies, version numbers, and other project-specific information.
-
-3. **Data Serialization**: TOML can be used to serialize data in a format that is both human-readable and easy to parse programmatically.
-
-4. **Environment Settings**: TOML files can be used to manage environment-specific settings, such as database connections or API keys, which can vary between development, testing, and production environments.
-
-5. **Configuration for Build Tools**: Some build tools and package managers use TOML files to define build configurations and dependencies.
-
-## Contents of TOML file
-
-[tool.ruff](#toolruff)
-
-[tool.bandit](#toolbandit)
-
-[tool.uv](#tooluv)
-
-[Pytest](#pytest)
-
-<a id="ts_anomaly_detection"></a>
-# Ts_Anomaly_Detection {#ts_anomaly_detection}
-
-
-
-<a id="ts_anomaly_detectionpy"></a>
-# Ts_Anomaly_Detection.Py {#ts_anomaly_detectionpy}
-
-https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Build/TimeSeries/TS_Anomaly_Detection.py
 
 <a id="tableau"></a>
 # Tableau {#tableau}
@@ -22364,7 +22427,8 @@ Just like financial debt, technical debt incurs "interest," meaning that the lon
 5. **Prioritize and Plan**:
    - Make technical debt reduction a part of the project planning process. Prioritize tasks that address high-impact debt and allocate time for refactoring in each development cycle.
 
-# [Project name] Design Doc
+<a id="project-name-design-doc"></a>
+# [Project name] Design Doc {#project-name-design-doc}
 
 # About this doc
 
@@ -22714,6 +22778,134 @@ Overall, Text2Cypher aims to simplify the interaction with graph databases, maki
 
 
 
+<a id="tf-idf"></a>
+# Tf Idf {#tf-idf}
+
+
+TF-IDF is a statistical technique used in text analysis to determine the importance of a word in a document relative to a collection of documents (corpus). It balances two ideas:
+
+- Term Frequency (TF): Captures how often a term occurs in a document.
+- Inverse Document Frequency (IDF): Discounts terms that appear in many documents.
+
+High TF-IDF scores indicate terms that are frequent in a document but rare in the corpus, making them useful for distinguishing between documents in tasks such as information retrieval, document classification, and recommendation.
+
+TF-IDF combines local and global term [Statistics](#statistics):
+- TF gives high scores to frequent terms in a document
+- IDF reduces the weight of common terms across documents
+- TF-IDF identifies terms that are both frequent and distinctive
+
+### Equations
+
+#### Term Frequency
+
+$TF(t, d)$ measures how often a term $t$ appears in a document $d$, normalized by the total number of terms in $d$:
+
+$$
+TF(t, d) = \frac{f_{t,d}}{\sum_k f_{k,d}}
+$$
+
+Where:
+- $f_{t,d}$ is the raw count of term $t$ in document $d$  
+- $\sum_k f_{k,d}$ is the total number of terms in $d$ (i.e. the document length)
+
+#### Inverse Document Frequency
+
+IDF assigns lower weights to frequent terms:
+
+$$
+IDF(t, D) = \log \left( \frac{N}{1 + |\{d \in D : t \in d\}|} \right)
+$$
+
+Where:
+- $N$ is the number of documents in the corpus $D$  
+- $|\{d \in D : t \in d\}|$ is the number of documents containing term $t$  
+- Adding 1 to the denominator avoids division by zero
+
+#### TF-IDF Score
+
+The final score is:
+
+$$
+TF\text{-}IDF(t, d, D) = TF(t, d) \times IDF(t, D)
+$$
+
+### Related Notes
+
+- [Bag of words](#bag-of-words)
+- [Tokenisation](#tokenisation)
+- [Clustering](#clustering)
+- [Search](#search)
+- [Recommender systems](#recommender-systems)
+- [nltk](#nltk)
+
+### Exploratory Ideas
+- Can track TF-IDF over time (e.g., note evolution)
+- Can cluster or classify the documents using TF-IDF?
+## Implementations 
+
+### Python Script (scikit-learn version)
+
+```python
+from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
+
+# Step 1: Tokenize and vectorize using Bag of Words
+bow = CountVectorizer(tokenizer=normalize_document)
+X_counts = bow.fit_transform(corpus)
+
+# Step 2: Apply TF-IDF transformation
+tfidf_transformer = TfidfTransformer()
+X_tfidf = tfidf_transformer.fit_transform(X_counts)
+
+# Optional: View TF-IDF scores per document
+for doc_id in range(len(corpus)):
+    print(f"Document {doc_id}: {corpus[doc_id]}")
+    print("TF-IDF values:")
+    tfidf_vector = X_tfidf[doc_id].T.toarray()
+    for term, score in zip(bow.get_feature_names_out(), tfidf_vector):
+        if score > 0:
+            print(f"{term.rjust(10)} : {score[0]:.4f}")
+```
+
+### Python Script (custom TF-IDF implementation)
+
+```python
+import math
+from nltk.corpus import stopwords
+from nltk.tokenize import RegexpTokenizer
+from nltk.util import bigrams, trigrams
+
+stop_words = stopwords.words('english')
+tokenizer = RegexpTokenizer(r'\w+')
+
+def tokenize(text):
+    tokens = tokenizer.tokenize(text.lower())
+    tokens = [t for t in tokens if len(t) > 2 and t not in stop_words]
+    return tokens + [' '.join(b) for b in bigrams(tokens)] + [' '.join(t) for t in trigrams(tokens)]
+
+def tf(term, doc_tokens):
+    return doc_tokens.count(term) / len(doc_tokens)
+
+def idf(term, docs_tokens):
+    doc_count = sum(1 for doc in docs_tokens if term in doc)
+    return math.log(len(docs_tokens) / (1 + doc_count))
+
+def compute_tfidf(docs):
+    docs_tokens = [tokenize(doc) for doc in docs]
+    all_terms = set(term for doc in docs_tokens for term in doc)
+    tfidf_scores = []
+    for tokens in docs_tokens:
+        tfidf = {}
+        for term in all_terms:
+            if term in tokens:
+                tfidf[term] = tf(term, tokens) * idf(term, docs_tokens)
+        tfidf_scores.append(tfidf)
+    return tfidf_scores
+```
+
+
+
+
+
 <a id="thinking-systems"></a>
 # Thinking Systems {#thinking-systems}
 
@@ -22848,6 +23040,189 @@ tokens_no_stopwords = [token for token in temp if token not in stopwords.words("
 print(tokens_no_stopwords)
 ```
 
+<a id="toml"></a>
+# Toml {#toml}
+
+A `.toml` file is a configuration file format that stands for "Tom's Obvious, Minimal Language." 
+
+It is designed to be easy to read due to its simple syntax. TOML files are often used for configuration because they are straightforward to parse and write for both humans and machines. 
+
+The format supports basic data types like strings, integers, floats, booleans, arrays, and tables (which are similar to dictionaries or objects in other programming languages).
+
+```toml
+title = "TOML Example"
+
+[owner]
+name = "Tom Preston-Werner"
+dob = 1979-05-27T07:32:00Z
+
+[database]
+server = "192.168.1.1"
+ports = [ 8001, 8001, 8002 ]
+connection_max = 5000
+enabled = true
+```
+
+In this example, you can see how different data types and structures are represented in a TOML file.
+
+## What can you do with these files?
+
+TOML files are primarily used for configuration purposes. 
+
+1. **Application Configuration**: Many software applications use TOML files to store configuration settings. This allows users to easily modify settings without altering the code.
+
+2. **Project Metadata**: In some programming environments, TOML files are used to define project metadata, such as dependencies, version numbers, and other project-specific information.
+
+3. **Data Serialization**: TOML can be used to serialize data in a format that is both human-readable and easy to parse programmatically.
+
+4. **Environment Settings**: TOML files can be used to manage environment-specific settings, such as database connections or API keys, which can vary between development, testing, and production environments.
+
+5. **Configuration for Build Tools**: Some build tools and package managers use TOML files to define build configurations and dependencies.
+
+## Contents of TOML file
+
+[tool.ruff](#toolruff)
+
+[tool.bandit](#toolbandit)
+
+[tool.uv](#tooluv)
+
+[Pytest](#pytest)
+
+<a id="bandit-a-security-linter-for-python"></a>
+# Bandit: A Security Linter for Python {#bandit-a-security-linter-for-python}
+
+## Resources
+- [Bandit Documentation](https://bandit.readthedocs.io/en/latest/)
+
+## How to Use Bandit
+
+Installation
+To install Bandit, use pip by running the following command in your terminal:
+```bash
+pip install bandit
+```
+Running Bandit
+After installation, you can run Bandit on your Python files or directories. For example, to scan a file named `example.py`, use:
+```bash
+bandit example.py
+```
+This command will analyze the file and report any security issues it finds.
+### 3. Customizing Bandit
+You can customize Bandit's behavior by specifying options. For example, to scan a directory and exclude certain subdirectories, use:
+
+```bash
+bandit -r example_directory -x example_directory/venv
+```
+
+- `-r` specifies the directory to scan.
+- `-x` specifies directories to exclude.
+
+### 4. Example Script
+Here's a simple Python script that Bandit can analyze:
+
+```python
+import subprocess
+
+user_input = input("Enter your name: ")
+subprocess.call(["echo", user_input])
+```
+
+This script takes user input and passes it to the `echo` command using `subprocess.call()`. This can be dangerous as it might allow command injection.
+
+To analyze the script, run:
+```bash
+bandit example.py
+```
+Bandit will generate a report highlighting potential security issues. For the script above, it might flag the use of `subprocess.call()` as a potential injection vector.
+
+Fixing Issues
+Based on Bandit's report, you can modify your code to fix vulnerabilities. For example, to mitigate the risk of command injection, you can set `shell=False`:
+
+```python
+import subprocess
+
+user_input = input("Enter your name: ")
+subprocess.call(f"echo {user_input}", shell=True)
+```
+Then rerun [Bandit example output](#bandit-example-output)
+## Example Script for Bandit Analysis
+
+In [ML_Tools](#ml_tools) see: [Bandit_Example_Nonfixed.py](#bandit_example_nonfixedpy)
+
+Features Demonstrated: [Common Security Vulnerabilities in Software Development](#common-security-vulnerabilities-in-software-development)
+1. **Command Injection**: The `dangerous_subprocess` function uses `subprocess.call` with `shell=True`, which can lead to command injection if user input is not properly sanitized.
+2. **Hardcoded Password**: The `hardcoded_password` function contains a hardcoded password, which is a common security issue.
+3. **Use of `eval`**: The `unsafe_eval` function uses `eval`, which can execute arbitrary code if the input is not controlled.
+4. **Insecure Deserialization**: The `insecure_deserialization` function uses `pickle.loads`, which can be exploited if untrusted data is deserialized.
+
+### Running Bandit on the Example Script
+To analyze this script with Bandit, save it as `example.py` and run:
+
+```bash
+bandit example.py
+```
+Bandit will generate a report highlighting the security issues in the script, providing insights into how each feature can be potentially exploited and suggesting ways to mitigate these risks.
+
+By following these steps, you can use Bandit to identify and address security vulnerabilities in your Python code. Remember, while Bandit is a powerful tool, it's important to complement it with good coding practices and thorough security testing.
+
+<a id="toolruff"></a>
+# Tool.Ruff {#toolruff}
+
+Ruff is a fast [Python](#python) linter and code formatter.
+
+It is designed to enforce coding style and catch potential errors in Python code. 
+
+Ruff aims to be efficient and comprehensive, supporting a wide range of linting rules and style checks. It can be used to automatically format code to adhere to a specified style guide, making it a useful tool for maintaining consistent code quality across a project.
+
+## in [TOML](#toml)
+
+have:
+
+```toml
+[tool.ruff.format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "auto"
+```
+
+
+<a id="tooluv"></a>
+# Tool.Uv {#tooluv}
+
+
+Appears in [TOML](#toml) file
+
+Link: https://github.com/astral-sh/uv
+
+---
+
+`uv` is a  tool for managing Python development [Virtual environments](#virtual-environments), projects, and dependencies. It offers a range of features that streamline various aspects of Python development, from installing Python itself to managing projects and dependencies. 
+
+1. **Python Version Management**: `uv` allows you to install, list, find, pin, and uninstall Python versions. This is useful for managing multiple Python versions across different projects, ensuring compatibility and ease of switching between environments.
+
+2. **Script Execution**: You can run standalone Python scripts and manage their dependencies directly with `uv`. This simplifies the process of executing scripts with specific dependencies without needing a full project setup.
+
+3. **Project Management**: `uv` provides commands to create new projects, manage dependencies, sync environments, and build and publish projects. This is particularly useful for maintaining consistent environments and dependencies across development, testing, and production stages.
+
+4. **Tool Management**: It supports running and installing tools from Python package indexes, making it easier to integrate tools like linters and formatters into your workflow.
+
+5. **Pip Interface**: `uv` offers a pip-like interface for managing packages and environments, which can be used in legacy workflows or when more granular control is needed.
+
+6. **Utility Commands**: It includes utility commands for managing cache, directories, and performing self-updates, which help maintain the tool's efficiency and keep it up-to-date.
+
+
+
+<a id="topic-modeling"></a>
+# Topic Modeling {#topic-modeling}
+
+
+
 <a id="train-dev-test-sets"></a>
 # Train Dev Test Sets {#train-dev-test-sets}
 
@@ -22970,6 +23345,15 @@ In [ML_Tools](#ml_tools) see: [transfer_learning.py](#transfer_learningpy)
 - [Deep Learning Video](https://www.youtube.com/watch?v=DyPW-994t7w&list=PLcWfeUsAys2nPgh-gYRlexc6xvscdvHqX&index=15)
 
 
+
+<a id="transfer_learningpy"></a>
+# Transfer_Learning.Py {#transfer_learningpy}
+
+https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Build/Neural_Network/transfer_learning.py
+
+For deep learning, to do  [Transfer Learning](#transfer-learning) we take out and replace a few end layers of the network. We can then train just the last layer of weights of a neural network. 
+
+The number of layers to remove and then added from pretrained depends on the similarity between tasks. Higher layers in networks are able to recognise higher detail components. 
 
 <a id="transformed-target-regressor"></a>
 # Transformed Target Regressor {#transformed-target-regressor}
@@ -23159,6 +23543,16 @@ For further reading, you can refer to the note on [Transformers vs RNNs](#transf
 - [Language Model Output Optimisation](obsidian://open?vault=content&file=Language%20Model%20Output%20Optimisation)
 - [Small Language Models](obsidian://open?vault=content&file=Small%20Language%20Models)
 
+<a id="ts_anomaly_detection"></a>
+# Ts_Anomaly_Detection {#ts_anomaly_detection}
+
+
+
+<a id="ts_anomaly_detectionpy"></a>
+# Ts_Anomaly_Detection.Py {#ts_anomaly_detectionpy}
+
+https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Build/TimeSeries/TS_Anomaly_Detection.py
+
 <a id="turning-a-flat-file-into-a-database"></a>
 # Turning A Flat File Into A Database {#turning-a-flat-file-into-a-database}
 
@@ -23301,12 +23695,6 @@ else:
 
 
 
-<a id="typescript"></a>
-# Typescript {#typescript}
-
-
-Superset of JavaScript adding static typing and object-oriented features for building large-scale applications.
-
 <a id="types-of-computational-bugs"></a>
 # Types Of Computational Bugs {#types-of-computational-bugs}
 
@@ -23381,6 +23769,12 @@ Types of [Neural network](#neural-network):
 [Transformer](#transformer)
 
 
+<a id="typescript"></a>
+# Typescript {#typescript}
+
+
+Superset of JavaScript adding static typing and object-oriented features for building large-scale applications.
+
 <a id="typical-output-formats-in-neural-networks"></a>
 # Typical Output Formats In Neural Networks {#typical-output-formats-in-neural-networks}
 
@@ -23430,229 +23824,6 @@ See [Generative AI](#generative-ai)
 
 Loss Functions: The [loss function](#loss-function) used during training also guides the output format. For example, binary crossentropy is commonly used for binary classification, while mean squared error is often used for regression.
 
-<a id="t-sne"></a>
-# T Sne {#t-sne}
-
-
-t-SNE (t-distributed Stochastic Neighbor Embedding) is a [Dimensionality Reduction](#dimensionality-reduction) technique used primarily for visualizing high-dimensional data. Unlike methods such as **[Principal Component Analysis|PCA](#principal-component-analysispca)** (Principal Component Analysis), which are linear, t-SNE is a **non-linear** method that excels at preserving the local structure of the data. 
-
-### Key Characteristics of t-SNE:
-- **Non-linear Mapping**: It attempts to capture non-linear relationships in the data by embedding it in a lower-dimensional space (usually 2D or 3D).
-- **Local Similarities**: t-SNE preserves the local structure of the data. This means that points that are close in the high-dimensional space remain close in the lower-dimensional space.
-- **Global Structure**: t-SNE may distort global structures to focus more on local relationships, which is both a strength and limitation.
-  
-### How t-SNE Works:
-1. **Pairwise Similarities**: t-SNE first calculates pairwise similarities between data points in the high-dimensional space.
-2. **Probability Distribution**: These similarities are transformed into probabilities representing how likely it is that two points are neighbors.
-3. **Lower-Dimensional Mapping**: t-SNE tries to replicate this distribution of neighbors in the lower-dimensional space by iteratively adjusting the positions of the points.
-
-### Applications:
-- **Data Visualization**: t-SNE is widely used in data visualization, especially when exploring clusters or patterns in high-dimensional datasets.
-- **Exploratory Data Analysis (EDA)**: It helps in finding clusters or subgroups in complex datasets, such as in genomics, image processing, or natural language processing.
-
-### Limitations:
-- **Computationally Intensive**: t-SNE can be slow and resource-heavy, particularly on large datasets.
-- **Random Initialization**: Results can vary due to its sensitivity to initialization and the perplexity parameter (which controls how t-SNE balances attention between local and global data structure).
-- **Difficult to Interpret**: While t-SNE is great for visualization, interpreting the precise distances and positions of points can be tricky.
-
-### example
-
-
-```python
-# Importing libraries
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-from sklearn.datasets import load_iris
-from sklearn.manifold import TSNE
-from sklearn.preprocessing import StandardScaler
-
-# Load the Iris dataset
-iris = load_iris()
-X = iris.data
-y = iris.target
-
-# Standardizing the features
-scaler = StandardScaler()
-X_scaled = scaler.fit_transform(X)
-
-# Applying t-SNE
-tsne = TSNE(n_components=2, random_state=42)
-X_tsne = tsne.fit_transform(X_scaled)
-
-# Plotting the results
-plt.figure(figsize=(8, 6))
-plt.scatter(X_tsne[:, 0], X_tsne[:, 1], c=y, cmap='viridis')
-plt.colorbar()
-plt.title('t-SNE visualization of Iris dataset')
-plt.xlabel('t-SNE Component 1')
-plt.ylabel('t-SNE Component 2')
-plt.show()
-
-```
-
-
-![Pasted image 20241015211844.png](../content/images/Pasted%20image%2020241015211844.png)
-
-# Bandit: A Security Linter for Python
-
-## Resources
-- [Bandit Documentation](https://bandit.readthedocs.io/en/latest/)
-
-## How to Use Bandit
-
-Installation
-To install Bandit, use pip by running the following command in your terminal:
-```bash
-pip install bandit
-```
-Running Bandit
-After installation, you can run Bandit on your Python files or directories. For example, to scan a file named `example.py`, use:
-```bash
-bandit example.py
-```
-This command will analyze the file and report any security issues it finds.
-### 3. Customizing Bandit
-You can customize Bandit's behavior by specifying options. For example, to scan a directory and exclude certain subdirectories, use:
-
-```bash
-bandit -r example_directory -x example_directory/venv
-```
-
-- `-r` specifies the directory to scan.
-- `-x` specifies directories to exclude.
-
-### 4. Example Script
-Here's a simple Python script that Bandit can analyze:
-
-```python
-import subprocess
-
-user_input = input("Enter your name: ")
-subprocess.call(["echo", user_input])
-```
-
-This script takes user input and passes it to the `echo` command using `subprocess.call()`. This can be dangerous as it might allow command injection.
-
-To analyze the script, run:
-```bash
-bandit example.py
-```
-Bandit will generate a report highlighting potential security issues. For the script above, it might flag the use of `subprocess.call()` as a potential injection vector.
-
-Fixing Issues
-Based on Bandit's report, you can modify your code to fix vulnerabilities. For example, to mitigate the risk of command injection, you can set `shell=False`:
-
-```python
-import subprocess
-
-user_input = input("Enter your name: ")
-subprocess.call(f"echo {user_input}", shell=True)
-```
-Then rerun [Bandit example output](#bandit-example-output)
-## Example Script for Bandit Analysis
-
-In [ML_Tools](#ml_tools) see: [Bandit_Example_Nonfixed.py](#bandit_example_nonfixedpy)
-
-Features Demonstrated: [Common Security Vulnerabilities in Software Development](#common-security-vulnerabilities-in-software-development)
-1. **Command Injection**: The `dangerous_subprocess` function uses `subprocess.call` with `shell=True`, which can lead to command injection if user input is not properly sanitized.
-2. **Hardcoded Password**: The `hardcoded_password` function contains a hardcoded password, which is a common security issue.
-3. **Use of `eval`**: The `unsafe_eval` function uses `eval`, which can execute arbitrary code if the input is not controlled.
-4. **Insecure Deserialization**: The `insecure_deserialization` function uses `pickle.loads`, which can be exploited if untrusted data is deserialized.
-
-### Running Bandit on the Example Script
-To analyze this script with Bandit, save it as `example.py` and run:
-
-```bash
-bandit example.py
-```
-Bandit will generate a report highlighting the security issues in the script, providing insights into how each feature can be potentially exploited and suggesting ways to mitigate these risks.
-
-By following these steps, you can use Bandit to identify and address security vulnerabilities in your Python code. Remember, while Bandit is a powerful tool, it's important to complement it with good coding practices and thorough security testing.
-
-<a id="toolruff"></a>
-# Tool.Ruff {#toolruff}
-
-Ruff is a fast [Python](#python) linter and code formatter.
-
-It is designed to enforce coding style and catch potential errors in Python code. 
-
-Ruff aims to be efficient and comprehensive, supporting a wide range of linting rules and style checks. It can be used to automatically format code to adhere to a specified style guide, making it a useful tool for maintaining consistent code quality across a project.
-
-## in [TOML](#toml)
-
-have:
-
-```toml
-[tool.ruff.format]
-# Like Black, use double quotes for strings.
-quote-style = "double"
-# Like Black, indent with spaces, rather than tabs.
-indent-style = "space"
-# Like Black, respect magic trailing commas.
-skip-magic-trailing-comma = false
-# Like Black, automatically detect the appropriate line ending.
-line-ending = "auto"
-```
-
-
-<a id="tooluv"></a>
-# Tool.Uv {#tooluv}
-
-
-Appears in [TOML](#toml) file
-
-Link: https://github.com/astral-sh/uv
-
----
-
-`uv` is a  tool for managing Python development [Virtual environments](#virtual-environments), projects, and dependencies. It offers a range of features that streamline various aspects of Python development, from installing Python itself to managing projects and dependencies. 
-
-1. **Python Version Management**: `uv` allows you to install, list, find, pin, and uninstall Python versions. This is useful for managing multiple Python versions across different projects, ensuring compatibility and ease of switching between environments.
-
-2. **Script Execution**: You can run standalone Python scripts and manage their dependencies directly with `uv`. This simplifies the process of executing scripts with specific dependencies without needing a full project setup.
-
-3. **Project Management**: `uv` provides commands to create new projects, manage dependencies, sync environments, and build and publish projects. This is particularly useful for maintaining consistent environments and dependencies across development, testing, and production stages.
-
-4. **Tool Management**: It supports running and installing tools from Python package indexes, making it easier to integrate tools like linters and formatters into your workflow.
-
-5. **Pip Interface**: `uv` offers a pip-like interface for managing packages and environments, which can be used in legacy workflows or when more granular control is needed.
-
-6. **Utility Commands**: It includes utility commands for managing cache, directories, and performing self-updates, which help maintain the tool's efficiency and keep it up-to-date.
-
-
-
-<a id="topic-modeling"></a>
-# Topic Modeling {#topic-modeling}
-
-
-
-<a id="transfer_learningpy"></a>
-# Transfer_Learning.Py {#transfer_learningpy}
-
-https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Build/Neural_Network/transfer_learning.py
-
-For deep learning, to do  [Transfer Learning](#transfer-learning) we take out and replace a few end layers of the network. We can then train just the last layer of weights of a neural network. 
-
-The number of layers to remove and then added from pretrained depends on the similarity between tasks. Higher layers in networks are able to recognise higher detail components. 
-
-# U {#u}
-
-# U
-
-# Uml {#uml}
-
-
-
-
-https://www.drawio.com/
-
-https://www.reddit.com/r/SoftwareEngineering/comments/133iw7n/is_there_any_free_handy_tool_to_create_uml/
-
-https://plantuml.com/
-
-
-
 <a id="ubuntu"></a>
 # Ubuntu {#ubuntu}
 
@@ -23672,7 +23843,96 @@ Ubuntu is a popular open-source operating system based on the [Linux](#linux) ke
 
 
 
+<a id="uml"></a>
+# Uml {#uml}
+
+
+
+
+https://www.drawio.com/
+
+https://www.reddit.com/r/SoftwareEngineering/comments/133iw7n/is_there_any_free_handy_tool_to_create_uml/
+
+https://plantuml.com/
+
+
+
+<a id="unittest"></a>
+# Unittest {#unittest}
+
+
+### **`@patch` (from `unittest.mock`) Explanation**
+
+`@patch` is used to replace objects/functions with mock versions during tests. It is part of Python’s `unittest.mock` module.
+
+#### **Example & Usage**
+
+python
+
+Copy code
+
+`from unittest.mock import patch  def fetch_data():     """Simulated function that fetches data from an API"""     return "Real Data"  @patch("__main__.fetch_data", return_value="Mocked Data") def test_fetch_data(mock_fetch):     assert fetch_data() == "Mocked Data"`
+
+🔹 **How it works:**
+
+- `@patch("__main__.fetch_data", return_value="Mocked Data")` replaces `fetch_data()` with a mocked version returning `"Mocked Data"`.
+- Inside the test, `fetch_data()` will **always** return `"Mocked Data"` instead of calling the real function.
+
+#### **Why use `@patch`?**
+
+- Prevents tests from making actual API/database calls.
+- Speeds up testing by mocking expensive operations.
+- Allows control over return values and side effects.
+
+---
+
+### **Your Case:**
+
+- **`@pytest.fixture`** is used to provide reusable test data (`mock_files`).
+- **`@patch`** is used to:
+    - Mock file operations (`builtins.open`, `os.walk`).
+    - Mock function calls (`process_file`, `log_action`, `write_updated_file`).
+    - Prevent real file modifications while testing.
+
+<a id="univariate-vs-multivariate"></a>
+# Univariate Vs Multivariate {#univariate-vs-multivariate}
+
+Single feature versus multiple features
+
+
+
+<a id="unstructured-data"></a>
+# Unstructured Data {#unstructured-data}
+
+
+>[!Important]
+> Unstructured data is data that does not conform to a data model and has no easily identifiable structure. 
+
+Unstructured data cannot be easily used by programs, and is difficult to analyze. Examples of unstructured data could be the contents of an <mark>email, contents of a word document, data from social media, photos, videos, survey results</mark>, etc.
+## An example of unstructured data
+
+An simple example of unstructured data is a string that contains interesting information inside of it, but that has not been formatted into a well defined schema. An example is given below:
+
+|               |  **UnstructuredString**|
+|---------| -----------|
+|Record 1| "Bob is 29" |
+|Record 2| "Mary just turned 30"|
+
+## Unstructured vs structured data
+
+In contrast with unstructured data, [structured data](term/structured%20data.md) refers to data that has been formatted into a well-defined schema. An example would be data that is stored with precisely defined columns in a relational database or excel spreadsheet. Examples of structured fields could be age, name, phone number, credit card numbers or address. Storing data in a structured format allows it to be easily understood and queried by machines and with tools such as  [SQL](#sql).
+
+  
+
+
+
 <a id="unsupervised-learning"></a>
+#clustering"
+  - field
+aliases:
+  - unsupervised
+category:
+---
 # Unsupervised Learning {#unsupervised-learning}
 
 
@@ -23892,82 +24152,21 @@ For each of the energy data questions that RNNs might solve, **interpretable alt
 
 
 
-<a id="unittest"></a>
-# Unittest {#unittest}
-
-
-### **`@patch` (from `unittest.mock`) Explanation**
-
-`@patch` is used to replace objects/functions with mock versions during tests. It is part of Python’s `unittest.mock` module.
-
-#### **Example & Usage**
-
-python
-
-Copy code
-
-`from unittest.mock import patch  def fetch_data():     """Simulated function that fetches data from an API"""     return "Real Data"  @patch("__main__.fetch_data", return_value="Mocked Data") def test_fetch_data(mock_fetch):     assert fetch_data() == "Mocked Data"`
-
-🔹 **How it works:**
-
-- `@patch("__main__.fetch_data", return_value="Mocked Data")` replaces `fetch_data()` with a mocked version returning `"Mocked Data"`.
-- Inside the test, `fetch_data()` will **always** return `"Mocked Data"` instead of calling the real function.
-
-#### **Why use `@patch`?**
-
-- Prevents tests from making actual API/database calls.
-- Speeds up testing by mocking expensive operations.
-- Allows control over return values and side effects.
-
----
-
-### **Your Case:**
-
-- **`@pytest.fixture`** is used to provide reusable test data (`mock_files`).
-- **`@patch`** is used to:
-    - Mock file operations (`builtins.open`, `os.walk`).
-    - Mock function calls (`process_file`, `log_action`, `write_updated_file`).
-    - Prevent real file modifications while testing.
-
-<a id="univariate-vs-multivariate"></a>
-# Univariate Vs Multivariate {#univariate-vs-multivariate}
-
-Single feature versus multiple features
-
-
-
-<a id="unstructured-data"></a>
-# Unstructured Data {#unstructured-data}
-
-
->[!Important]
-> Unstructured data is data that does not conform to a data model and has no easily identifiable structure. 
-
-Unstructured data cannot be easily used by programs, and is difficult to analyze. Examples of unstructured data could be the contents of an <mark>email, contents of a word document, data from social media, photos, videos, survey results</mark>, etc.
-## An example of unstructured data
-
-An simple example of unstructured data is a string that contains interesting information inside of it, but that has not been formatted into a well defined schema. An example is given below:
-
-|               |  **UnstructuredString**|
-|---------| -----------|
-|Record 1| "Bob is 29" |
-|Record 2| "Mary just turned 30"|
-
-## Unstructured vs structured data
-
-In contrast with unstructured data, [structured data](term/structured%20data.md) refers to data that has been formatted into a well-defined schema. An example would be data that is stored with precisely defined columns in a relational database or excel spreadsheet. Examples of structured fields could be age, name, phone number, credit card numbers or address. Storing data in a structured format allows it to be easily understood and queried by machines and with tools such as  [SQL](#sql).
-
-  
-
-
-
-# V {#v}
-
-# V
-
+<a id="vacuum"></a>
 # Vacuum {#vacuum}
 
 
+
+<a id="vanishing-and-exploding-gradients-problem"></a>
+# Vanishing And Exploding Gradients Problem {#vanishing-and-exploding-gradients-problem}
+
+
+[Recurrent Neural Networks|RNN](#recurrent-neural-networksrnn)
+
+
+
+[vanishing and exploding gradients problem](#vanishing-and-exploding-gradients-problem)
+In standard RNNs, the difficulty lies in retaining useful information over long sequences due to the exponential decrease in the gradient values, which results in poor learning of long-term dependencies.
 
 <a id="variance"></a>
 # Variance {#variance}
@@ -23991,6 +24190,9 @@ $$
 \text{Var}(X) = \frac{1}{n}\sum_{i=1}^n (x_i - \mu_X)^2
 $$
 - Variance determines the **spread** of data along a particular dimension.
+
+<a id="vector-database"></a>
+# Vector Database {#vector-database}
 
 ## Overview
 
@@ -24153,6 +24355,9 @@ Related concepts:
 - [Numpy](#numpy)
 - [gpu](#gpu)
 
+<a id="vectorized-engine"></a>
+# Vectorized Engine {#vectorized-engine}
+
 ## Vectorized Engine
 
 A modern database query execution engine designed to optimize data processing by leveraging vectorized operations and SIMD (Single Instruction, Multiple Data) capabilities of modern CPUs. Vectorized engines, such as  [DuckDB](#duckdb), process data in large blocks or batches using SIMD instructions, allowing for improved parallelism, cache locality, and reduced overhead compared to traditional row-at-a-time processing engines, using [Columnar Storage](#columnar-storage).
@@ -24162,6 +24367,9 @@ A modern database query execution engine designed to optimize data processing by
 
 
 
+
+<a id="view-use-case"></a>
+# View Use Case {#view-use-case}
 
 ## View Use Case
 
@@ -24315,21 +24523,7 @@ Remember to set python interpreter
 Related terms:
 - [Poetry](#poetry)
 
-<a id="vanishing-and-exploding-gradients-problem"></a>
-# Vanishing And Exploding Gradients Problem {#vanishing-and-exploding-gradients-problem}
-
-
-[Recurrent Neural Networks|RNN](#recurrent-neural-networksrnn)
-
-
-
-[vanishing and exploding gradients problem](#vanishing-and-exploding-gradients-problem)
-In standard RNNs, the difficulty lies in retaining useful information over long sequences due to the exponential decrease in the gradient values, which results in poor learning of long-term dependencies.
-
-# W {#w}
-
-# W
-
+<a id="wcss-and-elbow-method"></a>
 # Wcss And Elbow Method {#wcss-and-elbow-method}
 
 
@@ -24486,6 +24680,13 @@ https://aeturrell.com/blog/posts/time-series-explosion/?utm_source=substack&utm_
 https://otexts.com/fpp3/?utm_source=substack&utm_medium=email#
 
 <a id="what-algorithms-or-models-are-used-within-the-energy-sector"></a>
+#question"
+  - energy
+importance: 
+engagement: 
+recency_of_interest: 2024-10-05
+category: CAREER
+---
 # What Algorithms Or Models Are Used Within The Energy Sector {#what-algorithms-or-models-are-used-within-the-energy-sector}
 
 
@@ -24505,6 +24706,12 @@ https://otexts.com/fpp3/?utm_source=substack&utm_medium=email#
 
 
 <a id="what-can-abm-solve-within-the-energy-sector"></a>
+#question"
+importance: 
+engagement: -10
+recency_of_interest: 
+category: CAREER
+---
 # What Can Abm Solve Within The Energy Sector {#what-can-abm-solve-within-the-energy-sector}
 
 
@@ -24514,6 +24721,13 @@ https://otexts.com/fpp3/?utm_source=substack&utm_medium=email#
 energy systems analysis
 
 <a id="what-is-the-difference-between-odds-and-probability"></a>
+#question"
+  - math
+importance: 
+engagement: 
+recency_of_interest: 2024-10-12
+category: DS
+---
 # What Is The Difference Between Odds And Probability {#what-is-the-difference-between-odds-and-probability}
 
 
@@ -24521,6 +24735,12 @@ energy systems analysis
 
 
 <a id="what-is-the-role-of-gradient-based-optimization-in-training-deep-learning-models"></a>
+#question"
+importance: 
+engagement: 
+recency_of_interest: 2024-10-11
+category: DS
+---
 # What Is The Role Of Gradient Based Optimization In Training Deep Learning Models. {#what-is-the-role-of-gradient-based-optimization-in-training-deep-learning-models}
 
 
@@ -24549,53 +24769,6 @@ to ensure effective performance on validation data. If your model is performing 
 5. **Feature Interaction**: Regularization techniques like $L_1$ and $L_2$ may not effectively capture complex interactions between features. If the relationships in the data are intricate, regularization alone may not improve the model's ability to generalize.
 
 6. **Validation Set Issues**: The validation set itself may not be representative of the problem space, or it may contain noise or outliers that affect the model's performance. Regularization won't address these issues if the validation data is flawed.
-
-
-
-<a id="why-json-is-better-than-pickle-for-untrusted-data"></a>
-# Why Json Is Better Than Pickle For Untrusted Data {#why-json-is-better-than-pickle-for-untrusted-data}
-
-**JSON vs. [Pickle](#pickle)**:
-
-1. **Security**:
-   - **JSON**: JSON is a text-based data format that is inherently safer for handling untrusted data. It <mark>only</mark> supports basic data types like strings, numbers, arrays, and objects, which reduces the risk of executing arbitrary code.
-   - **Pickle**: Pickle is a Python-specific binary serialization format that <mark>can serialize and deserialize complex Python objects.</mark> However, it can <mark>execute arbitrary code</mark> during deserialization, making it unsafe for handling untrusted data.
-
-2. **Interoperability (the ability of computer systems or software to exchange and make use of information)**:
-   - **JSON**: JSON is language-agnostic and widely used across different programming environments, making it ideal for data interchange between systems.
-   - **Pickle**: Pickle is specific to Python, which limits its use in cross-language applications.
-
-3. **Readability**:
-   - **JSON**: Being a text format, JSON is human-readable and easy to debug.
-   - **Pickle**: Pickle produces binary data, which is not human-readable and harder to debug.
-
-For these reasons, JSON is preferred over Pickle when dealing with untrusted data, as it minimizes security risks and offers better interoperability and readability.
-
-<a id="why-type-1-and-type-2-matter"></a>
-# Why Type 1 And Type 2 Matter {#why-type-1-and-type-2-matter}
-
-Type I and Type II errors are used in evaluating the performance of classification models, and understanding their differences is essential for interpreting model results effectively.
-
-![Pasted image 20250312064809.png](../content/images/Pasted%20image%2020250312064809.png)
-
-### Type I Error (False Positive)
-- **Definition**: A Type I error occurs when the model incorrectly predicts the positive class. In other words, it identifies a negative instance as positive.
-- **Example**: If a model predicts that an email is spam (positive) when it is actually not spam (negative), this is a Type I error.
-- **Consequences**: Type I errors can lead to unnecessary actions or consequences, such as misclassifying legitimate emails as spam, which may result in important messages being missed.
-
-### Type II Error (False Negative)
-- **Definition**: A Type II error occurs when the model incorrectly predicts the negative class. This means it fails to identify a positive instance.
-- **Example**: If a model predicts that an email is not spam (negative) when it is actually spam (positive), this is a Type II error.
-- **Consequences**: Type II errors can lead to missed opportunities or risks, such as allowing spam emails to clutter the inbox or failing to detect a disease in a medical diagnosis scenario.
-
-### Why Both Errors Matter
-1. **Impact on Decision-Making**: The consequences of Type I and Type II errors can vary significantly depending on the context. In some applications, such as medical diagnoses, a Type II error (failing to detect a disease) may be more critical than a Type I error (false alarm). Conversely, in fraud detection, a Type I error may lead to unnecessary investigations.
-
-2. **Balancing Precision and Recall**: Understanding these errors helps in balancing precision (the proportion of true positives among all positive predictions) and recall (the proportion of true positives among all actual positives). Depending on the application, one may be prioritized over the other, influencing model tuning and evaluation.
-
-3. **Model Evaluation**: Both types of errors are essential for a comprehensive evaluation of a model's performance. Metrics such as precision, recall, and the F1 score incorporate these errors to provide a more nuanced view of how well the model is performing.
-
-4. **Risk Management**: By analyzing the trade-offs between Type I and Type II errors, practitioners can make informed decisions about model thresholds and operational strategies, ensuring that the model aligns with business or clinical objectives.
 
 
 
@@ -24681,6 +24854,9 @@ Let's assume you are predicting house prices, and you're using a linear regressi
     - This often results in more accurate predictions, especially when categorical features have no inherent order.
 
 
+<a id="why-does-the-adam-optimizer-converge"></a>
+# Why does the Adam Optimizer converge {#why-does-the-adam-optimizer-converge}
+
 ### Why the Adam Optimizer Converges
 
 The Adam optimizer is able to efficiently handle sparse gradients and adaptively adjust learning rates. The convergence of Adam, often observed as a flattening of the cost function, can be attributed to several factors inherent to its design and the characteristics of the dataset being used.
@@ -24756,6 +24932,53 @@ The [Central Limit Theorem](#central-limit-theorem) (CLT) is particularly import
 7. **Robustness of Results**: The CLT provides a theoretical justification for the robustness of statistical methods. Even if the original data is not normally distributed, the means of sufficiently large samples will tend to be normally distributed, allowing for more reliable conclusions.
 
 
+<a id="why-json-is-better-than-pickle-for-untrusted-data"></a>
+# Why Json Is Better Than Pickle For Untrusted Data {#why-json-is-better-than-pickle-for-untrusted-data}
+
+**JSON vs. [Pickle](#pickle)**:
+
+1. **Security**:
+   - **JSON**: JSON is a text-based data format that is inherently safer for handling untrusted data. It <mark>only</mark> supports basic data types like strings, numbers, arrays, and objects, which reduces the risk of executing arbitrary code.
+   - **Pickle**: Pickle is a Python-specific binary serialization format that <mark>can serialize and deserialize complex Python objects.</mark> However, it can <mark>execute arbitrary code</mark> during deserialization, making it unsafe for handling untrusted data.
+
+2. **Interoperability (the ability of computer systems or software to exchange and make use of information)**:
+   - **JSON**: JSON is language-agnostic and widely used across different programming environments, making it ideal for data interchange between systems.
+   - **Pickle**: Pickle is specific to Python, which limits its use in cross-language applications.
+
+3. **Readability**:
+   - **JSON**: Being a text format, JSON is human-readable and easy to debug.
+   - **Pickle**: Pickle produces binary data, which is not human-readable and harder to debug.
+
+For these reasons, JSON is preferred over Pickle when dealing with untrusted data, as it minimizes security risks and offers better interoperability and readability.
+
+<a id="why-type-1-and-type-2-matter"></a>
+# Why Type 1 And Type 2 Matter {#why-type-1-and-type-2-matter}
+
+Type I and Type II errors are used in evaluating the performance of classification models, and understanding their differences is essential for interpreting model results effectively.
+
+![Pasted image 20250312064809.png](../content/images/Pasted%20image%2020250312064809.png)
+
+### Type I Error (False Positive)
+- **Definition**: A Type I error occurs when the model incorrectly predicts the positive class. In other words, it identifies a negative instance as positive.
+- **Example**: If a model predicts that an email is spam (positive) when it is actually not spam (negative), this is a Type I error.
+- **Consequences**: Type I errors can lead to unnecessary actions or consequences, such as misclassifying legitimate emails as spam, which may result in important messages being missed.
+
+### Type II Error (False Negative)
+- **Definition**: A Type II error occurs when the model incorrectly predicts the negative class. This means it fails to identify a positive instance.
+- **Example**: If a model predicts that an email is not spam (negative) when it is actually spam (positive), this is a Type II error.
+- **Consequences**: Type II errors can lead to missed opportunities or risks, such as allowing spam emails to clutter the inbox or failing to detect a disease in a medical diagnosis scenario.
+
+### Why Both Errors Matter
+1. **Impact on Decision-Making**: The consequences of Type I and Type II errors can vary significantly depending on the context. In some applications, such as medical diagnoses, a Type II error (failing to detect a disease) may be more critical than a Type I error (false alarm). Conversely, in fraud detection, a Type I error may lead to unnecessary investigations.
+
+2. **Balancing Precision and Recall**: Understanding these errors helps in balancing precision (the proportion of true positives among all positive predictions) and recall (the proportion of true positives among all actual positives). Depending on the application, one may be prioritized over the other, influencing model tuning and evaluation.
+
+3. **Model Evaluation**: Both types of errors are essential for a comprehensive evaluation of a model's performance. Metrics such as precision, recall, and the F1 score incorporate these errors to provide a more nuanced view of how well the model is performing.
+
+4. **Risk Management**: By analyzing the trade-offs between Type I and Type II errors, practitioners can make informed decisions about model thresholds and operational strategies, ensuring that the model aligns with business or clinical objectives.
+
+
+
 <a id="why-use-er-diagrams"></a>
 # Why Use Er Diagrams {#why-use-er-diagrams}
 
@@ -24789,6 +25012,28 @@ Key features of WSL include:
 2. **Multiple Distributions**: WSL supports various Linux distributions, such as [Ubuntu](#ubuntu), Debian, and Fedora, which can be installed from the Microsoft Store.
 3. **Command-Line Tools**: Users can run Linux command-line tools and applications directly in Windows, making it easier for developers to work in a familiar environment.
 4. **Performance**: WSL provides near-native performance for Linux applications, making it suitable for development and testing.
+
+
+<a id="word2vec"></a>
+# Word2Vec {#word2vec}
+
+Word2Vec is a technique for generating vector representations of words. Developed by researchers at Google, it uses a shallow [neural network](#neural-network) to produce [standardised/Vector Embedding|word embedding](#standardisedvector-embeddingword-embedding) that capture [Semantic Relationships](#semantic-relationships) and [syntactic relationships](#syntactic-relationships). Word2Vec has two main architectures:
+
+In [ML_Tools](#ml_tools) see: [Word2Vec.py](#word2vecpy)
+
+1. CBOW (Continuous [Bag of Words](#bag-of-words)):
+    - Predicts a target word given its context (neighboring words).
+    - Efficient for smaller datasets.
+      
+2. Skip-Gram:
+    - Predicts the context words given a target word.
+    - Performs better on larger datasets.
+
+Word2Vec generates dense, continuous vector representations where words with similar meanings are close to each other in the embedding space. For example:
+
+- `vector("king") - vector("man") + vector("woman") ≈ vector("queen")`
+
+
 
 
 <a id="word2vecpy"></a>
@@ -24826,28 +25071,6 @@ The script can benefit from **Word2Vec embeddings** by replacing the randomly in
 3. **Semantic Diversity**:
     - The expanded list increases the diversity of semantic relationships and highlights the strength of embeddings in grouping similar concepts.
 
-<a id="word2vec"></a>
-# Word2Vec {#word2vec}
-
-Word2Vec is a technique for generating vector representations of words. Developed by researchers at Google, it uses a shallow [neural network](#neural-network) to produce [standardised/Vector Embedding|word embedding](#standardisedvector-embeddingword-embedding) that capture [Semantic Relationships](#semantic-relationships) and [syntactic relationships](#syntactic-relationships). Word2Vec has two main architectures:
-
-In [ML_Tools](#ml_tools) see: [Word2Vec.py](#word2vecpy)
-
-1. CBOW (Continuous [Bag of Words](#bag-of-words)):
-    - Predicts a target word given its context (neighboring words).
-    - Efficient for smaller datasets.
-      
-2. Skip-Gram:
-    - Predicts the context words given a target word.
-    - Performs better on larger datasets.
-
-Word2Vec generates dense, continuous vector representations where words with similar meanings are close to each other in the embedding space. For example:
-
-- `vector("king") - vector("man") + vector("woman") ≈ vector("queen")`
-
-
-
-
 <a id="wordnet"></a>
 # Wordnet {#wordnet}
 
@@ -24880,10 +25103,7 @@ Used in [Feature Selection](#feature-selection). Wrapper methods are powerful be
 
 
 
-# X {#x}
-
-# X
-
+<a id="xgboost"></a>
 # Xgboost {#xgboost}
 
 
@@ -25016,10 +25236,7 @@ xgb_model.fit(X_train_fit,y_train_fit, eval_set = [(X_train_eval,y_train_eval)],
 xgb_model.best_itersation
 ```
 
-# Y {#y}
-
-# Y
-
+<a id="yaml"></a>
 # Yaml {#yaml}
 
 
@@ -25031,10 +25248,7 @@ Stands for [YAML ain't markup language](https://github.com/yaml/yaml-spec) and
 
 YAML is a data serialization language often used to write configuration files. Depending on whom you ask, YAML stands for yet another markup language, or YAML isn’t markup language (a recursive acronym), which emphasizes that YAML is for data, not documents.
 
-# Z {#z}
-
-# Z
-
+<a id="z-normalisation"></a>
 # Z Normalisation {#z-normalisation}
 
 

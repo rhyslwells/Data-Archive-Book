@@ -55,3 +55,5 @@ print(f"✓ created {BOOK_MD.relative_to(ROOT)}")
 SUMMARY_MD.write_text("\n".join(summary) + "\n", encoding="utf-8")
 print(f"✓ created {SUMMARY_MD.relative_to(ROOT)}")
 
+print("🎉 Done.  Use HonKit to build EPUB/PDF:")
+print("   npx honkit epub ./ ./mybook.epub")
