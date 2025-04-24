@@ -1,5 +1,5 @@
-<a id="turning-a-flat-file-into-a-database"></a>
 # Turning A Flat File Into A Database {#turning-a-flat-file-into-a-database}
+<a id="turning-a-flat-file-into-a-database"></a>
 
 
 ## Summary:
@@ -30,6 +30,7 @@ import pandas as pd
 import sqlite3
 
 # Example data for demonstration purposes
+<a id="example-data-for-demonstration-purposes"></a>
 data = {
     'order_id': [1, 2, 3, 4],
     'order_date': ['2024-01-15', '2024-02-20', '2024-03-10', '2024-04-05'],
@@ -41,6 +42,7 @@ data = {
 }
 
 # Create a DataFrame from the example data
+<a id="create-a-dataframe-from-the-example-data"></a>
 df = pd.DataFrame(data)
 ```
 
@@ -48,12 +50,14 @@ df = pd.DataFrame(data)
 
 ```python
 # Example cleaning function
+<a id="example-cleaning-function"></a>
 def clean_data(df):
     df.dropna(inplace=True)
     df.columns = [col.strip().replace(" ", "_").lower() for col in df.columns]
     return df
 
 # Clean the data
+<a id="clean-the-data"></a>
 df = clean_data(df)
 ```
 
@@ -61,9 +65,11 @@ df = clean_data(df)
 
 ```python
 # Extract unique customers
+<a id="extract-unique-customers"></a>
 customers_df = df['customer_id', 'customer_name', 'contact_name', 'country'](#customer_id-customer_name-contact_name-country).drop_duplicates()
 
 # Extract orders
+<a id="extract-orders"></a>
 orders_df = df['order_id', 'order_date', 'customer_id', 'amount'](#order_id-order_date-customer_id-amount)
 ```
 
@@ -71,13 +77,16 @@ orders_df = df['order_id', 'order_date', 'customer_id', 'amount'](#order_id-orde
 
 ```python
 # Connect to SQLite database (or create it)
+<a id="connect-to-sqlite-database-or-create-it"></a>
 conn = sqlite3.connect('data.db')
 cursor = conn.cursor()
 
 # Enable foreign key support
+<a id="enable-foreign-key-support"></a>
 cursor.execute("PRAGMA foreign_keys = ON")
 
 # Create 'customers' table
+<a id="create-customers-table"></a>
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS customers (
     customer_id INTEGER PRIMARY KEY,
@@ -88,6 +97,7 @@ CREATE TABLE IF NOT EXISTS customers (
 ''')
 
 # Create 'orders' table with a foreign key referencing 'customers'
+<a id="create-orders-table-with-a-foreign-key-referencing-customers"></a>
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS orders (
     order_id INTEGER PRIMARY KEY,
@@ -99,6 +109,7 @@ CREATE TABLE IF NOT EXISTS orders (
 ''')
 
 # Commit changes
+<a id="commit-changes"></a>
 conn.commit()
 ```
 
@@ -106,12 +117,15 @@ conn.commit()
 
 ```python
 # Insert data into 'customers' table
+<a id="insert-data-into-customers-table"></a>
 customers_df.to_sql('customers', conn, if_exists='append', index=False)
 
 # Insert data into 'orders' table
+<a id="insert-data-into-orders-table"></a>
 orders_df.to_sql('orders', conn, if_exists='append', index=False)
 
 # Commit changes and close the connection
+<a id="commit-changes-and-close-the-connection"></a>
 conn.commit()
 conn.close()
 ```
@@ -123,6 +137,7 @@ conn = sqlite3.connect('data.db')
 cursor = conn.cursor()
 
 # Query to check if all customer_id in orders table exist in customers table
+<a id="query-to-check-if-all-customer_id-in-orders-table-exist-in-customers-table"></a>
 cursor.execute('''
 SELECT order_id
 FROM orders
@@ -140,8 +155,8 @@ else:
 
 
 
-<a id="types-of-computational-bugs"></a>
 # Types Of Computational Bugs {#types-of-computational-bugs}
+<a id="types-of-computational-bugs"></a>
 
 Each of these types of bugs can have significant impacts on software functionality and performance, and understanding them is crucial for effective [Debugging](#debugging) and software development.
 ### Types of Computational Bugs
@@ -173,8 +188,8 @@ Each of these types of bugs can have significant impacts on software functionali
 
 
 
-<a id="types-of-database-schema"></a>
 # Types Of Database Schema {#types-of-database-schema}
+<a id="types-of-database-schema"></a>
 
 There are several types of database schemas commonly used in data warehousing and database design.
 
@@ -198,8 +213,8 @@ Columnar Schema:
 
 
 
-<a id="types-of-neural-networks"></a>
 # Types Of Neural Networks {#types-of-neural-networks}
+<a id="types-of-neural-networks"></a>
 
 Types of [Neural network](#neural-network):
 
@@ -214,14 +229,14 @@ Types of [Neural network](#neural-network):
 [Transformer](#transformer)
 
 
-<a id="typescript"></a>
 # Typescript {#typescript}
+<a id="typescript"></a>
 
 
 Superset of JavaScript adding static typing and object-oriented features for building large-scale applications.
 
-<a id="typical-output-formats-in-neural-networks"></a>
 # Typical Output Formats In Neural Networks {#typical-output-formats-in-neural-networks}
+<a id="typical-output-formats-in-neural-networks"></a>
 
 The output format of a [Neural network](#neural-network) is largely determined by the specific task it is designed to perform.
 ## Classification
@@ -269,8 +284,8 @@ See [Generative AI](#generative-ai)
 
 Loss Functions: The [loss function](#loss-function) used during training also guides the output format. For example, binary crossentropy is commonly used for binary classification, while mean squared error is often used for regression.
 
-<a id="ubuntu"></a>
 # Ubuntu {#ubuntu}
+<a id="ubuntu"></a>
 
 Ubuntu is a popular open-source operating system based on the [Linux](#linux) kernel. It is designed to be user-friendly:
 
@@ -288,8 +303,8 @@ Ubuntu is a popular open-source operating system based on the [Linux](#linux) ke
 
 
 
-<a id="uml"></a>
 # Uml {#uml}
+<a id="uml"></a>
 
 
 
@@ -302,8 +317,8 @@ https://plantuml.com/
 
 
 
-<a id="unittest"></a>
 # Unittest {#unittest}
+<a id="unittest"></a>
 
 
 ### **`@patch` (from `unittest.mock`) Explanation**
@@ -339,15 +354,15 @@ Copy code
     - Mock function calls (`process_file`, `log_action`, `write_updated_file`).
     - Prevent real file modifications while testing.
 
-<a id="univariate-vs-multivariate"></a>
 # Univariate Vs Multivariate {#univariate-vs-multivariate}
+<a id="univariate-vs-multivariate"></a>
 
 Single feature versus multiple features
 
 
 
-<a id="unstructured-data"></a>
 # Unstructured Data {#unstructured-data}
+<a id="unstructured-data"></a>
 
 
 >[!Important]
@@ -371,8 +386,8 @@ In contrast with unstructured data, [structured data](term/structured%20data.md)
 
 
 
-<a id="unsupervised-learning"></a>
 # Unsupervised Learning {#unsupervised-learning}
+<a id="unsupervised-learning"></a>
 
 
 Unsupervised learning is a type of machine learning where the algorithm is trained on data without explicit labels or predefined outputs. 
@@ -418,25 +433,25 @@ Example: Detecting fraudulent credit card transactions by identifying transactio
 Mechanism: Works by randomly partitioning the data and identifying [standardised/Outliers|anomalies](#standardisedoutliersanomalies) as points that can be isolated quickly.
 
 
-<a id="untitled-1"></a>
 # Untitled 1 {#untitled-1}
+<a id="untitled-1"></a>
 
 
 
 
-<a id="untitled-2"></a>
 # Untitled 2 {#untitled-2}
+<a id="untitled-2"></a>
 
 
 
 
-<a id="untitled"></a>
 # Untitled {#untitled}
+<a id="untitled"></a>
 
 
 
-<a id="use-cases-for-a-simple-neural-network-like"></a>
 # Use Cases For A Simple Neural Network Like {#use-cases-for-a-simple-neural-network-like}
+<a id="use-cases-for-a-simple-neural-network-like"></a>
 
 Scenarios where a simple [Neural network|Neural Network](#neural-networkneural-network) work like this might be useful:
 
@@ -459,8 +474,8 @@ The provided code only defines the network and performs a **forward pass**, but 
 - **Train the network** using an optimizer like **Stochastic Gradient Descent (SGD)**, **Adam**, or another optimization algorithm.
 - **Backpropagate** the gradients to update the model’s weights using gradient descent.
 
-<a id="use-of-rnns-in-energy-sector"></a>
 # Use Of Rnns In Energy Sector {#use-of-rnns-in-energy-sector}
+<a id="use-of-rnns-in-energy-sector"></a>
 
 
 
@@ -586,18 +601,18 @@ For each of the energy data questions that RNNs might solve, **interpretable alt
 
 
 
-<a id="utilities"></a>
 # Utilities {#utilities}
+<a id="utilities"></a>
 
 
 
-<a id="vacuum"></a>
 # Vacuum {#vacuum}
+<a id="vacuum"></a>
 
 
 
-<a id="vanishing-and-exploding-gradients-problem"></a>
 # Vanishing And Exploding Gradients Problem {#vanishing-and-exploding-gradients-problem}
+<a id="vanishing-and-exploding-gradients-problem"></a>
 
 
 [Recurrent Neural Networks|RNN](#recurrent-neural-networksrnn)
@@ -607,8 +622,8 @@ For each of the energy data questions that RNNs might solve, **interpretable alt
 [vanishing and exploding gradients problem](#vanishing-and-exploding-gradients-problem)
 In standard RNNs, the difficulty lies in retaining useful information over long sequences due to the exponential decrease in the gradient values, which results in poor learning of long-term dependencies.
 
-<a id="variance"></a>
 # Variance {#variance}
+<a id="variance"></a>
 
 Variance in a dataset is a statistical measure that represents the degree of spread or dispersion of the data points around the mean (average) of the dataset. 
 
@@ -630,8 +645,8 @@ $$
 $$
 - Variance determines the **spread** of data along a particular dimension.
 
-<a id="vector-database"></a>
 # Vector Database {#vector-database}
+<a id="vector-database"></a>
 
 ## Overview
 
@@ -682,8 +697,8 @@ Several vector database solutions are available, each with unique features and o
 
 
 
-<a id="vector-embedding"></a>
 # Vector Embedding {#vector-embedding}
+<a id="vector-embedding"></a>
 
 
 Vector Embedding is a technique used in machine learning and [NLP](#nlp) to represent data in a continuous vector space. This representation captures the [Semantic Relationships](#semantic-relationships) of data, such as words or sentences, allowing similar items to be positioned close to each other in the vector space.
@@ -747,8 +762,8 @@ In [ML_Tools](#ml_tools) see: [Vector_Embedding.py](#vector_embeddingpy)
 
 
 
-<a id="vector_embeddingpy"></a>
 # Vector_Embedding.Py {#vector_embeddingpy}
+<a id="vector_embeddingpy"></a>
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Build/NLP/Vector_Embedding.py
 
@@ -775,8 +790,8 @@ https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Build/NLP/Vector_E
 2. **Visualization**:
     - A scatter plot showing the positions of terms in the embedding space.
 
-<a id="vectorisation"></a>
 # Vectorisation {#vectorisation}
+<a id="vectorisation"></a>
 
 
 
@@ -794,21 +809,21 @@ Related concepts:
 - [Numpy](#numpy)
 - [gpu](#gpu)
 
-<a id="vectorized-engine"></a>
 # Vectorized Engine {#vectorized-engine}
+<a id="vectorized-engine"></a>
 
 ## Vectorized Engine
 
 A modern database query execution engine designed to optimize data processing by leveraging vectorized operations and SIMD (Single Instruction, Multiple Data) capabilities of modern CPUs. Vectorized engines, such as  [DuckDB](#duckdb), process data in large blocks or batches using SIMD instructions, allowing for improved parallelism, cache locality, and reduced overhead compared to traditional row-at-a-time processing engines, using [Columnar Storage](#columnar-storage).
 
-<a id="vercel"></a>
 # Vercel {#vercel}
+<a id="vercel"></a>
 
 
 
 
-<a id="view-use-case"></a>
 # View Use Case {#view-use-case}
+<a id="view-use-case"></a>
 
 ## View Use Case
 
@@ -878,8 +893,8 @@ This query retrieves all employees with an average performance score of 4.0 or h
 
 5. **Security**: If sensitive employee data needs to be protected, the view can be designed to exclude certain columns, ensuring that only necessary information is accessible.
 
-<a id="views"></a>
 # Views {#views}
+<a id="views"></a>
 
 
 Views are virtual tables defined by SQL [Querying|Query](#queryingquery) that <mark>simplify complex data representation.</mark> They can remove unnecessary columns, aggregate results, partition data, and secure sensitive information.
@@ -925,8 +940,8 @@ Related topics:
 7. **Aggregation and Partitioning**:
    - Views can be used to calculate and store aggregated results (e.g., average ratings) and organize data by specific criteria (e.g., years or categories).
 
-<a id="violin-plot"></a>
 # Violin Plot {#violin-plot}
+<a id="violin-plot"></a>
 
 
 An extension of a [Boxplot](#boxplot) showing the data distribution. Useful when comparing distributions, skewness.
@@ -939,8 +954,8 @@ plt.show()
 
 
 
-<a id="virtual-environments"></a>
 # Virtual Environments {#virtual-environments}
+<a id="virtual-environments"></a>
 
 
 [Setting up virtual env](https://www.youtube.com/watch?v=yG9kmBQAtW4)
@@ -962,8 +977,8 @@ Remember to set python interpreter
 Related terms:
 - [Poetry](#poetry)
 
-<a id="wcss-and-elbow-method"></a>
 # Wcss And Elbow Method {#wcss-and-elbow-method}
+<a id="wcss-and-elbow-method"></a>
 
 
 USE: WCSS (within-cluster sum of squares)
@@ -984,11 +999,14 @@ Rationale: as you increase the number of clusters (K), the WCSS will generally d
 ```python
 
 # Use WCSS and elbow method
+<a id="use-wcss-and-elbow-method"></a>
 # number of clusters
+<a id="number-of-clusters"></a>
 wcss=[]
 start=2
 end=10
 # Create all possible cluster solutions with a loop
+<a id="create-all-possible-cluster-solutions-with-a-loop"></a>
 for i in range(start,end):
     # Cluster solution with i clusters
     kmeans = KMeans(i)
@@ -1002,28 +1020,35 @@ for i in range(start,end):
   
 
 # Create a variable containing the numbers from 1 to 6, so we can use it as X axis of the future plot
+<a id="create-a-variable-containing-the-numbers-from-1-to-6-so-we-can-use-it-as-x-axis-of-the-future-plot"></a>
 
 number_clusters = range(start,end)
 
 # Plot the number of clusters vs WCSS
+<a id="plot-the-number-of-clusters-vs-wcss"></a>
 
 plt.plot(number_clusters,wcss)
 
 # Name your graph
+<a id="name-your-graph"></a>
 
 plt.title('The Elbow Method')
 # Name the x-axis
+<a id="name-the-x-axis"></a>
 plt.xlabel('Number of clusters')
 # Name the y-axis
+<a id="name-the-y-axis"></a>
 plt.ylabel('Within-cluster Sum of Squares')
 
 # Identify the elbow numbers (there may be more than one thats best)
+<a id="identify-the-elbow-numbers-there-may-be-more-than-one-thats-best"></a>
 elbow_nums=[4,5,6,7,8]
 ```
 
 plotting
 ```python
 # function to give scatter for each elbow number
+<a id="function-to-give-scatter-for-each-elbow-number"></a>
     
 def scatter_elbow(X, elbow_num, var1, var2):
     """
@@ -1052,13 +1077,15 @@ def scatter_elbow(X, elbow_num, var1, var2):
     plt.title(f"{elbow_num}-Clustering for {var1}-{var2}")
     plt.show()
 # Example usage:
+<a id="example-usage"></a>
 # scatter_elbow(data, elbow_num, 'var1', 'var2')
+<a id="scatter_elbowdata-elbow_num-var1-var2"></a>
 for elbow_num in elbow_nums:
     scatter_elbow(df, elbow_num, var1, var2)
 ```
 
-<a id="weak-learners"></a>
 # Weak Learners {#weak-learners}
+<a id="weak-learners"></a>
 
 
 Weak learners are simple models that perform slightly better than random guessing. They are often used as the building blocks in [Model Ensemble](#model-ensemble) methods to create a strong predictive model.
@@ -1078,8 +1105,8 @@ Weak learners are a crucial component of [Model Ensemble](#model-ensemble) techn
 - A smaller learning rate means that each weak learner has a smaller impact, often requiring more learners to achieve good performance.
 
 
-<a id="web-feature-server-wfs"></a>
 # Web Feature Server (Wfs) {#web-feature-server-wfs}
+<a id="web-feature-server-wfs"></a>
 
 [GIS](#gis)
 
@@ -1093,8 +1120,8 @@ Weak learners are a crucial component of [Model Ensemble](#model-ensemble) techn
 - **Data Access**: Provides access to the actual data behind the map, enabling more detailed and customized analysis and processing compared to image-based services.
 - **Standardization**: Also standardized by the OGC, ensuring compatibility and interoperability across various GIS applications and systems.
 
-<a id="web-map-tile-service-wmts"></a>
 # Web Map Tile Service (Wmts) {#web-map-tile-service-wmts}
+<a id="web-map-tile-service-wmts"></a>
 
 [GIS](#gis)
 
@@ -1108,8 +1135,8 @@ Weak learners are a crucial component of [Model Ensemble](#model-ensemble) techn
 - **Scalability**: The tile-based approach allows for easy scaling and efficient handling of high load, as the same tiles can be reused for multiple requests.
 - **Standardization**: It is standardized by the Open Geospatial Consortium (OGC), ensuring interoperability between different systems and software.
 
-<a id="webpages-relevant"></a>
 # Webpages Relevant {#webpages-relevant}
+<a id="webpages-relevant"></a>
 
 Using bookmarks:
 #### [Time Series](#time-series)
@@ -1118,27 +1145,27 @@ https://aeturrell.com/blog/posts/time-series-explosion/?utm_source=substack&utm_
 
 https://otexts.com/fpp3/?utm_source=substack&utm_medium=email#
 
-<a id="what-algorithms-or-models-are-used-within-the-energy-sector"></a>
 # What Algorithms Or Models Are Used Within The Energy Sector {#what-algorithms-or-models-are-used-within-the-energy-sector}
+<a id="what-algorithms-or-models-are-used-within-the-energy-sector"></a>
 
 
 
 
 
-<a id="what-algorithms-or-models-are-used-within-the-telecommunication-sector"></a>
 # What Algorithms Or Models Are Used Within The Telecommunication Sector {#what-algorithms-or-models-are-used-within-the-telecommunication-sector}
+<a id="what-algorithms-or-models-are-used-within-the-telecommunication-sector"></a>
 
 
 
 
 
-<a id="what-are-the-best-practices-for-evaluating-the-effectiveness-of-different-prompts"></a>
 # What Are The Best Practices For Evaluating The Effectiveness Of Different Prompts {#what-are-the-best-practices-for-evaluating-the-effectiveness-of-different-prompts}
+<a id="what-are-the-best-practices-for-evaluating-the-effectiveness-of-different-prompts"></a>
 
 
 
-<a id="what-can-abm-solve-within-the-energy-sector"></a>
 # What Can Abm Solve Within The Energy Sector {#what-can-abm-solve-within-the-energy-sector}
+<a id="what-can-abm-solve-within-the-energy-sector"></a>
 
 
 
@@ -1146,22 +1173,22 @@ https://otexts.com/fpp3/?utm_source=substack&utm_medium=email#
 
 energy systems analysis
 
-<a id="what-is-the-difference-between-odds-and-probability"></a>
 # What Is The Difference Between Odds And Probability {#what-is-the-difference-between-odds-and-probability}
+<a id="what-is-the-difference-between-odds-and-probability"></a>
 
 
 
 
 
-<a id="what-is-the-role-of-gradient-based-optimization-in-training-deep-learning-models"></a>
 # What Is The Role Of Gradient Based Optimization In Training Deep Learning Models. {#what-is-the-role-of-gradient-based-optimization-in-training-deep-learning-models}
+<a id="what-is-the-role-of-gradient-based-optimization-in-training-deep-learning-models"></a>
 
 
 
 
 
-<a id="when-and-why-not-to-us-regularisation"></a>
 # When And Why Not To Us Regularisation {#when-and-why-not-to-us-regularisation}
+<a id="when-and-why-not-to-us-regularisation"></a>
 
 While regularization is tool to combat overfitting, it is not a always useful. It is crucial to consider the model's 
 - complexity,
@@ -1185,8 +1212,8 @@ to ensure effective performance on validation data. If your model is performing 
 
 
 
-<a id="why-and-when-is-feature-scaling-necessary"></a>
 # Why And When Is Feature Scaling Necessary {#why-and-when-is-feature-scaling-necessary}
+<a id="why-and-when-is-feature-scaling-necessary"></a>
 
 [Feature Scaling](#feature-scaling) is useful for models that use distances like [Support Vector Machines|SVM](#support-vector-machinessvm) and [K-means](#k-means)
 ### When Scaling Is Unnecessary
@@ -1200,8 +1227,8 @@ to ensure effective performance on validation data. If your model is performing 
       
 
 
-<a id="why-does-increasing-the-number-of-models-in-a-ensemble-not-necessarily-improve-the-accuracy"></a>
 # Why Does Increasing The Number Of Models In A Ensemble Not Necessarily Improve The Accuracy {#why-does-increasing-the-number-of-models-in-a-ensemble-not-necessarily-improve-the-accuracy}
+<a id="why-does-increasing-the-number-of-models-in-a-ensemble-not-necessarily-improve-the-accuracy"></a>
 
 
 Increasing the number of models in an ensemble ([Model Ensemble](#model-ensemble)) does not always lead to improved accuracy due to several limiting factors:
@@ -1212,8 +1239,8 @@ Increasing the number of models in an ensemble ([Model Ensemble](#model-ensemble
 - **Increased Complexity**: More models increase computational costs and training times without necessarily improving accuracy.
 - **Overfitting Risk**: Adding complex models can lead to overfitting, where the ensemble learns noise instead of underlying patterns.
 
-<a id="why-does-label-encoding-give-different-predictions-from-one-hot-encoding"></a>
 # Why Does Label Encoding Give Different Predictions From One Hot Encoding {#why-does-label-encoding-give-different-predictions-from-one-hot-encoding}
+<a id="why-does-label-encoding-give-different-predictions-from-one-hot-encoding"></a>
 
 Label Encoding and One-Hot Encoding give different predictions because they represent categorical variables in fundamentally different ways. 
 
@@ -1267,8 +1294,8 @@ Let's assume you are predicting house prices, and you're using a linear regressi
     - This often results in more accurate predictions, especially when categorical features have no inherent order.
 
 
-<a id="why-does-the-adam-optimizer-converge"></a>
 # Why does the Adam Optimizer converge {#why-does-the-adam-optimizer-converge}
+<a id="why-does-the-adam-optimizer-converge"></a>
 
 ### Why the Adam Optimizer Converges
 
@@ -1308,8 +1335,8 @@ The convergence of the Adam optimizer, resulting in a stable cost value, is a pr
 
 
 
-<a id="why-is-named-entity-recognition-ner-a-challenging-task"></a>
 # Why Is Named Entity Recognition (Ner) A Challenging Task {#why-is-named-entity-recognition-ner-a-challenging-task}
+<a id="why-is-named-entity-recognition-ner-a-challenging-task"></a>
 
 Named Entity Recognition (NER) is considered a challenging task for several reasons:
 
@@ -1327,8 +1354,8 @@ Named Entity Recognition (NER) is considered a challenging task for several reas
 
 7. **Domain-Specific Language**: Different domains (e.g., medical, legal, technical) may have specific terminologies and entities that general NER models may not recognize effectively without domain-specific training.
 
-<a id="why-is-the-central-limit-theorem-important-when-working-with-small-sample-sizes"></a>
 # Why Is The Central Limit Theorem Important When Working With Small Sample Sizes {#why-is-the-central-limit-theorem-important-when-working-with-small-sample-sizes}
+<a id="why-is-the-central-limit-theorem-important-when-working-with-small-sample-sizes"></a>
 
 The [Central Limit Theorem](#central-limit-theorem) (CLT) is particularly important for data scientists working with small sample sizes. It enables the use of various statistical methods, and helps in making valid inferences about the population from limited data.
 
@@ -1345,8 +1372,8 @@ The [Central Limit Theorem](#central-limit-theorem) (CLT) is particularly import
 7. **Robustness of Results**: The CLT provides a theoretical justification for the robustness of statistical methods. Even if the original data is not normally distributed, the means of sufficiently large samples will tend to be normally distributed, allowing for more reliable conclusions.
 
 
-<a id="why-json-is-better-than-pickle-for-untrusted-data"></a>
 # Why Json Is Better Than Pickle For Untrusted Data {#why-json-is-better-than-pickle-for-untrusted-data}
+<a id="why-json-is-better-than-pickle-for-untrusted-data"></a>
 
 **JSON vs. [Pickle](#pickle)**:
 
@@ -1364,8 +1391,8 @@ The [Central Limit Theorem](#central-limit-theorem) (CLT) is particularly import
 
 For these reasons, JSON is preferred over Pickle when dealing with untrusted data, as it minimizes security risks and offers better interoperability and readability.
 
-<a id="why-type-1-and-type-2-matter"></a>
 # Why Type 1 And Type 2 Matter {#why-type-1-and-type-2-matter}
+<a id="why-type-1-and-type-2-matter"></a>
 
 Type I and Type II errors are used in evaluating the performance of classification models, and understanding their differences is essential for interpreting model results effectively.
 
@@ -1392,8 +1419,8 @@ Type I and Type II errors are used in evaluating the performance of classificati
 
 
 
-<a id="why-use-er-diagrams"></a>
 # Why Use Er Diagrams {#why-use-er-diagrams}
+<a id="why-use-er-diagrams"></a>
 
 [Why use ER diagrams](#why-use-er-diagrams)
 
@@ -1409,13 +1436,13 @@ Cleaning a dataset before creating an [ER Diagrams](#er-diagrams) is crucial for
 
 5. Data Consistency: [Data Cleansing](#data-cleansing) ensures consistency across the dataset, which is essential for maintaining integrity in the ER diagram. Consistent data allows for clearer identification of relationships and attributes, leading to a more effective database design.
 
-<a id="wikipedia_apipy"></a>
 # Wikipedia_Api.Py {#wikipedia_apipy}
+<a id="wikipedia_apipy"></a>
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Utilities/Wikipedia_API.py
 
-<a id="windows-subsystem-for-linux"></a>
 # Windows Subsystem For Linux {#windows-subsystem-for-linux}
+<a id="windows-subsystem-for-linux"></a>
 
 [Windows Subsystem for Linux](#windows-subsystem-for-linux) (WSL) is a compatibility layer for running Linux binary executables natively on Windows 10 and Windows 11. It allows users to run a Linux environment directly on Windows without the need for a virtual machine or dual-boot setup. 
 
@@ -1427,8 +1454,8 @@ Key features of WSL include:
 4. **Performance**: WSL provides near-native performance for Linux applications, making it suitable for development and testing.
 
 
-<a id="word2vec"></a>
 # Word2Vec {#word2vec}
+<a id="word2vec"></a>
 
 Word2Vec is a technique for generating vector representations of words. Developed by researchers at Google, it uses a shallow [neural network](#neural-network) to produce [standardised/Vector Embedding|word embedding](#standardisedvector-embeddingword-embedding) that capture [Semantic Relationships](#semantic-relationships) and [syntactic relationships](#syntactic-relationships). Word2Vec has two main architectures:
 
@@ -1449,8 +1476,8 @@ Word2Vec generates dense, continuous vector representations where words with sim
 
 
 
-<a id="word2vecpy"></a>
 # Word2Vec.Py {#word2vecpy}
+<a id="word2vecpy"></a>
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Build/NLP/Word2Vec.py
 
@@ -1484,13 +1511,13 @@ The script can benefit from **Word2Vec embeddings** by replacing the randomly in
 3. **Semantic Diversity**:
     - The expanded list increases the diversity of semantic relationships and highlights the strength of embeddings in grouping similar concepts.
 
-<a id="wordnet"></a>
 # Wordnet {#wordnet}
+<a id="wordnet"></a>
 
 
 
-<a id="wrapper-methods"></a>
 # Wrapper Methods {#wrapper-methods}
+<a id="wrapper-methods"></a>
 
 Used in [Feature Selection](#feature-selection). Wrapper methods are powerful because they directly optimize the performance of the machine learning model by selecting the most informative subset of features. 
 
@@ -1516,8 +1543,8 @@ Used in [Feature Selection](#feature-selection). Wrapper methods are powerful be
 
 
 
-<a id="xgboost"></a>
 # Xgboost {#xgboost}
+<a id="xgboost"></a>
 
 
 XGBoost (eXtreme Gradient Boosting) is a highly efficient and flexible implementation of [Gradient Boosting](#gradient-boosting) that is widely used for its accuracy and performance in machine learning tasks.
@@ -1640,6 +1667,7 @@ print(f"Accuracy: {accuracy:.2f}")
 ```
 
 # Notes
+<a id="notes"></a>
 
 Set up an example of XGBoost. Plot the paramater space slices "Min_Samples_split", "Max_Depth" vs accuracy.
 
@@ -1649,8 +1677,8 @@ xgb_model.fit(X_train_fit,y_train_fit, eval_set = [(X_train_eval,y_train_eval)],
 xgb_model.best_itersation
 ```
 
-<a id="yaml"></a>
 # Yaml {#yaml}
+<a id="yaml"></a>
 
 
 Stands for [YAML ain't markup language](https://github.com/yaml/yaml-spec) and is a superset of JSON
@@ -1661,8 +1689,8 @@ Stands for [YAML ain't markup language](https://github.com/yaml/yaml-spec) and
 
 YAML is a data serialization language often used to write configuration files. Depending on whom you ask, YAML stands for yet another markup language, or YAML isn’t markup language (a recursive acronym), which emphasizes that YAML is for data, not documents.
 
-<a id="z-normalisation"></a>
 # Z Normalisation {#z-normalisation}
+<a id="z-normalisation"></a>
 
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Preprocess/Outliers/outliers_z_score.py
@@ -1722,8 +1750,8 @@ scaler = MinMaxScaler()
 df_normalized = scaler.fit_transform(df)  # Rescales each feature to [0, 1]
 ```
 
-<a id="z-score"></a>
 # Z Score {#z-score}
+<a id="z-score"></a>
 
 
 Z-scores standardize a value relative to a distribution by measuring how many standard deviations it is from the mean. This is useful for [standardised/Outliers|Outliers](#standardisedoutliersoutliers) and [Normalisation](#normalisation).
@@ -1762,8 +1790,8 @@ Related terms:
     - Use this method for datasets with extreme outliers.
     - Points with $M > 3.5$ are typically anomalies.
 
-<a id="z-scores-vs-prediction-intervals"></a>
 # Z Scores Vs Prediction Intervals {#z-scores-vs-prediction-intervals}
+<a id="z-scores-vs-prediction-intervals"></a>
 
 
 [Z-Score](#z-score) and [Prediction Intervals](#prediction-intervals) serve different purposes. Z-scores assess existing values within a dataset, while prediction intervals estimate the likely range for future observations.
@@ -1781,8 +1809,8 @@ Use Z-scores to evaluate existing values or standardize. Use prediction interval
 |**Width of range**|Based on fixed $\sigma$|Wider—accounts for both sampling error and variability|
 |**Needs population $\sigma$?**|Yes (or large $n$ to approximate)|No (uses sample $s$ and $t$ for small $n$)|
 
-<a id="z-test"></a>
 # Z Test {#z-test}
+<a id="z-test"></a>
 
 The Z-test is a statistical method used to determine if there is a <mark>significant difference between the means of two groups or to compare a sample mean to a known population mean when the population [standard deviation](#standard-deviation) is known</mark>. 
 
