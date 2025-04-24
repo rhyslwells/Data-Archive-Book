@@ -21,6 +21,7 @@
 
 
 
+<a id="olap-online-analytical-processing"></a>
 # Olap (Online Analytical Processing) {#olap-online-analytical-processing}
 
 
@@ -49,10 +50,12 @@ To interact with the OLAP cube, users typically utilize tools such as:
 - **Excel with Pivot Tables**: For slicing, dicing, and reporting.
 - **Tableau**: For visual analysis.
 
+<a id="olap"></a>
 # Olap {#olap}
 
 
 
+<a id="oltp"></a>
 # Oltp {#oltp}
 
 In online transaction processing (**OLTP**), information systems typically facilitate and manage **transaction-oriented** applications. It's the opposite of [OLAP (Online Analytical Processing)](standardised/OLAP%20(online%20analytical%20processing).md).
@@ -130,6 +133,7 @@ _What can go wrong with the proposed approach? How are you mitigating that?_
 
 _Anything still being figured out that you could use some additional eyes or thoughts on._
 
+<a id="one-hot-encoding"></a>
 # One Hot Encoding {#one-hot-encoding}
 
 
@@ -164,6 +168,7 @@ cat_variables = ['Sex',
 df = pd.get_dummies(data = df, prefix = cat_variables, columns = cat_variables)
 ```
 
+<a id="one_hot_encodingpy"></a>
 # One_Hot_Encoding.Py {#one_hot_encodingpy}
 
 Explorations\Preprocess\One_hot_encoding\One_hot_encoding.py
@@ -179,6 +184,7 @@ This script demonstrates how to preprocess categorical variables and apply linea
 7. **Label Encoding and One-Hot Encoding**: It applies `LabelEncoder` to convert 'town' names into numbers and uses `OneHotEncoder` to create dummy variables for categorical columns.
 8. **Final Predictions**: It predicts prices using the transformed features and evaluates the model's performance.
 
+<a id="optimisation-function"></a>
 # Optimisation Function {#optimisation-function}
 
 
@@ -196,6 +202,7 @@ This process is repeated until:
 
 See [Optimisation techniques](#optimisation-techniques).
 
+<a id="optimisation-techniques"></a>
 # Optimisation Techniques {#optimisation-techniques}
 
 Optimisation techniques
@@ -215,6 +222,7 @@ Optimization Solvers in [Sklearn](#sklearn) : Scikit-learn solvers improve on Gr
 
 
 
+<a id="optimising-neural-networks"></a>
 # Optimising Neural Networks {#optimising-neural-networks}
 
 
@@ -275,6 +283,7 @@ The goal is to minimize this [cost function](#cost-function) by finding the opti
 
 
 
+<a id="optuna"></a>
 # Optuna {#optuna}
 
 Optuna is a [hyperparameter](#hyperparameter) optimization framework used to automatically tune hyperparameters for machine learning models.
@@ -360,6 +369,7 @@ study.optimize(objective, n_trials=15)
 best_trial = study.best_trial
 ```
 
+<a id="ordinary-least-squares"></a>
 # Ordinary Least Squares {#ordinary-least-squares}
 
 **Derivation of Coefficients**:
@@ -368,6 +378,7 @@ best_trial = study.best_trial
 $$b=(X^{T}X)^{-1} X^{T}y$$
     - Here, $X$ is the matrix of input features (including a column of ones for the intercept),  is the vector of observed values, and  is the vector of coefficients.
 
+<a id="orthogonalization"></a>
 # Orthogonalization {#orthogonalization}
 
 [link](https://www.youtube.com/watch?v=UEtvV1D6B3s&list=PLkDaE6sCZn6E7jZ9sN_xHwSHOdjUxUW_b&index=2)
@@ -396,6 +407,7 @@ Related links:
 - [Optimising Neural Networks](#optimising-neural-networks)
 - [DS & ML Portal](#ds--ml-portal)
 
+<a id="outliers"></a>
 # Outliers {#outliers}
 
 
@@ -417,12 +429,14 @@ Impact on Classification Models
 
 - Loss of Information: Removing outliers may lead to the loss of important data points that could help in distinguishing between classes, potentially resulting in a less accurate model. For example, an outlier might represent a rare but important class that the model needs to learn from.
 
+<a id="over-parameterised-models"></a>
 # Over Parameterised Models {#over-parameterised-models}
 
 [Neural network](#neural-network)
 
 Universal approximation theory
 
+<a id="overfitting"></a>
 # Overfitting {#overfitting}
 
 
@@ -459,5 +473,6 @@ Universal approximation theory
 > - [Cross Validation](#cross-validation) techniques (e.g., $k$-fold, Leave-One-Out cross-validation)  
 > - [Bias and variance](#bias-and-variance)radeoff in machine learning models  
 
+<a id="oltp-online-transactional-processing"></a>
 # Oltp (Online Transactional Processing) {#oltp-online-transactional-processing}
 

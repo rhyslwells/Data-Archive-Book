@@ -41,6 +41,7 @@
 
 
 
+<a id="gis"></a>
 # Gis {#gis}
 
 Geographic information system.
@@ -60,10 +61,12 @@ There are free GIS softwares
 
 
 
+<a id="gru"></a>
 # Gru {#gru}
 
 
 
+<a id="gsheets"></a>
 # Gsheets {#gsheets}
 
 
@@ -75,11 +78,13 @@ Useful functions:
 Accessing google sheets from a script:
 https://www.youtube.com/watch?v=zCEJurLGFRk
 
+<a id="gaussian-distribution"></a>
 # Gaussian Distribution {#gaussian-distribution}
 
 
 Common assumption for a [Distributions](#distributions).
 
+<a id="gaussian-mixture-models"></a>
 # Gaussian Mixture Models {#gaussian-mixture-models}
 
 
@@ -147,6 +152,7 @@ GMMs can have difference [Covariance Structures](#covariance-structures)
         - $\Sigma$: Covariance matrix
     - Threshold low-probability examples to identify anomalies.
 
+<a id="gaussian_mixture_model_implementationpy"></a>
 # Gaussian_Mixture_Model_Implementation.Py {#gaussian_mixture_model_implementationpy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Build/Clustering/Gaussian_Mixture_Model_Implementation.py
@@ -157,6 +163,7 @@ Follow-Up Questions
 - What are the implications of choosing different covariance types in GMMs?
 
 
+<a id="general-linear-regression"></a>
 # General Linear Regression {#general-linear-regression}
 
 
@@ -251,15 +258,18 @@ Going round training data : called a Epochs
 
 
 
+<a id="generative-ai"></a>
 # Generative Ai {#generative-ai}
 
 
 
+<a id="generative-adversarial-networks"></a>
 # Generative Adversarial Networks {#generative-adversarial-networks}
 
 
    Composed of two neural networks, a generator, and a discriminator, that compete against each other. GANs are used for tasks like generating realistic images or videos.
 
+<a id="get-data"></a>
 # Get Data {#get-data}
 
 
@@ -306,6 +316,7 @@ How to you ensure data is unbiased and representative.
 - Stratified sampling, (group then randomly sample).
 - Examine the data sources.
 
+<a id="gini-impurity-vs-cross-entropy"></a>
 # Gini Impurity Vs Cross Entropy {#gini-impurity-vs-cross-entropy}
 
 When working with decision trees, both [Gini Impurity](#gini-impurity) and [Cross Entropy](#cross-entropy) are metrics used to evaluate the quality of a split. They help determine how well a feature separates the classes in a dataset.
@@ -328,6 +339,7 @@ When working with decision trees, both [Gini Impurity](#gini-impurity) and [Cros
 - **Efficiency**: If computational efficiency is a concern, Gini impurity might be preferred due to its simpler calculation.
 - **Interpretability**: Cross-entropy provides a more information-theoretic perspective, which might be preferred if you are interested in the information gain aspect of the splits.
 
+<a id="gini-impurity"></a>
 # Gini Impurity {#gini-impurity}
 
 Gini impurity is a metric used in decision trees to measure the degree or probability of misclassification in a dataset. It is associated with the leaves of a [Decision Tree](#decision-tree) and helps determine the best split at each node.
@@ -385,6 +397,7 @@ A Gini impurity of 0.4422 indicates the level of impurity in this node. A Gini i
 
 This calculation helps in deciding whether to split the node further or not. The goal is to choose splits that <mark>minimize the Gini impurity</mark>, leading to more homogeneous branches.
 
+<a id="git"></a>
 # Git {#git}
 
 
@@ -570,6 +583,7 @@ cd repo-folder
 
 
 
+<a id="gitlab"></a>
 # Gitlab {#gitlab}
 
 [GitLab CI CD Tutorial for Beginners Crash Course](https://www.youtube.com/watch?v=qP8kir2GUgo)
@@ -580,6 +594,7 @@ cd repo-folder
 
 
 
+<a id="google-cloud-platform"></a>
 # Google Cloud Platform {#google-cloud-platform}
 
 Google Cloud Platform is a suite of cloud computing services offered by Google. It provides a range of services including computing, storage, and application development that run on Google hardware.
@@ -625,6 +640,7 @@ Resources:
  Explore the generic repository for additional resources and examples.
 
 
+<a id="google-my-maps-data-extraction"></a>
 # Google My Maps Data Extraction {#google-my-maps-data-extraction}
 
 
@@ -689,6 +705,7 @@ Use [**Google Apps Script**](#google-apps-script) to extract additional informat
 
 
 
+<a id="gradient-boosting-regressor"></a>
 # Gradient Boosting Regressor {#gradient-boosting-regressor}
 
 
@@ -725,6 +742,7 @@ The `GradientBoostingRegressor` from the `sklearn.ensemble` module is a model us
 12. **ccp_alpha**: Complexity parameter used for pruning the trees. A larger value leads to more pruning (simplifying the model), which can help prevent overfitting.
 
 
+<a id="gradient-boosting"></a>
 # Gradient Boosting {#gradient-boosting}
 
 
@@ -758,6 +776,7 @@ High Performance: Known for its high performance and efficiency in terms of spee
 - Feature Handling: Effectively manages [heterogeneous features](#heterogeneous-features) and automatically selects relevant ones.
 - [Overfitting](#overfitting): Less prone to overfitting compared to other complex models.
 
+<a id="gradient-descent"></a>
 # Gradient Descent {#gradient-descent}
 
 
@@ -826,6 +845,7 @@ Where:
 Can use contour plots to show [Gradient Descent#](#gradient-descent) moving towards minima.
 ![Pasted image 20241224082847.png](../content/images/Pasted%20image%2020241224082847.png)
 
+<a id="gradio"></a>
 # Gradio {#gradio}
 
 Gradio is an open-source platform that simplifies the process of <mark>creating user interfaces</mark> for machine learning models. 
@@ -845,20 +865,24 @@ https://www.gradio.app/
 
 [Overview](#overview)
 
+<a id="grain"></a>
 # Grain {#grain}
 
 Grain
    - Definition: The level of detail or [granularity](#granularity) of the data stored in the fact table.
    - Importance: Defining the grain is crucial as it determines what each record in the fact table represents (e.g., individual transactions, daily summaries).
 
+<a id="grammar-method"></a>
 # Grammar Method {#grammar-method}
 
 can understand the Grammar as a method for acceptable sentences.
 
+<a id="graph-analysis-plugin"></a>
 # Graph Analysis Plugin {#graph-analysis-plugin}
 
 
 
+<a id="graph-neural-network"></a>
 # Graph Neural Network {#graph-neural-network}
 
 
@@ -873,6 +897,7 @@ Use cases:
 - Material Science - Deepmind - GNome - Density function theory.
 - Drug Discovery - MIT - antibiotic activities
 
+<a id="graph-theory-community"></a>
 # Graph Theory Community {#graph-theory-community}
 
 In graph theory, a community (also known as a cluster or module) is a group of nodes that are more densely connected to each other than to the rest of the network.
@@ -908,6 +933,7 @@ Some widely used algorithms:
 | Leiden | Improved version of Louvain for better quality and performance |
 
 
+<a id="graph-theory"></a>
 # Graph Theory {#graph-theory}
 
 
@@ -922,6 +948,7 @@ Some widely used algorithms:
 [Plotly](#plotly) for graphs
 https://plotly.com/python/network-graphs/
 
+<a id="graphrag"></a>
 # Graphrag {#graphrag}
 
 
@@ -947,6 +974,7 @@ In [ML_Tools](#ml_tools) see: [Wikipedia_API.py](#wikipedia_apipy)
 - [Neo4j: Building Better GenAI: Your Intro to RAG & Graphs](https://www.youtube.com/watch?v=OuyTENdRcNs)
 
 
+<a id="grep"></a>
 # Grep {#grep}
 
 
@@ -954,6 +982,7 @@ In [ML_Tools](#ml_tools) see: [Wikipedia_API.py](#wikipedia_apipy)
 
 
 
+<a id="gridseachcv"></a>
 # Gridseachcv {#gridseachcv}
 
 Used [GridSeachCv](#gridseachcv) to search through the [Hyperparameter](#hyperparameter) space
@@ -973,6 +1002,7 @@ Given a parameter grid of [Hyperparameter](#hyperparameter), a model, then you m
 
 ![Pasted image 20240128194244.png|500](../content/images/Pasted%20image%2020240128194244.png|500)
 
+<a id="groupby-vs-crosstab"></a>
 # Groupby Vs Crosstab {#groupby-vs-crosstab}
 
 In pandas, [Groupby](#groupby) and [Crosstab](#crosstab) serve related but distinct purposes for data <mark>aggregation</mark> and summarization.
@@ -1001,6 +1031,7 @@ In [DE_Tools](#de_tools) see:
 
 
 
+<a id="groupby"></a>
 # Groupby {#groupby}
 
 
@@ -1031,6 +1062,7 @@ B              60
 ![Pasted image 20250323081619.png](../content/images/Pasted%20image%2020250323081619.png)
 
 
+<a id="grouped-plots"></a>
 # Grouped Plots {#grouped-plots}
 
 Related:
@@ -1053,6 +1085,7 @@ plt.show()
 
 ![Pasted image 20250402212849.png](../content/images/Pasted%20image%2020250402212849.png)
 
+<a id="guardrails"></a>
 # Guardrails {#guardrails}
 
 
@@ -1079,6 +1112,7 @@ Controlling a [Generative AI](#generative-ai) in business through the use of [Gu
    - Tailor the AI to address specific business needs. For example, a generative AI for a legal firm should stick to legal advice and documentation, whereas a customer service chatbot should handle predefined topics like returns and product support.
    - [Data Observability|monitoring](#data-observabilitymonitoring) / Monitoring and Logging: Keep track of input and output interactions to ensure that the AI’s performance remains within its intended boundaries.
 
+<a id="gitlab-ciyml"></a>
 # Gitlab Ci.Yml {#gitlab-ciyml}
 
 The purpose of a `gitlab-ci.yml` file is to define and configure the **GitLab CI/CD pipeline** for automating tasks such as building, testing, and deploying your code. It is the core configuration file that GitLab uses to orchestrate and execute CI/CD workflows in a repository.
@@ -1146,6 +1180,7 @@ deploy_job:
 
 ```
 
+<a id="granularity"></a>
 # Granularity {#granularity}
 
 

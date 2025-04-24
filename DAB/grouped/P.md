@@ -75,6 +75,7 @@
 
 
 
+<a id="pca-explained-variance-ratio"></a>
 # Pca Explained Variance Ratio {#pca-explained-variance-ratio}
 
 [PCA Explained Variance Ratio](#pca-explained-variance-ratio)
@@ -125,6 +126,7 @@ Summing these ratios gives the total variance explained by the first few compone
 - **Data [interpretability](#interpretability)**: The explained variance helps us understand how important each component is in representing the dataset. If the first few components explain most of the variance, we can focus on them for analysis and modeling.
     
 
+<a id="pca-principal-components"></a>
 # Pca Principal Components {#pca-principal-components}
 
 The principal components (or the new axes that explain the most variance) are stored in `pca.components_` and displayed as a DataFrame for easier reading
@@ -183,11 +185,13 @@ PC2 Interpretation: `Sepal width` has the highest positive loading, while `sepal
 
 
 
+<a id="pca-based-anomaly-detection"></a>
 # Pca Based Anomaly Detection {#pca-based-anomaly-detection}
 
 For implementation, see: [ML_Tools](#ml_tools):
 - [PCA_Based_Anomaly_Detection.py](#pca_based_anomaly_detectionpy)
 
+<a id="pca_analysisipynb"></a>
 # Pca_Analysis.Ipynb {#pca_analysisipynb}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Preprocess/PCA/PCA_Analysis.ipynb
@@ -220,14 +224,17 @@ Summary:
     - Computes and prints explained variance for all components.
     - Uses Seaborn to generate a heatmap of PCA component contributions.
 
+<a id="pca_based_anomaly_detectionpy"></a>
 # Pca_Based_Anomaly_Detection.Py {#pca_based_anomaly_detectionpy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Preprocess/PCA/PCA_Based_Anomaly_Detection.py
 
+<a id="pdf"></a>
 # Pdf++ {#pdf}
 
 https://www.youtube.com/watch?v=4dU6WXULSqg
 
+<a id="pdp-and-ice"></a>
 # Pdp And Ice {#pdp-and-ice}
 
 link:
@@ -248,6 +255,7 @@ Categorical Example
 
 
 
+<a id="page-rank"></a>
 # Page Rank {#page-rank}
 
 PageRank is an algorithm originally developed by Larry Page and Sergey Brin (founders of Google) to rank web pages in search engine results. It measures the relative importance of each node (e.g., webpage) in a directed graph based on the structure of incoming links.
@@ -297,6 +305,7 @@ for node, score in pagerank_scores.items():
 
 #graph #data_visualization
 
+<a id="pandas-dataframe-agent"></a>
 # Pandas Dataframe Agent {#pandas-dataframe-agent}
 
 Example:
@@ -312,6 +321,7 @@ Can as pandas questions to a dataframe.
 Types of questions:
 - what is the max value of "col1"
 
+<a id="pandas-pivot-table"></a>
 # Pandas Pivot Table {#pandas-pivot-table}
 
 
@@ -327,6 +337,7 @@ Relevant links:
 In [DE_Tools](#de_tools) see:
 - https://github.com/rhyslwells/DE_Tools/blob/main/Explorations/Transformation/pivot_table.ipynb
 
+<a id="pandas-stack"></a>
 # Pandas Stack {#pandas-stack}
 
 
@@ -406,6 +417,7 @@ In this example:
 - Complexity: If stacking makes the data too complex to manage or understand, it might be better to keep the original structure.
 - Simplicity: When the current structure of your DataFrame already suits your analysis needs, stacking may be unnecessary.
 
+<a id="pandas-join-vs-merge"></a>
 # Pandas Join Vs Merge {#pandas-join-vs-merge}
 
 In pandas, both `.join()` and `pd.merge()` are used to combine DataFrames, but they differ in **syntax**, **defaults**, and **use cases**.
@@ -423,6 +435,7 @@ In pandas, both `.join()` and `pd.merge()` are used to combine DataFrames, but t
 |**Use case**|Simple joins on index or one column|Complex joins with control over join behavior|
 #data_cleaning #data_integration 
 
+<a id="pandas"></a>
 # Pandas {#pandas}
 
 
@@ -441,18 +454,22 @@ Areas:
 
 
 
+<a id="pandas_commonpy"></a>
 # Pandas_Common.Py {#pandas_commonpy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Utilities/Pandas_Common.py
 
+<a id="pandas_stackpy"></a>
 # Pandas_Stack.Py {#pandas_stackpy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Utilities/Pandas_Stack.py
 
+<a id="parametric-tests"></a>
 # Parametric Tests {#parametric-tests}
 
 
 
+<a id="parquet"></a>
 # Parquet {#parquet}
 
 
@@ -535,6 +552,7 @@ print(df_read)
 
 In summary, Parquet is an efficient, compact, and scalable file format ideal for big data analytics and storage, providing faster performance and reduced costs.
 
+<a id="part-of-speech-tagging"></a>
 # Part Of Speech Tagging {#part-of-speech-tagging}
 
 Part of speech tagging : assigning a specific part-of-speech category (such as noun, verb, adjective, etc.) to each word in a text
@@ -546,10 +564,12 @@ pos_tag(temp[:20])
 ```
 will get outputs such as [('history', 'NN'), ('poland', 'NN'), ('roots', 'NNS'), ('early', 'JJ').
 
+<a id="percentile-detection"></a>
 # Percentile Detection {#percentile-detection}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Preprocess/Outliers/outliers_percentile.py
 
+<a id="performance-dimensions"></a>
 # Performance Dimensions {#performance-dimensions}
 
 
@@ -581,6 +601,7 @@ https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Preprocess/Outlier
 
 
 
+<a id="performance-drift"></a>
 # Performance Drift {#performance-drift}
 
 
@@ -621,6 +642,7 @@ Images
 
 ![Pasted image 20250113072251.png](../content/images/Pasted%20image%2020250113072251.png)
 
+<a id="physical-model"></a>
 # Physical Model {#physical-model}
 
 Physical Model
@@ -661,10 +683,12 @@ Physical Model
    - Implements the logical model in a specific database system.
    - Includes table structures, columns, data types, and constraints.
 
+<a id="plotly"></a>
 # Plotly {#plotly}
 
 
 
+<a id="poetry"></a>
 # Poetry {#poetry}
 
 
@@ -693,6 +717,7 @@ poetry add numpy
 
 
 
+<a id="policy"></a>
 # Policy {#policy}
 
 
@@ -737,10 +762,12 @@ This policy can be represented as a table or a function that maps each state (gr
 |(2, 2)|Goal Reached|
 
 
+<a id="positional-encoding"></a>
 # Positional Encoding {#positional-encoding}
 
 
 
+<a id="postgresql"></a>
 # Postgresql {#postgresql}
 
 
@@ -764,6 +791,7 @@ pgadmin tools: to check system information
 
 ![Pasted image 20250329081752.png](../content/images/Pasted%20image%2020250329081752.png)
 
+<a id="powerbi"></a>
 # Powerbi {#powerbi}
 
 
@@ -772,6 +800,7 @@ pgadmin tools: to check system information
 
 Business analytics tool for data visualization and reporting.
 
+<a id="powershell"></a>
 # Powershell {#powershell}
 
 
@@ -814,12 +843,14 @@ PowerShell interacts with several types of scripts and scripting languages, incl
 7. **JSON and XML**: PowerShell can parse and manipulate JSON and XML data, which are often used in configuration files and data exchange.
 
 
+<a id="powerquery"></a>
 # Powerquery {#powerquery}
 
 
 [How to normalise a merged table](#how-to-normalise-a-merged-table)
 
 
+<a id="powershell-versus-cmd"></a>
 # Powershell Versus Cmd {#powershell-versus-cmd}
 
 
@@ -912,6 +943,7 @@ PowerShell and Command Prompt (cmd) are both command-line interfaces available o
 
 In summary, PowerShell offers a more versatile and powerful environment for scripting, automation, and administrative tasks on Windows systems, while cmd remains useful for straightforward commands and basic system interactions.
 
+<a id="powershell-vs-bash"></a>
 # Powershell Vs Bash {#powershell-vs-bash}
 
 
@@ -929,6 +961,7 @@ The choice between [PowerShell](#powershell) and [Bash](#bash) largely depends o
 - **Community and Resources**: There is a vast amount of community support, tutorials, and resources available for Bash, especially in the open-source community.
 - **Cross-Platform**: While traditionally associated with Unix/Linux, Bash can also be used on Windows through [Windows Subsystem for Linux](#windows-subsystem-for-linux) (WSL) or [Git](#git) Bash.
 
+<a id="precision-or-recall"></a>
 # Precision Or Recall {#precision-or-recall}
 
 
@@ -949,6 +982,7 @@ Task Dependency Example:
 ![Pasted image 20240116211130.png](../content/images/Pasted%20image%2020240116211130.png)
 
 
+<a id="precision-recall-curve"></a>
 # Precision Recall Curve {#precision-recall-curve}
 
 
@@ -983,6 +1017,7 @@ Comparison with [ROC (Receiver Operating Characteristic)](#roc-receiver-operatin
 - **When to Use Precision-Recall Curves**: Precision-recall curves are particularly useful over ROC curves in scenarios with highly [imbalanced datasets](#imbalanced-datasets). They provide a more informative picture of a model's performance by focusing on the positive class, which is often the minority class in imbalanced datasets.
 
 
+<a id="precision"></a>
 # Precision {#precision}
 
 
@@ -1012,6 +1047,7 @@ Importance:
 
 
 
+<a id="prediction-intervals"></a>
 # Prediction Intervals {#prediction-intervals}
 
 
@@ -1039,6 +1075,7 @@ $$\bar{x} \pm t_{\alpha/2, n-1} \cdot s \cdot \sqrt{1 + \frac{1}{n}}$$
 - Risk assessment and operational thresholds.
 
 
+<a id="preprocessing"></a>
 # Preprocessing {#preprocessing}
 
 
@@ -1073,6 +1110,7 @@ Feature preprocessing refers to the process of transforming raw data into a clea
 
 
 
+<a id="prevention-is-better-than-the-cure"></a>
 # Prevention Is Better Than The Cure {#prevention-is-better-than-the-cure}
 
 To ensure data products are effective essential to prioritize prevention over remediation of [Data Quality](#data-quality)
@@ -1109,6 +1147,7 @@ To effectively handle data quality issues, organizations should focus on:
 
 
 
+<a id="primary-key"></a>
 # Primary Key {#primary-key}
 
 A primary key (PK) is a unique identifier for each record in a database table.
@@ -1119,6 +1158,7 @@ A primary key (PK) is a unique identifier for each record in a database table.
 
 For example, an ISBN serves as a primary key for books, uniquely identifying each book in the database
 
+<a id="principal-component-analysis"></a>
 # Principal Component Analysis {#principal-component-analysis}
 
 
@@ -1149,10 +1189,12 @@ In [ML_Tools](#ml_tools) see:
 - [PCA Explained Variance Ratio](#pca-explained-variance-ratio)
 - [PCA Principal Components](#pca-principal-components)
 
+<a id="probability-in-other-fields"></a>
 # Probability In Other Fields {#probability-in-other-fields}
 
 
 
+<a id="problem-definition"></a>
 # Problem Definition {#problem-definition}
 
 
@@ -1187,6 +1229,7 @@ What assumption can we make based on the problem?
 
 
 
+<a id="prompt-engineering"></a>
 # Prompt Engineering {#prompt-engineering}
 
 
@@ -1237,6 +1280,7 @@ The proportion test is used to compare proportions between groups. It can be cat
 - **One-Sample Proportion Test**: Compares the proportion of successes in a single sample to a known population proportion.
 - **Two-Sample Proportion Test**: Compares the proportions of successes between two independent samples.
 
+<a id="publish-and-subscribe"></a>
 # Publish And Subscribe {#publish-and-subscribe}
 
 
@@ -1333,6 +1377,7 @@ _Go over how you plan to test it. Your test plan should be more thorough the ris
     
 - Change is ideally < 500 lines if possible. < 150 is ideal.
 
+<a id="push-down"></a>
 # Push Down {#push-down}
 
 
@@ -1345,6 +1390,7 @@ For example, a [semantic layer](semantic%20layer.md) or [Data Virtualization](Da
 Pushdown optimization increases mapping performance when the source database can process transformation logic faster than the semantic layer itself. 
 
 
+<a id="pycaret"></a>
 # Pycaret {#pycaret}
 
 PyCaret is an open-source, low-code Python library designed to simplify machine learning workflows. 
@@ -1393,6 +1439,7 @@ Object or functional APIs
 - Educational purposes for teaching machine learning concepts.
 - Rapid development of machine learning solutions for business problems.
 
+<a id="pygraphviz"></a>
 # Pygraphviz {#pygraphviz}
 
 PyGraphviz
@@ -1419,6 +1466,7 @@ python
 from networkx.drawing.nx_agraph import graphviz_layout
 pos = graphviz_layout(G, prog="dot")
 
+<a id="pyspark"></a>
 # Pyspark {#pyspark}
 
 
@@ -1441,6 +1489,7 @@ Similar to [Pandas](#pandas)
 
 
 
+<a id="pytorch"></a>
 # Pytorch {#pytorch}
 
 
@@ -1710,18 +1759,21 @@ optimizer.step()  # Update model weights
 print("Training step completed on:", device)
 ```
 
+<a id="pycaret_anomalyipynb"></a>
 # Pycaret_Anomaly.Ipynb {#pycaret_anomalyipynb}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Preprocess/Outliers/Pycaret_Anomaly.ipynb
 
 
 
+<a id="pycaret_examplepy"></a>
 # Pycaret_Example.Py {#pycaret_examplepy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Deployment/Pycaret/Pycaret_Example.py
 
 
 
+<a id="pydantic"></a>
 # Pydantic {#pydantic}
 
 Pydantic is a Python library used for [data validation](#data-validation) and settings management using Python type annotations.
@@ -1820,6 +1872,7 @@ While Pydantic uses classes and inheritance (features of OOP), it is **not purel
 - **Reusability**:  
     You can define base models and extend them, similar to class inheritance in OOP.
 
+<a id="pydanticpy"></a>
 # Pydantic.Py {#pydanticpy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Utilities/Pydantic.py
@@ -1837,6 +1890,7 @@ This script demonstrates how Pydantic can be used to validate and parse data, en
 
 
 
+<a id="pydantic_morepy"></a>
 # Pydantic_More.Py {#pydantic_morepy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Utilities/Pydantic_More.py
@@ -1850,6 +1904,7 @@ https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Utilities/Pydantic
 6. **Model Inheritance:** Extending the `User` model to create an `AdminUser` model.
 7. **Parsing Raw Data:** Demonstrating `parse_raw` for JSON strings.
 
+<a id="pyright-vs-pydantic"></a>
 # Pyright Vs Pydantic {#pyright-vs-pydantic}
 
 While [Pyright](#pyright) and [Pydantic](#pydantic) serve different roles in Python development, they complement each other well. 
@@ -1884,6 +1939,7 @@ Pyright helps ensure that the code adheres to <mark>type constraints before exec
 
 
 
+<a id="pyright"></a>
 # Pyright {#pyright}
 
 
@@ -1932,6 +1988,7 @@ Copy code
 - Ensures clean test environments.
 - Can handle resource management (e.g., opening/closing database connections, creating temporary files).
 
+<a id="python-click"></a>
 # Python Click {#python-click}
 
 
@@ -2109,6 +2166,7 @@ def confirm_action(ctx):
 
 Python Click simplifies CLI creation with its decorators and built-in features like automatic help generation and context passing. This guide provides a foundation for building more advanced command-line applications. Additionally, handling user input and confirmations enhances the interactivity of CLI applications.
 
+<a id="python"></a>
 # Python {#python}
 
 
@@ -2121,6 +2179,7 @@ object orientated
 
 
 
+<a id="pytorch-vs-tensorflow"></a>
 # Pytorch Vs Tensorflow {#pytorch-vs-tensorflow}
 
 
@@ -2132,6 +2191,7 @@ object orientated
 - Abstraction is better in pytorch, even data parallelism
 - Tf.contrib, [keras](#keras) to rescue
 
+<a id="p-values"></a>
 # P Values {#p-values}
 
 
@@ -2139,6 +2199,7 @@ A p-value is a measure of the evidence against a null hypothesis.
  p-values indicate whether an effect exists
 Used in [Feature Selection](#feature-selection)
 
+<a id="p-values-in-linear-regression-in-sklearn"></a>
 # P Values In Linear Regression In Sklearn {#p-values-in-linear-regression-in-sklearn}
 
 
@@ -2174,6 +2235,7 @@ The second one contains the p-values of these F-statistics
 outputs:
 (array([56.04804786, 0.17558437]), array([7.19951844e-11, 6.76291372e-01]))
 
+<a id="parametric-vs-non-parametric-models"></a>
 # Parametric Vs Non Parametric Models {#parametric-vs-non-parametric-models}
 
 
@@ -2209,6 +2271,7 @@ In [Statistics](#statistics)
 - **Computation:** Parametric models are usually computationally less intensive than non-parametric models.
 
 
+<a id="parametric-vs-non-parametric-tests"></a>
 # Parametric Vs Non Parametric Tests {#parametric-vs-non-parametric-tests}
 
 [Parametric tests ](#parametric-tests) are statistical tests that make <mark>assumptions about the distribution</mark> of the data. For example, a t-test assumes that the data is normally distributed. Non-parametric tests do not make assumptions about the distribution of the data. Parametric tests are generally more powerful than non-parametric tests, but they are only valid if the data meets the [Statistical Assumptions](#statistical-assumptions) of the test.
@@ -2216,6 +2279,7 @@ In [Statistics](#statistics)
 [Non-parametric tests ](#non-parametric-tests) are less powerful than parametric tests, but they can be used on any type of data, regardless of the distribution.
 
 
+<a id="parsimonious"></a>
 # Parsimonious {#parsimonious}
 
 **Parsimonious** refers to a principle in [Model Selection](#model-selection) and statistical modeling that emphasizes <mark>simplicity</mark>. In the context of regression and other statistical models, a parsimonious model is one that explains the data with the fewest possible parameters or predictors while still providing a good fit.
@@ -2233,6 +2297,7 @@ A parsimonious model is one that achieves a good balance between simplicity and 
 
 
 
+<a id="pdgrouper"></a>
 # Pd.Grouper {#pdgrouper}
 
 `pd.Grouper` is a utility in pandas used with `.groupby()` to flexibly group data by a specific column, often useful for time-based grouping, multi-index grouping, or applying custom frequency aggregation.
@@ -2261,6 +2326,7 @@ pd.Grouper(key=None, level=None, freq=None, axis=0, sort=False)
 
 
 
+<a id="pdoc"></a>
 # Pdoc {#pdoc}
 
 [PDOC](https://pdoc.dev/) is a documentation generator specifically designed for Python projects. Here are some key features and details:
@@ -2316,11 +2382,13 @@ After running this command, you should find the generated documentation in the `
     
 3. **Integrate into a Project Repository**: If you're using version control (like Git), you can include the `docs` folder in your repository. This way, anyone who clones the repository can easily access the documentation.
 
+<a id="pmdarima"></a>
 # Pmdarima {#pmdarima}
 
 Helps find [Model Parameters](#model-parameters) for [ARIMA](#arima) models
 
 [Forecasting_AutoArima.py](#forecasting_autoarimapy)
 
+<a id="programming-languages"></a>
 # Programming Languages {#programming-languages}
 

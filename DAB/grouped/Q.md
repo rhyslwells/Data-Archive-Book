@@ -11,6 +11,7 @@
 
 
 
+<a id="q-learning"></a>
 # Q Learning {#q-learning}
 
 
@@ -46,6 +47,7 @@ $$
 
 
 
+<a id="query-gsheets"></a>
 # Query Gsheets {#query-gsheets}
 
 In [standardised/GSheets](#standardisedgsheets) I want to use query, but I also want to remove certain rows based on a range of keys , can I do this ?
@@ -61,6 +63,7 @@ Since `QUERY` does not support dynamic `NOT IN`, you can first filter out the ex
 - `QUERY(..., "SELECT Col1, Col2, Col3, Col4", 1)`: Runs a query on the filtered data.
 
 
+<a id="quartz"></a>
 # Quartz {#quartz}
 
 
@@ -74,6 +77,7 @@ How does quartz work of a software level:
 - There is a diagram showing how markdown goes to html.
 - [JavaScript](#javascript) for static site generators already existed.
 
+<a id="query-optimisation"></a>
 # Query Optimisation {#query-optimisation}
 
 
@@ -109,12 +113,14 @@ SQLite's "VACUUM" command reclaims unused space after data deletion, reducing da
 [Query Optimisation](#query-optimisation)
    **Tags**: #performance_tuning, #querying
 
+<a id="query-plan"></a>
 # Query Plan {#query-plan}
 
 What is expected to happen to the query plan if there is [Database Index|Indexing](#database-indexindexing)?
 
 
 
+<a id="querying"></a>
 # Querying {#querying}
 
 
@@ -143,6 +149,7 @@ Related terms:
 - [SQL Joins](#sql-joins)
 - [SQL Injection](#sql-injection):=Why we should not use f-strings in queries
 
+<a id="quicksort"></a>
 # Quicksort {#quicksort}
 
 

@@ -44,6 +44,7 @@
 
 
 
+<a id="t-test"></a>
 # T Test {#t-test}
 
 The T-test is a statistical method <mark>used to determine if there is a significant difference between the means of two groups, especially when the population [standard deviation](#standard-deviation) is unknown.</mark> It is particularly useful when dealing with small sample sizes.
@@ -89,6 +90,7 @@ This formulation condenses all the data into a single variable, allowing for [hy
 The T-test is a Uniformly Most Powerful Unbiased (UMPU) test, meaning it is optimal for detecting differences in means under the specified conditions.
 
 
+<a id="tf-idf"></a>
 # Tf Idf {#tf-idf}
 
 
@@ -216,6 +218,7 @@ def compute_tfidf(docs):
 
 
 
+<a id="toml"></a>
 # Toml {#toml}
 
 A `.toml` file is a configuration file format that stands for "Tom's Obvious, Minimal Language." 
@@ -264,14 +267,17 @@ TOML files are primarily used for configuration purposes.
 
 [Pytest](#pytest)
 
+<a id="ts_anomaly_detection"></a>
 # Ts_Anomaly_Detection {#ts_anomaly_detection}
 
 
 
+<a id="ts_anomaly_detectionpy"></a>
 # Ts_Anomaly_Detection.Py {#ts_anomaly_detectionpy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Build/TimeSeries/TS_Anomaly_Detection.py
 
+<a id="tableau"></a>
 # Tableau {#tableau}
 
 
@@ -288,10 +294,12 @@ https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Build/TimeSeries/T
 
 
 
+<a id="tags"></a>
 # Tags {#tags}
 
 
 
+<a id="technical-debt"></a>
 # Technical Debt {#technical-debt}
 
 
@@ -445,6 +453,7 @@ _Who is working on this? Are there any external teams that need to sign off on t
 
 _Add any detailed figures you didn’t want to inline for space._
 
+<a id="telecommunications"></a>
 # Telecommunications {#telecommunications}
 
 
@@ -463,6 +472,7 @@ Network Optimization
     - **Load Balancing**: RL can help in distributing network loads across multiple servers or paths, ensuring optimal use of available resources while preventing any single point from becoming overloaded.
     - **Adaptive Scheduling**: RL algorithms can manage the scheduling of data transmission and resource allocation in cellular networks, allowing for efficient handling of varying traffic patterns and user behaviors.
 
+<a id="tensorflow"></a>
 # Tensorflow {#tensorflow}
 
 
@@ -481,6 +491,7 @@ Basic example is
 
 [Pytorch vs Tensorflow](#pytorch-vs-tensorflow)
 
+<a id="terminal-commands"></a>
 # Terminal Commands {#terminal-commands}
 
 
@@ -488,6 +499,7 @@ jupyter nbconvert K-Means_VideoGames_Raw.ipynb --to python --no-prompt
 
 
 
+<a id="test-loss-when-evaluating-models"></a>
 # Test Loss When Evaluating Models {#test-loss-when-evaluating-models}
 
 Test loss is used for [Model Evaluation](#model-evaluation) to assess how well a model generalizes to unseen data, which is essential for evaluating its performance in real-world applications.
@@ -527,6 +539,7 @@ Model Comparison: [Model Selection](#model-selection)
   - A model might achieve high accuracy but perform poorly in terms of test loss if it incorrectly classifies a few outliers.
   - Conversely, a model with low test loss might be more stable in making predictions, even for edge cases.
 
+<a id="testing"></a>
 # Testing {#testing}
 
 
@@ -578,6 +591,7 @@ Testing a [Python](#python) program effectively involves multiple levels to ensu
 - [Types of Computational Bugs](#types-of-computational-bugs)
 
 
+<a id="testing_pytestpy"></a>
 # Testing_Pytest.Py {#testing_pytestpy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Deployment/Testing_Pytest.py
@@ -597,6 +611,7 @@ The `pytest` example script demonstrates several key features of the [Pytest](#p
 
 
 
+<a id="testing_unittestpy"></a>
 # Testing_Unittest.Py {#testing_unittestpy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Deployment/Testing_unittest.py
@@ -641,6 +656,7 @@ By writing and running tests, you can ensure that your code behaves as expected 
     
     - Each function is tested with multiple inputs, including positive, negative, and zero values, to ensure robustness.
 
+<a id="text2cypher"></a>
 # Text2Cypher {#text2cypher}
 
 Text2Cypher is a concept that allows users to convert natural language queries into Cypher queries, which are used to interact with [GraphRAG|graph database](#graphraggraph-database) like [Neo4j](#neo4j). This functionality enables users to ask questions in a more intuitive/[interpretability|interpretable](#interpretabilityinterpretable), conversational manner, rather than needing to know the specific syntax of [Cypher](#cypher).
@@ -661,6 +677,7 @@ Overall, Text2Cypher aims to simplify the interaction with graph databases, maki
 
 
 
+<a id="thinking-systems"></a>
 # Thinking Systems {#thinking-systems}
 
 
@@ -707,6 +724,7 @@ Collective intelligence.
 
 Designing system so that individuals impact the whole.
 
+<a id="time-series-forecasting"></a>
 # Time Series Forecasting {#time-series-forecasting}
 
 
@@ -726,6 +744,7 @@ Resources:
 
 [LightGBM](#lightgbm)
 
+<a id="time-series-identify-trends-and-patterns"></a>
 # Time Series Identify Trends And Patterns {#time-series-identify-trends-and-patterns}
 
  Analyze long-term trends, seasonal patterns, and cyclical behaviors.
@@ -733,6 +752,7 @@ Resources:
 ARIMA or SARIMA
 
 
+<a id="time-series"></a>
 # Time Series {#time-series}
 
 
@@ -759,6 +779,7 @@ print(df)
 ```
 
 
+<a id="tokenisation"></a>
 # Tokenisation {#tokenisation}
 
 
@@ -790,6 +811,7 @@ tokens_no_stopwords = [token for token in temp if token not in stopwords.words("
 print(tokens_no_stopwords)
 ```
 
+<a id="train-dev-test-sets"></a>
 # Train Dev Test Sets {#train-dev-test-sets}
 
 In [Model Building](#model-building) train the model using the prepared data to learn patterns and make predictions. The model is trained on your dataset, which is typically divided into three main subsets: training, development (dev), and test sets.
@@ -831,6 +853,7 @@ Considerations
 
 
 
+<a id="transaction"></a>
 # Transaction {#transaction}
 
 
@@ -866,6 +889,7 @@ To prevent <mark>race conditions,</mark> transactions and locking mechanisms are
 Using timestamping can help manage access to exclusive locks, allowing for more efficient handling of concurrent transactions ([Concurrency](#concurrency)).
 
 
+<a id="transfer-learning"></a>
 # Transfer Learning {#transfer-learning}
 
 
@@ -910,6 +934,7 @@ In [ML_Tools](#ml_tools) see: [transfer_learning.py](#transfer_learningpy)
 
 
 
+<a id="transformed-target-regressor"></a>
 # Transformed Target Regressor {#transformed-target-regressor}
 
 [Sklearn](#sklearn)
@@ -925,6 +950,7 @@ The `TransformedTargetRegressor` is a utility class in `scikit-learn` that a
 
 The `TransformedTargetRegressor` applies the transformation before training the model and automatically applies the inverse transformation when making predictions. This makes it easier to work with transformed target variables, as you don't have to manually apply the inverse transformation every time you want to make a prediction.
 
+<a id="transformer"></a>
 # Transformer {#transformer}
 
 
@@ -975,6 +1001,7 @@ Follow-up questions:
 - [Transformers vs RNNs](#transformers-vs-rnns)
 
 
+<a id="transformers-vs-rnns"></a>
 # Transformers Vs Rnns {#transformers-vs-rnns}
 
 
@@ -1095,6 +1122,7 @@ For further reading, you can refer to the note on [Transformers vs RNNs](#transf
 - [Language Model Output Optimisation](obsidian://open?vault=content&file=Language%20Model%20Output%20Optimisation)
 - [Small Language Models](obsidian://open?vault=content&file=Small%20Language%20Models)
 
+<a id="turning-a-flat-file-into-a-database"></a>
 # Turning A Flat File Into A Database {#turning-a-flat-file-into-a-database}
 
 
@@ -1236,11 +1264,13 @@ else:
 
 
 
+<a id="typescript"></a>
 # Typescript {#typescript}
 
 
 Superset of JavaScript adding static typing and object-oriented features for building large-scale applications.
 
+<a id="types-of-computational-bugs"></a>
 # Types Of Computational Bugs {#types-of-computational-bugs}
 
 Each of these types of bugs can have significant impacts on software functionality and performance, and understanding them is crucial for effective [Debugging](#debugging) and software development.
@@ -1273,6 +1303,7 @@ Each of these types of bugs can have significant impacts on software functionali
 
 
 
+<a id="types-of-database-schema"></a>
 # Types Of Database Schema {#types-of-database-schema}
 
 There are several types of database schemas commonly used in data warehousing and database design.
@@ -1297,6 +1328,7 @@ Columnar Schema:
 
 
 
+<a id="types-of-neural-networks"></a>
 # Types Of Neural Networks {#types-of-neural-networks}
 
 Types of [Neural network](#neural-network):
@@ -1312,6 +1344,7 @@ Types of [Neural network](#neural-network):
 [Transformer](#transformer)
 
 
+<a id="typical-output-formats-in-neural-networks"></a>
 # Typical Output Formats In Neural Networks {#typical-output-formats-in-neural-networks}
 
 The output format of a [Neural network](#neural-network) is largely determined by the specific task it is designed to perform.
@@ -1360,6 +1393,7 @@ See [Generative AI](#generative-ai)
 
 Loss Functions: The [loss function](#loss-function) used during training also guides the output format. For example, binary crossentropy is commonly used for binary classification, while mean squared error is often used for regression.
 
+<a id="t-sne"></a>
 # T Sne {#t-sne}
 
 
@@ -1499,6 +1533,7 @@ Bandit will generate a report highlighting the security issues in the script, pr
 
 By following these steps, you can use Bandit to identify and address security vulnerabilities in your Python code. Remember, while Bandit is a powerful tool, it's important to complement it with good coding practices and thorough security testing.
 
+<a id="toolruff"></a>
 # Tool.Ruff {#toolruff}
 
 Ruff is a fast [Python](#python) linter and code formatter.
@@ -1524,6 +1559,7 @@ line-ending = "auto"
 ```
 
 
+<a id="tooluv"></a>
 # Tool.Uv {#tooluv}
 
 
@@ -1549,10 +1585,12 @@ Link: https://github.com/astral-sh/uv
 
 
 
+<a id="topic-modeling"></a>
 # Topic Modeling {#topic-modeling}
 
 
 
+<a id="transfer_learningpy"></a>
 # Transfer_Learning.Py {#transfer_learningpy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Build/Neural_Network/transfer_learning.py

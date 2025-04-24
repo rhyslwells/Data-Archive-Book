@@ -37,6 +37,7 @@
 
 
 
+<a id="eda"></a>
 # Eda {#eda}
 
 
@@ -61,10 +62,12 @@ Exploratory [Data Analysis](#data-analysis) (EDA) is an approach to analyzing da
 In [ML_Tools](#ml_tools) see:
 - [EDA_Pandas.py](#eda_pandaspy)
 
+<a id="eda_pandaspy"></a>
 # Eda_Pandas.Py {#eda_pandaspy}
 
 
 
+<a id="elt"></a>
 # Elt {#elt}
 
 
@@ -94,6 +97,7 @@ Historically, ETL was preferred for reasons that are now less relevant:
 [ELT](#elt)
    **Tags**: #data_transformation, #data_integration
 
+<a id="etl-pipeline-example"></a>
 # Etl Pipeline Example {#etl-pipeline-example}
 
 
@@ -159,6 +163,7 @@ load(df)
 # %%
 ```
 
+<a id="etl-vs-elt"></a>
 # Etl Vs Elt {#etl-vs-elt}
 
 
@@ -187,6 +192,7 @@ While the following image demonstrates the ELT approach to data integration:
 - Every transformation that is performed on the data may obscure some of the underlying information, and analysts only see what was kept during the transformation phase. 
 - Building an ETL-based data pipeline is often beyond the technical capabilities of analysts.
 
+<a id="etl"></a>
 # Etl {#etl}
 
 
@@ -227,6 +233,7 @@ To improve an ETL process, consider the following enhancements:
 [ETL](#etl)
    **Tags**: #data_transformation, #data_integration
 
+<a id="edge-machine-learning-models"></a>
 # Edge Machine Learning Models {#edge-machine-learning-models}
 
 **Edge ML** refers to deploying machine learning models directly on edge devices, such as IoT sensors, smartphones, or embedded systems, instead of relying on cloud-based processing. This is crucial in scenarios requiring low-latency, real-time decision-making, or environments with limited connectivity.
@@ -269,6 +276,7 @@ To improve an ETL process, consider the following enhancements:
 
 Edge ML is driving innovation in industries requiring decentralized, real-time intelligence, enabling devices to make smart decisions locally while minimizing reliance on cloud resources.
 
+<a id="education-and-training"></a>
 # Education And Training {#education-and-training}
 
 Adaptive Learning Systems
@@ -279,6 +287,7 @@ Adaptive Learning Systems
     - **Feedback and Assessment**: Adaptive systems can provide immediate feedback based on student responses, reinforcing concepts through targeted exercises and adjusting difficulty levels as needed.
     - **Engagement Strategies**: By analyzing student interactions, RL can suggest motivational strategies, such as gamification elements or timely reminders, to keep students engaged and motivated.
 
+<a id="elastic-net"></a>
 # Elastic Net {#elastic-net}
 
 
@@ -302,6 +311,7 @@ model = ElasticNet(alpha=0.1, l1_ratio=0.5)  # l1_ratio controls the L1/L2 mix
 model.fit(X_train, y_train)
 ```
 
+<a id="embedded-methods"></a>
 # Embedded Methods {#embedded-methods}
 
 Embedded methods for [Feature Selection](#feature-selection) <mark>integrate feature selection directly into the model training process.</mark>
@@ -329,6 +339,7 @@ Embedded methods provide a convenient and efficient approach to feature selectio
 
 
 
+<a id="encoding-categorical-variables"></a>
 # Encoding Categorical Variables {#encoding-categorical-variables}
 
 
@@ -432,6 +443,7 @@ var1_DF = pd.DataFrame(var1_1hot_mat, columns=['cat1', 'cat2', 'cat3'])
 - **Scenario Analysis**: ABM allows for "what-if" analyses, enabling stakeholders to explore different scenarios, such as the impact of implementing new technologies or policies on energy systems.
 - **Data-Driven Insights**: With the rise of smart meters and IoT devices, ABM can leverage real-time data to improve model accuracy and relevancy, enhancing decision-making processes.
 
+<a id="energy-storage"></a>
 # Energy Storage {#energy-storage}
 
 
@@ -443,6 +455,7 @@ Stored energy can be traded.
 
 Stored energy can be stored using distributed system such as EV cars.
 
+<a id="energy"></a>
 # Energy {#energy}
 
 
@@ -471,6 +484,7 @@ Dymanic pricing, incentised load management, local generation
   
 Use green energy if on grid
 
+<a id="environment-variables"></a>
 # Environment Variables {#environment-variables}
 
 Solution 1: Set Environment Variables Permanently (Recommended)
@@ -495,6 +509,7 @@ Click OK and restart your computer.
 
 Once restarted, Jupyter Notebook should be able to access the variables.
 
+<a id="epoch"></a>
 # Epoch {#epoch}
 
 
@@ -515,6 +530,7 @@ Epoch 1/10
 
 
 
+<a id="epub"></a>
 # Epub {#epub}
 
 
@@ -547,10 +563,12 @@ Because of this, you can't refer to a fixed page number universally across devic
 | Navigation             | Flexible (TOC, links, metadata)      | Static (can have TOC, but fixed)   |
 
 
+<a id="estimator"></a>
 # Estimator {#estimator}
 
 Given a sample an estimator is a formula that approximates a population parameter i.e feature
 
+<a id="etlt"></a>
 # Etlt {#etlt}
 
 
@@ -564,6 +582,7 @@ When compared to ELT, the EtLT approach incorporates an additional light “twea
 
 
 
+<a id="evaluating-language-models"></a>
 # Evaluating Language Models {#evaluating-language-models}
 
 
@@ -587,6 +606,7 @@ https://www.analyticsvidhya.com/blog/2024/05/from-gpt-4-to-llama-3-lmsys-chatbot
 
 
 
+<a id="evaluation-metrics"></a>
 # Evaluation Metrics {#evaluation-metrics}
 
 
@@ -647,6 +667,7 @@ In order to use metrics to evaluate a model we can:
 
 
 
+<a id="event-driven-events"></a>
 # Event Driven Events {#event-driven-events}
 
 Events can be stored in a [Data Lake](#data-lake) and analysed to find patterns/predictions.  
@@ -659,6 +680,7 @@ Events can be stored in a [Data Lake](#data-lake) and analysed to find patterns/
 
 [API Driven Microservices](#api-driven-microservices)
 
+<a id="event-driven-microservices"></a>
 # Event Driven Microservices {#event-driven-microservices}
 
 
@@ -688,6 +710,7 @@ Key characteristics of event-driven microservices include:
 
 
 
+<a id="event-driven"></a>
 # Event Driven {#event-driven}
 
 Event-driven refers to a <mark>programming paradigm</mark> or architectural style where the flow of the program is determined by events—changes in state or conditions that trigger specific actions or responses. 
@@ -718,10 +741,12 @@ Benefits of Event-Driven Architecture:
 - [Event Driven Microservices](#event-driven-microservices)
 - **Tags**: #event_driven, #data_processing
 
+<a id="event-driven-architecture"></a>
 # Event Driven Architecture {#event-driven-architecture}
 
 
 
+<a id="everything"></a>
 # Everything {#everything}
 
 
@@ -741,6 +766,7 @@ search syntax
 
 
 
+<a id="excel--sheets"></a>
 # Excel & Sheets {#excel--sheets}
 
 
@@ -1012,12 +1038,14 @@ Steps:
 
 Xlookup
 
+<a id="explain-different-gradient-descent-algorithms-their-advantages-and-limitations"></a>
 # Explain Different Gradient Descent Algorithms, Their Advantages, And Limitations. {#explain-different-gradient-descent-algorithms-their-advantages-and-limitations}
 
 
 
 
 
+<a id="explain-the-curse-of-dimensionality"></a>
 # Explain The Curse Of Dimensionality {#explain-the-curse-of-dimensionality}
 
 
@@ -1051,12 +1079,14 @@ While the curse of dimensionality presents significant challenges, there are tec
 
 
 
+<a id="exploration-vs-exploitation"></a>
 # Exploration Vs. Exploitation {#exploration-vs-exploitation}
 
 One of the major challenges in [Reinforcement learning](#reinforcement-learning) is balancing exploration (trying new actions) and exploitation (choosing the best-known actions). 
 
 The <mark>epsilon-greedy strategy</mark> is commonly used, where a small probability (epsilon) allows for exploration while primarily exploiting the best-known actions.
 
+<a id="exploration"></a>
 # Exploration {#exploration}
 
 
@@ -1067,6 +1097,7 @@ The <mark>epsilon-greedy strategy</mark> is commonly used, where a small probabi
 
 
 
+<a id="embeddings-for-oov-words"></a>
 # Embeddings For Oov Words {#embeddings-for-oov-words}
 
 Can you find words in a [Vector Embedding|word embedding](#vector-embeddingword-embedding) that where not used to creates the embedding?
@@ -1108,5 +1139,6 @@ embedding = model.get_vector("unseenword")  # FastText will synthesize it
 
 #NLP #ml_process #ml_optimisation
 
+<a id="emergent-behavior"></a>
 # Emergent Behavior {#emergent-behavior}
 

@@ -37,6 +37,7 @@
 
 
 
+<a id="faiss"></a>
 # Faiss {#faiss}
 
 
@@ -71,6 +72,7 @@ FAISS offers different types of indices depending on use case:
 
 
 
+<a id="fabric"></a>
 # Fabric {#fabric}
 
 
@@ -101,6 +103,7 @@ Fabric is a unified analytics platform that operates in the cloud, eliminating t
 - Cross-Workspace Shortcuts: Allows departments to reference data across workspaces without creating copies.
 - Copilot with PowerBI: Integrates AI-driven insights and automation within PowerBI for enhanced data analysis.
 
+<a id="fact-table"></a>
 # Fact Table {#fact-table}
 
 A fact table is a central component of a star [Database Schema|schema](#database-schemaschema) or snowflake schema in a [data warehouse](#data-warehouse), it stores [Facts](#facts).
@@ -125,6 +128,7 @@ Example:
 [Fact Table](#fact-table)
    **Tags**: #data_modeling, #data_warehouse
 
+<a id="factor-analysis"></a>
 # Factor Analysis {#factor-analysis}
 
 
@@ -151,6 +155,7 @@ In [ML_Tools](#ml_tools) see: [Factor_Analysis.py](#factor_analysispy)
 1. Would you like to visualize the factors to understand how the data clusters in the new latent space?
 2. Should we explore the relationships between the factors and target classes (e.g., species in the Iris dataset)?
 
+<a id="factor_analysispy"></a>
 # Factor_Analysis.Py {#factor_analysispy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Preprocess/Factor_Analysis.py
@@ -216,12 +221,14 @@ The two factors together capture a large portion of the total variance in the da
 - The plot should give a clear idea of whether the latent factors allow for a meaningful separation of species.
 - The summary table of average factor values will help understand how the factors relate to the target variable.
 
+<a id="facts"></a>
 # Facts {#facts}
 
 Facts are quantitative data points that are typically stored in the [Fact Table](#fact-table).
 
 They represent measurable events or metrics, such as sales revenue or quantities sold.
 
+<a id="fastapi"></a>
 # Fastapi {#fastapi}
 
 **FastAPI** is a modern web framework for building APIs with Python. It is designed to be fast and easy to use, leveraging Python's type hints to provide features like:
@@ -255,6 +262,7 @@ They represent measurable events or metrics, such as sales revenue or quantities
     - **API documentation (Swagger UI):** `http://127.0.0.1:8000/docs`
     - **ReDoc documentation:** `http://127.0.0.1:8000/redoc`
 
+<a id="fastapi_examplepy"></a>
 # Fastapi_Example.Py {#fastapi_examplepy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Deployment/FastAPI_Example.py
@@ -598,6 +606,7 @@ You can copy and paste these commands directly into `cmd` to test the API.
 
 Make sure your FastAPI server is running on `http://127.0.0.1:8000` before executing these commands.
 
+<a id="feature-engineering"></a>
 # Feature Engineering {#feature-engineering}
 
 
@@ -624,6 +633,7 @@ Predicting house prices. Raw features might be square footage, number of bedroom
 
 ![C1_W2_Lab07_FeatureEngLecture.png](../content/images/C1_W2_Lab07_FeatureEngLecture.png)
 
+<a id="feature-evaluation"></a>
 # Feature Evaluation {#feature-evaluation}
 
 
@@ -656,6 +666,7 @@ Investigating correlations and redundancy,
 
 
 
+<a id="feature-extraction"></a>
 # Feature Extraction {#feature-extraction}
 
 
@@ -681,6 +692,7 @@ Feature extraction simplifies complex data by transforming it into a smaller set
 
 
 
+<a id="feature-importance"></a>
 # Feature Importance {#feature-importance}
 
 
@@ -734,6 +746,7 @@ This method uses the decrease in node impurity as a measure of feature importanc
 
 
 
+<a id="feature-scaling"></a>
 # Feature Scaling {#feature-scaling}
 
 
@@ -780,6 +793,7 @@ This returns an array where each feature is standardized.
 
 ![Pasted image 20241224083928.png](../content/images/Pasted%20image%2020241224083928.png)
 
+<a id="feature-selection-vs-feature-importance"></a>
 # Feature Selection Vs Feature Importance {#feature-selection-vs-feature-importance}
 
 
@@ -794,6 +808,7 @@ Use for [interpretability](#interpretability) of the model, but they are applied
 
 
 
+<a id="feature-selection"></a>
 # Feature Selection {#feature-selection}
 
 
@@ -827,6 +842,7 @@ After selecting features, it's essential to evaluate your model's performance ([
 
 1. Univariate Feature Selection: Use statistical tests like chi-square for categorical variables or [ANOVA](#anova) for numerical variables to assess the relationship between each feature and the target variable. Features with low test scores or high p-values may be less relevant and can be pruned.
 
+<a id="feature-selection-and-creation"></a>
 # Feature Selection And Creation {#feature-selection-and-creation}
 
 [Feature Selection](#feature-selection)
@@ -849,10 +865,12 @@ When selecting features we ask:
 - Can we control it easily what do we gain from it
 - is it a sensible variable?
 
+<a id="feature_distributionpy"></a>
 # Feature_Distribution.Py {#feature_distributionpy}
 
 
 
+<a id="feed-forward-neural-network"></a>
 # Feed Forward Neural Network {#feed-forward-neural-network}
 
 
@@ -871,6 +889,7 @@ A **Feedforward Neural Network (FFNN)** is the simplest type of [Neural network]
 - **[Overfitting](#overfitting):** FFNNs can overfit on the training data, especially if they have many parameters and not enough regularization (e.g., dropout, [Ridge|L2](#ridgel2) regularization).
 - **No Temporal Understanding:** Unlike [Recurrent Neural Networks](#recurrent-neural-networks) or transformers, FFNNs cannot model sequential dependencies in data. They are better suited for static, non-sequential tasks.
 
+<a id="feedback-template"></a>
 # Feedback Template {#feedback-template}
 
 - Praise: I really appreciate your work on this
@@ -893,10 +912,12 @@ A **Feedforward Neural Network (FFNN)** is the simplest type of [Neural network]
     
     - _add here_
 
+<a id="filter-method"></a>
 # Filter Method {#filter-method}
 
 
 
+<a id="firebase"></a>
 # Firebase {#firebase}
 
 Googles version of [AWS](#aws)
@@ -905,6 +926,7 @@ Googles version of [AWS](#aws)
 
 Project idea: Set up a basic emailer app.
 
+<a id="fishbone-diagram"></a>
 # Fishbone Diagram {#fishbone-diagram}
 
 Fishbone diagram
@@ -915,6 +937,7 @@ Root cause analysis: [Documentation & Meetings](#documentation--meetings)
 - ![Pasted image 20250312162034.png](../content/images/Pasted%20image%2020250312162034.png)
 - People and ownership: Who is entering the data: the source data
 
+<a id="fitting-weights-and-biases-of-a-neural-network"></a>
 # Fitting Weights And Biases Of A Neural Network {#fitting-weights-and-biases-of-a-neural-network}
 
 For a neural network model, fitting weights and biases involves optimizing these [Model Parameters](#model-parameters) so the model learns to map input features ($X$) to target outputs ($y$) effectively. This is achieved through the training process, which minimizes the error between predictions and actual values.
@@ -1015,6 +1038,7 @@ You can run a flask app in google colab and then share it publicly with ngrok.
 
 flask app saved on github.
 
+<a id="folder-tree-diagram"></a>
 # Folder Tree Diagram {#folder-tree-diagram}
 
 
@@ -1035,6 +1059,7 @@ tree /a /f >output.doc
 
 
 
+<a id="forecasting_autoarimapy"></a>
 # Forecasting_Autoarima.Py {#forecasting_autoarimapy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Build/TimeSeries/Forecasting_AutoArima.py
@@ -1047,6 +1072,7 @@ https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Build/TimeSeries/F
 - [Evaluation Metrics](#evaluation-metrics): Marginal differences in evaluation metrics across ARIMA models may occur due to the volatile nature of the data.
 
 
+<a id="forecasting_baselinepy"></a>
 # Forecasting_Baseline.Py {#forecasting_baselinepy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Build/TimeSeries/Forecasting_Baseline.py
@@ -1059,6 +1085,7 @@ Baseline methods are essential for establishing a performance benchmark. They pr
     - **Seasonal Naive Forecasting:** Uses the value from the previous seasonal period to forecast the future.
     - **Drift Method:** Predicts future values based on the trend between the first and last observations in the training data.
 
+<a id="forecasting_exponential_smoothingpy"></a>
 # Forecasting_Exponential_Smoothing.Py {#forecasting_exponential_smoothingpy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Build/TimeSeries/Forecasting_Exponential_Smoothing.py
@@ -1088,6 +1115,7 @@ Advanced Alternatives: For complex datasets like stock prices, advanced models s
 
 
 
+<a id="foreign-key"></a>
 # Foreign Key {#foreign-key}
 
 A foreign key is a field in one table that uniquely identifies a row in another table, linking to the primary key of that table.
@@ -1113,6 +1141,7 @@ Foreign keys establish relationships between tables and maintain referential int
 | 103        | Charlie      | 1             |
 | 104        | Dana         | 3             |
 
+<a id="forward-propagation"></a>
 # Forward Propagation {#forward-propagation}
 
 
@@ -1155,6 +1184,7 @@ Foreign keys establish relationships between tables and maintain referential int
 > - [Backpropagation](#backpropagation) in neural networks  
 > - Activation functions in deep learning
 
+<a id="fuzzywuzzy"></a>
 # Fuzzywuzzy {#fuzzywuzzy}
 
 Tool used for correcting spelling with pandas.
@@ -1163,6 +1193,7 @@ Tool used for correcting spelling with pandas.
 
 
 
+<a id="filter-methods"></a>
 # Filter Methods {#filter-methods}
 
 
@@ -1193,6 +1224,7 @@ For [Feature Selection](#feature-selection)
    - Helpful for [Feature Selection](#feature-selection) in classification tasks with categorical variables.
 
 
+<a id="functional-programming"></a>
 # Functional Programming {#functional-programming}
 
 

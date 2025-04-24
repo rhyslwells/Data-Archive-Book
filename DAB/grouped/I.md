@@ -25,6 +25,7 @@
 
 
 
+<a id="imbalanced-datasets"></a>
 # Imbalanced Datasets {#imbalanced-datasets}
 
 
@@ -60,6 +61,7 @@ Resampling Techniques:
 
 
 
+<a id="imbalanced_datasets_smotepy"></a>
 # Imbalanced_Datasets_Smote.Py {#imbalanced_datasets_smotepy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Preprocess/Imbalanced_Datasets_SMOTE.py
@@ -111,6 +113,7 @@ This example highlights the effectiveness of resampling techniques, such as [SMO
 
 
 
+<a id="immutable-vs-mutable"></a>
 # Immutable Vs Mutable {#immutable-vs-mutable}
 
 [Python](#python)
@@ -132,6 +135,7 @@ print(nums)
 ```
 
 
+<a id="impact-of-multicollinearity-on-model-parameters"></a>
 # Impact Of Multicollinearity On Model Parameters {#impact-of-multicollinearity-on-model-parameters}
 
 See https://youtu.be/StSAJIZuqws?t=655
@@ -163,6 +167,7 @@ summary(model) $coefficients %>% as_tibble
 
 
 
+<a id="implementing-database-schema"></a>
 # Implementing Database Schema {#implementing-database-schema}
 
 To manage and create a database schema in SQLite, you can use the following commands:
@@ -255,6 +260,7 @@ Also See:
 - [Many-to-Many Relationships](#many-to-many-relationships)
 - [ER Diagrams](#er-diagrams)
 
+<a id="in-ner-how-would-you-handle-ambiguous-entities"></a>
 # In Ner How Would You Handle Ambiguous Entities {#in-ner-how-would-you-handle-ambiguous-entities}
 
 Handling ambiguous entities in Named Entity Recognition (NER) can be quite challenging. Here are some strategies that can be employed:
@@ -270,6 +276,7 @@ Handling ambiguous entities in Named Entity Recognition (NER) can be quite chall
 5. **User Feedback**: Incorporate user feedback mechanisms to refine the model's predictions. If users can correct or confirm entity classifications, this can improve the model over time.
 
 
+<a id="industries-of-interest"></a>
 # Industries Of Interest {#industries-of-interest}
 
 
@@ -293,6 +300,7 @@ Exploratory Questions
 
 
 
+<a id="input-is-not-properly-sanitized"></a>
 # Input Is Not Properly Sanitized {#input-is-not-properly-sanitized}
 
 
@@ -309,6 +317,7 @@ Sanitization typically involves:
 - Escaping special characters that could be interpreted as code.
 - Removing or encoding potentially harmful content.
 
+<a id="interpreting-logistic-regression-model-parameters"></a>
 # Interpreting Logistic Regression Model Parameters {#interpreting-logistic-regression-model-parameters}
 
 How do this in terms of odds, probabilities ,odds ratio.
@@ -319,6 +328,7 @@ How do this in terms of odds, probabilities ,odds ratio.
  
 
 
+<a id="interquartile-range-iqr-detection"></a>
 # Interquartile Range (Iqr) Detection {#interquartile-range-iqr-detection}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Preprocess/Outliers/outliers_IQR.py
@@ -348,6 +358,7 @@ Applications:
 - Best suited for non-Gaussian distributions.
 - Commonly used in boxplots for visualizing outliers.
 
+<a id="isolated-forest"></a>
 # Isolated Forest {#isolated-forest}
 
 
@@ -388,6 +399,7 @@ Related Topics
  - One-Class [Support Vector Machines|SVM](#support-vector-machinessvm) for anomaly detection
 
 
+<a id="imperative"></a>
 # Imperative {#imperative}
 
 
@@ -407,6 +419,7 @@ However, the declarative approach benefits from **leveraging compile-time query
 
 
 
+<a id="in-memory-format"></a>
 # In Memory Format {#in-memory-format}
 
 
@@ -432,10 +445,12 @@ The opposed to in-memory formats are [Data Lake File Formats](Data%20Lake%20File
 
 
 
+<a id="incremental-synchronization"></a>
 # Incremental Synchronization {#incremental-synchronization}
 
 
 
+<a id="inference-versus-prediction"></a>
 # Inference Versus Prediction {#inference-versus-prediction}
 
 
@@ -449,6 +464,7 @@ The key distinction is that in **generative models**, inferencing not only predi
 
 
 
+<a id="inference"></a>
 # Inference {#inference}
 
 
@@ -456,6 +472,7 @@ Inferencing involves prediction, but the output is more generative and creative 
 
 [inference versus prediction](#inference-versus-prediction)
 
+<a id="information-theory"></a>
 # Information Theory {#information-theory}
 
 
@@ -480,10 +497,12 @@ Information theory has profound implications and applications across various dom
 
 
 
+<a id="interoperable"></a>
 # Interoperable {#interoperable}
 
 
 
+<a id="interpretability"></a>
 # Interpretability {#interpretability}
 
 
@@ -584,6 +603,7 @@ Need comprehensibility and accuracy in explanations to enhance user understandin
 
 - **How can we design machine learning models that are both accurate and interpretable?** While deep learning models often achieve high accuracy, their complexity can make them difficult to interpret. This raises questions about how to balance accuracy and interpretability. Exploring techniques for visualizing and understanding the internal representations learned by deep networks, or developing inherently interpretable models that still achieve high performance, could lead to greater trust and adoption of machine learning in critical applications like healthcare and finance.
 
+<a id="interview-notepad"></a>
 # Interview Notepad {#interview-notepad}
 
 
@@ -690,6 +710,7 @@ What is a statistical interaction? ;; Statistical interaction occurs when the ef
 What is selection bias? ;; Selection bias refers to a systematic error in sampling that results in a sample that is <mark>not representative of the population</mark>, leading to incorrect conclusions about the population.
 <!--SR:!2024-04-12,1,230-->
 
+<a id="ipynb"></a>
 # Ipynb {#ipynb}
 
 

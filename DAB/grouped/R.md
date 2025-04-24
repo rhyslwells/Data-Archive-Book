@@ -36,6 +36,7 @@
 
 
 
+<a id="r-squared"></a>
 # R Squared {#r-squared}
 
 
@@ -60,6 +61,7 @@ An R² of 0.60 indicates that 60% of the variability observed in the target vari
 #### Follow up Questions
 - [R-squared metric not always a good indicator of model performance in regression](#r-squared-metric-not-always-a-good-indicator-of-model-performance-in-regression)
 
+<a id="r-squared-metric-not-always-a-good-indicator-of-model-performance-in-regression"></a>
 # R Squared Metric Not Always A Good Indicator Of Model Performance In Regression {#r-squared-metric-not-always-a-good-indicator-of-model-performance-in-regression}
 
 R-squared (R²) is a commonly used metric for assessing the performance of regression models, but it is not always a reliable indicator of model quality. It should not be the sole criterion for evaluating model performance. It is essential to consider other metrics, such as [Adjusted R squared](#adjusted-r-squared), [Cross Validation](#cross-validation) results, and the overall context of the analysis.
@@ -76,10 +78,12 @@ R-squared (R²) is a commonly used metric for assessing the performance of regre
 
 
 
+<a id="r"></a>
 # R {#r}
 
 
 
+<a id="rag"></a>
 # Rag {#rag}
 
 
@@ -179,6 +183,7 @@ ice cream shop inteacting with cloud database.
    - Body: New flavor data.
    - Response: Confirmation of creation.
 
+<a id="roc-receiver-operating-characteristic"></a>
 # Roc (Receiver Operating Characteristic) {#roc-receiver-operating-characteristic}
 
 
@@ -245,6 +250,7 @@ plt.legend()
 plt.show()
 ```
 
+<a id="roc_curvepy"></a>
 # Roc_Curve.Py {#roc_curvepy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Selection/ROC_Curve.py
@@ -314,15 +320,18 @@ This script illustrates the process of building, evaluating, and visualizing cla
 - Both models significantly outperform random guessing (baseline AUROC = 0.500), indicating their utility for this classification task.
 - However, such high performance (especially for Naive Bayes) may suggest that the dataset or features are particularly well-suited to the model, or there may be minimal noise in the classification task. Further evaluation (e.g., on new datasets) is recommended to confirm robustness.
 
+<a id="race-conditions"></a>
 # Race Conditions {#race-conditions}
 
 
 
+<a id="random-forest-regression"></a>
 # Random Forest Regression {#random-forest-regression}
 
 Random Forest Regression
 : Like random forests for classification, random forest regression combines multiple regression trees to improve prediction accuracy.
 
+<a id="random-forests"></a>
 # Random Forests {#random-forests}
 
 
@@ -373,6 +382,7 @@ Use data that was not in boot strap data set - measure the accuracy based on the
 Refine the random forest by qweaking the [Hyperparameter](#hyperparameter) of number of features used per step.
 
 
+<a id="react"></a>
 # React {#react}
 
 
@@ -393,6 +403,7 @@ React is ideal for Single Page Applications (SPAs) that load once and update dyn
 Popular UI libraries include Tailwind CSS and shadcn/ui.
 
 
+<a id="reasoning-tokens"></a>
 # Reasoning Tokens {#reasoning-tokens}
 
 
@@ -408,6 +419,7 @@ In the context of models like ChatGPT, **reasoning tokens** refer to the individ
 
 - Reasoning tokens enable the model to maintain **logical continuity**, allowing it to backtrack or adjust outputs based on the sequence of previously generated tokens. For example, if the model makes a mistake in an earlier step (like a miscalculation), it can revise its response as it generates subsequent tokens that recognize the inconsistency.
 
+<a id="recall"></a>
 # Recall {#recall}
 
 
@@ -430,6 +442,7 @@ Related Concepts
 
 ![Pasted image 20241222091831.png](../content/images/Pasted%20image%2020241222091831.png)
 
+<a id="recommender-systems"></a>
 # Recommender Systems {#recommender-systems}
 
 
@@ -458,6 +471,7 @@ A recommender system, or recommendation system, is a type of information filteri
 - **News and Content Platforms**:
 
 
+<a id="recurrent-neural-networks"></a>
 # Recurrent Neural Networks {#recurrent-neural-networks}
 
 
@@ -518,10 +532,12 @@ Issues:
 - They couple their representation size to the amount of computation per step. 
 
 
+<a id="recursive-algorithm"></a>
 # Recursive Algorithm {#recursive-algorithm}
 
 
 
+<a id="regression-metrics"></a>
 # Regression Metrics {#regression-metrics}
 
 
@@ -593,6 +609,7 @@ See Regression_Metrics.py
 
 
 
+<a id="regression"></a>
 # Regression {#regression}
 
 
@@ -628,10 +645,12 @@ See Regression_Metrics.py
 > -  What are the benefits of combining [Linear Regression](#linear-regression) with [Feature Engineering](#feature-engineering) for complex datasets?  
 
 
+<a id="regression_logistic_metricsipynb"></a>
 # Regression_Logistic_Metrics.Ipynb {#regression_logistic_metricsipynb}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Selection/Model_Evaluation/Classification/Regression_Logistic_Metrics.ipynb
 
+<a id="regularisation-of-tree-based-models"></a>
 # Regularisation Of Tree Based Models {#regularisation-of-tree-based-models}
 
 
@@ -745,6 +764,7 @@ Below are the common regularization techniques used in tree models such as [Deci
 
 
 
+<a id="regularisation"></a>
 # Regularisation {#regularisation}
 
 
@@ -798,10 +818,12 @@ Regularization is widely used in linear models but is also applied in other mach
 In [ML_Tools](#ml_tools) see: [Regularisation.py](#regularisationpy)
 
 
+<a id="regularisationpy"></a>
 # Regularisation.Py {#regularisationpy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Optimisation/Regularisation/Regularisation.py
 
+<a id="reinforcement-learning"></a>
 # Reinforcement Learning {#reinforcement-learning}
 
 
@@ -865,6 +887,7 @@ with np.printoptions(formatter={'float': '{:.3f}'.format}):
     print("Info:", info)
 ```
 
+<a id="relating-tables-together"></a>
 # Relating Tables Together {#relating-tables-together}
 
 
@@ -904,10 +927,12 @@ Cascading Actions:
 [ER Diagrams](#er-diagrams)
 
 
+<a id="relational-database"></a>
 # Relational Database {#relational-database}
 
 
 
+<a id="relationships-in-memory"></a>
 # Relationships In Memory {#relationships-in-memory}
 
 
@@ -933,10 +958,12 @@ Organizing memory in graph structures allows LLMs to improve relational understa
 
 Insights from cognitive science inform memory design and improve human-AI interaction. By integrating these insights, LLMs can mimic human-like memory processes, enhancing their ability to form, maintain, and retrieve relationships in memory, leading to more natural and effective interactions.
 
+<a id="reward-function"></a>
 # Reward Function {#reward-function}
 
 [Recurrent Neural Networks|RNN](#recurrent-neural-networksrnn)
 
+<a id="ridge"></a>
 # Ridge {#ridge}
 
 
@@ -1012,6 +1039,7 @@ from tensorflow.keras.regularizers import l2
 Dense(25, activation="relu", kernel_regularizer=l2(0.01))
 ```
 
+<a id="row-based-storage"></a>
 # Row Based Storage {#row-based-storage}
 
 Data is stored in consecutive rows, allows [CRUD](#crud)
@@ -1036,10 +1064,12 @@ When performing an **insert** or **update**, the entire row can be read and writ
 
 Use case [OLTP](#oltp). For instance, inserting a new order or updating an existing one (like modifying `order_amount` or `customer_id`) is efficient because all the data for a single record is stored together in a row.
 
+<a id="requirementstxt"></a>
 # Requirements.Txt {#requirementstxt}
 
 
 
+<a id="reverse-etl"></a>
 # Reverse Etl {#reverse-etl}
 
 
@@ -1051,6 +1081,7 @@ As [Maxime Beauchemin](term/maxime%20beauchemin.md) mentions in [his article](h
 
 Read more about in [Reverse ETL Explained](https://airbyte.com/blog/reverse-etl#so-what-is-a-reverse-etl).
 
+<a id="rollup"></a>
 # Rollup {#rollup}
 
 

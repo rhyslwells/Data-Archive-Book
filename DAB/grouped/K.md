@@ -16,6 +16,7 @@
 
 
 
+<a id="k-means"></a>
 # K Means {#k-means}
 
 
@@ -57,6 +58,7 @@ The centroids are updated after each iteration.
 
 
 
+<a id="k-nearest-neighbours"></a>
 # K Nearest Neighbours {#k-nearest-neighbours}
 
 
@@ -96,6 +98,7 @@ KNN is best suited for smaller datasets due to its computational intensity, as i
    - Classifies a new data point based on the majority class of its k nearest neighbors.
    - Simple but computationally expensive for large datasets.
 
+<a id="k_meanspy"></a>
 # K_Means.Py {#k_meanspy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Build/Clustering/KMeans/K_Means.py
@@ -126,6 +129,7 @@ https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Build/Clustering/K
 8. **Exploratory Analysis**:
    - The script examines the impact of different numbers of clusters using an example function (`scatter_elbow`).
 
+<a id="kaggle-abalone-regression-example"></a>
 # Kaggle Abalone Regression Example {#kaggle-abalone-regression-example}
 
 Task: For each model as we tune the hyperparameters what happens to the (RMSLE) metric (scatter metric against hyperparameter).  
@@ -152,6 +156,7 @@ Both (sklearn)[`StratifiedKFold`](https://scikit-learn.org/stable/modules/gener
 `RepeatedStratifiedKFold` allows improving the estimated performance of a machine learning model, by simply repeating the [cross-validation](https://scikit-learn.org/stable/modules/cross_validation.html) procedure multiple times (according to the `n_repeats` value), and reporting the _mean_ result across all folds from all runs. This _mean_ result is expected to be a more accurate estimate of the model's performance
 
 
+<a id="kernelling"></a>
 # Kernelling {#kernelling}
 
 
@@ -207,6 +212,7 @@ In summary, WMTS is focused on efficiently serving map images for fast visualiza
 - **k-Means**: Performs well when clusters are **spherical** and well-separated.
 - **GMM**: Handles **overlapping clusters** and clusters with **different shapes**, leveraging its covariance modeling capability.
 
+<a id="knowledge-graph"></a>
 # Knowledge Graph {#knowledge-graph}
 
 
@@ -242,6 +248,7 @@ In summary, WMTS is focused on efficiently serving map images for fast visualiza
 - **Nodes**: `Barack Obama`, `United States`, `President`.
 - **Edges**: `Barack Obama --> President of --> United States`.
 
+<a id="knowledge-graphs-with-obsidian"></a>
 # Knowledge Graphs With Obsidian {#knowledge-graphs-with-obsidian}
 
 
@@ -280,6 +287,7 @@ In summary, WMTS is focused on efficiently serving map images for fast visualiza
 
 
 
+<a id="knowledge-work"></a>
 # Knowledge Work {#knowledge-work}
 
 
@@ -300,6 +308,7 @@ Knowledge work refers to tasks that primarily involve handling or using informat
 - Strategic planning
 - Writing and content creation
 
+<a id="knowledge-graph-vs-rag-setup"></a>
 # Knowledge Graph Vs Rag Setup {#knowledge-graph-vs-rag-setup}
 
 
@@ -330,6 +339,7 @@ A [Knowledge Graph](#knowledge-graph) and a **Retrieval-Augmented Generation ([R
 
 
 
+<a id="kubernetes"></a>
 # Kubernetes {#kubernetes}
 
 

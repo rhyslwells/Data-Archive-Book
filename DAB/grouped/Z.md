@@ -8,6 +8,7 @@
 
 
 
+<a id="z-normalisation"></a>
 # Z Normalisation {#z-normalisation}
 
 
@@ -68,6 +69,7 @@ scaler = MinMaxScaler()
 df_normalized = scaler.fit_transform(df)  # Rescales each feature to [0, 1]
 ```
 
+<a id="z-score"></a>
 # Z Score {#z-score}
 
 
@@ -107,6 +109,7 @@ Related terms:
     - Use this method for datasets with extreme outliers.
     - Points with $M > 3.5$ are typically anomalies.
 
+<a id="z-scores-vs-prediction-intervals"></a>
 # Z Scores Vs Prediction Intervals {#z-scores-vs-prediction-intervals}
 
 
@@ -125,6 +128,7 @@ Use Z-scores to evaluate existing values or standardize. Use prediction interval
 |**Width of range**|Based on fixed $\sigma$|Wider—accounts for both sampling error and variability|
 |**Needs population $\sigma$?**|Yes (or large $n$ to approximate)|No (uses sample $s$ and $t$ for small $n$)|
 
+<a id="z-test"></a>
 # Z Test {#z-test}
 
 The Z-test is a statistical method used to determine if there is a <mark>significant difference between the means of two groups or to compare a sample mean to a known population mean when the population [standard deviation](#standard-deviation) is known</mark>. 

@@ -17,10 +17,12 @@
 
 
 
+<a id="vacuum"></a>
 # Vacuum {#vacuum}
 
 
 
+<a id="variance"></a>
 # Variance {#variance}
 
 Variance in a dataset is a statistical measure that represents the degree of spread or dispersion of the data points around the mean (average) of the dataset. 
@@ -92,6 +94,7 @@ Several vector database solutions are available, each with unique features and o
 
 
 
+<a id="vector-embedding"></a>
 # Vector Embedding {#vector-embedding}
 
 
@@ -156,6 +159,7 @@ In [ML_Tools](#ml_tools) see: [Vector_Embedding.py](#vector_embeddingpy)
 
 
 
+<a id="vector_embeddingpy"></a>
 # Vector_Embedding.Py {#vector_embeddingpy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Build/NLP/Vector_Embedding.py
@@ -183,6 +187,7 @@ https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Build/NLP/Vector_E
 2. **Visualization**:
     - A scatter plot showing the positions of terms in the embedding space.
 
+<a id="vectorisation"></a>
 # Vectorisation {#vectorisation}
 
 
@@ -205,6 +210,7 @@ Related concepts:
 
 A modern database query execution engine designed to optimize data processing by leveraging vectorized operations and SIMD (Single Instruction, Multiple Data) capabilities of modern CPUs. Vectorized engines, such as  [DuckDB](#duckdb), process data in large blocks or batches using SIMD instructions, allowing for improved parallelism, cache locality, and reduced overhead compared to traditional row-at-a-time processing engines, using [Columnar Storage](#columnar-storage).
 
+<a id="vercel"></a>
 # Vercel {#vercel}
 
 
@@ -278,6 +284,7 @@ This query retrieves all employees with an average performance score of 4.0 or h
 
 5. **Security**: If sensitive employee data needs to be protected, the view can be designed to exclude certain columns, ensuring that only necessary information is accessible.
 
+<a id="views"></a>
 # Views {#views}
 
 
@@ -324,6 +331,7 @@ Related topics:
 7. **Aggregation and Partitioning**:
    - Views can be used to calculate and store aggregated results (e.g., average ratings) and organize data by specific criteria (e.g., years or categories).
 
+<a id="violin-plot"></a>
 # Violin Plot {#violin-plot}
 
 
@@ -337,6 +345,7 @@ plt.show()
 
 
 
+<a id="virtual-environments"></a>
 # Virtual Environments {#virtual-environments}
 
 
@@ -359,6 +368,7 @@ Remember to set python interpreter
 Related terms:
 - [Poetry](#poetry)
 
+<a id="vanishing-and-exploding-gradients-problem"></a>
 # Vanishing And Exploding Gradients Problem {#vanishing-and-exploding-gradients-problem}
 
 

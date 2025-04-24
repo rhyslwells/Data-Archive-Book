@@ -26,6 +26,7 @@
 
 
 
+<a id="nlp"></a>
 # Nlp {#nlp}
 
 
@@ -74,6 +75,7 @@ wordnet_lemmatizer = WordNetLemmatizer()
   - **re**: Regular expressions for pattern matching and text manipulation.
 
 
+<a id="naive-bayes"></a>
 # Naive Bayes {#naive-bayes}
 
 
@@ -300,6 +302,7 @@ Naive Bayes classifiers are based on Bayes' theorem and assume that the features
    - A probabilistic classifier based on Bayes' theorem.
    - Simple and fast, especially effective for text classification.
 
+<a id="named-entity-recognition"></a>
 # Named Entity Recognition {#named-entity-recognition}
 
 
@@ -328,6 +331,7 @@ NER has significant implications in information extraction, search engines, and 
  - Text classification in [NLP](#nlp)  
  - Information extraction techniques  
 
+<a id="network-design"></a>
 # Network Design {#network-design}
 
 
@@ -338,6 +342,7 @@ How to systems interact.
 
 
 
+<a id="neural-network-classification"></a>
 # Neural Network Classification {#neural-network-classification}
 
 
@@ -363,6 +368,7 @@ In [clustering](#clustering)-based classification, we group the probability dist
 - [Data Quality](#data-quality): The quality of the training data can also influence the choice of threshold or number of clusters. If the data is noisy or contains outliers, the chosen values may not be optimal.
 - [Evaluation Metrics](#evaluation-metrics): Choose evaluation metrics that are appropriate for the specific problem and the desired trade-off between different types of errors. 
 
+<a id="neural-scaling-laws"></a>
 # Neural Scaling Laws {#neural-scaling-laws}
 
 
@@ -431,6 +437,7 @@ $$LOSS < D^{-4/d}$$
 
 
 
+<a id="neural-network-in-practice"></a>
 # Neural Network In Practice {#neural-network-in-practice}
 
 
@@ -474,6 +481,7 @@ The `history` object can capture additional metrics such as accuracy, validation
 
 
 
+<a id="neural-network"></a>
 # Neural Network {#neural-network}
 
 
@@ -531,6 +539,7 @@ Cons:
 
 
 
+<a id="ngrams"></a>
 # Ngrams {#ngrams}
 
 
@@ -549,6 +558,7 @@ N-grams are used to analyze and <mark>model the structure of language</mark>, an
 
 This can be does through kwargs in CountVectorizer.
 
+<a id="nosql"></a>
 # Nosql {#nosql}
 
 
@@ -556,14 +566,17 @@ This can be does through kwargs in CountVectorizer.
 
  **NoSQL Databases**: Accommodate unstructured data and can be represented through graph theory or document-based structures, allowing for flexible data models.
 
+<a id="nodejs"></a>
 # Node.Js {#nodejs}
 
 
 
+<a id="non-parametric-tests"></a>
 # Non Parametric Tests {#non-parametric-tests}
 
 
 
+<a id="normalisation-of-text"></a>
 # Normalisation Of Text {#normalisation-of-text}
 
 
@@ -623,6 +636,7 @@ def normalize_document(document, stemmer=porter_stemmer, lemmatizer=wodnet_lemma
 
 
 
+<a id="normalisation-of-data"></a>
 # Normalisation Of Data {#normalisation-of-data}
 
 Normalization is the process of structuring data from the source into a format appropriate for consumption in the destination. 
@@ -631,6 +645,7 @@ For example, when writing data from a nested, dynamically typed source like a [J
 
 
 
+<a id="normalisation-vs-standardisation"></a>
 # Normalisation Vs Standardisation {#normalisation-vs-standardisation}
 
 Key Differences:
@@ -645,6 +660,7 @@ Normalisation is preferred when the data does not follow a Gaussian distribution
 
 
 
+<a id="normalisation"></a>
 # Normalisation {#normalisation}
 
 
@@ -676,6 +692,7 @@ print(df.sort_values('Category'))
 
 
 
+<a id="normalised-schema"></a>
 # Normalised Schema {#normalised-schema}
 
 
@@ -706,6 +723,7 @@ This is achieved by applying formal rules during the creation of a new database 
 [Normalisation of data](#normalisation-of-data)
 
 
+<a id="notebooklm"></a>
 # Notebooklm {#notebooklm}
 
 https://www.youtube.com/watch?v=EOmgC3-hznM
@@ -731,18 +749,22 @@ FAQ
 
 Note: #portal  can help with file extraction rem utils function (for [NotebookLM](#notebooklm))
 
+<a id="nbconvert"></a>
 # Nbconvert {#nbconvert}
 
 
 
+<a id="neo4j"></a>
 # Neo4J {#neo4j}
 
 
 
+<a id="nltk"></a>
 # Nltk {#nltk}
 
 
 
+<a id="npy-files-a-numpy-array-storage"></a>
 # Npy Files A Numpy Array Storage {#npy-files-a-numpy-array-storage}
 
 

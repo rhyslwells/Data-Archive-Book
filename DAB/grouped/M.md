@@ -60,16 +60,19 @@
 
 
 
+<a id="ml-engineer"></a>
 # Ml Engineer {#ml-engineer}
 
 ML Engineer
   - Configures and optimizes production ML models.
   - Monitors the performance and accuracy of ML models in production environments.
 
+<a id="mnist"></a>
 # Mnist {#mnist}
 
 [Datasets](#datasets)
 
+<a id="machine-learning-algorithms"></a>
 # Machine Learning Algorithms {#machine-learning-algorithms}
 
 
@@ -126,6 +129,7 @@ Data Dependence: The performance of machine learning algorithms heavily depends 
 
 [Interpretability](#interpretability): Some machine learning algorithms, especially deep learning models, can be complex and difficult to interpret, making it challenging to understand the reasoning behind their predictions.
 
+<a id="machine-learning-operations"></a>
 # Machine Learning Operations {#machine-learning-operations}
 
 
@@ -143,6 +147,7 @@ Machine Learning Operations (MLOps) is a set of practices and tools designed to 
 
 6. [Model Observability](#model-observability) and Retraining: Continuous monitoring of model performance is crucial in MLOps. Observability tools help track metrics and identify when a model needs retraining due to changes in data patterns or performance degradation.
 
+<a id="machine-learning"></a>
 # Machine Learning {#machine-learning}
 
 
@@ -168,6 +173,7 @@ Machine learning (ML) is a type of artificial intelligence (AI) that allows soft
 
 
 
+<a id="maintainable-code"></a>
 # Maintainable Code {#maintainable-code}
 
 [Pydantic](#pydantic) : runtine analysis
@@ -178,6 +184,7 @@ Machine learning (ML) is a type of artificial intelligence (AI) that allows soft
 
 Want robust and reliable Python applications.
 
+<a id="makefile"></a>
 # Makefile {#makefile}
 
 
@@ -257,6 +264,7 @@ If you run this Makefile using the `make` command in a terminal, here's what wou
 4. **Clean Up**: If you run `make clean`, it will execute the `clean` target, which removes the object files and the executable, cleaning up the build directory.
 
 
+<a id="manifold-learning"></a>
 # Manifold Learning {#manifold-learning}
 
 
@@ -348,6 +356,7 @@ WHERE enrollments.student_id = 1;  -- Replace 1 with the desired student ID
    - <mark>Requires a junction table</mark> to manage the relationships.
    - Example: Students and Courses tables with a junction table Enrollments.
 
+<a id="markov-decision-processes"></a>
 # Markov Decision Processes {#markov-decision-processes}
 
 
@@ -361,11 +370,13 @@ architecture
 [Markov Decision Processes](#markov-decision-processes) 
 ([Markov Decision Processes|MDP](#markov-decision-processesmdp)s): The mathematical framework for modelling decision-making, characterized by states, actions, transition probabilities, and rewards. Your understanding of probability theory and stochastic processes will be crucial here.
 
+<a id="markov-chain"></a>
 # Markov Chain {#markov-chain}
 
 Is a stochastic model that describes a sequence of events in which the probability of each event depends only on the state attained in the previous event.
 
 
+<a id="master-observability-datadog"></a>
 # Master Observability Datadog {#master-observability-datadog}
 
 what happens in prod, pre prod.
@@ -391,6 +402,7 @@ logging
 
 
 
+<a id="mathematical-reasoning-in-transformers"></a>
 # Mathematical Reasoning In Transformers {#mathematical-reasoning-in-transformers}
 
 
@@ -411,6 +423,7 @@ Pretrained transformers on math specific data.
 
 
 
+<a id="mathematics"></a>
 # Mathematics {#mathematics}
 
 
@@ -422,6 +435,7 @@ Pretrained transformers on math specific data.
 
 [information theory](#information-theory)
 
+<a id="maximum-likelihood-estimation"></a>
 # Maximum Likelihood Estimation {#maximum-likelihood-estimation}
 
 Resource:
@@ -450,12 +464,14 @@ Assumptions for MLE:
 
 Likelihood is a function of a parameter
 
+<a id="mean-squared-error"></a>
 # Mean Squared Error {#mean-squared-error}
 
 <mark>Measures numerical proximity.</mark>
 
 
 
+<a id="melt"></a>
 # Melt {#melt}
 
 
@@ -543,11 +559,13 @@ Output:
 
 
 
+<a id="memory-caching"></a>
 # Memory Caching {#memory-caching}
 
 Memory Caching
   - Use in-memory caches to store frequently accessed data closer to the user, reducing latency.
 
+<a id="memory"></a>
 # Memory {#memory}
 
 
@@ -582,10 +600,12 @@ Balances immediate retrieval with long-term storage of information, enabling bet
 
 Supports evolving and persistent memory systems tailored to specific tasks.
 
+<a id="merge"></a>
 # Merge {#merge}
 
 
 
+<a id="metadata-handling"></a>
 # Metadata Handling {#metadata-handling}
 
 
@@ -608,6 +628,7 @@ Supports evolving and persistent memory systems tailored to specific tasks.
 
 - Description: Similar to capping and flooring, winsorizing replaces extreme values with less extreme values within a specified range, typically using percentiles.
 
+<a id="metric"></a>
 # Metric {#metric}
 
 
@@ -626,6 +647,7 @@ Calculated measures are part of metrics and apply to specific [Dimensions](Dimen
 
 
 
+<a id="microsoft-access"></a>
 # Microsoft Access {#microsoft-access}
 
 
@@ -673,10 +695,12 @@ Issues:
 
 
 
+<a id="mini-batch-gradient-descent"></a>
 # Mini Batch Gradient Descent {#mini-batch-gradient-descent}
 
 
 
+<a id="mixture-of-experts"></a>
 # Mixture Of Experts {#mixture-of-experts}
 
 Different parts of the network focusing on parts of the questions
@@ -690,6 +714,7 @@ activating
 
 
 
+<a id="model-building"></a>
 # Model Building {#model-building}
 
 
@@ -710,10 +735,12 @@ Model Selection:
 
 
 
+<a id="model-cascading"></a>
 # Model Cascading {#model-cascading}
 
 
 
+<a id="model-deployment"></a>
 # Model Deployment {#model-deployment}
 
 
@@ -758,6 +785,7 @@ Deployment Options
 AZURE_STORAGE_CONNECTION_STRING (required as environment variable)
 Learn more about it: https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python?toc=%2Fpython%2Fazure%2FTOC.json
 
+<a id="model-ensemble"></a>
 # Model Ensemble {#model-ensemble}
 
 
@@ -787,6 +815,7 @@ In [ML_Tools](#ml_tools) see: [Comparing_Ensembles.py](#comparing_ensemblespy)
 - **Complexity**: Ensemble models can be more complex and computationally intensive than single models.
 - **[Interpretability](#interpretability)**: The final model may be harder to interpret compared to simpler models like decision trees.
 
+<a id="model-evaluation-vs-model-optimisation"></a>
 # Model Evaluation Vs Model Optimisation {#model-evaluation-vs-model-optimisation}
 
 
@@ -798,6 +827,7 @@ Feedback Loop: Evaluation provides feedback on the effectiveness of optimization
 
 
 
+<a id="model-evaluation"></a>
 # Model Evaluation {#model-evaluation}
 
 
@@ -818,6 +848,7 @@ For regression tasks: [Regression Metrics](#regression-metrics): Metrics like Me
 
 [Feature Importance](#feature-importance): After training, analyze which features have the most significant impact on the model's predictions.
 
+<a id="model-interpretability"></a>
 # Model Interpretability {#model-interpretability}
 
 Model [interpretability](#interpretability) tools are crucial in ensuring that machine learning models are transparent, explainable, and understandable to stakeholders, particularly in industries where decisions need to be justifiable (e.g., finance, healthcare). 
@@ -857,6 +888,7 @@ Global Surrogate Models
 
 
 
+<a id="model-observability"></a>
 # Model Observability {#model-observability}
 
 
@@ -904,6 +936,7 @@ Monitor the model's performance over time. If the data distribution changes (con
 - [Model Validation](#model-validation)
 
 
+<a id="model-optimisation"></a>
 # Model Optimisation {#model-optimisation}
 
 
@@ -935,6 +968,7 @@ Model optimization is a step in the machine learning workflow aimed at enhancing
 
 5. [Model Ensemble](#model-ensemble): Combining models to get better performance
 
+<a id="model-parameters-tuning"></a>
 # Model Parameters Tuning {#model-parameters-tuning}
 
 
@@ -968,6 +1002,7 @@ On the right:
     - the error on the trained data (blue) decreases as the model complexity increases as expected
     - the error of the cross-validation data decreases initially as the model starts to conform to the data, but then increases as the model starts to over-fit on the training data (fails to *generalize*).
 
+<a id="model-parameters"></a>
 # Model Parameters {#model-parameters}
 
 Model parameters are also called weights and biases.
@@ -1003,6 +1038,7 @@ See also:
 
 
 
+<a id="model-selection"></a>
 # Model Selection {#model-selection}
 
 
@@ -1030,6 +1066,7 @@ Common approaches for model selection include:
 - [Cross Validation](#cross-validation): Evaluate the model more robustly by splitting the training data into smaller chunks and training the model multiple times.
 - [Model Interpretability](#model-interpretability): Utilize tools to understand and interpret the model's predictions, ensuring transparency and trustworthiness.
 
+<a id="model-validation"></a>
 # Model Validation {#model-validation}
 
 Model Validation refers to the process of evaluating a machine learning model's performance on a separate dataset (often called the validation set) to ensure it generalizes well to new, unseen data. This step is crucial for tuning [model parameters](#model-parameters), selecting the best model, and preventing overfitting. Validation helps in assessing how well the model will perform in real-world scenarios.
@@ -1038,6 +1075,7 @@ Model Validation refers to the process of evaluating a machine learning model's 
 
 While model validation is a step in the model development process, model observability is an ongoing practice once the model is deployed. Both are related in that they aim to ensure the model's reliability and effectiveness, but they occur at different stages of the model lifecycle. Validation is about initial performance assessment, whereas observability is about continuous monitoring and maintenance.
 
+<a id="model-parameters-vs-hyperparameters"></a>
 # Model Parameters Vs Hyperparameters {#model-parameters-vs-hyperparameters}
 
 Model parameters and hyperparameters serve different roles:
@@ -1059,6 +1097,7 @@ Model parameters and hyperparameters serve different roles:
 	   - or the regularization parameter in a regression model.
    - Hyperparameters are typically tuned through methods like grid search or random search to find the best configuration that results in optimal model performance.
 
+<a id="model-preparation"></a>
 # Model Preparation {#model-preparation}
 
 
@@ -1071,6 +1110,7 @@ print(accuracy_score(y_expect, y_pred))
 ```
 
 
+<a id="momentum"></a>
 # Momentum {#momentum}
 
 Momentum is an [Model Optimisation|Optimisation](#model-optimisationoptimisation)  technique used to accelerate the [Gradient Descent](#gradient-descent) algorithm by incorporating the concept of inertia. It helps in reducing oscillations and speeding up convergence, especially in scenarios where the [cost function](#cost-function) has a complex landscape (surface). Momentum helps in dampening oscillations and achieving faster convergence. Momentum is a technique that helps accelerate gradient descent by adding a fraction of the previous update to the current update. Formula:
@@ -1100,14 +1140,17 @@ In [ML_Tools](#ml_tools) see: [Momentum.py](#momentumpy)
 
 
 
+<a id="momentumpy"></a>
 # Momentum.Py {#momentumpy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Optimisation/Momentum.py
 
+<a id="mongodb"></a>
 # Mongodb {#mongodb}
 
 
 
+<a id="monolith-architecture"></a>
 # Monolith Architecture {#monolith-architecture}
 
 
@@ -1129,6 +1172,7 @@ When we talk about a "function call-driven" monolith, we are referring to the wa
 
 
 
+<a id="monte-carlo-simulation"></a>
 # Monte Carlo Simulation {#monte-carlo-simulation}
 
 Resources:
@@ -1149,6 +1193,7 @@ Simulation studies:
 
 
 
+<a id="multi-agent-reinforcement-learning"></a>
 # Multi Agent Reinforcement Learning {#multi-agent-reinforcement-learning}
 
 
@@ -1156,6 +1201,7 @@ Simulation studies:
 
 
 
+<a id="multi-head-attention"></a>
 # Multi Head Attention {#multi-head-attention}
 
 
@@ -1217,6 +1263,7 @@ Consider translating a sentence from one language to another. The multi-head att
 By <mark>aggregating these different perspectives</mark>, multi-head attention ensures that the model understands both the local and global context, leading to better translation quality.
 
 
+<a id="multi-level-index"></a>
 # Multi Level Index {#multi-level-index}
 
 
@@ -1265,6 +1312,7 @@ Product B Store X   90  105
           Store Y   95  100
 ```
 
+<a id="multicollinearity"></a>
 # Multicollinearity {#multicollinearity}
 
 
@@ -1301,10 +1349,12 @@ Related:
 - Variance Inflation Factor (VIF): High VIF values (typically greater than 10) indicate a high degree of multicollinearity. <mark>Features with high VIF should be dropped to improve model stability.</mark>
 
 
+<a id="multinomial-naive-bayes"></a>
 # Multinomial Naive Bayes {#multinomial-naive-bayes}
 
 
 
+<a id="mysql"></a>
 # Mysql {#mysql}
 
 MySQL has more <mark>granularity</mark> with types than SQLite. For example, an integer could be `TINYINT`, `SMALLINT`, `MEDIUMINT`, `INT` or `BIGINT` based on the size of the number we want to store. 
@@ -1315,10 +1365,12 @@ The following table shows us the size and range of numbers we can store in each 
 ### Tags
 - **Tags**: #relational_database, #data_management
 
+<a id="maintainability"></a>
 # Maintainability {#maintainability}
 
 
 
+<a id="map-reduce"></a>
 # Map Reduce {#map-reduce}
 
 
@@ -1353,6 +1405,7 @@ MapReduce is particularly effective for [Batch Processing](#batch-processing)  t
 
 
 
+<a id="master-data-management"></a>
 # Master Data Management {#master-data-management}
 
 
@@ -1380,5 +1433,6 @@ Key aspects of MDM include:
 
 
 
+<a id="mean-absolute-error"></a>
 # Mean Absolute Error {#mean-absolute-error}
 

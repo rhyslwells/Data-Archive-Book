@@ -34,6 +34,7 @@
 
 
 
+<a id="hadoop"></a>
 # Hadoop {#hadoop}
 
 
@@ -61,6 +62,7 @@
 
 
 
+<a id="handling-different-distributions"></a>
 # Handling Different Distributions {#handling-different-distributions}
 
 Handling different [distributions](#distributions) is needed for developing robust, fair, and accurate machine learning models that can adapt to a wide range of data environments.
@@ -110,18 +112,22 @@ How do we pick the dev set?
 ## Related Topics
 - [Preprocessing](#preprocessing)
 
+<a id="handling_missing_dataipynb"></a>
 # Handling_Missing_Data.Ipynb {#handling_missing_dataipynb}
 
 https://github.com/rhyslwells/DE_Tools/blob/main/Explorations/Investigating/Cleaning/Handling_Missing_Data.ipynb
 
+<a id="handling_missing_data_basicipynb"></a>
 # Handling_Missing_Data_Basic.Ipynb {#handling_missing_data_basicipynb}
 
 https://github.com/rhyslwells/DE_Tools/blob/main/Explorations/Investigating/Cleaning/Handling_Missing_Data_Basic.ipynb
 
+<a id="handwritten-digit-classification"></a>
 # Handwritten Digit Classification {#handwritten-digit-classification}
 
 ![Pasted image 20241006124356.png|800](../content/images/Pasted%20image%2020241006124356.png|800)
 
+<a id="hash"></a>
 # Hash {#hash}
 
 A hash is a fixed-size string of characters that is generated from input data of any size using a hash function. 
@@ -155,6 +161,7 @@ If the input data changes even slightly (e.g., "Hello, World"), the hash will be
 
 
 
+<a id="heatmap"></a>
 # Heatmap {#heatmap}
 
 
@@ -178,6 +185,7 @@ In [ML_Tools](#ml_tools) see: [Heatmaps_Dendrograms.py](#heatmaps_dendrogramspy)
 
 
 
+<a id="heatmaps_dendrogramspy"></a>
 # Heatmaps_Dendrograms.Py {#heatmaps_dendrogramspy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations\Preprocess\Correlation\Heatmaps_Dendrograms.py
@@ -187,12 +195,14 @@ See:
  - [Dendrograms](#dendrograms)
 
 
+<a id="hierarchical-clustering"></a>
 # Hierarchical Clustering {#hierarchical-clustering}
 
 Hierarchical clustering builds a treelike structure of clusters, with similar clusters merged together at higher levels.
 
 Hierarchical clustering builds a tree-like structure of clusters, with similar clusters merged together at higher levels.
 
+<a id="high-cross-validation-accuracy-is-not-directly-proportional-to-performance-on-unseen-test-data"></a>
 # High Cross Validation Accuracy Is Not Directly Proportional To Performance On Unseen Test Data {#high-cross-validation-accuracy-is-not-directly-proportional-to-performance-on-unseen-test-data}
 
 Reasons a Model with High [Cross Validation](#cross-validation) Accuracy May Perform Poorly on Unseen Test Data
@@ -227,6 +237,7 @@ Inappropriate Performance Metric:
 - Avoid data leakage by ensuring strict separation of preprocessing in CV folds.
 
 
+<a id="honkit"></a>
 # Honkit {#honkit}
 
 
@@ -236,6 +247,7 @@ https://flaviocopes.com/how-to-create-ebooks-markdown/#:~:text=honkit%20works%20
 
 https://github.com/rhyslwells/Note_Compiler
 
+<a id="hosting"></a>
 # Hosting {#hosting}
 
 
@@ -271,6 +283,7 @@ Once you have a simple Dash application.
 - ❌ May require a credit card to unlock some features
 
 
+<a id="how-llms-store-facts"></a>
 # How Llms Store Facts {#how-llms-store-facts}
 
 
@@ -292,6 +305,7 @@ See [Anthropic](#anthropic) posts
 - https://transformer-circuits.pub/2022/toy_model/index.html#adversarial
 - https://transformer-circuits.pub/2023/monosemantic-features
 
+<a id="how-businesses-use-gen-ai"></a>
 # How Businesses Use Gen Ai {#how-businesses-use-gen-ai}
 
 
@@ -318,6 +332,7 @@ An AI Gateway is a middleware platform that simplifies and secures interactions 
 2. [ibm.com - How an AI Gateway provides leaders with greater control](https://www.ibm.com/blog/announcement/how-an-ai-gateway-provides-greater-control-and-visibility-into-ai-services/)
 3. [traefik.io - AI Gateway: What Is It? How Is It Different From API Gateway?](https://traefik.io/glossary/ai-gateway/)
 
+<a id="how-do-we-evaluate-of-llm-outputs"></a>
 # How Do We Evaluate Of Llm Outputs {#how-do-we-evaluate-of-llm-outputs}
 
 Methods for assessing the quality and relevance of LLM-generated outputs, critical for improving model performance.
@@ -336,6 +351,7 @@ The evaluation of [LLM](#llm) outputs involves various methodologies to assess t
 
 
 
+<a id="how-is-reinforcement-learning-being-combined-with-deep-learning"></a>
 # How Is Reinforcement Learning Being Combined With Deep Learning {#how-is-reinforcement-learning-being-combined-with-deep-learning}
 
 
@@ -345,6 +361,7 @@ Exploring the potential of this combination in other domains and developing new 
 
 
 
+<a id="how-is-schema-evolution-done-in-practice-with-sql"></a>
 # How Is Schema Evolution Done In Practice With Sql {#how-is-schema-evolution-done-in-practice-with-sql}
 
 
@@ -451,12 +468,14 @@ Exploring the potential of this combination in other domains and developing new 
 - **Too Long**: Descriptive, yes, but avoid overly lengthy messages that become difficult to scan quickly.
 - **No Context**: A good commit message should allow anyone reviewing it to understand the change without needing additional context.
 
+<a id="how-to-model-to-improve-demand-forecasting"></a>
 # How To Model To Improve Demand Forecasting {#how-to-model-to-improve-demand-forecasting}
 
 
 
 
 
+<a id="how-to-normalise-a-merged-table"></a>
 # How To Normalise A Merged Table {#how-to-normalise-a-merged-table}
 
 See: [Normalised Schema](#normalised-schema)
@@ -472,6 +491,7 @@ Resource:
 
 
 
+<a id="how-to-reduce-the-need-for-gen-ai-responses"></a>
 # How To Reduce The Need For Gen Ai Responses {#how-to-reduce-the-need-for-gen-ai-responses}
 
 
@@ -511,15 +531,18 @@ Useful in [GraphRAG](#graphrag) is understanding the relationships of nodes in a
 
 ![Pasted image 20241004074458.png](../content/images/Pasted%20image%2020241004074458.png)
 
+<a id="how-to-use-sklearn-pipeline"></a>
 # How To Use Sklearn Pipeline {#how-to-use-sklearn-pipeline}
 
 
 
 
+<a id="how-would-you-decide-between-using-tf-idf-and-word2vec-for-text-vectorization"></a>
 # How Would You Decide Between Using Tf Idf And Word2Vec For Text Vectorization {#how-would-you-decide-between-using-tf-idf-and-word2vec-for-text-vectorization}
 
 
 
+<a id="hugging-face"></a>
 # Hugging Face {#hugging-face}
 
 
@@ -540,6 +563,7 @@ Resources:
 
 
 
+<a id="hyperparameter-tuning"></a>
 # Hyperparameter Tuning {#hyperparameter-tuning}
 
 
@@ -597,6 +621,7 @@ Hyperparameter_tuning_RF.py
 Video link: https://youtu.be/jUxhUgkKAjE?list=PLtqF5YXg7GLltQSLKSTnwCcHqTZASedbO&t=765
 
 
+<a id="hyperparameter"></a>
 # Hyperparameter {#hyperparameter}
 
 
@@ -613,6 +638,7 @@ Also see:
 
 
 
+<a id="hypothesis-testing"></a>
 # Hypothesis Testing {#hypothesis-testing}
 
 
@@ -659,6 +685,7 @@ Multiple testing increases the likelihood of encountering false positives (Type 
 - [Testing](#testing)
 
 
+<a id="heterogeneous-features"></a>
 # Heterogeneous Features {#heterogeneous-features}
 
 
@@ -696,6 +723,7 @@ In machine learning, heterogeneous features refer to a situation where the input
 Understanding how to work with heterogeneous features is essential for building effective machine learning models that can handle diverse types of data and extract meaningful insights from them.
 
 
+<a id="how-do-you-do-the-data-selection"></a>
 # How Do You Do The Data Selection {#how-do-you-do-the-data-selection}
 
 When you sample a dataset, [how do you do the data selection](#how-do-you-do-the-data-selection)? [Data Selection](#data-selection)

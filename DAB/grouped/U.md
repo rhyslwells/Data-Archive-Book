@@ -16,6 +16,7 @@
 
 
 
+<a id="uml"></a>
 # Uml {#uml}
 
 
@@ -29,6 +30,7 @@ https://plantuml.com/
 
 
 
+<a id="ubuntu"></a>
 # Ubuntu {#ubuntu}
 
 Ubuntu is a popular open-source operating system based on the [Linux](#linux) kernel. It is designed to be user-friendly:
@@ -47,6 +49,7 @@ Ubuntu is a popular open-source operating system based on the [Linux](#linux) ke
 
 
 
+<a id="unsupervised-learning"></a>
 # Unsupervised Learning {#unsupervised-learning}
 
 
@@ -93,20 +96,24 @@ Example: Detecting fraudulent credit card transactions by identifying transactio
 Mechanism: Works by randomly partitioning the data and identifying [standardised/Outliers|anomalies](#standardisedoutliersanomalies) as points that can be isolated quickly.
 
 
+<a id="untitled-1"></a>
 # Untitled 1 {#untitled-1}
 
 
 
 
+<a id="untitled-2"></a>
 # Untitled 2 {#untitled-2}
 
 
 
 
+<a id="untitled"></a>
 # Untitled {#untitled}
 
 
 
+<a id="use-cases-for-a-simple-neural-network-like"></a>
 # Use Cases For A Simple Neural Network Like {#use-cases-for-a-simple-neural-network-like}
 
 Scenarios where a simple [Neural network|Neural Network](#neural-networkneural-network) work like this might be useful:
@@ -130,6 +137,7 @@ The provided code only defines the network and performs a **forward pass**, but 
 - **Train the network** using an optimizer like **Stochastic Gradient Descent (SGD)**, **Adam**, or another optimization algorithm.
 - **Backpropagate** the gradients to update the model’s weights using gradient descent.
 
+<a id="use-of-rnns-in-energy-sector"></a>
 # Use Of Rnns In Energy Sector {#use-of-rnns-in-energy-sector}
 
 
@@ -256,10 +264,12 @@ For each of the energy data questions that RNNs might solve, **interpretable alt
 
 
 
+<a id="utilities"></a>
 # Utilities {#utilities}
 
 
 
+<a id="unittest"></a>
 # Unittest {#unittest}
 
 
@@ -296,12 +306,14 @@ Copy code
     - Mock function calls (`process_file`, `log_action`, `write_updated_file`).
     - Prevent real file modifications while testing.
 
+<a id="univariate-vs-multivariate"></a>
 # Univariate Vs Multivariate {#univariate-vs-multivariate}
 
 Single feature versus multiple features
 
 
 
+<a id="unstructured-data"></a>
 # Unstructured Data {#unstructured-data}
 
 

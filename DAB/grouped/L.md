@@ -36,6 +36,7 @@
 
 
 
+<a id="lbfgs"></a>
 # Lbfgs {#lbfgs}
 
 LBFGS stands for Limited-memory Broyden-Fletcher-Goldfarb-Shanno, which is an [Optimisation function](#optimisation-function)optimization algorithm used to find the minimum of a function. In the context of [logistic regression](#logistic-regression), LBFGS is a method for optimizing the cost function to find the optimal [model parameters](#model-parameters) (such as the intercept and coefficients).
@@ -53,6 +54,7 @@ In the context of logistic regression with sklearn, LBFGS is used as a solver fo
 
 LBFGS is often preferred for its efficiency and ability to converge quickly without needing a lot of iterations, especially when the number of features is large.
 
+<a id="llm-evaluation-metrics"></a>
 # Llm Evaluation Metrics {#llm-evaluation-metrics}
 
 [LLM Evaluation Metrics](#llm-evaluation-metrics)
@@ -63,6 +65,7 @@ which quantify the similarity between generated text and reference outputs.
 
 [LLM](#llm)
 
+<a id="llm"></a>
 # Llm {#llm}
 
 
@@ -100,6 +103,7 @@ Large [Language Models](#language-models) (LLMs) are a type of artificial intell
 
 
 
+<a id="lstm"></a>
 # Lstm {#lstm}
 
 
@@ -199,10 +203,12 @@ without lightning - there is a script there
 
 [LSTM](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
 
+<a id="label-encoding"></a>
 # Label Encoding {#label-encoding}
 
 
 
+<a id="labelling-data"></a>
 # Labelling Data {#labelling-data}
 
 Possible missing labelling or bias in the data, or under-represented data. Construction of the data set comes from the group collecting it.
@@ -211,6 +217,7 @@ Examples:
 - ImageNet
 
 
+<a id="langchain"></a>
 # Langchain {#langchain}
 
 [Python](#python) framework
@@ -241,6 +248,7 @@ sequences of calls too a LLM
 
 set up [Agentic Solutions](#agentic-solutions)
 
+<a id="language-model-output-optimisation"></a>
 # Language Model Output Optimisation {#language-model-output-optimisation}
 
 
@@ -279,6 +287,7 @@ Language models can be categorized into **large language models ([LLM](#llm))** 
 | **Interpretability**| Often a "black box"; difficult to explain decision-making. | More interpretable due to simpler architecture. |
 | **Generality**      | General-purpose; capable of handling a wide range of tasks. | Task-specific; excels in specific domains and structured data. |
 
+<a id="language-models"></a>
 # Language Models {#language-models}
 
 
@@ -292,6 +301,7 @@ Related to:
 [LLM](#llm)
 [Small Language Models|SLM](#small-language-modelsslm)
 
+<a id="lasso"></a>
 # Lasso {#lasso}
 
 
@@ -326,10 +336,12 @@ In L1 regularization, a penalty term proportional to the absolute value of the w
 - Can result in a sparse model with fewer features retained.
 -  Lasso regression adds a penalty term to the loss function proportional to the absolute value of the coefficients of the features. This encourages sparsity in the coefficient vector, effectively setting some coefficients to zero and performing feature selection.
 
+<a id="latency"></a>
 # Latency {#latency}
 
 
 
+<a id="latent-dirichlet-allocation"></a>
 # Latent Dirichlet Allocation {#latent-dirichlet-allocation}
 
 
@@ -419,6 +431,7 @@ for index, topic in enumerate(lda.components_):
 - **Dimensionality Reduction**: LDA reduces the complexity of the text data by modeling it with a smaller number of topics instead of many individual words.
 
 
+<a id="learning-styles"></a>
 # Learning Styles {#learning-styles}
 
 
@@ -438,6 +451,7 @@ What does the data look like [continuous](#continuous) or [categorical](#categor
 
 
 
+<a id="lightgbm-vs-xgboost-vs-catboost"></a>
 # Lightgbm Vs Xgboost Vs Catboost {#lightgbm-vs-xgboost-vs-catboost}
 
 
@@ -454,6 +468,7 @@ This table summarizes the key differences and strengths of each [Gradient Boosti
 
 
 
+<a id="lightgbm"></a>
 # Lightgbm {#lightgbm}
 
 
@@ -483,10 +498,12 @@ LightGBM is a gradient boosting framework that is designed for speed and efficie
 - **Large Datasets**: Ideal for applications where speed is crucial.
 - **High-Dimensional Data**: Efficient when dealing with high-dimensional data and categorical features.
 
+<a id="linear-discriminant-analysis"></a>
 # Linear Discriminant Analysis {#linear-discriminant-analysis}
 
 
 
+<a id="linear-regression"></a>
 # Linear Regression {#linear-regression}
 
 
@@ -571,6 +588,7 @@ Gradient descent is an optimization algorithm used to minimize the cost function
 When additional variables are introduced, it can impact the intercept ($b_0$) in the linear regression model. The intercept is the value of $y$ when all independent variables ($x_1, x_2, \ldots, x_n$) are zero. The presence of extra variables can affect the baseline value of the dependent variable.
 
 
+<a id="linked-list"></a>
 # Linked List {#linked-list}
 
 
@@ -661,12 +679,14 @@ ll.delete(20)
 ll.display()  # Output: 10 -> 30 -> None
 ```
 
+<a id="load-balancing"></a>
 # Load Balancing {#load-balancing}
 
 Load balancing is a technique used to distribute incoming network traffic across multiple servers. This helps ensure both reliability and performance by preventing any single server from becoming overwhelmed with too much traffic.
 
 
 
+<a id="local-interpretable-model-agnostic-explanations"></a>
 # Local Interpretable Model Agnostic Explanations {#local-interpretable-model-agnostic-explanations}
 
 
@@ -709,6 +729,7 @@ explanation.show_in_notebook()
 ```
 
 
+<a id="logical-model"></a>
 # Logical Model {#logical-model}
 
 Logical Model
@@ -721,6 +742,7 @@ Logical Model
    - Details the attributes of each data entity.
    - Specifies relationships without depending on a specific database management system.
 
+<a id="logistic-regression-statsmodel-summary-table"></a>
 # Logistic Regression Statsmodel Summary Table {#logistic-regression-statsmodel-summary-table}
 
 Statsmodel has this summary table unlike [Sklearn](#sklearn)
@@ -741,6 +763,7 @@ Specifically a graph such as,
 
 $$\mathbb{N}$$
 
+<a id="logistic-regression-does-not-predict-probabilities"></a>
 # Logistic Regression Does Not Predict Probabilities {#logistic-regression-does-not-predict-probabilities}
 
 In logistic regression, the model predicts the <mark>odds of an event happening rather than directly predicting probabilities.</mark> The odds are defined as:
@@ -757,6 +780,7 @@ Resources:
 
 [What is the difference between odds and probability](#what-is-the-difference-between-odds-and-probability)
 
+<a id="logistic-regression"></a>
 # Logistic Regression {#logistic-regression}
 
 
@@ -861,6 +885,7 @@ sklearn's Logistic Regression implementation does not use [Gradient Descent](#gr
     - Uses the Newton method with conjugate gradients.
     - Efficient for datasets with many features.
 
+<a id="looker-studio"></a>
 # Looker Studio {#looker-studio}
 
 Looker studio is [Google](#google) version of [PowerBI](#powerbi), but its free.
@@ -876,6 +901,7 @@ Data models are called Blends
 
 [Dashboard with Relational Database in Looker Studio Data Blending and Modeling](https://www.youtube.com/@virtual_school)
 
+<a id="loss-function"></a>
 # Loss Function {#loss-function}
 
 
@@ -897,6 +923,7 @@ Resources
 - [Loss versus Cost function](#loss-versus-cost-function)
 
 
+<a id="loss-versus-cost-function"></a>
 # Loss Versus Cost Function {#loss-versus-cost-function}
 
 In machine learning, the terms "loss function" and "cost function" are often used interchangeably, but they can have slightly different meanings depending on the context:
@@ -910,6 +937,7 @@ In machine learning, the terms "loss function" and "cost function" are often use
 [Model parameters vs hyperparameters](#model-parameters-vs-hyperparameters)
 
 
+<a id="lambda-architecture"></a>
 # Lambda Architecture {#lambda-architecture}
 
 
@@ -965,6 +993,7 @@ Lambda architecture is particularly useful in scenarios where <mark>both histori
 
 
 
+<a id="learning-rate"></a>
 # Learning Rate {#learning-rate}
 
 
@@ -999,6 +1028,7 @@ What happens if you are at a local minima? Then no change.
 
 ![Pasted image 20241216204925.png](../content/images/Pasted%20image%2020241216204925.png)
 
+<a id="lemmatization"></a>
 # Lemmatization {#lemmatization}
 
 

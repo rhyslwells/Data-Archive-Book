@@ -111,6 +111,7 @@
 
 
 
+<a id="dbscan"></a>
 # Dbscan {#dbscan}
 
 
@@ -242,6 +243,7 @@ Boosting and Optimisation
 - [Interpretability](#interpretability)
 - [RAG](#rag)
 
+<a id="dash"></a>
 # Dash {#dash}
 
 
@@ -260,6 +262,7 @@ Key Components of Dash
 4. **Callback Functions**: Used to make components interactive by linking inputs (user actions) to outputs (changes in the UI).
 5. **[Plotly](#plotly) Integration**: Dash apps leverage Plotly for creating interactive visualizations.
 
+<a id="dashboarding"></a>
 # Dashboarding {#dashboarding}
 
 
@@ -270,6 +273,7 @@ Key Components of Dash
 
 
 
+<a id="data-ai-education-at-work"></a>
 # Data Ai Education At Work {#data-ai-education-at-work}
 
 
@@ -331,12 +335,14 @@ Integrating data and AI education into organizational strategies is essential fo
    - Trust and verifiability of AI systems (black boxes) are crucial for business benefits.
 
 
+<a id="data-analysis-portal"></a>
 # Data Analysis Portal {#data-analysis-portal}
 
 [Data Analyst](#data-analyst)
 
 [Data Visualisation](#data-visualisation)
 
+<a id="data-analysis"></a>
 # Data Analysis {#data-analysis}
 
 What is it? Usually done with a [Data Analyst](#data-analyst).After processing, data is analyzed to extract meaningful insights and derive value from the data.
@@ -352,6 +358,7 @@ Forward looking:
 - Prescriptive: Goes a step further by <mark>recommending actions based on the predictions made</mark>. It uses optimization and simulation algorithms to suggest the best course of action for a given situation.
 - Inferential: Makes inferences and predictions about a population based on a sample of data. It often involves [Hypothesis testing](#hypothesis-testing) and [Confidence Interval](#confidence-interval).
 
+<a id="data-analyst"></a>
 # Data Analyst {#data-analyst}
 
 Summary:
@@ -381,12 +388,14 @@ Summary:
   
 - Continuous Learning: Stay updated with the latest tools, techniques, and best practices in the evolving field of data analysis.
 
+<a id="data-architect"></a>
 # Data Architect {#data-architect}
 
 Data Architect
   - Designs and manages the data infrastructure.
   - Ensures data is stored, organized, and accessible for analysis.
 
+<a id="data-archive-graph-analysis"></a>
 # Data Archive Graph Analysis {#data-archive-graph-analysis}
 
 
@@ -400,6 +409,7 @@ Check out [Graph Analysis Plugin](#graph-analysis-plugin)
 Convert Dataview to CSV
 
 
+<a id="data-cleansing"></a>
 # Data Cleansing {#data-cleansing}
 
 
@@ -421,6 +431,7 @@ Follow-up questions:
 
 
 
+<a id="data-collection"></a>
 # Data Collection {#data-collection}
 
 Determine the [Data Quality](#data-quality) and quantity of data required and get it.
@@ -460,6 +471,7 @@ By establishing a [data contract](#data-contract) and building interfaces based 
 
 ![Pasted image 20250312163351.png](../content/images/Pasted%20image%2020250312163351.png)
 
+<a id="data-distribution"></a>
 # Data Distribution {#data-distribution}
 
 Data distribution refers to the process of making processed and analyzed data available for downstream applications and systems. 
@@ -472,6 +484,7 @@ This can involve supplying data to
 
 have access to the information they need for decision-making and operations.
 
+<a id="data-drift"></a>
 # Data Drift {#data-drift}
 
 Data drift refers to changes in the statistical properties of input data that a machine learning (ML) model encounters during production. Such shifts can lead to decreased model performance, as the model may struggle to make accurate predictions on data that differ from its training set. 
@@ -516,6 +529,7 @@ Once detected, strategies to manage data drift include:
 
  
 
+<a id="data-engineer"></a>
 # Data Engineer {#data-engineer}
 
 
@@ -556,6 +570,7 @@ Tasks They Are Usually Given
 
 
 
+<a id="data-engineering-portal"></a>
 # Data Engineering Portal {#data-engineering-portal}
 
 
@@ -586,6 +601,7 @@ Related Ideas:
 - [Turning a flat file into a database](#turning-a-flat-file-into-a-database)
 - [Database Techniques](#database-techniques)
 
+<a id="data-engineering-tools"></a>
 # Data Engineering Tools {#data-engineering-tools}
 
 
@@ -609,6 +625,7 @@ Tools: Amazon S3, Google BigQuery, Snowflake.
 ### Tags
 - **Tags**: #data_tools, #data_management
 
+<a id="data-engineering"></a>
 # Data Engineering {#data-engineering}
 
 
@@ -629,6 +646,7 @@ With that said more programmatic skills are needed similar to software engineeri
 
 As a data engineer, you use mainly [SQL](SQL.md) for almost everything except when using external data from an API. Here you'd use [ELT](term/elt.md) tools or write some [Data Pipeline](#data-pipeline) with the tools mentioned above.
 
+<a id="data-governance"></a>
 # Data Governance {#data-governance}
 
 
@@ -638,6 +656,7 @@ It establishes the processes and responsibilities that ensure the [Data Quality]
 
 **Data Governance**: Focuses on ensuring that data is managed consistently and adheres to policies, often working in tandem with [Data Observability](#data-observability) to enforce quality standards.
 
+<a id="data-hierarchy-of-needs"></a>
 # Data Hierarchy Of Needs {#data-hierarchy-of-needs}
 
 
@@ -664,6 +683,7 @@ The **Data Hierarchy of Needs** is a framework that outlines the stages required
    Once the foundation is in place, apply advanced techniques like machine learning and artificial intelligence for predictive and prescriptive insights.
 
 
+<a id="data-ingestion"></a>
 # Data Ingestion {#data-ingestion}
 
 
@@ -687,6 +707,7 @@ Related to:
 [Data Ingestion](#data-ingestion)
    **Tags**: #data_collection, #data_management
 
+<a id="data-integration"></a>
 # Data Integration {#data-integration}
 
 
@@ -719,6 +740,7 @@ Application integration links multiple applications to move data directly betwee
 - **Point-to-Point Traffic**: Can create excessive traffic between systems.
 - **Performance Impact**: Executing analytics on operational systems may interfere with their functioning.
 
+<a id="data-integrity"></a>
 # Data Integrity {#data-integrity}
 
 Data integrity refers to the 
@@ -745,6 +767,7 @@ In the context of [Database](#database) and information systems, data integrity 
 [Data Integrity](#data-integrity)
    **Tags**: #data_quality, #data_management
 
+<a id="data-lake"></a>
 # Data Lake {#data-lake}
 
 
@@ -772,6 +795,7 @@ Components of a data lake
 		2. [Data Lake File Format](term/data%20lake%20file%20format.md)
 		3. [Data Lake Table Format](term/data%20lake%20table%20format.md) with [Apache Parquet](term/apache%20parquet.md), [Apache Iceberg](term/apache%20iceberg.md), and [Apache Hudi](term/apache%20hudi.md)
 
+<a id="data-lakehouse"></a>
 # Data Lakehouse {#data-lakehouse}
 
 
@@ -824,10 +848,12 @@ Platforms that implement the data lakehouse architecture include:
 
 
 
+<a id="data-leakage"></a>
 # Data Leakage {#data-leakage}
 
 **Data Leakage** refers to the unintentional inclusion of information in the training data that would not be available in a real-world scenario, leading to overly optimistic model performance. It occurs when the model has access to data it shouldn't during training, such as future information or test data, which can result in misleading evaluation metrics and poor generalization to new data.
 
+<a id="data-lifecycle-management"></a>
 # Data Lifecycle Management {#data-lifecycle-management}
 
 
@@ -848,6 +874,7 @@ Key Stages of Full Lifecycle Management
 
 Data engineers must evaluate and select tools and technologies based on several [Performance Dimensions](#performance-dimensions)
 
+<a id="data-management"></a>
 # Data Management {#data-management}
 
 
@@ -873,6 +900,7 @@ Related Concepts:
 [Data Management](#data-management)
    **Tags**: #data_management, #data_quality
 
+<a id="data-modelling"></a>
 # Data Modelling {#data-modelling}
 
 
@@ -902,6 +930,7 @@ Types of Modeling:
 [Data Modelling](#data-modelling)
    **Tags**: #data_modeling, #database_design
 
+<a id="data-observability"></a>
 # Data Observability {#data-observability}
 
 
@@ -948,6 +977,7 @@ How to Manage Metadata:
 - Tracking the issues.
 - Alerting and ensuring data owners fix it.
 
+<a id="data-pipeline-to-data-products"></a>
 # Data Pipeline To Data Products {#data-pipeline-to-data-products}
 
 
@@ -985,6 +1015,7 @@ Imagine a retail company wants to create a recommendation system for its online 
 
 
 
+<a id="data-pipeline"></a>
 # Data Pipeline {#data-pipeline}
 
 
@@ -1028,6 +1059,7 @@ Monitoring and Maintenance:
 [Data Pipeline](#data-pipeline)
    **Tags**: #data_workflow, #data_management
 
+<a id="data-principles"></a>
 # Data Principles {#data-principles}
 
 
@@ -1062,6 +1094,7 @@ Data principles are essential for ensuring that data is managed, used, and maint
 Related:
 - [Performance Dimensions](#performance-dimensions)
 
+<a id="data-product"></a>
 # Data Product {#data-product}
 
 
@@ -1075,6 +1108,7 @@ It applies more product thinking, whereas the "Data Product" essentially is a da
 
 Sometimes Data Products are also called [data asset](#data-asset).
 
+<a id="data-quality"></a>
 # Data Quality {#data-quality}
 
 
@@ -1095,6 +1129,7 @@ Related terms:
 - [Data Contract](#data-contract)
 - [Change Management](#change-management)
 
+<a id="data-reduction"></a>
 # Data Reduction {#data-reduction}
 
 Reducing the volume of data through techniques:
@@ -1105,6 +1140,7 @@ Reducing the volume of data through techniques:
 
 Remove features with zero or low [variance](#variance) and redundant features to improve model performance.
 
+<a id="data-roles"></a>
 # Data Roles {#data-roles}
 
 A data team is a specialized group within an organization responsible for managing, analyzing, and leveraging data to drive business decisions and strategies. 
@@ -1128,6 +1164,7 @@ The team collaborates across various functions to ensure data integrity, accessi
 - **Senior Stakeholders and Business Ambassadors:** Communicate requirements, progress, and solutions to align with business goals.
 - **Software Engineers and Data Teams:** Coordinate on data production and integration processes.
 
+<a id="data-science"></a>
 # Data Science {#data-science}
 
 
@@ -1137,6 +1174,7 @@ Resources:
 - https://scikit-learn.org/stable/auto_examples/index.html
 
 
+<a id="data-scientist"></a>
 # Data Scientist {#data-scientist}
 
 Data Scientist
@@ -1144,6 +1182,7 @@ Data Scientist
   - Works with data lakes to extract insights.
   - Develops and deploys production Machine Learning (ML) models for predictions.
 
+<a id="data-selection-in-ml"></a>
 # Data Selection In Ml {#data-selection-in-ml}
 
 When selecting data for machine learning models, several important considerations can significantly impact the model's performance/[Model Optimisation](#model-optimisation) and the insights you can derive from it. Here are key factors to consider:
@@ -1181,6 +1220,7 @@ When selecting data for machine learning models, several important consideration
 11. Scalability:
 - Consider the scalability of your data selection process. As datasets grow, ensure that your methods can handle larger volumes efficiently.
 
+<a id="data-selection"></a>
 # Data Selection {#data-selection}
 
 
@@ -1243,6 +1283,7 @@ The condition `df["var1"] >= 999` creates a boolean Series that filters the rows
 
 
 
+<a id="data-steward"></a>
 # Data Steward {#data-steward}
 
 A **Data Steward** is responsible for ensuring the quality, integrity, and governance of an organization's data assets. They act as a bridge between business users, IT teams, and data governance policies, ensuring that data is well-defined, accurate, and used appropriately.
@@ -1273,6 +1314,7 @@ A **Data Steward** is responsible for ensuring the quality, integrity, and gover
   - Ensures that data policies and standards are adhered to across the organization.
   - Acts as a liaison between data users and IT to facilitate [data management](#data-management).
 
+<a id="data-storage"></a>
 # Data Storage {#data-storage}
 
 
@@ -1305,6 +1347,7 @@ Data storage encompasses various methods and technologies for storing, retrievin
 
 
 
+<a id="data-streaming"></a>
 # Data Streaming {#data-streaming}
 
 
@@ -1324,10 +1367,12 @@ Example:
 [Data Streaming](#data-streaming)
    **Tags**: #data_workflow
 
+<a id="data-terms"></a>
 # Data Terms {#data-terms}
 
 
 
+<a id="data-transformation-with-pandas"></a>
 # Data Transformation With Pandas {#data-transformation-with-pandas}
 
 
@@ -1365,6 +1410,7 @@ Related terms:
 ![Pasted image 20250323081817.png](../content/images/Pasted%20image%2020250323081817.png)
 
 
+<a id="data-transformation"></a>
 # Data Transformation {#data-transformation}
 
 
@@ -1393,6 +1439,7 @@ Related:
 
 
 
+<a id="data-validation"></a>
 # Data Validation {#data-validation}
 
 Data Validation:
@@ -1407,6 +1454,7 @@ Data Validation:
 --- 
 [Pydantic](#pydantic)
 
+<a id="data-virtualization"></a>
 # Data Virtualization {#data-virtualization}
 
 Organizations may also consider adopting a data virtualization solution to integrate their data. 
@@ -1419,6 +1467,7 @@ The virtualization layer then combines the responses from these source systems i
 
 One disadvantage of data virtualization is that analytics workloads are executed on operational systems, which could interfere with their functioning. Another disadvantage is that the virtualization layer may act as a bottleneck on the performance of analytics operations.
 
+<a id="data-visualisation"></a>
 # Data Visualisation {#data-visualisation}
 
 
@@ -1429,6 +1478,7 @@ Can generate reports using:
 - [PowerBI](#powerbi)
 - [Looker Studio](#looker-studio)
 
+<a id="data-warehouse"></a>
 # Data Warehouse {#data-warehouse}
 
 
@@ -1460,6 +1510,7 @@ Access Tools: Tools for querying and analyzing data, such as SQL clients and bus
 - [Why a Data Warehouse?](https://www.youtube.com/watch?v=jmwGNhUXn_o)
 
 
+<a id="data-transformation-in-data-engineering"></a>
 # Data Transformation In Data Engineering {#data-transformation-in-data-engineering}
 
 Data transformation in [Data Engineering](#data-engineering) is a key step in data pipelines, often part of:  
@@ -1471,6 +1522,7 @@ Data transformation in [Data Engineering](#data-engineering) is a key step in da
 Related:
 - [ETL vs ELT](#etl-vs-elt)for a comparison.
 
+<a id="data-transformation-in-machine-learning"></a>
 # Data Transformation In Machine Learning {#data-transformation-in-machine-learning}
 
 Transforming raw data into a meaningful format is necessary for building effective models.  
@@ -1480,6 +1532,7 @@ Transforming raw data into a meaningful format is necessary for building effecti
 - Feature Scaling & Encoding: Applying normalization and encoding to categorical variables.  
 - [Encoding Categorical Variables](#encoding-categorical-variables): Converting categorical data into numerical format for machine learning models.  
 
+<a id="database-index"></a>
 # Database Index {#database-index}
 
 
@@ -1527,6 +1580,7 @@ Time: While indexes speed up data retrieval, creating and updating them can slow
 - Search Mechanism: When searching, a binary search method is employed. This involves checking the middle of the data and deciding which side to search next, taking advantage of the ordered nature of B-trees for efficiency.
 
 
+<a id="database-management-system-dbms"></a>
 # Database Management System (Dbms) {#database-management-system-dbms}
 
 
@@ -1545,6 +1599,7 @@ These systems enable users to perform [CRUD](#crud) operations while maintaining
 Can be proprietary (paid, with support) or Open source (free, self-supported).
 
 
+<a id="database-schema"></a>
 # Database Schema {#database-schema}
 
 
@@ -1575,6 +1630,7 @@ Related to:
 #### Resources
 [link](https://www.youtube.com/watch?v=3BZz8R7mqu0)
 
+<a id="database-storage"></a>
 # Database Storage {#database-storage}
 
 
@@ -1588,6 +1644,7 @@ Methods and optimizations for storing, retrieving, and processing data in [datab
 
 
 
+<a id="database-techniques"></a>
 # Database Techniques {#database-techniques}
 
 
@@ -1603,6 +1660,7 @@ Techniques:
 	- [Query Plan](#query-plan)
 	- [Vacuum](#vacuum)
 
+<a id="database"></a>
 # Database {#database}
 
 
@@ -1632,6 +1690,7 @@ Related Ideas:
 - [Turning a flat file into a database](#turning-a-flat-file-into-a-database)
 - [Database Techniques](#database-techniques)
 
+<a id="databricks-vs-snowflake"></a>
 # Databricks Vs Snowflake {#databricks-vs-snowflake}
 
 
@@ -1655,6 +1714,7 @@ Comparison between **[Databricks](#databricks)** and **[Snowflake](#snowflake)**
 
 
 
+<a id="databricks"></a>
 # Databricks {#databricks}
 
 
@@ -1689,6 +1749,7 @@ Scalability
 
 [Databricks vs Snowflake](#databricks-vs-snowflake)
 
+<a id="datasets"></a>
 # Datasets {#datasets}
 
 This note collects notes on datasets that are good examples for exploring various concepts.
@@ -1714,6 +1775,7 @@ This note collects notes on datasets that are good examples for exploring variou
 
 
 
+<a id="debugging-ipynb"></a>
 # Debugging Ipynb {#debugging-ipynb}
 
 debugging jupyter cells
@@ -1725,6 +1787,7 @@ https://stackoverflow.com/questions/72671709/vs-code-debug-cell-disappears-arbit
 
 
 
+<a id="debugging"></a>
 # Debugging {#debugging}
 
 
@@ -1776,6 +1839,7 @@ In [ML_Tools](#ml_tools) see:
 
 
 
+<a id="debuggingpy"></a>
 # Debugging.Py {#debuggingpy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Utilities/Debugging.py
@@ -1795,6 +1859,7 @@ This script includes examples of logging, using breakpoints, and reproducing a s
 
 
 
+<a id="decision-tree"></a>
 # Decision Tree {#decision-tree}
 
 
@@ -1879,6 +1944,7 @@ Disadvantages:
 
 
 
+<a id="deep-learning-frameworks"></a>
 # Deep Learning Frameworks {#deep-learning-frameworks}
 
 
@@ -1925,6 +1991,7 @@ Disadvantages:
   While Keras simplifies model building, it may not be as performant as lower-level frameworks like TensorFlow when it comes to fine-tuning and optimizing models for production.
 
 
+<a id="deep-learning"></a>
 # Deep Learning {#deep-learning}
 
 
@@ -1955,6 +2022,7 @@ Areas of Deep Learning:
 
 
 
+<a id="deep-q-learning"></a>
 # Deep Q Learning {#deep-q-learning}
 
 
@@ -1983,6 +2051,7 @@ Updates the weights in the model.
   - It also allows the agent to reuse experiences for multiple updates, increasing data efficiency.
 
 
+<a id="deepseek"></a>
 # Deepseek {#deepseek}
 
 
@@ -2030,10 +2099,12 @@ absorbed weights at training
 
 - **Smart Choices About Switching**: Consider if DeepSeek offers clear advantages for your specific needs before changing your current AI tools or workflows. DeepSeek is beneficial for developers focused on cost minimization. If you are an everyday user already paying for ChatGPT and concerned about data storage, switching may not be necessary unless DeepSeek significantly improves your workflow.
 
+<a id="deleting-rows-or-filling-them-with-the-mean-is-not-always-best"></a>
 # Deleting Rows Or Filling Them With The Mean Is Not Always Best {#deleting-rows-or-filling-them-with-the-mean-is-not-always-best}
 
 
 
+<a id="demand-forecasting"></a>
 # Demand Forecasting {#demand-forecasting}
 
 
@@ -2050,6 +2121,7 @@ How can we model the effects of energy consumption patterns on demand forecastin
 - **Linear Programming**: Used for optimizing resource allocation in energy production and distribution, such as maximizing output while minimizing costs.
 -
 
+<a id="dendrograms"></a>
 # Dendrograms {#dendrograms}
 
 Dendrograms show **close** vectors is the data where taken as a vector.
@@ -2063,12 +2135,14 @@ Can tell which <mark>features are the most similar</mark> with [Dendrograms](#de
 
 
 
+<a id="design-thinking-questions"></a>
 # Design Thinking Questions {#design-thinking-questions}
 
 - "What is the user’s need?"
 - "What constraints are at play?"
 - "How might we…?" — a classic starter for idea generation.
 
+<a id="determining-threshold-values"></a>
 # Determining Threshold Values {#determining-threshold-values}
 
 In [Binary Classification](#binary-classification) problems, a threshold value is used to convert predicted probabilities into discrete class labels. The choice of threshold significantly impacts the model's performance, affecting [Evaluation Metrics](#evaluation-metrics).
@@ -2083,6 +2157,7 @@ Here are common methods for determining the optimal threshold value:
 - [Precision-Recall Curve](#precision-recall-curve) Analysis
 - [Cost-Sensitive Analysis](#cost-sensitive-analysis)
 
+<a id="devops"></a>
 # Devops {#devops}
 
 
@@ -2104,10 +2179,12 @@ DevOps refers to practices for collaboration and automation between [Software De
  Related to:
 - [DataOps](#dataops)
 
+<a id="difference-between-databricks-vs-snowflake"></a>
 # Difference Between Databricks Vs. Snowflake {#difference-between-databricks-vs-snowflake}
 
 
 
+<a id="difference-between-snowflake-to-hadoop"></a>
 # Difference Between Snowflake To Hadoop {#difference-between-snowflake-to-hadoop}
 
 
@@ -2144,6 +2221,7 @@ In summary, Snowflake and Hadoop are both powerful tools for managing and analyz
 
 
 
+<a id="differentation"></a>
 # Differentation {#differentation}
 
 
@@ -2157,6 +2235,7 @@ see also Reverse Mode Automatic Differentiation
 
 Fast,Flexible,Exact
 
+<a id="digital-transformation"></a>
 # Digital Transformation {#digital-transformation}
 
 
@@ -2271,6 +2350,7 @@ To consider when conducting:
 
 
 
+<a id="digital-twin"></a>
 # Digital Twin {#digital-twin}
 
 
@@ -2369,6 +2449,7 @@ To consider when conducting:
 
 
 
+<a id="dimension-table"></a>
 # Dimension Table {#dimension-table}
 
 A dimension table is a key component of a [star schema](#star-schema) or snowflake schema in a data warehouse. It provides descriptive attributes (or dimensions) related to the [Facts](#facts) stored in a fact table.
@@ -2402,6 +2483,7 @@ Examples
 [Dimension Table](#dimension-table)
    **Tags**: #data_modeling, #data_warehouse
 
+<a id="dimensional-modelling"></a>
 # Dimensional Modelling {#dimensional-modelling}
 
 
@@ -2424,6 +2506,7 @@ Benefits of Dimensional Modeling: [Performance Dimensions](#performance-dimensio
 [Dimensional Modelling](#dimensional-modelling)
    **Tags**: #data_modeling, #data_warehouse
 
+<a id="dimensionality-reduction"></a>
 # Dimensionality Reduction {#dimensionality-reduction}
 
 
@@ -2447,6 +2530,7 @@ Its a technique used to reduce the number of input variables (features) in a dat
 ### [Explain the curse of dimensionality](#explain-the-curse-of-dimensionality)
 
 
+<a id="dimensions"></a>
 # Dimensions {#dimensions}
 
 
@@ -2456,6 +2540,7 @@ Traditionally known from [OLAP (online analytical processing)|OLAP](#olap-online
 
 They provide context to the [Facts](#facts).
 
+<a id="directed-acyclic-graph-dag"></a>
 # Directed Acyclic Graph (Dag) {#directed-acyclic-graph-dag}
 
 
@@ -2467,6 +2552,7 @@ It's a popular way of building data pipelines in tools like [Apache Airflow](#ap
 
 ![](dag.png)
 
+<a id="directory-structure"></a>
 # Directory Structure {#directory-structure}
 
 
@@ -2506,6 +2592,7 @@ It's a popular way of building data pipelines in tools like [Apache Airflow](#ap
     └── visualization  <- Scripts to create exploratory and results oriented visualizations
         └── visualize.py
 
+<a id="distillation"></a>
 # Distillation {#distillation}
 
 training smaller models with larger.
@@ -2516,6 +2603,7 @@ training smaller models with larger.
 
 
 
+<a id="distributed-computing"></a>
 # Distributed Computing {#distributed-computing}
 
 
@@ -2556,6 +2644,7 @@ Distributed computing enables the processing of massive datasets and computation
 - Challenges include **fault tolerance**, **network [latency](#latency)**, and **data consistency**. Innovations in consensus algorithms and fault-tolerant storage systems are working to mitigate these issues.
 
 
+<a id="distribution_analysispy"></a>
 # Distribution_Analysis.Py {#distribution_analysispy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Preprocess/Distribution_Analysis.py
@@ -2585,6 +2674,7 @@ Logistic: 0.05019989765502264
 
 The **Logistic distribution** has the **highest p-value (0.0502)**, making it the **best candidate** among the tested distributions. However, since it's **borderline (≈0.05)**, you may want to visualize the distribution and compare the fits.
 
+<a id="distributions"></a>
 # Distributions {#distributions}
 
 
@@ -2643,6 +2733,7 @@ In [ML_Tools](#ml_tools) see: [Feature_Distribution.py](#feature_distributionpy)
 - [Boxplot](#boxplot)
 
 
+<a id="docker-image"></a>
 # Docker Image {#docker-image}
 
 A Docker image is a lightweight, standalone, and executable package that includes everything needed to run a piece of software, including the code, runtime, libraries, environment variables, and configuration files. Docker images are used to create Docker containers, which are instances of these images running in an isolated environment.
@@ -2707,6 +2798,7 @@ Docker images are used for:
 
 This example gives you a taste of how Docker can be used to quickly deploy and manage applications. As you become more familiar with Docker, you can explore building your own images, managing multi-container applications with Docker Compose, and more.
 
+<a id="docker"></a>
 # Docker {#docker}
 
 Utilizes Docker images [Docker Image](#docker-image) to set up containers for consistent development and testing environments.
@@ -2825,6 +2917,7 @@ Multi use containers
   Time-boxed events for experimentation and cross-team collaboration  
 
 
+<a id="dropout"></a>
 # Dropout {#dropout}
 
 
@@ -2844,6 +2937,7 @@ from tensorflow.keras.layers import Dropout
 Dropout(0.5)
 ```
 
+<a id="duckdb-in-python"></a>
 # Duckdb In Python {#duckdb-in-python}
 
 To use **DuckDB** in Python, you can follow these steps to install the DuckDB library and perform basic operations such as creating a database, running queries, and manipulating data. Here's a simple guide:
@@ -2907,6 +3001,7 @@ DuckDB also supports advanced features such as:
 conn.execute("CREATE TABLE my_data AS SELECT * FROM read_csv_auto('path/to/your/file.csv')")
 ```
 
+<a id="duckdb-vs-sqlite"></a>
 # Duckdb Vs Sqlite {#duckdb-vs-sqlite}
 
 Choosing between **[DuckDB](#duckdb)** and **[SQLite](#sqlite)** for data processing in [Python](#python) depends on your specific use case and requirements.
@@ -2946,6 +3041,7 @@ If your primary focus is on data analysis and you need high performance for anal
 - SQLite requires more manual handling for data transformations, especially when dealing with large datasets.
 
 
+<a id="duckdb"></a>
 # Duckdb {#duckdb}
 
 **DuckDB** is an open-source analytical database management system designed for efficient data processing and analysis. It is optimized for running complex queries on large datasets and is particularly well-suited for data science and analytics tasks. Here are some key features and characteristics of DuckDB:
@@ -3013,6 +3109,7 @@ If you drop the `West Windsor` dummy column, your table would look like this:
 
 Now, your model will use the `West Windsor` category as the baseline. The coefficients of `Robbinsville` and `Princeton` in the regression model will indicate how much higher or lower their prices are compared to `West Windsor`.
 
+<a id="dagster"></a>
 # Dagster {#dagster}
 
 
@@ -3022,10 +3119,12 @@ Key features are:
 - Manage your data assets with code
 - A single pane of glass for your data platform 
 
+<a id="data-asset"></a>
 # Data Asset {#data-asset}
 
 
 
+<a id="data-lineage"></a>
 # Data Lineage {#data-lineage}
 
 
@@ -3035,6 +3134,7 @@ Data lineage is the process of understanding, recording, and visualizing data as
 
 This includes all [Data Transformation](Data%20Transformation.md) (what changed and why).
 
+<a id="data-literacy"></a>
 # Data Literacy {#data-literacy}
 
 
@@ -3051,6 +3151,7 @@ Examples of data literacy in action include:
 By nurturing a data-literate workforce, businesses can improve their ability to make informed decisions, drive innovation, and achieve better outcomes.
 
 
+<a id="dbt"></a>
 # Dbt {#dbt}
 
 
@@ -3122,6 +3223,7 @@ https://www.getdbt.com/blog/what-exactly-is-dbt
 [dbt](#dbt)
    **Tags**: #data_transformation, #data_tools
 
+<a id="declarative"></a>
 # Declarative {#declarative}
 
 
@@ -3155,6 +3257,7 @@ A declarative approach to data engineering would involve **Functional Data Engin
 ### **Use Cases**:
 Declarative pipelines are particularly useful in [data lineage](#data-lineage), **[Data Observability](#data-observability)**, and [Data Quality](#data-quality) monitoring**. By defining *what* data products should exist and what their properties should be, it's easier to track changes and ensure the consistency and quality of data. It also makes systems more resilient to changes, as the declarative nature enables the system to adjust the execution order or method dynamically, based on current conditions.
 
+<a id="dependency-manager"></a>
 # Dependency Manager {#dependency-manager}
 
 [Virtual environments](#virtual-environments)

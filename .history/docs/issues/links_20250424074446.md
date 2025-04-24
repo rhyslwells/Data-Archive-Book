@@ -1,0 +1,46 @@
+
+Issue 2:
+
+These links only working within the grouped file. A.md ect, for the link #api but links to #reggression (note in R.md) do not go to the R.md heading
+
+---
+Solution: use inject.py
+
+I want to fix the internal links witihin my epub. In A.md in grouped folder i have this. The table of contents links at the top work, but the internal ones i.e. AB testing in Acid transaction do not link me to the ab testing note.
+
+# A
+
+## Table of Contents
+* [AB testing](#ab-testing)
+* [ACID Transaction](#acid-transaction)
+* [AI Engineer](#ai-engineer)
+* [AI governance](#ai-governance)
+* [Azure](#azure)ect
+
+<a id="ab-testing"></a>
+# Ab Testing {#ab-testing}
+
+A/B testing is a method of performance testing two versions of a product like an app.
+
+
+
+# Acid Transaction {#acid-transaction}
+
+
+An ACID [Transaction](#transaction) ensures that either all changes are successfully committed or rolled back, preventing the database from ending up in an inconsistent state. This guarantees the integrity of the data throughout the transaction process. [AB testing](#ab-testing)
+
+
+
+---------------------
+TEST
+
+<a id="api"></a>
+# Api {#api}
+
+
+An API (Application Programming Interfaces) allows one system (client) to <mark>request specific actions from another system</mark> (server).
+
+# Api Driven Microservices {#api-driven-microservices}
+
+
+API-driven microservices refer to a [software architecture](#software-architecture) approach where [microservices](#microservices) communicate with each other and with external systems primarily through well-defined [API](#api) (Application Programming Interfaces). 

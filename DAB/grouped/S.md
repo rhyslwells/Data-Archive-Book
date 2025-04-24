@@ -75,6 +75,7 @@
 
 
 
+<a id="shapley-additive-explanations"></a>
 # Shapley Additive Explanations {#shapley-additive-explanations}
 
 
@@ -111,6 +112,7 @@ shap_values = explainer.shap_values(X_test)
 shap.summary_plot(shap_values, X_test)
 ```
 
+<a id="smote-synthetic-minority-over-sampling-technique"></a>
 # Smote (Synthetic Minority Over Sampling Technique) {#smote-synthetic-minority-over-sampling-technique}
 
 
@@ -120,10 +122,12 @@ Generate synthetic samples for the minority class by interpolating between exist
 
 SMOTE: This technique generates synthetic samples for the minority class (female resumes) by creating new instances that are interpolations of existing ones.
 
+<a id="smss"></a>
 # Smss {#smss}
 
 microsoft sql server management.
 
+<a id="sql-groupby"></a>
 # Sql Groupby {#sql-groupby}
 
 The [SQL](#sql) `GROUP BY` clause is used to group rows that have the same values in specified columns into summary rows, like "total sales per region" or "average age per department." 
@@ -194,6 +198,7 @@ HAVING SUM(amount) > 1000;
 [SQL Groupby](#sql-groupby)
    **Tags**: #data_transformation  #querying
 
+<a id="sql-injection"></a>
 # Sql Injection {#sql-injection}
 
 SQL injection is a code injection technique that targets applications using SQL databases. It occurs when a malicious user injects harmful SQL code into a query, potentially compromising the security of the database. 
@@ -284,6 +289,7 @@ The output will still reflect the balance of the user with ID 1, without exposin
 - **Validate and Sanitize Inputs**: Ensure user inputs are validated and sanitized before being processed.
 
 
+<a id="sql-joins"></a>
 # Sql Joins {#sql-joins}
 
 In [DE_Tools](#de_tools) see:
@@ -292,6 +298,7 @@ In [DE_Tools](#de_tools) see:
 
 ![Pasted image 20250323083319.png|800](../content/images/Pasted%20image%2020250323083319.png|800)
 
+<a id="sql-window-functions"></a>
 # Sql Window Functions {#sql-window-functions}
 
 SQL Window Functions are a feature in SQL that allow you to perform calculations across a set of table rows that are somehow related to the current row. 
@@ -385,11 +392,13 @@ Resulting Table:
 [SQL Window functions](#sql-window-functions)
    **Tags**: #data_analysis, #querying
 
+<a id="sql-vs-nosql"></a>
 # Sql Vs Nosql {#sql-vs-nosql}
 
 
 [NoSQL](#nosql)
 
+<a id="sql"></a>
 # Sql {#sql}
 
 
@@ -500,6 +509,7 @@ The choice between [SQLAlchemy](#sqlalchemy) and [SQLite](#sqlite) depends on yo
 - For simple SQLite-based projects: Use `sqlite3` (faster, simpler).
 - For larger applications needing scalability and maintainability: Use `SQLAlchemy`.
 
+<a id="sqlalchemy"></a>
 # Sqlalchemy {#sqlalchemy}
 
 SQLAlchemy is a Python SQL toolkit and <mark>Object Relational Mapper</mark> (ORM) that provides tools to interact with databases in a more Pythonic way. It allows you to work with relational databases such as MySQL, PostgreSQL, SQLite, and others without writing raw [SQL](#sql) queries manually.
@@ -563,10 +573,12 @@ In [DE_Tools](#de_tools) see:
     - Easily switch databases without changing the core logic.
 
 
+<a id="sqlite-studio"></a>
 # Sqlite Studio {#sqlite-studio}
 
 
 
+<a id="sqlite"></a>
 # Sqlite {#sqlite}
 
 
@@ -584,6 +596,7 @@ Related notes:
 - [Concurrency](#concurrency)
 - [SQL](#sql)
 
+<a id="svm_examplepy"></a>
 # Svm_Example.Py {#svm_examplepy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main\Explorations/Build/Classifiers/SVM/SVM_Example.py
@@ -633,6 +646,7 @@ https://github.com/rhyslwells/ML_Tools/blob/main\Explorations/Build/Classifiers/
 - The model is used to predict flower species for new samples.
 - The accuracy of the model is reported for each combination of hyperparameters.
 
+<a id="sarsa"></a>
 # Sarsa {#sarsa}
 
 
@@ -660,6 +674,7 @@ $$
 - The learning process may be slower compared to Q-learning, but it can be more robust in environments where the agent’s behavior is expected to align closely with the policy it follows.
 
 
+<a id="scala"></a>
 # Scala {#scala}
 
 
@@ -702,6 +717,7 @@ While Scala has a **smaller user base** and is considered **hard to learn**, it 
 
 - **Niche and Learning Curve**: While Scala’s adoption is smaller compared to languages like Java or Python, its **expressiveness** and **power** make it a popular choice for niche applications, especially in big data environments.
 
+<a id="scalability"></a>
 # Scalability {#scalability}
 
 Scalability refers to the capability of a system, network, or process to handle a growing amount of work or its potential to accommodate growth.
@@ -728,6 +744,7 @@ Horizontal scaling allows for greater flexibility and can often be more cost-eff
 ### Tags
 - **Tags**: #data_management
 
+<a id="scaling-agentic-systems"></a>
 # Scaling Agentic Systems {#scaling-agentic-systems}
 
 [Agentic solutions](#agentic-solutions) propose an improvement over traditional Large Language Model ([LLM](#llm)) usage by employing networks of Small Language Models (SLMs). These systems aim to strike a balance between scalability, control, and performance, addressing specific tasks with precision while maintaining overall system adaptability.
@@ -825,12 +842,14 @@ LLMs (Large Language Models):
 
 
 
+<a id="scaling-server"></a>
 # Scaling Server {#scaling-server}
 
 Scaling Server
   - Horizontal Scaling: Adding more servers, preferred for scalability.
   - Vertical Scaling: Adding more resources (memory, CPU) to existing servers.
 
+<a id="scheduled-tasks"></a>
 # Scheduled Tasks {#scheduled-tasks}
 
 
@@ -866,6 +885,7 @@ Windows provides `schtasks`, a command-line tool to schedule tasks.
     
     `schtasks /delete /tn "DailyBackup" /f`
 
+<a id="schema-evolution"></a>
 # Schema Evolution {#schema-evolution}
 
 
@@ -884,6 +904,7 @@ See also:
 
 
 
+<a id="scientific-method"></a>
 # Scientific Method {#scientific-method}
 
 
@@ -933,6 +954,7 @@ See also:
 - **Iterative Process**: Be prepared to revisit and refine each step as new insights emerge.
 - **Documentation**: Keep thorough documentation of your process, findings, and decisions.
 
+<a id="seaborn"></a>
 # Seaborn {#seaborn}
 
 
@@ -941,10 +963,12 @@ https://seaborn.pydata.org/tutorial.html
 Related:
 - [Data Visualisation](#data-visualisation)
 
+<a id="search"></a>
 # Search {#search}
 
 
 
+<a id="security"></a>
 # Security {#security}
 
 
@@ -952,6 +976,7 @@ Related:
 
 
 
+<a id="semantic-relationships"></a>
 # Semantic Relationships {#semantic-relationships}
 
 
@@ -977,6 +1002,7 @@ Another valuable resource is **SentiWordNet**, which extends WordNet by assignin
 Documents discussing similar topics might also share similar sentiments, strengthening the case for a semantic link. NLTK provides access to SentiWordNet, allowing you to incorporate sentiment analysis into your exploration of semantic relationships.
 
 
+<a id="sentence-similarity"></a>
 # Sentence Similarity {#sentence-similarity}
 
 Sentence similarity refers to the degree to which two sentences are alike in meaning. It is a crucial concept in natural language processing ([NLP](#nlp)) tasks such as information retrieval, text summarization, and paraphrase detection. Measuring sentence similarity involves comparing the semantic content of sentences to determine how closely they relate to each other.
@@ -1000,6 +1026,7 @@ There are several methods to measure sentence similarity:
 
 Each method has its strengths and weaknesses, and the choice of method often depends on the specific requirements of the task and the available computational resources.
 
+<a id="sharepoint"></a>
 # Sharepoint {#sharepoint}
 
 
@@ -1036,6 +1063,7 @@ SharePoint integrates with Microsoft Office and is highly customizable, making i
 
 
 
+<a id="silhouette-analysis"></a>
 # Silhouette Analysis {#silhouette-analysis}
 
 [Sklearn link](https://scikit-learn.org/1.5/auto_examples/cluster/plot_kmeans_silhouette_analysis.html)
@@ -1084,10 +1112,12 @@ Bad
 
 
 
+<a id="similarity-search"></a>
 # Similarity Search {#similarity-search}
 
 
 
+<a id="single-source-of-truth"></a>
 # Single Source Of Truth {#single-source-of-truth}
 
 Sending data from across an enterprise into a centralized system such as a:
@@ -1105,6 +1135,7 @@ results in a single unified location for accessing and analyzing all the inform
 [Single Source of Truth](#single-source-of-truth)
    **Tags**: #data_management, #data_storage
 
+<a id="sklearn-pipiline"></a>
 # Sklearn Pipiline {#sklearn-pipiline}
 
 
@@ -1120,6 +1151,7 @@ clf.score(X_test,y_test)
 clf.predict(user_input)
 ```
 
+<a id="sklearn"></a>
 # Sklearn {#sklearn}
 
 
@@ -1154,6 +1186,7 @@ pickle.dump(pipe,out)
 
 [Sklearn](#sklearn)
 
+<a id="slowly-changing-dimension"></a>
 # Slowly Changing Dimension {#slowly-changing-dimension}
 
 
@@ -1190,6 +1223,7 @@ Consider a retail company that tracks customer information, including attributes
 | 2           | Jane Smith | 456 Oak St, City B    | Silver             | 2022-01-01     | NULL       |
 
 
+<a id="small-language-models"></a>
 # Small Language Models {#small-language-models}
 
 
@@ -1218,6 +1252,7 @@ SLMs remain highly relevant for [Edge Machine Learning Models](#edge-machine-lea
 
 
 
+<a id="smart-grids"></a>
 # Smart Grids {#smart-grids}
 
 
@@ -1233,6 +1268,7 @@ Help with carbon commitment
     - **Load Balancing**: RL can manage the distribution of electricity by dynamically balancing load across different sources, minimizing energy loss and enhancing stability.
     - **Renewable Energy Integration**: RL helps in integrating renewable energy sources (e.g., solar, wind) into the grid by optimizing the usage of these variable resources and managing their unpredictability.
 
+<a id="snowflake-schema"></a>
 # Snowflake Schema {#snowflake-schema}
 
 Snowflake Schema
@@ -1261,6 +1297,7 @@ Snowflake Schema
    - **[Data Warehouse](#data-warehouse): Ideal for enterprise data warehousing, business intelligence, and analytics.
    - **Data Lake**: Can function as a data lake with support for semi-structured data.
 
+<a id="soft-deletion"></a>
 # Soft Deletion {#soft-deletion}
 
 
@@ -1344,6 +1381,7 @@ DELETE FROM users WHERE is_deleted = true AND deletion_date < NOW() - INTERVAL '
 ```
 
 
+<a id="software-design-patterns"></a>
 # Software Design Patterns {#software-design-patterns}
 
 
@@ -1612,6 +1650,7 @@ p1.send("Hello");
 ```
 
 
+<a id="software-development-life-cycle"></a>
 # Software Development Life Cycle {#software-development-life-cycle}
 
 
@@ -1670,6 +1709,7 @@ See agile manifesto : Working software over documentation
 
 ### [DevOps](#devops)
 
+<a id="sparsecategorialcrossentropy-or-categoricalcrossentropy"></a>
 # Sparsecategorialcrossentropy Or Categoricalcrossentropy {#sparsecategorialcrossentropy-or-categoricalcrossentropy}
 
 To understand the differences and use cases for `SparseCategoricalCrossentropy` and `CategoricalCrossentropy` in [TensorFlow](#tensorflow), let's break down each one:
@@ -1698,6 +1738,7 @@ To understand the differences and use cases for `SparseCategoricalCrossentropy` 
 
 
 
+<a id="specificity"></a>
 # Specificity {#specificity}
 
 
@@ -1709,6 +1750,7 @@ Importance
 
 
 
+<a id="spreadsheets-vs-databases"></a>
 # Spreadsheets Vs Databases {#spreadsheets-vs-databases}
 
 Compared to spreadsheets, databases offer:
@@ -1722,12 +1764,14 @@ Compared to spreadsheets, databases offer:
 ### Tags
 - **Tags**: #data_management, #data_storage
 
+<a id="stacking"></a>
 # Stacking {#stacking}
 
 What is [Stacking](#stacking)?;; is an [Model Ensemble](#model-ensemble) combines predictions of multiple base models <mark>by training a meta-model</mark> on the outputs of the base models.
 
 
 
+<a id="standard-deviation"></a>
 # Standard Deviation {#standard-deviation}
 
 Standard deviation is a statistical measure that quantifies the amount of variation or dispersion in a set of data values. It indicates how much individual data points deviate from the mean (average) of the dataset.
@@ -1772,6 +1816,7 @@ $$
    Standard deviation is more intuitive and easier to communicate to a broader audience, including those without a strong statistical background. Its direct relation to the data makes it a preferred choice for explaining variability.
 
 
+<a id="standardisation"></a>
 # Standardisation {#standardisation}
 
 Standardisation is a [Preprocessing|data preprocessing](#preprocessingdata-preprocessing) technique used to [Data Transformation](#data-transformation) features so that they have a mean of 0 and a standard deviation of 1. Centers data with zero mean and unit variance, suitable for algorithms sensitive to variance.
@@ -1808,6 +1853,7 @@ scaler = StandardScaler()
 df_standardized = scaler.fit_transform(df)  # Rescales each feature to have mean 0 and std deviation 1
 ```
 
+<a id="star-schema"></a>
 # Star Schema {#star-schema}
 
 Star Schema
@@ -1819,6 +1865,7 @@ Star Schema
    - Description: A simple and widely used form of dimensional modeling where a central fact table is connected to multiple dimension tables.
    - Advantages: Easy to understand and query, with straightforward joins between fact and dimension tables.
 
+<a id="statistical-assumptions"></a>
 # Statistical Assumptions {#statistical-assumptions}
 
 Statistical assumptions are essential conditions that must be met for various statistical methods and models to produce valid results. Necessary for robustness and reliability of statistical analyses. If any assumptions are violated, it may be necessary to employ alternative statistical methods or to transform the data accordingly.
@@ -1861,6 +1908,7 @@ Transformations and Alternatives: When assumptions are violated, consider:
   - Alternative Methods: Using robust statistical techniques that are less sensitive to assumption violations, such as bootstrapping or non-parametric tests.
   - Contextual Relevance: The relevance of specific assumptions may vary depending on the context of the analysis and the nature of the data. Always consider the specific characteristics of the dataset when evaluating assumptions.
 
+<a id="statistical-tests"></a>
 # Statistical Tests {#statistical-tests}
 
 Statistical tests are methods used to determine if there is a significant difference between groups or if a relationship exists between variables. Each test has its specific [Statistical Assumptions](#statistical-assumptions) and applications.
@@ -1878,6 +1926,7 @@ Statistical tests are methods used to determine if there is a significant differ
 
 For each statistical test, a test statistic is calculated. This statistic measures the degree of deviation from the null hypothesis ([Hypothesis testing](#hypothesis-testing)). The [estimator](#estimator) is centered by the population mean, and then it is divided by the population standard deviation, a process known as [Standardisation](#standardisation).
 
+<a id="statistics"></a>
 # Statistics {#statistics}
 
 
@@ -1944,15 +1993,18 @@ Dashboards/Animations: Shiny, gganimate
 
 
 
+<a id="stemming"></a>
 # Stemming {#stemming}
 
 Shorting words to the key term.
 
+<a id="stochastic-gradient-descent"></a>
 # Stochastic Gradient Descent {#stochastic-gradient-descent}
 
 
 [Gradient Descent](#gradient-descent)
 
+<a id="stored-procedures"></a>
 # Stored Procedures {#stored-procedures}
 
 Stored procedures are a way to automate SQL statements, allowing them to be executed repeatedly without rewriting the code.
@@ -2054,6 +2106,7 @@ Stored procedures can accept parameters. For example, we can create a procedure 
   Stored procedures can be enhanced with programming constructs available in MySQL, allowing for more complex logic.
 
 
+<a id="strongly-vs-weakly-typed-language"></a>
 # Strongly Vs Weakly Typed Language {#strongly-vs-weakly-typed-language}
 
 
@@ -2094,6 +2147,7 @@ text = text + number;  // No error, result is "Hello5"
 ```
 
 
+<a id="structuring-and-organizing-data"></a>
 # Structuring And Organizing Data {#structuring-and-organizing-data}
 
 Structuring and organizing data.
@@ -2105,6 +2159,7 @@ In [DE_Tools](#de_tools) see:
 Related terms:
 - [Multi-level index](#multi-level-index)
 
+<a id="summarisation"></a>
 # Summarisation {#summarisation}
 
 
@@ -2140,6 +2195,7 @@ The main point of summarization is effectively assigning scores to sentences. He
 - **Word Frequencies**: Analyze word frequencies to identify the most common words in the text. Sentences that contain a higher number of these frequent words are then selected for the summary.
 
 
+<a id="supervised-learning"></a>
 # Supervised Learning {#supervised-learning}
 
 
@@ -2187,6 +2243,7 @@ That is there is a y_train, then uses to get y_pred (from X_test) and compare ag
 
 ![Pasted image 20241012152141.png](../content/images/Pasted%20image%2020241012152141.png)
 
+<a id="support-vector-classifier-svc"></a>
 # Support Vector Classifier (Svc) {#support-vector-classifier-svc}
 
 
@@ -2205,6 +2262,7 @@ That is there is a y_train, then uses to get y_pred (from X_test) and compare ag
 - **SVC**: Primarily focuses on placing a hyperplane between datasets for separation. It is effective when the data is linearly separable.
 - **SVM**: Extends the concept of SVC by using kernel functions to handle cases where data is **not linearly separable** in its original space. Kernels transform the data into a higher-dimensional space where a linear separation is possible.
 
+<a id="support-vector-machines"></a>
 # Support Vector Machines {#support-vector-machines}
 
 
@@ -2244,12 +2302,14 @@ In [ML_Tools](#ml_tools) see: [SVM_Example.py](#svm_examplepy)
 
 
 
+<a id="support-vector-regression"></a>
 # Support Vector Regression {#support-vector-regression}
 
 Support Vector Regression use similar principles to [Support Vector Machines|SVM](#support-vector-machinessvm)s but for predicting continuous variables.
 
 
 
+<a id="symbolic-computation"></a>
 # Symbolic Computation {#symbolic-computation}
 
 
@@ -2294,10 +2354,12 @@ Wolfram Alpha is designed specifically for symbolic computation and uses rule-ba
 
 
 
+<a id="sympy"></a>
 # Sympy {#sympy}
 
 
 
+<a id="semantic-layer"></a>
 # Semantic Layer {#semantic-layer}
 
 
@@ -2353,6 +2415,7 @@ A semantic layer can be implemented using various tools and technologies, such a
 
 
 
+<a id="semi-structured-data"></a>
 # Semi Structured Data {#semi-structured-data}
 
 
@@ -2377,6 +2440,7 @@ It is often relatively straightforward to convert semi-structured data into stru
 
 
 
+<a id="shapefile"></a>
 # Shapefile {#shapefile}
 
 
@@ -2422,6 +2486,7 @@ Consider a city planning department that wants to map all the parks within the c
 
 
 
+<a id="sklearn-datasets"></a>
 # Sklearn Datasets {#sklearn-datasets}
 
 make a dataframe by 
@@ -2434,10 +2499,12 @@ df.head()
 df['target'] = ds.target
 
 
+<a id="spacy"></a>
 # Spacy {#spacy}
 
 
 
+<a id="storage-layer-object-store"></a>
 # Storage Layer Object Store {#storage-layer-object-store}
 
 
@@ -2450,6 +2517,7 @@ and Google Cloud Storage.
 The web user interface is easy to use. **Its features are very basic, where, in fact, these object stores store distributed files exceptionally well.** They are also highly configurable, with solid security and reliability built-in.
 
 
+<a id="structured-data"></a>
 # Structured Data {#structured-data}
 
 
@@ -2504,6 +2572,7 @@ Examples of semi-structured data are [JSON](#json) or [XML](#xml) files. Semi-st
 
 <mark>[structured data](term/structured%20data.md) refers to data that has been formatted into a well-defined schema</mark>. An example would be data that is stored with precisely defined columns in a relational database or excel spreadsheet. Examples of structured fields could be age, name, phone number, credit card numbers or address.
 
+<a id="syntactic-relationships"></a>
 # Syntactic Relationships {#syntactic-relationships}
 
 Syntactic relationships refer to the structural connections between words or phrases in a sentence, focusing on grammar and the arrangement of words. They determine how words combine to form phrases, clauses, and sentences, following the rules of syntax.

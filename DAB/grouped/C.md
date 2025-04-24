@@ -61,6 +61,7 @@
 
 
 
+<a id="ci-cd"></a>
 # Ci Cd {#ci-cd}
 
 **CI/CD** stands for **[Continuous Integration](#continuous-integration)** and **[Continuous Delivery/Deployment](#continuous-deliverydeployment)**. It is a set of practices aimed at streamlining and accelerating the [Software Development Life Cycle](#software-development-life-cycle). The main goals of CI/CD are to improve software quality, reduce integration issues, and deliver updates to users more frequently and reliably.
@@ -71,21 +72,25 @@ Tools and Technologies
 
 
 
+<a id="crud"></a>
 # Crud {#crud}
 
 Create,Read,Update,Delete.
 
+<a id="career-interest"></a>
 # Career Interest {#career-interest}
 
 
 This is a portal to notes that I find relevant to my career:
 
+<a id="casual-inference"></a>
 # Casual Inference {#casual-inference}
 
 missing data problem
 
 
 
+<a id="catboost"></a>
 # Catboost {#catboost}
 
 
@@ -166,6 +171,7 @@ print(f"Accuracy: {accuracy:.2f}")
 
 
 
+<a id="central-limit-theorem"></a>
 # Central Limit Theorem {#central-limit-theorem}
 
 
@@ -192,6 +198,7 @@ The Central Limit Theorem states that the distribution of the sum (or average) o
 
 <!--SR:!2024-01-26,3,250-->
 
+<a id="chain-of-thought"></a>
 # Chain Of Thought {#chain-of-thought}
 
 **Chain of Thought (CoT) reasoning**
@@ -213,6 +220,7 @@ Advantages of Chain of Thought:
 Related to:
 - [Model Ensemble](#model-ensemble)
 
+<a id="change-management"></a>
 # Change Management {#change-management}
 
 
@@ -251,6 +259,7 @@ How we can accomplish change:
 - Introduce a hook i.e. can we reduce the processing time for tasks by X amount.
 - Put ourselves in a better position for tomorrow.
 
+<a id="checksum"></a>
 # Checksum {#checksum}
 
 A checksum is a value calculated from a data set that is used to verify the integrity of that data. It acts as a fingerprint for the data, allowing systems to detect errors or alterations that may occur during storage, processing, or transmission.
@@ -303,6 +312,7 @@ This is a basic example, and in practice, checksums can be computed using more c
 
 The Chi-squared test is used to determine if there is a significant association between categorical variables. It assesses whether the observed frequencies in a contingency table differ from the expected frequencies, assuming the data is independent.
 
+<a id="choosing-a-threshold"></a>
 # Choosing A Threshold {#choosing-a-threshold}
 
 The optimal threshold depends on the specific problem and the desired trade-off between different types of errors:
@@ -312,6 +322,7 @@ The optimal threshold depends on the specific problem and the desired trade-off 
 3. [Precision-Recall Curve](#precision-recall-curve) Analysis: Plot the precision against the recall for different threshold values. The optimal threshold often lies near the "elbow" of the precision-recall curve, where a small decrease in precision results in a significant increase in recall.
 4. [Cost-Sensitive Analysis](#cost-sensitive-analysis): Assign different costs to different types of errors (e.g., false positives vs. false negatives) and choose the threshold that minimizes the total cost.
 
+<a id="choosing-the-number-of-clusters"></a>
 # Choosing The Number Of Clusters {#choosing-the-number-of-clusters}
 
 The optimal number of clusters ([clustering](#clustering)) depends on the data and the desired level of [granularity](#granularity). Here are some common approaches:
@@ -319,6 +330,7 @@ The optimal number of clusters ([clustering](#clustering)) depends on the data a
 1. Elbow Method: [WCSS and elbow method](#wcss-and-elbow-method): Plot the within-cluster sum of squares (WCSS) as a function of the number of clusters. The optimal number of clusters is often the point where the WCSS starts to decrease slowly.
 2. [Silhouette Analysis](#silhouette-analysis): Calculate the silhouette coefficient for each data point, which measures how similar a data point is to its own cluster compared to other clusters. The optimal number of clusters 1 is often the one that maximizes the average silhouette coefficient.T
 
+<a id="class-separability"></a>
 # Class Separability {#class-separability}
 
 
@@ -336,6 +348,7 @@ If you have a perfectly balanced dataset (unlike [Imbalanced Datasets](#imbalanc
 
 Addressing these issues may require exploring different [feature engineering](#feature-engineering) techniques, selecting more appropriate models, or adjusting hyperparameters to improve class separability.
 
+<a id="classification-report"></a>
 # Classification Report {#classification-report}
 
 The `classification_report` function in `sklearn.metrics` is used to evaluate the performance of a classification model. It provides a summary of key metrics for each class, including precision, recall, F1-score, and support.
@@ -387,6 +400,7 @@ In [ML_Tools](#ml_tools) see: [Evaluation_Metrics.py](#evaluation_metricspy)
 
 
 
+<a id="classification"></a>
 # Classification {#classification}
 
 
@@ -423,6 +437,7 @@ Classifier: A model used for classification tasks, predicting discrete labels or
 3. Medical Diagnosis: Using patient symptoms and test results to classify diseases.
 
 
+<a id="claude"></a>
 # Claude {#claude}
 
 
@@ -430,6 +445,7 @@ Claude is better for code and uses Artifact for tracking code changes.
 
 Claude is crazy see: https://youtu.be/RudrWy9uPZE?t=473
 
+<a id="click_implementationpy"></a>
 # Click_Implementation.Py {#click_implementationpy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Utilities/Click_Implementation.py
@@ -498,6 +514,7 @@ Modifies `data.json` to:
 
 
 
+<a id="cloud-providers"></a>
 # Cloud Providers {#cloud-providers}
 
 
@@ -512,6 +529,7 @@ Whereas [Databricks](#databricks) ( [Databrick](https://www.databricks.com/)) an
 [Memory Caching](#memory-caching)
 
 
+<a id="clustering"></a>
 # Clustering {#clustering}
 
 
@@ -539,6 +557,7 @@ Clustering involves grouping a set of data points into subsets or clusters based
 
 Use clustering to find [Correlation](#correlation) between features. Utilize a [Dendrograms](#dendrograms) to visualize the relationship between features.
 
+<a id="clustering_dashboardpy"></a>
 # Clustering_Dashboard.Py {#clustering_dashboardpy}
 
 
@@ -562,6 +581,7 @@ Requirements: Input should be numerical; data needs to be scaled.
 - [Video Explanation](https://youtu.be/crQkHHhY7aY?t=149)
 - [Seaborn Clustermap Documentation](https://seaborn.pydata.org/generated/seaborn.clustermap.html)
 
+<a id="code-diagrams"></a>
 # Code Diagrams {#code-diagrams}
 
 [Documentation & Meetings](#documentation--meetings)
@@ -579,6 +599,7 @@ Architecture diagram : main componts fitting together
 
 
 
+<a id="columnar-storage"></a>
 # Columnar Storage {#columnar-storage}
 
 A database storage technique that stores <mark>data by columns</mark> rather than rows, 
@@ -601,6 +622,7 @@ If you're querying for the total sales (`order_amount`) in a specific period, on
 Use case: **Data Analytics/OLAP (Online Analytical Processing)**
 - Running a query to get the **total sales for October** only needs to scan the `order_amount` and `order_date` columns, rather than scanning entire rows, faster [Querying](#querying)
 
+<a id="command-line"></a>
 # Command Line {#command-line}
 
 
@@ -614,6 +636,7 @@ The command line is a text-based interface used to interact with a computer's op
 
 [Command Prompt](#command-prompt)
 
+<a id="command-prompt"></a>
 # Command Prompt {#command-prompt}
 
 
@@ -773,6 +796,7 @@ These examples illustrate some of the basic functionalities of Command Prompt. W
 
 
 
+<a id="common-security-vulnerabilities-in-software-development"></a>
 # Common Security Vulnerabilities In Software Development {#common-security-vulnerabilities-in-software-development}
 
 
@@ -861,6 +885,7 @@ Mitigation:
 - Escape user input before rendering it in HTML.
 - Use security libraries or frameworks that automatically handle escaping
 
+<a id="common-table-expression"></a>
 # Common Table Expression {#common-table-expression}
 
 
@@ -923,6 +948,7 @@ FROM levels;
 ```
 
 
+<a id="communication-techniques"></a>
 # Communication Techniques {#communication-techniques}
 
 
@@ -1011,6 +1037,7 @@ Tips for Using Communication Bridges
 - Effect: Ends discussions with clear direction and accountability.
 
 
+<a id="communication-principles"></a>
 # Communication Principles {#communication-principles}
 
 
@@ -1020,6 +1047,7 @@ Tips for Using Communication Bridges
 
 
 
+<a id="comparing-llm"></a>
 # Comparing Llm {#comparing-llm}
 
 
@@ -1033,12 +1061,14 @@ text to image leader board
 
 
 
+<a id="components-of-the-database"></a>
 # Components Of The Database {#components-of-the-database}
 
 [Fact Table](#fact-table) in main table that [Dimension Table](#dimension-table) connect to them.
 
 ![Obsidian_CSP0FnAVD1.png](../content/images/Obsidian_CSP0FnAVD1.png)
 
+<a id="computer-science"></a>
 # Computer Science {#computer-science}
 
 
@@ -1046,10 +1076,12 @@ text to image leader board
 
 
 
+<a id="concatenate"></a>
 # Concatenate {#concatenate}
 
 
 
+<a id="conceptual-model"></a>
 # Conceptual Model {#conceptual-model}
 
 Conceptual Model
@@ -1063,11 +1095,13 @@ Conceptual Model
    - Defines important data entities and their relationships.
    - Tools: [ER Diagrams](#er-diagrams), ER Studio, DbSchema.
 
+<a id="concurrency"></a>
 # Concurrency {#concurrency}
 
 In [DE_Tools](#de_tools) see:
 - https://github.com/rhyslwells/DE_Tools/blob/main/Explorations/SQLite/Transactions/Concurrency.ipynb
 
+<a id="confidence-interval"></a>
 # Confidence Interval {#confidence-interval}
 
 
@@ -1080,6 +1114,7 @@ Key Points
 - A 95% confidence interval for a mean of (50, 60) suggests that, in repeated sampling, 95% of such intervals would contain the true mean.
 
 
+<a id="confusion-matrix"></a>
 # Confusion Matrix {#confusion-matrix}
 
 
@@ -1130,6 +1165,7 @@ array([[377, 63],
        [ 91, 180]], dtype=int64)
 ```
 
+<a id="continuous-delivery---deployment"></a>
 # Continuous Delivery   Deployment {#continuous-delivery---deployment}
 
 Continuous Delivery
@@ -1144,16 +1180,19 @@ Continuous Deployment:
 
 A continuous integration and continuous deployment (CI/CD) pipeline is **a series of steps that must be performed in order to deliver a new version of software**
 
+<a id="continuous-integration"></a>
 # Continuous Integration {#continuous-integration}
 
    - Developers frequently integrate code into a shared repository.
    - Automated builds and tests are run to detect issues early.
    - Encourages smaller, more manageable code changes.
 
+<a id="converting-categorical-variables-to-a-dummy-indicators"></a>
 # Converting Categorical Variables To A Dummy Indicators {#converting-categorical-variables-to-a-dummy-indicators}
 
 
 
+<a id="convolutional-neural-networks"></a>
 # Convolutional Neural Networks {#convolutional-neural-networks}
 
 
@@ -1177,6 +1216,7 @@ The idea of pooling in convolutional neural networks is to do two things:
 ![Pasted image 20241006124735.png|500](../content/images/Pasted%20image%2020241006124735.png|500)
 
 
+<a id="correlation-vs-causation"></a>
 # Correlation Vs Causation {#correlation-vs-causation}
 
 What is the meaning of [Correlation](#correlation) does not imply causation?
@@ -1188,6 +1228,7 @@ Correlation measures the statistical association between two variables, while ca
 - **Causation**: Suggests a direct cause-and-effect relationship between variables, requiring experimentation to establish.
 
 
+<a id="correlation"></a>
 # Correlation {#correlation}
 
 
@@ -1243,6 +1284,7 @@ df['var1', 'target'](#var1-target).groupby(['var1'], as_index=False).mean().sort
 ```
 
 
+<a id="cosine-similarity"></a>
 # Cosine Similarity {#cosine-similarity}
 
 Cosine similarity is a [Metric](#metric) used to measure how similar two vectors are by calculating the cosine of the angle between them. It ranges from -1 to 1.where 1 indicates identical orientation, 0 indicates orthogonality, and -1 indicates opposite orientation. 
@@ -1255,6 +1297,7 @@ Cosine similarity is commonly used in
 In [Binary Classification](#binary-classification), cosine similarity can be used as a feature to help distinguish between two classes. For instance, in text classification tasks, you might represent documents as vectors using techniques like [TF-IDF](#tf-idf). 
 
 
+<a id="cost-function"></a>
 # Cost Function {#cost-function}
 
 The concept of a Cost Function is central to [Model Optimisation](#model-optimisation), particularly in training models.
@@ -1278,6 +1321,7 @@ A cost function, also known as a loss function or error function, is a mathemati
 
 **[Reward Function](#reward-function)**: Mentioned as the opposite of a cost function, typically used in [Reinforcement learning](#reinforcement-learning) to indicate the desirability of an outcome.
 
+<a id="covariance"></a>
 # Covariance {#covariance}
 
 
@@ -1305,14 +1349,17 @@ Covariance is used in:
 - in the calculation of [correlation](#correlation) coefficients 
 - and in multivariate statistics, such as in [Gaussian Mixture Models](#gaussian-mixture-models) where it helps describe the shape and orientation of the data distribution.
 
+<a id="covering-index"></a>
 # Covering Index {#covering-index}
 
 Like an [Database Index|Index](#database-indexindex) but for partial indexes?
 
+<a id="cron-jobs"></a>
 # Cron Jobs {#cron-jobs}
 
 
 
+<a id="cross-entropy"></a>
 # Cross Entropy {#cross-entropy}
 
 
@@ -1372,6 +1419,7 @@ In [ML_Tools](#ml_tools) see:
 
 
 
+<a id="cross-validation"></a>
 # Cross Validation {#cross-validation}
 
 
@@ -1414,6 +1462,7 @@ In [ML_Tools](#ml_tools) see:
 
 All notebooks use cross-validation based on `TimeSeriesSplit` to ensure proper evaluation of performance with no [Data Leakage](#data-leakage). This method ensures that training and test data are split while maintaining the chronological order of the data.
 
+<a id="cross_entropypy"></a>
 # Cross_Entropy.Py {#cross_entropypy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Selection/Model_Evaluation/Classification/Cross_Entropy.py
@@ -1463,6 +1512,7 @@ This approach provides insight into the model's performance by analyzing the spr
     - If both are high, the model is likely underperforming across the board.
 
 
+<a id="cross_entropy_singlepy"></a>
 # Cross_Entropy_Single.Py {#cross_entropy_singlepy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Selection/Model_Evaluation/Classification/Cross_Entropy_Single.py
@@ -1505,6 +1555,7 @@ So, the cross entropy loss for this example is approximately 0.3567. This value 
 3. **Cross Entropy Loss Calculation**: Prints the loss value for a sample data point.
 4. **Loss Curve**: A line graph shows how the loss changes as the predicted probability for the true class increases.
 
+<a id="crosstab"></a>
 # Crosstab {#crosstab}
 
 Used to compute a simple cross-tabulation of two (or more) factors. It is particularly useful for computing frequency tables. Here's an example:
@@ -1542,6 +1593,7 @@ B            1  1
 In [DE_Tools](#de_tools) see:
 - https://github.com/rhyslwells/DE_Tools/blob/main/Explorations/Transformation/reshaping.ipynb
 
+<a id="cryptography"></a>
 # Cryptography {#cryptography}
 
 
@@ -1703,6 +1755,7 @@ const isVerified = verifier.verify(publicKey, signature, 'hex');
 console.log(isVerified);
 ```
 
+<a id="current-challenges-within-the-energy-sector"></a>
 # Current Challenges Within The Energy Sector {#current-challenges-within-the-energy-sector}
 
 
@@ -1710,6 +1763,7 @@ console.log(isVerified);
 
 
 
+<a id="cleaning-terminal-path"></a>
 # Cleaning Terminal Path {#cleaning-terminal-path}
 
 
@@ -1737,5 +1791,6 @@ https://stackoverflow.com/questions/41117421/ps1-cannot-be-loaded-because-runnin
 
 
 
+<a id="conceptual-data-model"></a>
 # Conceptual Data Model {#conceptual-data-model}
 

@@ -31,15 +31,18 @@
 
 
 
+<a id="b-tree"></a>
 # B Tree {#b-tree}
 
 
 
+<a id="bert-pretraining-of-deep-bidirectional-transformers-for-language-understanding"></a>
 # Bert Pretraining Of Deep Bidirectional Transformers For Language Understanding {#bert-pretraining-of-deep-bidirectional-transformers-for-language-understanding}
 
 
 
 
+<a id="bert"></a>
 # Bert {#bert}
 
 
@@ -87,10 +90,12 @@ Resources:
 
 
 
+<a id="bertscore"></a>
 # Bertscore {#bertscore}
 
 
 
+<a id="backpropagation"></a>
 # Backpropagation {#backpropagation}
 
 
@@ -153,6 +158,7 @@ from sympy import symbols, diff
 
 ## [Sympy](#sympy)
 
+<a id="bag-of-words"></a>
 # Bag Of Words {#bag-of-words}
 
 
@@ -192,6 +198,7 @@ Represent each sentence by a vector of length determined by get_feature_names_ou
 
 This is a typical text preprocessing pipeline used to prepare textual data for machine learning models.
 
+<a id="bagging"></a>
 # Bagging {#bagging}
 
 
@@ -237,12 +244,14 @@ Each tree in a random forest is trained on a different bootstrap sample of the d
 - **Computational Cost**: Training multiple models can be computationally intensive, although this can be mitigated by parallel processing.
 
 
+<a id="bandit_example_fixedpy"></a>
 # Bandit_Example_Fixed.Py {#bandit_example_fixedpy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Deployment/Bandit_Example_Fixed.py
 
 
 
+<a id="bandit_example_nonfixedpy"></a>
 # Bandit_Example_Nonfixed.Py {#bandit_example_nonfixedpy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Deployment/Bandit_Example_Nonfixed.py
@@ -339,6 +348,7 @@ fi
 
 
 
+<a id="batch-normalisation"></a>
 # Batch Normalisation {#batch-normalisation}
 
 Links:
@@ -411,6 +421,7 @@ keras.layers.Dense(10, activation = "softmax")
 
 
 
+<a id="batch-processing"></a>
 # Batch Processing {#batch-processing}
 
 
@@ -431,6 +442,7 @@ Batch processing is widely supported by cloud infrastructures like **Amazon EMR*
 [Batch Processing](#batch-processing)
    **Tags**: #data_processing, #data_workflow
 
+<a id="bellman-equations"></a>
 # Bellman Equations {#bellman-equations}
 
 
@@ -463,10 +475,12 @@ Bellman's equations are used in dynamic programming methods like Value Iteration
 - Enrichment: Adding contextual data for better insights.  
 - [Data Quality](#data-quality): Validating, cleansing, and deduplicating data.
 
+<a id="bernoulli"></a>
 # Bernoulli {#bernoulli}
 
 
 
+<a id="bias-and-variance"></a>
 # Bias And Variance {#bias-and-variance}
 
 
@@ -499,6 +513,7 @@ The bias-variance trade-off describes the relationship between model complexity 
 - High bias (underfitting) occurs when a model is too simple, leading to poor performance on both training and test data. 
 - High variance (overfitting) happens when a model is overly complex, performing well on training data but poorly on unseen data.
 
+<a id="big-data"></a>
 # Big Data {#big-data}
 
 
@@ -528,6 +543,7 @@ Handling big data involves:
 [Big Data](#big-data)
    **Tags**: #big_data, #data_processing
 
+<a id="big-o-notation"></a>
 # Big O Notation {#big-o-notation}
 
 
@@ -543,6 +559,7 @@ We can express algorithmic complexity using the big-O notation. For a problem of
 -   A quadratic-time function/method is “order N squared” : O(N^2) 
 
 
+<a id="bigquery"></a>
 # Bigquery {#bigquery}
 
 cloud-based [Data Warehouse](#data-warehouse)
@@ -565,10 +582,12 @@ BigQuery is a fully managed, serverless data warehouse offered by [Google](#goog
 
 8. **Cost-Effective:** BigQuery uses a pay-as-you-go pricing model, where users are charged based on the amount of data processed by queries and the amount of data stored.
 
+<a id="binary-classification"></a>
 # Binary Classification {#binary-classification}
 
 Binary classification is a type of [Classification](#classification) task that involves predicting one of two possible classes or outcomes. It is used in scenarios where the goal is to categorize data into two distinct groups, such as spam vs. not spam in email filtering or disease vs. no disease in medical diagnosis.
 
+<a id="binder"></a>
 # Binder {#binder}
 
 
@@ -576,6 +595,7 @@ https://mybinder.org/
 
 
 
+<a id="boosting"></a>
 # Boosting {#boosting}
 
 
@@ -604,12 +624,14 @@ It combines [Weak Learners](#weak-learners) (models that are slightly better tha
 - Complexity: Boosting models can be more complex and computationally intensive than single models.
 - [Interpretability](#interpretability): The final model may be harder to interpret compared to simpler models like decision trees.
 
+<a id="bootstrap"></a>
 # Bootstrap {#bootstrap}
 
 sampling with replacement from an original dataset.
 
 
 
+<a id="boxplot"></a>
 # Boxplot {#boxplot}
 
 
@@ -670,6 +692,7 @@ plt.ylabel('Values')
 plt.show()
 ```
 
+<a id="business-observability"></a>
 # Business Observability {#business-observability}
 
 
@@ -695,6 +718,7 @@ Key components of business observability include:
 
 
 
+<a id="business-intelligence"></a>
 # Business Intelligence {#business-intelligence}
 
 

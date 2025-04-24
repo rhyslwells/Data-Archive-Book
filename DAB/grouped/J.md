@@ -12,6 +12,7 @@
 
 
 
+<a id="java-vs-javascript"></a>
 # Java Vs Javascript {#java-vs-javascript}
 
 
@@ -36,6 +37,7 @@ Although their names are similar, **Java** and **JavaScript** are fundamentally 
 - **[Java](#java)** is used for building **large-scale applications**, including desktop apps and Android apps. It is strongly typed, compiled, and can handle multithreading.
 - **[JavaScript](#javascript)** is mainly used for **web development**, both for the front-end (managing user interfaces) and back-end (using Node.js), and is more flexible with dynamic typing and asynchronous behavior.
 
+<a id="javascript"></a>
 # Javascript {#javascript}
 
 
@@ -133,6 +135,7 @@ joined_df = df1.join(df2, lsuffix='_left', rsuffix='_right')
 Merging datasets for completeness (also see [SQL Joins](#sql-joins)). 
 
 
+<a id="json-to-yaml"></a>
 # Json To Yaml {#json-to-yaml}
 
 
@@ -216,6 +219,7 @@ alias_reuse:
   bar: baz 
 ```
 
+<a id="json"></a>
 # Json {#json}
 
 Stands for [javascript object notation](https://www.json.org/json-en.html)
@@ -232,10 +236,12 @@ JSON data embedded inside of a string, is an example of semi-structured data. Th
 |Record 1| \"{'id': 1, 'name': 'Mary X'}\" |
 |Record 2| \"{'id': 2, 'name': 'John D'}\"|
 
+<a id="junction-tables"></a>
 # Junction Tables {#junction-tables}
 
 
 
+<a id="jinja-template"></a>
 # Jinja Template {#jinja-template}
 
 

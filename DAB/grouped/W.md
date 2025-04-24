@@ -31,6 +31,7 @@
 
 
 
+<a id="wcss-and-elbow-method"></a>
 # Wcss And Elbow Method {#wcss-and-elbow-method}
 
 
@@ -125,6 +126,7 @@ for elbow_num in elbow_nums:
     scatter_elbow(df, elbow_num, var1, var2)
 ```
 
+<a id="weak-learners"></a>
 # Weak Learners {#weak-learners}
 
 
@@ -145,6 +147,7 @@ Weak learners are a crucial component of [Model Ensemble](#model-ensemble) techn
 - A smaller learning rate means that each weak learner has a smaller impact, often requiring more learners to achieve good performance.
 
 
+<a id="web-feature-server-wfs"></a>
 # Web Feature Server (Wfs) {#web-feature-server-wfs}
 
 [GIS](#gis)
@@ -159,6 +162,7 @@ Weak learners are a crucial component of [Model Ensemble](#model-ensemble) techn
 - **Data Access**: Provides access to the actual data behind the map, enabling more detailed and customized analysis and processing compared to image-based services.
 - **Standardization**: Also standardized by the OGC, ensuring compatibility and interoperability across various GIS applications and systems.
 
+<a id="web-map-tile-service-wmts"></a>
 # Web Map Tile Service (Wmts) {#web-map-tile-service-wmts}
 
 [GIS](#gis)
@@ -173,6 +177,7 @@ Weak learners are a crucial component of [Model Ensemble](#model-ensemble) techn
 - **Scalability**: The tile-based approach allows for easy scaling and efficient handling of high load, as the same tiles can be reused for multiple requests.
 - **Standardization**: It is standardized by the Open Geospatial Consortium (OGC), ensuring interoperability between different systems and software.
 
+<a id="webpages-relevant"></a>
 # Webpages Relevant {#webpages-relevant}
 
 Using bookmarks:
@@ -182,22 +187,26 @@ https://aeturrell.com/blog/posts/time-series-explosion/?utm_source=substack&utm_
 
 https://otexts.com/fpp3/?utm_source=substack&utm_medium=email#
 
+<a id="what-algorithms-or-models-are-used-within-the-energy-sector"></a>
 # What Algorithms Or Models Are Used Within The Energy Sector {#what-algorithms-or-models-are-used-within-the-energy-sector}
 
 
 
 
 
+<a id="what-algorithms-or-models-are-used-within-the-telecommunication-sector"></a>
 # What Algorithms Or Models Are Used Within The Telecommunication Sector {#what-algorithms-or-models-are-used-within-the-telecommunication-sector}
 
 
 
 
 
+<a id="what-are-the-best-practices-for-evaluating-the-effectiveness-of-different-prompts"></a>
 # What Are The Best Practices For Evaluating The Effectiveness Of Different Prompts {#what-are-the-best-practices-for-evaluating-the-effectiveness-of-different-prompts}
 
 
 
+<a id="what-can-abm-solve-within-the-energy-sector"></a>
 # What Can Abm Solve Within The Energy Sector {#what-can-abm-solve-within-the-energy-sector}
 
 
@@ -206,18 +215,21 @@ https://otexts.com/fpp3/?utm_source=substack&utm_medium=email#
 
 energy systems analysis
 
+<a id="what-is-the-difference-between-odds-and-probability"></a>
 # What Is The Difference Between Odds And Probability {#what-is-the-difference-between-odds-and-probability}
 
 
 
 
 
+<a id="what-is-the-role-of-gradient-based-optimization-in-training-deep-learning-models"></a>
 # What Is The Role Of Gradient Based Optimization In Training Deep Learning Models. {#what-is-the-role-of-gradient-based-optimization-in-training-deep-learning-models}
 
 
 
 
 
+<a id="when-and-why-not-to-us-regularisation"></a>
 # When And Why Not To Us Regularisation {#when-and-why-not-to-us-regularisation}
 
 While regularization is tool to combat overfitting, it is not a always useful. It is crucial to consider the model's 
@@ -242,6 +254,7 @@ to ensure effective performance on validation data. If your model is performing 
 
 
 
+<a id="why-json-is-better-than-pickle-for-untrusted-data"></a>
 # Why Json Is Better Than Pickle For Untrusted Data {#why-json-is-better-than-pickle-for-untrusted-data}
 
 **JSON vs. [Pickle](#pickle)**:
@@ -260,6 +273,7 @@ to ensure effective performance on validation data. If your model is performing 
 
 For these reasons, JSON is preferred over Pickle when dealing with untrusted data, as it minimizes security risks and offers better interoperability and readability.
 
+<a id="why-type-1-and-type-2-matter"></a>
 # Why Type 1 And Type 2 Matter {#why-type-1-and-type-2-matter}
 
 Type I and Type II errors are used in evaluating the performance of classification models, and understanding their differences is essential for interpreting model results effectively.
@@ -287,6 +301,7 @@ Type I and Type II errors are used in evaluating the performance of classificati
 
 
 
+<a id="why-and-when-is-feature-scaling-necessary"></a>
 # Why And When Is Feature Scaling Necessary {#why-and-when-is-feature-scaling-necessary}
 
 [Feature Scaling](#feature-scaling) is useful for models that use distances like [Support Vector Machines|SVM](#support-vector-machinessvm) and [K-means](#k-means)
@@ -301,6 +316,7 @@ Type I and Type II errors are used in evaluating the performance of classificati
       
 
 
+<a id="why-does-increasing-the-number-of-models-in-a-ensemble-not-necessarily-improve-the-accuracy"></a>
 # Why Does Increasing The Number Of Models In A Ensemble Not Necessarily Improve The Accuracy {#why-does-increasing-the-number-of-models-in-a-ensemble-not-necessarily-improve-the-accuracy}
 
 
@@ -312,6 +328,7 @@ Increasing the number of models in an ensemble ([Model Ensemble](#model-ensemble
 - **Increased Complexity**: More models increase computational costs and training times without necessarily improving accuracy.
 - **Overfitting Risk**: Adding complex models can lead to overfitting, where the ensemble learns noise instead of underlying patterns.
 
+<a id="why-does-label-encoding-give-different-predictions-from-one-hot-encoding"></a>
 # Why Does Label Encoding Give Different Predictions From One Hot Encoding {#why-does-label-encoding-give-different-predictions-from-one-hot-encoding}
 
 Label Encoding and One-Hot Encoding give different predictions because they represent categorical variables in fundamentally different ways. 
@@ -404,6 +421,7 @@ The convergence of the Adam optimizer, resulting in a stable cost value, is a pr
 
 
 
+<a id="why-is-named-entity-recognition-ner-a-challenging-task"></a>
 # Why Is Named Entity Recognition (Ner) A Challenging Task {#why-is-named-entity-recognition-ner-a-challenging-task}
 
 Named Entity Recognition (NER) is considered a challenging task for several reasons:
@@ -422,6 +440,7 @@ Named Entity Recognition (NER) is considered a challenging task for several reas
 
 7. **Domain-Specific Language**: Different domains (e.g., medical, legal, technical) may have specific terminologies and entities that general NER models may not recognize effectively without domain-specific training.
 
+<a id="why-is-the-central-limit-theorem-important-when-working-with-small-sample-sizes"></a>
 # Why Is The Central Limit Theorem Important When Working With Small Sample Sizes {#why-is-the-central-limit-theorem-important-when-working-with-small-sample-sizes}
 
 The [Central Limit Theorem](#central-limit-theorem) (CLT) is particularly important for data scientists working with small sample sizes. It enables the use of various statistical methods, and helps in making valid inferences about the population from limited data.
@@ -439,6 +458,7 @@ The [Central Limit Theorem](#central-limit-theorem) (CLT) is particularly import
 7. **Robustness of Results**: The CLT provides a theoretical justification for the robustness of statistical methods. Even if the original data is not normally distributed, the means of sufficiently large samples will tend to be normally distributed, allowing for more reliable conclusions.
 
 
+<a id="why-use-er-diagrams"></a>
 # Why Use Er Diagrams {#why-use-er-diagrams}
 
 [Why use ER diagrams](#why-use-er-diagrams)
@@ -455,10 +475,12 @@ Cleaning a dataset before creating an [ER Diagrams](#er-diagrams) is crucial for
 
 5. Data Consistency: [Data Cleansing](#data-cleansing) ensures consistency across the dataset, which is essential for maintaining integrity in the ER diagram. Consistent data allows for clearer identification of relationships and attributes, leading to a more effective database design.
 
+<a id="wikipedia_apipy"></a>
 # Wikipedia_Api.Py {#wikipedia_apipy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Utilities/Wikipedia_API.py
 
+<a id="windows-subsystem-for-linux"></a>
 # Windows Subsystem For Linux {#windows-subsystem-for-linux}
 
 [Windows Subsystem for Linux](#windows-subsystem-for-linux) (WSL) is a compatibility layer for running Linux binary executables natively on Windows 10 and Windows 11. It allows users to run a Linux environment directly on Windows without the need for a virtual machine or dual-boot setup. 
@@ -471,6 +493,7 @@ Key features of WSL include:
 4. **Performance**: WSL provides near-native performance for Linux applications, making it suitable for development and testing.
 
 
+<a id="word2vecpy"></a>
 # Word2Vec.Py {#word2vecpy}
 
 https://github.com/rhyslwells/ML_Tools/blob/main/Explorations/Build/NLP/Word2Vec.py
@@ -505,6 +528,7 @@ The script can benefit from **Word2Vec embeddings** by replacing the randomly in
 3. **Semantic Diversity**:
     - The expanded list increases the diversity of semantic relationships and highlights the strength of embeddings in grouping similar concepts.
 
+<a id="word2vec"></a>
 # Word2Vec {#word2vec}
 
 Word2Vec is a technique for generating vector representations of words. Developed by researchers at Google, it uses a shallow [neural network](#neural-network) to produce [standardised/Vector Embedding|word embedding](#standardisedvector-embeddingword-embedding) that capture [Semantic Relationships](#semantic-relationships) and [syntactic relationships](#syntactic-relationships). Word2Vec has two main architectures:
@@ -526,10 +550,12 @@ Word2Vec generates dense, continuous vector representations where words with sim
 
 
 
+<a id="wordnet"></a>
 # Wordnet {#wordnet}
 
 
 
+<a id="wrapper-methods"></a>
 # Wrapper Methods {#wrapper-methods}
 
 Used in [Feature Selection](#feature-selection). Wrapper methods are powerful because they directly optimize the performance of the machine learning model by selecting the most informative subset of features. 
