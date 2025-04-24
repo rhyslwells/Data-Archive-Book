@@ -18,8 +18,8 @@ def strip_yaml_front_matter(text: str) -> str:
             return text[end + 3:].lstrip()
     return text
 
-HILITE = re.compile(r'==(.+?)==')
-H1     = re.compile(r'^# (.+?)(\s*\{#([A-Za-z0-9_\-]+)\})?$', re.MULTILINE)
+HILITE   = re.compile(r'==(.+?)==')
+H1       = re.compile(r'^# (.+?)(\s*\{#([A-Za-z0-9_\-]+)\})?$', re.MULTILINE)
 
 def slugify(t: str) -> str:
     return re.sub(r'[^\w\- ]', '', t).strip().lower().replace(' ', '-')
@@ -36,22 +36,20 @@ for md in sorted(CONTENT_DIR.glob("*.md"), key=lambda p: p.name.lower()):
     txt = strip_yaml_front_matter(raw)
     txt = HILITE.sub(r'<mark>\1</mark>', txt)
 
-    # Process the main H1 header
     m = H1.search(txt)
     if m:
         title  = m.group(1).strip()
         anchor = m.group(3) or slugify(title)
         if not m.group(3):  # add {#anchor} if missing
             txt = H1.sub(f"# {title} {{#{anchor}}}", txt, count=1)
-    else:  # fabricate heading if missing
+    else:  # fabricate heading
         title  = md.stem.replace('-', ' ')
         anchor = slugify(title)
         txt    = f"# {title} {{#{anchor}}}\n\n{txt}"
 
-    # Ensure that the header has the correct format (with anchor)
-    txt = H1.sub(lambda m: f"# {m.group(1).strip()} {{#{slugify(m.group(1))}}}", txt)
+    # insert invisible anchor before heading
+    txt = f'<a id="{anchor}"></a>\n' + txt
 
-    # Add to the merged content
     merged_parts.append(txt)
     summary_lines.append(f"* [{title}](./book/book.md#{anchor})")
 
