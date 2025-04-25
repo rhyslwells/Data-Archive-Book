@@ -7,7 +7,9 @@ Commands sequence:
 cd DAB
 python update.py
 python file_remover.py
-python grouping.py
+
+python compiler.py
+
 npx honkit build
 npx honkit serve
 - Launch a development server to preview the content in the browser. Open http://localhost:4000 to view your book.

@@ -3,7 +3,6 @@ import re
 
 # Paths
 content_folder = './content'
-summary_file = 'SUMMARY.md'
 
 # Slugify helper: turns "Page Name" into "page-name"
 def slugify(text):
@@ -51,24 +50,12 @@ def update_links_and_titles(file_path):
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write(content)
 
-# Function to generate the HonKit-compatible SUMMARY.md
-def generate_summary(content_folder, summary_file):
-    summary_lines = ['# Summary\n']
-    for root, _, files in os.walk(content_folder):
-        for file in sorted(files):
-            if file.endswith('.md') and file.lower() != 'readme.md':
-                name = os.path.splitext(file)[0]
-                summary_lines.append(f"* [{name}](./content/{file})")
-    with open(summary_file, 'w', encoding='utf-8') as f:
-        f.write('\n'.join(summary_lines))
-    print(f"📘 SUMMARY.md generated at: {summary_file}")
 
-# Apply updates and build summary
+# Apply updates
 for root, _, files in os.walk(content_folder):
     for file in files:
         if file.endswith('.md'):
             update_links_and_titles(os.path.join(root, file))
 
-generate_summary(content_folder, summary_file)
 
-print("✅ All markdown files updated and SUMMARY.md created.")
+print("✅ All markdown files updated.")

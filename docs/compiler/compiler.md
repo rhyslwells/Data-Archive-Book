@@ -99,4 +99,21 @@ I get something like this:
 {% endraw %}
 
 -----
-table of contnats
+table of contnats only showing the first H1 header.
+
+Why HonKit still ignores later H1s
+HonKit (GitBook 3) builds the EPUB TOC from one markdown file per chapter.
+Because you merge every note into a single book.md, HonKit sees only the first H1 inside that file; the rest are treated as plain text. (Internally it converts each source file to one HTML “chapter” and uses the first H‑tag it finds.)
+
+Rule: One heading per source file becomes a TOC entry.
+
+
+// node_modules/gitbook-plugin-page-toc/package.json
+{
+  "name": "gitbook-plugin-page-toc",
+  ...
+  "engines": {
+    "gitbook": "3.*",
+    "honkit": ">=4.0.0"
+  }
+}
