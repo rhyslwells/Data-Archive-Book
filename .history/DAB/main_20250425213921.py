@@ -96,6 +96,19 @@ def main(args):
             print(f"❌ Script not found: {script_path}")
             return
         run_script(script_name)  # Use the new function here
+
+    # --pdf: Generate PDF file
+    if args.pdf:
+        output_pdf = args.pdf if args.pdf else "data-archive-book"
+        print(f"Generating PDF: {output_pdf}.pdf")
+        subprocess.run(["npx honkit pdf ./", f" ./{output_pdf}.pdf"], check=True)
+
+    # --epub: Generate EPUB file
+    if args.epub:
+        output_epub = args.epub if args.epub else "data-archive-book"
+        print(f"Generating EPUB: {output_epub}.epub")
+        subprocess.run(["npx", "honkit", "epub", "./", f"./{output_epub}.epub"], check=True)
+
     
     if args.fallback:
         fallback = input("❓ Did an error occur in compiler.py? Run file_remover.py? (y/N): ")

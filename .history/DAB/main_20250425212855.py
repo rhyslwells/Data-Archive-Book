@@ -96,6 +96,19 @@ def main(args):
             print(f"❌ Script not found: {script_path}")
             return
         run_script(script_name)  # Use the new function here
+
+    # --pdf: Generate PDF file
+    if args.pdf:
+        output_pdf = args.pdf if args.pdf else "data-archive-book.pdf"
+        print(f"Generating PDF: {output_pdf}")
+        subprocess.run(["npx", "honkit", "pdf", "./", f"./{output_pdf}"], check=True)
+
+    # --epub: Generate EPUB file
+    if args.epub:
+        output_epub = args.epub if args.epub else "data-archive-book.epub"
+        print(f"Generating EPUB: {output_epub}")
+        subprocess.run(["npx", "honkit", "epub", "./", f"./{output_epub}"], check=True)
+
     
     if args.fallback:
         fallback = input("❓ Did an error occur in compiler.py? Run file_remover.py? (y/N): ")
@@ -108,6 +121,7 @@ if __name__ == "__main__":
     parser.add_argument("--clean", action="store_true", help="Clean and recreate content directories")
     parser.add_argument("--copy", action="store_true", help="Copy standardised content and images")
     parser.add_argument('--run', type=str, help="Run a script by name (e.g. update.py, compiler.py)")
+    parser.add_argument("--fallback", action="store_true", help="Prompt to run fallback script")
 
     # PDF and EPUB generation
     parser.add_argument("--pdf", type=str, help="Generate PDF with the specified output filename")
@@ -125,5 +139,4 @@ if __name__ == "__main__":
 # python main.py --copy
 # python main.py --run update.py
 # python main.py --run compiler.py
-# python main.py --pdf name
-# python main.py --epub name
+# python main.py --fallback
