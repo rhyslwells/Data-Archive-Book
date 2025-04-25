@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parent.parent  # This sets ROOT to ...\Data-Arch
 SCRIPTS = ROOT / "DAB"/"scripts"
 CONTENT_DIR = ROOT / "DAB"/"content"
 IMAGES_DIR = CONTENT_DIR / "images"
-BOOK_DIR = ROOT / "DAB/book"
+BOOK_DIR = ROOT / "DAB"/"book"
 
 
 # Standardised source content (absolute or relative to home)
@@ -63,7 +63,7 @@ def copy_standardised_content():
         else:
             print(f"⚠️  Warning: {file_name} not found in {source_folder}")
 
-    print(f"✅ {copied_count} markdown files copied to {destination_folder}")
+    print(f"{copied_count} markdown files copied to {destination_folder}")
 
     # Copy all images
     image_files = list(STANDARDISED_IMAGES.glob("*"))
@@ -93,14 +93,14 @@ def main(args):
         script_name = args.run  # script passed as argument (e.g., 'update.py')
         script_path = SCRIPTS / script_name
         if not script_path.exists():
-            print(f"❌ Script not found: {script_path}")
+            print(f"Script not found: {script_path}")
             return
         run_script(script_name)  # Use the new function here
     
-    if args.fallback:
-        fallback = input("❓ Did an error occur in compiler.py? Run file_remover.py? (y/N): ")
-        if fallback.strip().lower() == "y":
-            run_script("file_remover.py")
+    # if args.fallback:
+    #     fallback = input("❓ Did an error occur in compiler.py? Run file_remover.py? (y/N): ")
+    #     if fallback.strip().lower() == "y":
+    #         run_script("file_remover.py")
 
 # ── CLI entry ─────────────────────────────────────────────────────────────
 if __name__ == "__main__":
