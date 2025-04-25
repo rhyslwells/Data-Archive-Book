@@ -4,9 +4,7 @@ import re
 from pathlib import Path
 
 BASE = Path(__file__).resolve().parent.parent  # goes up from /scripts
-content_folder = BASE / "content"
-
-print("BASE:", BASE)
+content_folder = BASE / "DAB" / "content"
 
 # Slugify helper: turns "Page Name" into "page-name"
 def slugify(text):
@@ -62,4 +60,4 @@ for root, _, files in os.walk(str(content_folder)):
             update_links_and_titles(os.path.join(root, file))
 
 
-print("All markdown files updated created.")
+print("✅ All markdown files updated created.")

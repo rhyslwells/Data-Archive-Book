@@ -62,4 +62,4 @@ for root, _, files in os.walk(str(content_folder)):
             update_links_and_titles(os.path.join(root, file))
 
 
-print("All markdown files updated created.")
+print("✅ All markdown files updated created.")
