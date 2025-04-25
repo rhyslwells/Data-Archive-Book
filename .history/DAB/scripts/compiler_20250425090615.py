@@ -2,7 +2,7 @@
 import re
 from pathlib import Path
 
-ROOT        = Path(__file__).parent.parent.resolve()
+ROOT        = Path(__file__).parent.resolve()
 CONTENT_DIR = ROOT / "content"
 BOOK_DIR    = ROOT / "book"
 BOOK_MD     = BOOK_DIR / "book.md"
@@ -65,4 +65,4 @@ for md in sorted(CONTENT_DIR.glob("*.md"), key=lambda p: p.name.lower()):
 BOOK_MD.write_text("\n\n".join(merged_parts), encoding="utf-8")
 SUMMARY_MD.write_text("\n".join(summary_lines) + "\n", encoding="utf-8")
 
-print("Preface added, math fences left untouched, book/book.md & SUMMARY.md regenerated.")
+print("✓ Preface added, math fences left untouched, book/book.md & SUMMARY.md regenerated.")

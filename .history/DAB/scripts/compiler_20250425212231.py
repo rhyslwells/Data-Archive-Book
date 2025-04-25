@@ -2,7 +2,7 @@
 import re
 from pathlib import Path
 
-ROOT        = Path(__file__).parent.parent.resolve()
+ROOT        = Path(__file__).parent.resolve()
 CONTENT_DIR = ROOT / "content"
 BOOK_DIR    = ROOT / "book"
 BOOK_MD     = BOOK_DIR / "book.md"

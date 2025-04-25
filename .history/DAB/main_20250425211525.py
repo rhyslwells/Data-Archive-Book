@@ -117,9 +117,9 @@ if __name__ == "__main__":
         args = parser.parse_args()
         main(args)
 
-# Usage:
-# python main.py --clean
-# python main.py --copy
+# python3 main.py --clean
+# python3 main.py --copy
+# python3 main.py --run selected_files.py
 # python main.py --run update.py
 # python main.py --run compiler.py
-# python main.py --fallback
+# python3 main.py --fallback

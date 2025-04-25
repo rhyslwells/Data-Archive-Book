@@ -2,11 +2,12 @@
 import re
 from pathlib import Path
 
-ROOT        = Path(__file__).parent.parent.resolve()
-CONTENT_DIR = ROOT / "content"
-BOOK_DIR    = ROOT / "book"
-BOOK_MD     = BOOK_DIR / "book.md"
-SUMMARY_MD  = ROOT / "SUMMARY.md"
+# Set ROOT to the parent directory of the current script (scripts)
+ROOT        = Path(__file__).parent.resolve()  # This resolves to the 'scripts' directory
+CONTENT_DIR = ROOT.parent / "content"  # Assuming the content folder is one level up
+BOOK_DIR    = ROOT  # Using the current directory (scripts) for output
+BOOK_MD     = BOOK_DIR / "book.md"  # book.md will be created in the 'scripts' directory
+SUMMARY_MD  = ROOT.parent / "SUMMARY.md"  # SUMMARY.md will be created in the root (parent) directory
 BOOK_DIR.mkdir(exist_ok=True)
 
 # ── helpers ────────────────────────────────────────────────────────────────
@@ -32,7 +33,7 @@ If you need a specific page see the **Table of Contents** to jump to a topic.
 """
 
 merged_parts  = [preface_block]
-summary_lines = ["# Summary\n", f"* [Preface](./book/book.md#{preface_anchor})"]
+summary_lines = ["# Summary\n", f"* [Preface](./book.md#{preface_anchor})"]  # Updated link format
 
 # ── process notes ─────────────────────────────────────────────────────────
 for md in sorted(CONTENT_DIR.glob("*.md"), key=lambda p: p.name.lower()):
@@ -59,10 +60,10 @@ for md in sorted(CONTENT_DIR.glob("*.md"), key=lambda p: p.name.lower()):
                   text, count=1)
 
     merged_parts.append(text)
-    summary_lines.append(f"* [{title}](./book/book.md#{anchor})")
+    summary_lines.append(f"* [{title}](./book.md#{anchor})")  # Updated link format
 
 # ── write output ──────────────────────────────────────────────────────────
 BOOK_MD.write_text("\n\n".join(merged_parts), encoding="utf-8")
 SUMMARY_MD.write_text("\n".join(summary_lines) + "\n", encoding="utf-8")
 
-print("Preface added, math fences left untouched, book/book.md & SUMMARY.md regenerated.")
+print("Preface added, math fences left untouched, book.md & SUMMARY.md regenerated in scripts.")
