@@ -5,7 +5,6 @@ from pathlib import Path
 import argparse
 import sys
 import re
-import json
 
 # ── paths ─────────────────────────────────────────────────────────────────
 ROOT = Path(__file__).resolve().parent.parent  # This sets ROOT to ...\Data-Archive-Book\DAB
@@ -13,8 +12,6 @@ SCRIPTS = ROOT / "DAB"/"scripts"
 CONTENT_DIR = ROOT / "DAB"/"content"
 IMAGES_DIR = CONTENT_DIR / "images"
 BOOK_DIR = ROOT / "DAB"/"book"
-BOOK_JSON = ROOT / "DAB" / "book.json"
-
 
 
 # Standardised source content (absolute or relative to home)

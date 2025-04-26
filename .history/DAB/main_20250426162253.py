@@ -5,7 +5,6 @@ from pathlib import Path
 import argparse
 import sys
 import re
-import json
 
 # ── paths ─────────────────────────────────────────────────────────────────
 ROOT = Path(__file__).resolve().parent.parent  # This sets ROOT to ...\Data-Archive-Book\DAB
