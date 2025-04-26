@@ -149,6 +149,6 @@ if __name__ == "__main__":
 # python main.py --copy
 # python main.py --run update.py
 # python main.py --run compiler.py
-# python main.py --run latex.py
+# python main.py --latex.py
 # python main.py --update-title "New Book Title"
 
