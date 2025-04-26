@@ -12,17 +12,13 @@ def replace_inline_math(directory):
             with open(filepath, 'r', encoding='utf-8') as file:
                 content = file.read()
 
-                # Only replace *single* $...$ (not $$...$$)
-                updated_content = re.sub(
-                    r'(?<!\$)\$(?!\$)(.+?)(?<!\$)\$(?!\$)', 
-                    r'$$\1$$', 
-                    content,
-                    flags=re.DOTALL
-                )
+                # Step 1: Match inline math ($...$) and replace it with $$...$$
+                updated_content = re.sub(r'(?<!\$)\$(.*?)\$(?!\$)', r'$$\1$$', content)
 
+            # Step 2: Overwrite the file with the updated content
             with open(filepath, 'w', encoding='utf-8') as file:
                 file.write(updated_content)
             print(f"Updated {filename}")
 
-# Run the replacement
-replace_inline_math(ROOT / "book")
+# Run the replacement in the book directory
+replace_inline_math(ROOT / "book")  # The directory where book.md is located
