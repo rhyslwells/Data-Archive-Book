@@ -2,7 +2,7 @@
 
 This project transforms selected content from the [Data Archive](https://rhyslwells.github.io/Data-Archive/) into a **PDF** and **EPUB** format using [Honkit](https://honkit.netlify.app/).
 
-Users can choose specific Markdown files from the Data Archive to include in the generated book. This enables the creation of tailored versions of the archive for different purposes.
+Users can choose specific Markdown files from the Data Archive to include in the generated book using the `selected_files_list.md` file and `search.md`. This enables the creation of tailored versions of the archive for different purposes.
 
 > **Note:** This is an active work in progress. The PDF and EPUB versions are periodically updated when significant changes are made to the Data Archive.
 

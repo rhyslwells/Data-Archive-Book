@@ -1,10 +1,4 @@
-#engineering #drafting #data_pipeline
-
-Here is your **updated** workflow overview, modified to include running `latex.py` *before* building PDFs and EPUBs:
-
----
-
-# Updated Overview of `main.py`
+# Overview of `main.py`
 
 ## Purpose
 This script automates the preparation of content for building the **Data-Archive-Book** project. It:
@@ -86,12 +80,3 @@ You can also optionally:
   ```
 
 ---
-
-## ✅ Key Change
-- **Added:** `python main.py --run latex.py` before compiling and building outputs.
-
----
-
-Would you also like me to suggest a way to **combine all three scripts** (`update.py`, `latex.py`, `compiler.py`) into **one** command?  
-(Example: `python main.py --full`)  
-It would make the process even simpler if you prefer. 🚀

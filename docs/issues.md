@@ -1,43 +1,71 @@
 # Ongoing Issues
 
-- Latex does not properly render for some $$\Latex$$, and also not for $\LaTeX$ format.
-- Revisit Issue 5.
+## Issue 5: Unsupported Code Blocks Cause Build Failures
 
-# Resolved Issues
-
-## Issue 5: Code blocks fail to run for non standard code blocks.
-  
-- Atttempt 5.1: We can preprocess the Markdown files to remove the code blocks that are not supported by HonKit, and removes the following code blocks:
+- **Problem:** HonKit does not support certain non-standard code block types.
+- **Attempt 5.1:**  
+  Preprocess Markdown files to **remove** unsupported blocks:
   - `mermaid`
   - `bandit`
   - `dataview`
   - `just`
   - `dv`
   - `output`
+- **Status:** Ongoing
 
+# Resolved Issues
 
-## Issue 4: Building epub that contain a lot of files can be slow and cause issues with the build process. The build process can take a long time to complete, and in some cases, it may even fail due to the large number of files being processed.
+## Issue 7: Inline $ \LaTeX $ Not Rendering Properly
 
-- Resolution: In main.py we selectively copy files to the content folder based on the selected files. This reduces the number of files that need to be processed during the build process.
+- **Problem:** Inline $ \LaTeX $ expressions (`$...$`) are not correctly rendered.
+- **Resolution 7.1:**  
+  Use `latex.py` to **convert** `$term$` to `$$term$$`.
 
-## Issue 3: For all files in the Data-Archive (7550 files) the I/O process for honkit build is slow.
+## Issue 6: KaTeX Does Not Render $ \dots $
 
-Attempt 3.1: Reduce the number of files to build by grouping alphapetically, with a local TOC for each group. This did not allow the internal links to work between groupings.
+- **Problem:** KaTeX fails to render `\dots` correctly in EPUB output.
+- **Resolution 6.1:**  
+  - Find and **delete problematic entries** from `book.md`.
+  - Then run: `python main.py --run latex.py`.
 
-Attempt 3.2: Flatten all files into a single file. This worked for the internal links, but broke the EPUB output due to the large single file structure. The KaTeX math rendering failed due to the {% raw %} / {% math %} tags being left untouched. Tried to use a plugin like `honkit-plugin-chapterize` but the install failed and the plugin is not available in the honkit plugin repository.
+## Issue 4: Slow Build Performance for EPUB with Many Files
 
-## Issue 2: For epub the images are not showing up in the final output.
+- **Problem:** Building EPUB with too many files slows down and sometimes fails.
+- **Resolution 4.1:**  
+  - In `main.py`, **selectively copy** only necessary files to `content/` before build.
+  - **Reduces** the total number of processed files.
 
-- Resolution: For epub format images need to within contents/images folder. We also udate images links within notes to be relative to the contents folder. This is done in the `update.py` script. Corrects image links ![]() - to the following format 
-![Pasted image 20240124095916.png](images/Pasted%20image%2020240124095916.png)
+## Issue 3: Slow I/O During HonKit Build (7,550 Files)
 
-Images in epub:
-- For epub to view images correctly, the images need to be in the same directory contents,not the same as pdf generation.
-- The vscode epub viwer its bad use calibre to view the epub file.
-- Honkit uses calibre to create the epub file.
+- **Problem:** Full dataset processing is too slow.
+- **Attempt 3.1:**  
+  Group files alphabetically with local TOCs.  
+  → **Internal links broke** across groups.
+- **Attempt 3.2:**  
+  Flatten files into a **single large file**.  
+  → **Internal links worked**, but:
+  - EPUB generation failed due to file size.
+  - KaTeX rendering broke (`{% raw %}` / `{% math %}` left intact).
+  - Plugin `honkit-plugin-chapterize` installation attempt **failed** (plugin unavailable).
 
-## Issue 1: The highlighted text syntax `==highlighted text==` is not natively supported by HonKit.
+## Issue 2: Images Not Displaying in EPUB
 
-- Resolution: We can preprocess the Markdown files to convert this into HTML, convert `==...==` to `<mark>...</mark>`.
+- **Problem:** Images missing in final EPUB output.
+- **Resolution 2.1:**  
+  - Move images into `contents/images/`.
+  - Update Markdown image links to relative paths:
+    ```
+    ![Image](images/filename.png)
+    ```
+  - Implemented within `update.py`.
 
+**Notes:**
+- EPUB image handling differs from PDF generation.
+- **Use Calibre** for EPUB viewing (not VSCode's viewer).
+- HonKit uses Calibre to build EPUBs internally.
 
+## Issue 1: Highlighted Text Not Supported
+
+- **Problem:** HonKit does not support `==highlighted text==` syntax.
+- **Resolution 1.1:**  
+  Preprocess Markdown to **convert** `==...==` into `<mark>...</mark>` tags.
